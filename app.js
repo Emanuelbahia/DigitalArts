@@ -1,2 +1,3 @@
 let express = require("express");
-console.log(express);
+let app = express()
+let path = require("path")
