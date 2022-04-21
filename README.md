@@ -10,3 +10,5 @@ Integrantes del grupo:
 -Mi nombre es Emanuel Azcona, soy de Bahia Blanca, tengo 38 años y soy licenciado en administracion de empresas. Me gusta hacer deportes, viajar, hacer trekking y juntarme con amigos.
 
 -Soy Carolina Cirillo, vivo en Ramos Mejia, Pcia de Bs As, Argentina. Mi edad es incierta. Mis ganas de aprender a programar son muchas!. Soy Farmacéutica hace mas de 11 años , mi pasión?..estar con mi familia, mi meta próxima : Ser desarrolladora full stack.
+
+Mi nombre es Franco Leon Feierstein soy de Buenos Aires, Argentina, tengo 26 años. Me gusta hacer deportes por sobre todo grupales, tambien me gusta viajar y pasar tiempo con amigos. 
