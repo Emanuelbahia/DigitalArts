@@ -11,6 +11,9 @@ Integrantes del grupo:
 
 -Soy Carolina Cirillo, vivo en Ramos Mejia, Pcia de Bs As, Argentina. Mi edad es incierta. Mis ganas de aprender a programar son muchas!. Soy Farmacéutica hace mas de 11 años , mi pasión?..estar con mi familia, mi meta próxima : Ser desarrolladora full stack.
 
+-Mi nombre es Franco Leon Feierstein soy de Buenos Aires, Argentina, tengo 26 años. Me gusta hacer deportes por sobre todo grupales, tambien me gusta viajar y pasar tiempo con amigos. 
+-Mi nombre es Franco Leon Feierstein soy de Buenos Aires, Argentina, tengo 26 años. Me gusta hacer deportes por sobre todo grupales, tambien me gusta viajar y pasar tiempo con amigos. 
+
 5 sitios que usamos de referencia para crear nuestros wireframes:
 https://www.singulart.com/es/:
 Esta página la elegimos porq nos gustó la idea de q otras personas, en este caso de nuestro país, puedan publicar sus obras, hacerse conocidos en el ambiente y venderlas.
@@ -21,3 +24,5 @@ https://www.louvre.fr/es:
 De esta pagina nos gusto mucho como esta compuesta la pagina de inicio/presentacion y pudimos sacar varias ideas de la misma.
 https://www.metmuseum.org/:
 De esta pagina tambien nos gusto la pagina de inicio pero po sobre todo el video de presentacion y creo que podriamos llegar a usar algo parecido para nuestra pagina.
+
+
