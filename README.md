@@ -10,3 +10,14 @@ Integrantes del grupo:
 -Mi nombre es Emanuel Azcona, soy de Bahia Blanca, tengo 38 años y soy licenciado en administracion de empresas. Me gusta hacer deportes, viajar, hacer trekking y juntarme con amigos.
 
 -Soy Carolina Cirillo, vivo en Ramos Mejia, Pcia de Bs As, Argentina. Mi edad es incierta. Mis ganas de aprender a programar son muchas!. Soy Farmacéutica hace mas de 11 años , mi pasión?..estar con mi familia, mi meta próxima : Ser desarrolladora full stack.
+
+5 sitios que usamos de referencia para crear nuestros wireframes:
+https://www.singulart.com/es/:
+Esta página la elegimos porq nos gustó la idea de q otras personas, en este caso de nuestro país, puedan publicar sus obras, hacerse conocidos en el ambiente y venderlas.
+https://cuadrosdecorativos.com.ar/:
+Esta página nos pareció interesante por la cantidad y variedad de cuadros q tiene!
+Y por como esta explicado los pasos a seguir para hacer la compra.
+https://www.louvre.fr/es:
+De esta pagina nos gusto mucho como esta compuesta la pagina de inicio/presentacion y pudimos sacar varias ideas de la misma.
+https://www.metmuseum.org/:
+De esta pagina tambien nos gusto la pagina de inicio pero po sobre todo el video de presentacion y creo que podriamos llegar a usar algo parecido para nuestra pagina.
