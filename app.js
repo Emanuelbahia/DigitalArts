@@ -1,11 +1,16 @@
-let path = require("path")
 const express = require("express");
 const app = express();
+const path = require("path");
+const port = 3000;
 
-console.log(app);
+app.use(express.static(__dirname + "/public"));
 
-app.listen(3000, () => console.log("hola mundo"));
+const views = path.join(__dirname, "views/");
 
 app.get("/", function (req, res) {
-  res.send("bienvenido a contacto");
+  res.sendFile(path.join(views, "index.html"));
+});
+
+app.listen(port, () => {
+  console.log("hola mundo");
 });
