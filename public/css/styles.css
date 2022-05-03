@@ -1,4 +1,16 @@
 img {
     width: 25%;
 }
-
+/*lo de caja y subcaja es para poner 2 div adentro de un div y tener una caja al lado de la otra*/
+.caja1 {
+     display: flex;
+}
+.caja1 > .subcaja1 {
+    flex-basis: 100%;
+}
+.caja2 {
+    display: flex;
+}
+.caja2 > .subcaja2 {
+   flex-basis: 100%;
+}
