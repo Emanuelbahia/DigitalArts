@@ -12,6 +12,15 @@ app.get("/", function (req, res) {
   res.sendFile(path.join(views, "index.html"));
 });
 
+app.get("detalle_producto.html", function (req, res){
+  res.sendFile(path.join(views, "detalle_producto.html"));
+});
+
+app.get("categoria.html", function (req, res){
+  res.sendFile(path.join(views, "categoria.html"));
+});
+
 app.listen(port, () => {
   console.log("hola mundo");
 });
+
