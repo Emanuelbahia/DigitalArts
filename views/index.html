@@ -4,42 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
     <title>DigitalArts</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-       <img src="images/logo2.png" alt="logo">
+     <div class="contenedor-header">
+      <div class="item contenedor-menu">
+        <button>Menu</button>
+        <div class="drop-down">
+          <ul>
+            <li>Abstracto con espatula</li>
+            <li>Abstracto con pincel</li>
+            <li>Fotomontaje</li>
+            <li>Pouring</li>
+            <li>Cuadros decorativos</li>
+            <li>Artistas nuevos</li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+       <img class="tamaño-logo" src="images/logo2.png" alt="logo">
+      </div>
+      <div class="item">
+        <i class="fa-thin fa-magnifying-glass"></i>
+      </div>
+     </div>       
     </header>
     <main>
-        <h3>Nuestras pintuas</h3>
-     <div class="caja1"> 
-      <div class="subcaja1">
-        <img src="images/acrilico espatula.jpg" alt="acrilico espatula">
+        <h3 class="subrayado pad margin-top">Nuestras pinturas</h3>
+     <div class="contenedor1"> 
+      <div class="item">
+        <img class="img-cuadro" src="images/acrilico espatula.jpg" alt="acrilico espatula">
         <h5>acrilico con espatula</h5>
       </div>
-      <div class="subcaja1"> 
-        <img src="images/acrilico pincel.jpg" alt="acrilico pincel">
+      <div class="item" > 
+        <img class="img-cuadro" src="images/acrilico pincel.jpg" alt="acrilico pincel">
         <h5>acrilico con pincel</h5>
       </div>
-    </div>
-    <div class="caja2"> 
-      <div class="subcaja2">
-        <img src="images/pouring.jpg" alt="pouring">
+     </div>
+     <div class="contenedor1"> 
+      <div class="item">
+        <img class="img-cuadro" src="images/pouring.jpg" alt="pouring">
         <h5>pouring</h5>
       </div>
-      <div class="subcaja2">
-        <img src="images/fotomontaje.jpg" alt="fotomontaje">
+      <div class="item">
+        <img class="img-cuadro" src="images/fotomontaje.jpg" alt="fotomontaje">
         <h5>fotomontaje</h5>
       </div>
-    </div>
-        <h3>Cuadros decorativos</h3>
-        <img src="images/cuadro decorativo.png">
-        <h3>Cuadros de artistas nuevos</h3>
-        <img src="images/cuadro decorativo3.png" alt="cuadro de artista nuevo">
+     </div>
+      <div class="pad">
+        <h3 class="subrayado sin-margen">Cuadros decorativos</h3>
+        <img class="img-cuadro" src="images/cuadro decorativo.png">
+      </div>
+      <div class="pad">  
+        <h3 class="subrayado">Cuadros de artistas nuevos</h3>
+        <img class="img-cuadro" src="images/cuadro decorativo3.png" alt="cuadro de artista nuevo">
+      </div>
+      <div class="caja-registro">
+        <p>¿Queres exponer tus cuadros? Seleccionamos artistas que quieran ingresar al mundo del arte.</p>
+        <p>Solo sigue los siguiente pasos:</p>
+        <ul>
+          <li>Crea tu perfil</li>
+          <li>Envia tus obras</li>
+          <li>Expande tu red de coleccionistas</li>
+        </ul>
+        <button class="boton-registro">Registrate</button>
+      </div>
+      <br> 
     </main>
     <footer>
-
+      <div class="contenedor-footer">
+       <div class="cajita margen-derecho">
+        <h4>¿Quienes somos?</h4>
+        <ul>
+          <li>Acerca de nosotros</li>
+          <li>Nuestros artistas</li>
+          <li>El equipo</li>
+          <li>Criterios de seleccion</li>
+        </ul>
+       </div>
+       <div class="cajita margen-derecho">
+        <h4>Contactenos</h4>
+        <ul>
+          <li>Tel: +23 1234 5678</li>
+          <li>contacto@digitalarts.com.ar</li>          
+        </ul>
+       </div>
+       <div class="cajita">
+        <h4>Nos podes encontrar en:</h4>
+       </div>
+      </div>
     </footer>
 </body>
 </html>
