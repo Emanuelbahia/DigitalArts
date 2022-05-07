@@ -151,3 +151,22 @@ ul{
     margin-left: 3%;
 }
 /*menu*/
+
+.formulario{
+    padding: 25px 20px;
+}
+
+.control-formulario{
+    margin-bottom: 15px;
+}
+
+.control-formulario label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+
+.control{
+    width: 100%;
+    padding: 8px 8px;
+}
