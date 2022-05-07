@@ -17,7 +17,7 @@ app.get("detalle_producto.html", function (req, res){
 });
 
 app.get("categoria.html", function (req, res){
-  res.sendFile(path.join(views, "categoria.html"));
+  res.sendFile(path.join(views, "cuadros_decorativos.html"));
 });
 
 app.listen(port, () => {
