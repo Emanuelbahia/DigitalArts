@@ -12,15 +12,22 @@ app.get("/", function (req, res) {
   res.sendFile(path.join(views, "index.html"));
 });
 
-app.get("detalle_producto.html", function (req, res){
+app.get("/cuadros_decorativos.html", function (req, res) {
+  res.sendFile(path.join(views, "cuadros_decorativos.html"));
+});
+
+app.get("/categoria.html", function (req, res) {
+  res.sendFile(path.join(views, "categoria.html"));
+});
+
+app.get("/detalle_producto.html", function (req, res) {
   res.sendFile(path.join(views, "detalle_producto.html"));
 });
 
-app.get("categoria.html", function (req, res){
-  res.sendFile(path.join(views, "categoria.html"));
+app.get("/login", function (req, res) {
+  res.sendFile(path.join(views, "login"));
 });
 
 app.listen(port, () => {
   console.log("hola mundo");
 });
-

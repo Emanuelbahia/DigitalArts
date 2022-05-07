@@ -1,8 +1,11 @@
-*{
+*{  
     box-sizing: border-box;
+    /*margin: 0;*/
+    padding: 1.5%;
 }
+
 main{
-    background-color: rgb(180, 185, 184);
+    background-color: rgb(71 202 176);
 }
 .img-cuadro {
     width: 100%;
@@ -11,8 +14,8 @@ main{
     width: 50%;
 }
 .contenedor-header{
-    border: 3px solid black;
-    background-color: rgba(216, 128, 26, 0.968);
+    border: 1px solid black;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     
@@ -26,6 +29,7 @@ main{
 .contenedor-footer > .cajita{
     flex-basis: 100%;
 }
+
 .contenedor-menu.active .drop-down {
     display: block;
 }
@@ -62,7 +66,7 @@ button::before {
     right: 50px;
     top: 11px;
     transition: 0.5s;
-}*/
+}
 .contenedor-header ul{
     background: white;
     border-radius: 4px;
@@ -75,17 +79,23 @@ button::before {
 }
 .drop-down>ul li:hover{
     opacity: 0.7;
-    border-bottom: 4px solid black;
-}
+    border-bottom: 2px solid black;
+}*/
 .contenedor1{
     display: flex;
     flex-wrap: wrap;
 }
 .item{
     flex: 1 1 150px;
-    padding-left: 5%;
-    padding-right: 5%;
-}
+    padding-left: 1%;
+    padding-right: 1%;
+ }
+.acceso{
+  
+    padding-top: 25px;
+   
+}   
+
 .pad{
     padding-left: 5%;
     padding-right: 5%;
@@ -132,61 +142,12 @@ button::before {
 }
 .margin-top{
     margin-top: 0px;
-    margin-bottom: 3%;
+    /*margin-bottom: 3%;*/
 }
 .sin-margen{
     margin-top: 0px;
 }
+ul{
+    margin-left: 3%;
+}
 /*menu*/
-.botonMenu{
-   /*margin: auto;*/
-   display: block;
-   width: 30%;
-   height: 10%;
-   padding-left: 3%;
-   padding-bottom: 3%;
-   padding-top: 1%;
-   padding-right: 1%;
-   border-radius: 7px;
-   background: rgb(23, 5, 71);
-   color: white;
-   cursor: pointer;
-   position: relative;
-}
-
-.botonMenu span{
-   display: block;
-   width: 20px;
-   height: 3px;
-   background: white;
-   margin-top: 7px;
-}
-
-label{
-   cursor: pointer;
-}
-
-#menu-toggle{
-   display: none;
-}
-
-#trickMenu{
-   display: none;
-   text-align: center;
-   background: white;
-   padding: 10px 0;
-}
-
-#trickMenu li a{
-   display: block;
-   padding: 10px 0;
-   color: black;
-}
-
-#menu-toggle:checked + #trickMenu{
-   display: block;
-}
-nav ul{
-    list-style-type: none;
-   
-}
