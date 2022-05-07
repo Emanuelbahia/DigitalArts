@@ -24,7 +24,7 @@ app.get("/detalle_producto.html", function (req, res) {
   res.sendFile(path.join(views, "detalle_producto.html"));
 });
 
-app.get("/login", function (req, res) {
+app.get("/login.html", function (req, res) {
   res.sendFile(path.join(views, "login"));
 });
 

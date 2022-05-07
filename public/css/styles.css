@@ -18,7 +18,9 @@ main{
     background-color: white;
     display: flex;
     justify-content: space-between;
-    
+}
+.posicion-menu{
+    justify-content: start;
 }
 .contenedor-footer{
     display: flex;
@@ -53,7 +55,7 @@ button {
     background: black;
     font-size: 1rem;
     font-weight: bold;
-}
+} 
 /*
 button::before {
     content: "";
@@ -151,3 +153,16 @@ ul{
     margin-left: 3%;
 }
 /*menu*/
+
+.width-instagram{
+    width: 40%;
+    color: rgb(166, 14, 98);
+}
+.width-facebook{
+    width: 40%;
+    color: rgb(64, 64, 209);
+}
+.caja-redes{
+    background: white;
+    width: 50%;
+}
