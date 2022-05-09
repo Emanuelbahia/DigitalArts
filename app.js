@@ -27,6 +27,9 @@ app.get("/detalle_producto.html", function (req, res) {
 app.get("/login.html", function (req, res) {
   res.sendFile(path.join(views, "login"));
 });
+app.get("/registro_de_artistas.html", function (req, res) {
+  res.sendFile(path.join(views, "registro_de_artistas.html"));
+});
 
 app.listen(port, () => {
   console.log("hola mundo");
