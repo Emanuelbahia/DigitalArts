@@ -39,49 +39,46 @@
    </header>    
      <main>
       <div>
-        <p>Unete a nuestra comunidad de artistas profesionales</p>
+        <h3>Unete a nuestra comunidad de artistas profesionales</h3>
       </div>
       <div>
-         <p>X tu perfil y envianos las fotos de tus obras por E-mail</p>
+         <h3>Crea tu perfil y envianos las fotos de tus obras por E-mail</h3>
       </div>
-      <form action="" method="post">
-        <div>
-          <label>
-            <input type="text" name="registrate" placeholder="Registrate">
-          </label>
-        <div>
-          <label>
-            <input type="text" name="apellido" placeholder="Apellido">
+      <h2 class="login">REGISTRESE AQUÍ!</h2>
+      <form action="/registro_de_artistas" method="post">
+        <div class="control-formulario">
+          <label for="surname">
+            <input type="text" name="surname" id="surname"placeholder="Apellido" class="control" required>
           </label>
         </div>
-        <div>
-          <label>
-            <input type="text" name="nombre" placeholder="Nombre">
+        <div class="control-formulario">
+          <label for="name">
+            <input type="text" name="name" id="name" placeholder="Nombre" class="control" required>
           </label>
         </div> 
-        <div>
-          <label>
-            <input type="email" name="email" placeholder="E-mail">
+        <div class="control-formulario">
+          <label for="email">
+            <input type="email" name="email" id="email"placeholder="E-mail" class="control" required>
           </label>
         </div>  
-        <div>
-          <label>
-            <input type="password" name="password" placeholder="Contraseña">
+        <div class="control-formulario" >
+          <label for="password1">
+            <input type="password" name="password1" id="password1" placeholder="Contraseña" class="control" required>
           </label>
         </div>
-        <div>
-          <label>
-            <input type="password" name="password" placeholder="Confirme su contraseña">
+        <div class="control-formulario">
+          <label for="password">
+            <input type="password" name="password" placeholder="Confirme su contraseña" class="control" required>
           </label>
         </div>
-        <div>
-          <label>
-             <input type="file" name="archivo" placeholder="Subir archivos">
+        <div class="control-formulario">
+          <label for="file">
+             <input type="file" name="file" id="file"  class="file">
           </label>
         </div>
-        <div>
-          <label>
-            <input type="text" name="regitrese" placeholder="REGISTRARSE">
+        <div class="control-formulario">
+          <label for="submit">
+            <input type="submit" name="submit" id="submit">
           </label>
       </form>
      </main>
