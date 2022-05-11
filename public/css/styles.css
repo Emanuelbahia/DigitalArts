@@ -3,7 +3,6 @@
     /*margin: 0;*/
     /*padding: 1%;*/
 }
-
 main{
     background-color: rgb(144 241 221);
 }
@@ -212,3 +211,20 @@ ul{
     width: 100%;
     padding: 8px 8px;
 }
+.cuadros_decorativos {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.file {
+    width: 50%;
+    padding: 8px 8px;
+}
+.contenedor1 .item a {
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding-top: 0;
+    color: rgb(37, 36, 36);
+}
+
