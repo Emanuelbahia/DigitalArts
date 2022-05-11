@@ -1,17 +1,18 @@
 *{  
     box-sizing: border-box;
     /*margin: 0;*/
-    padding: 1%;
+    /*padding: 1%;*/
 }
 
 main{
-    background-color: rgb(71 202 176);
+    background-color: rgb(144 241 221);
 }
 .img-cuadro {
     width: 100%;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 .tamaño-logo{
-    width: 50%;
+    width: 60%;
 }
 .contenedor-header{
     border: 1px solid black;
@@ -94,12 +95,14 @@ button::before {
 }
 .item{
     flex: 1 1 150px;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
  }
+
 .acceso{
     display: flex;
     padding-top: 10%;
+    padding-bottom: 2%;
     justify-content: flex-end;
 }   
 .tamaño-icono-acceso{
@@ -109,7 +112,6 @@ button::before {
 .pad{
     padding-left: 5%;
     padding-right: 5%;
-    
 }
 
 .contenedor-footer ul {
@@ -151,8 +153,10 @@ button::before {
     text-decoration: underline;
 }
 .margin-top{
+    padding-left: 15px;
+    padding-top: 10px;
+    margin-bottom: 18px;
     margin-top: 0px;
-    margin-bottom: 0px;
 }
 .sin-margen{
     margin-top: 0px;
