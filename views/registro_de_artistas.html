@@ -12,7 +12,7 @@
 <body>
   <header>
     <div class="contenedor-header">
-     <div class="item ">
+     <div class="posicion-menu width-cajas-header">
        <!--<button>Menu</button>--->
        <i class="fa-solid fa-bars posicion-menu"></i>
        <div class="drop-down">
@@ -24,22 +24,20 @@
            <li>Cuadros decorativos</li>
            <li>Artistas nuevos</li>
          </ul>
-      </nav> 
-      </div>  
+       </div>  
      </div>  
-     <div class="item">
-      <img class="tamaño-logo" src="images/logo2.png" alt="logo">
+     <div class="posicion-logo width-cajas-header">
+      <img class="tamaño-logo " src="images/logo2.png" alt="logo">
      </div>
-     <div class="acceso item">
-       <i class="fa-solid fa-magnifying-glass"></i>
-       <i class="fa-solid fa-user"></i>
-       <i class="fa-solid fa-bag-shopping"></i>
+     <div class="acceso width-cajas-header">     
+       <a href="login.html" ><i class="fa-solid fa-user tamaño-icono-acceso"></i></a>
+       <a href="carrito.html" ></a><i class="fa-solid fa-bag-shopping tamaño-icono-acceso"></i></a>
      </div>  
     </div>     
    </header>    
-     <main>
+     <main class="item">
       <div>
-        <h3>Unete a nuestra comunidad de artistas profesionales</h3>
+        <h3 class="margin-top">Unete a nuestra comunidad de artistas profesionales</h3>
       </div>
       <div>
          <h3>Crea tu perfil y envianos las fotos de tus obras por E-mail</h3>
@@ -76,34 +74,38 @@
              <input type="file" name="file" id="file"  class="file">
           </label>
         </div>
-        <div class="control-formulario">
+        <div class="control-formulario padding-bottom">
           <label for="submit">
             <input type="submit" name="submit" id="submit">
           </label>
       </form>
      </main>
      <footer>
-        <div class="contenedor-footer">
-         <div class="cajita margen-derecho">
-          <h4>¿Quienes somos?</h4>
-          <ul>
-            <li>Acerca de nosotros</li>
-            <li>Nuestros artistas</li>
-            <li>El equipo</li>
-            <li>Criterios de seleccion</li>
-          </ul>
-         </div>
-         <div class="cajita margen-derecho">
-          <h4>Contactenos</h4>
-          <ul>
-            <li>Tel: +23 1234 5678</li>
-            <li>contacto@digitalarts.com.ar</li>          
-          </ul>
-         </div>
-         <div class="cajita">
-          <h4>Nos podes encontrar en:</h4>
-         </div>
-        </div>
+      <div class="contenedor-footer">
+       <div class="margen-derecho width-cajas-footer">
+        <h4>¿Quienes somos?</h4>
+        <ul>
+          <li>Acerca de nosotros</li>
+          <li>Nuestros artistas</li>
+          <li>El equipo</li>
+          <li>Criterios de seleccion</li>
+        </ul>
+       </div>
+       <div class="margen-derecho width-cajas-footer">
+        <h4>Contactenos</h4>
+        <ul>
+          <li>Tel: +23 1234 5678</li>
+          <li>contacto@digitalarts.com.ar</li>          
+        </ul>             
+        <h4>Nos podes encontrar en:</h4>         
+        <ul class="icono-redes caja-redes">
+        <li><a href="#" style="color:deeppink;"><i class="fab fa-instagram"></i></a></li>   
+        <li><a href="#" style="color:deepskyblue;"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#" style="color:lawngreen;"><i class="fab fa-whatsapp"></i></a></li>
+        </ul> 
+      </div> 
+       </div>
+      </div>
     </footer>
 </body>
 </html>
