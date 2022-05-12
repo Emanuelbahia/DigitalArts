@@ -38,6 +38,8 @@
 }  
 .tamaño-icono-acceso{
     width: 30%;
+    padding-right: 40px;
+    padding-left: 20px;
 } 
 
 /* MAIN */
@@ -50,8 +52,8 @@ main{
 }
 
 .item{
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
  }
 
  h5{
@@ -231,8 +233,9 @@ button {
 .caja-detalle-cuadro{
     border: 3px black solid;
     width: 60%;
-    padding: 10px;
+    padding: 5px;
     background-color: white;
+    margin-top: 10px;
 }
 
 p{
@@ -242,6 +245,7 @@ p{
 
 .padding-bottom{
     padding-bottom: 35px;
+    margin-bottom: 0px;
 }
 
 .carrito-centrado{

@@ -20,10 +20,6 @@ app.get("/categoria.html", function (req, res) {
   res.sendFile(path.join(views, "categoria.html"));
 });
 
-app.get("/detalle_producto.html", function (req, res) {
-  res.sendFile(path.join(views, "detalle_producto.html"));
-});
-
 app.get("/login.html", function (req, res) {
   res.sendFile(path.join(views, "login.html"));
 });
