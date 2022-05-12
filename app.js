@@ -51,6 +51,10 @@ app.get("/pouring.html", function (req, res) {
   res.sendFile(path.join(views, "pouring.html"));
 });
 
+app.get("/carrito.html", function (req, res) {
+  res.sendFile(path.join(views, "carrito.html"));
+});
+
 app.listen(port, () => {
   console.log("hola mundo");
 });
