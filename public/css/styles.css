@@ -252,3 +252,67 @@ p{
     margin: auto;
     padding: 10px;
 }
+
+/* CARRITO */
+.caja-compra-cuadro{
+    width: 30%;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.caja-precio-cuadro{
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.cuadro-carrito{
+    width: 70px;
+    padding: 5px;
+}
+
+.caja-carrito-unidad{
+    border: 1px black solid;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 100px;
+}
+
+.tamaño-precio{
+    font-size: 20px;
+    font-weight: bold;
+    width: 90%;
+}
+
+.caja-total{
+    border: 1px black solid;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.medida-caja-precio{
+    width: 30%;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.tamaño-letra-total{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.boton-compra-carrito{
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgb(14 14 91);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
