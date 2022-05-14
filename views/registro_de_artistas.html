@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <title>DigitalArts</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="contenedor-header">
+     <div class="posicion-menu width-cajas-header">
+       <!--<button>Menu</button>--->
+       <i class="fa-solid fa-bars posicion-menu"></i>
+       <div class="drop-down">
+         <ul>
+           <li>Abstracto con espatula</li>
+           <li>Abstracto con pincel</li>
+           <li>Fotomontaje</li>
+           <li>Pouring</li>
+           <li>Cuadros decorativos</li>
+           <li>Artistas nuevos</li>
+         </ul>
+       </div>  
+     </div>  
+     <div class="posicion-logo width-cajas-header">
+      <img class="tamaño-logo " src="images/logo2.png" alt="logo">
+     </div>
+     <div class="acceso width-cajas-header">     
+       <a href="login.html"><i class="fa-solid fa-user tamaño-icono-acceso"></i></a>
+       <a href="carrito.html"><i class="fa-solid fa-bag-shopping tamaño-icono-acceso"></i></a>
+     </div>  
+    </div>     
+   </header class="header_color">    
+     <main class="item">
+      <div>
+        <h3 class="margin-top">Unite a nuestra comunidad de artistas profesionales</h3>
+      </div>
+      <div>
+         <h3>Crea tu perfil y envianos las fotos de tus obras por E-mail</h3>
+      </div>
+      <h2 class="login">REGISTRESE AQUÍ!</h2>
+      <form action="/registro_de_artistas" method="post">
+        <div class="control-formulario">
+          <label for="surname">
+            <input type="text" name="surname" id="surname"placeholder="Ingrese su apellido" class="control" required>
+          </label>
+        </div>
+        <div class="control-formulario">
+          <label for="name">
+            <input type="text" name="name" id="name" placeholder="Ingrese su nombre" class="control" required>
+          </label>
+        </div> 
+        <div class="control-formulario">
+          <label for="email">
+            <input type="email" name="email" id="email"placeholder="Ingrese su E-mail" class="control" required>
+          </label>
+        </div>  
+        <div class="control-formulario" >
+          <label for="password1">
+            <input type="password" name="password1" id="password1" placeholder="Ingrese su contraseña" class="control" required>
+          </label>
+        </div>
+        <div class="control-formulario">
+          <label for="password">
+            <input type="password" name="password" placeholder="Confirme su contraseña" class="control" required>
+          </label>
+        </div>
+        <div class="control-formulario">
+          <label for="file1">
+             <input type="file" name="file" id="file1"  class="file">
+          </label>
+        </div>
+        <div class="control-formulario padding-bottom">
+          <label for="submit">
+            <input type="submit" name="submit" id="submit" class="submit">
+          </label>
+      </form>
+     </main>
+     <footer>
+      <div class="contenedor-footer">
+       <div class="margen-derecho width-cajas-footer">
+        <h4>¿Quienes somos?</h4>
+        <ul>
+          <li>Acerca de nosotros</li>
+          <li>Nuestros artistas</li>
+          <li>El equipo</li>
+          <li>Criterios de seleccion</li>
+        </ul>
+       </div>
+       <div class="margen-derecho width-cajas-footer">
+        <h4>Contactenos</h4>
+        <ul>
+          <li>Tel: +23 1234 5678</li>
+          <li>contacto@digitalarts.com.ar</li>          
+        </ul>             
+        <h4>Nos podes encontrar en:</h4>         
+        <ul class="icono-redes caja-redes">
+        <li><a href="#" style="color:deeppink;"><i class="fab fa-instagram"></i></a></li>   
+        <li><a href="#" style="color:deepskyblue;"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#" style="color:lawngreen;"><i class="fab fa-whatsapp"></i></a></li>
+        </ul> 
+      </div> 
+       </div>
+      </div>
+    </footer>
+</body>
+</html>

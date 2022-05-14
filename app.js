@@ -20,10 +20,6 @@ app.get("/categoria.html", function (req, res) {
   res.sendFile(path.join(views, "categoria.html"));
 });
 
-app.get("/detalle_producto.html", function (req, res) {
-  res.sendFile(path.join(views, "detalle_producto.html"));
-});
-
 app.get("/login.html", function (req, res) {
   res.sendFile(path.join(views, "login.html"));
 });
@@ -53,6 +49,9 @@ app.get("/pouring.html", function (req, res) {
 
 app.get("/register.html", function (req, res) {
   res.sendFile(path.join(views, "register.html"));
+  
+app.get("/carrito.html", function (req, res) {
+  res.sendFile(path.join(views, "carrito.html"));
 });
 
 app.listen(port, () => {

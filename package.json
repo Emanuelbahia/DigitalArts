@@ -18,6 +18,6 @@
   "homepage": "https://github.com/Emanuelbahia/grupo_2_DigitalArts#readme",
   "keywords": [],
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.18.1"
   }
 }
