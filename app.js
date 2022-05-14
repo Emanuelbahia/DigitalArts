@@ -49,7 +49,8 @@ app.get("/pouring.html", function (req, res) {
 
 app.get("/register.html", function (req, res) {
   res.sendFile(path.join(views, "register.html"));
-  
+});
+
 app.get("/carrito.html", function (req, res) {
   res.sendFile(path.join(views, "carrito.html"));
 });

@@ -217,6 +217,8 @@ button {
 .centrar-login{
     display:flex;
     justify-content: center;
+}
+
 .cuadros_decorativos {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
