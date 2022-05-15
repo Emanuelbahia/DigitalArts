@@ -1,5 +1,7 @@
 *{  
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
  }
 
 /* HEADER */
@@ -38,6 +40,7 @@
 }  
 .tamaño-icono-acceso{
     font-size: 4vw;
+    color: black;
     padding-right: 6vw;
 } 
 
@@ -64,12 +67,30 @@ main{
      color: rgb(37, 36, 36);
  }
 
+ .tamaño-letra-detalle-cuadro{
+     font-size: 4vw;
+ }
+
  .subrayado{
-    text-decoration: underline;    
+    text-decoration: underline;
+    font-size: 6vw;    
+}
+
+.margin-bottom-h5{
+    margin-bottom: 35px;
+    font-size: 4vw;
+}
+
+.margin-h3-home{
+    padding-bottom: 25px;
+}
+
+.padding-bottom-deco{
+    padding-bottom: 30px;
 }
 
 .margin-top{
-    padding-left: 5%;
+    padding-left: 8%;
     padding-top: 10px;
     margin-bottom: 18px;
     margin-top: 0px;
@@ -88,6 +109,11 @@ main{
     transition: all 0.3s ease;
     
 }
+
+.padding-lista-registro-artista{
+    padding: 10px 20px;
+}
+
 .boton-registro:hover{
     background: #2ceae5;
     transform: translate(-7px);
@@ -101,6 +127,11 @@ main{
     border: 3px solid black;
     padding: 2%;
     background-color: white;
+}
+
+.submit{
+    font-size: 17px;
+    padding: 4px;
 }
 
 /* FOOTER */
@@ -206,11 +237,13 @@ main{
 .control{
     width: 100%;
     padding: 8px 8px;
+    font-size: 15px;
 }
 
 .button-login{
     background-color: black;
     width: 40vw;
+    color: white;
 }
 
 .centrar-login{
@@ -226,6 +259,30 @@ main{
 .file {
     width: 50%;
     padding: 10px 10px;
+}
+
+.padding-register{
+    padding: 20px 20px;
+}
+
+.margin-h2{
+    margin-bottom: 10px;
+}
+
+.margin-button-register{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.margin-button-login{
+    margin-top: 50px;
+    padding-bottom: 20PX;
+}
+
+.margin-h2-login{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 40px;
 }
 
 /*CUADROS DECORATIVOS*/
