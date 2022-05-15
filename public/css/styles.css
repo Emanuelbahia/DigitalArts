@@ -207,6 +207,17 @@ main{
     width: 100%;
     padding: 8px 8px;
 }
+
+.button-login{
+    background-color: black;
+    width: 40vw;
+}
+
+.centrar-login{
+    display:flex;
+    justify-content: center;
+}
+
 .cuadros_decorativos {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;

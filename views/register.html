@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <title>DigitalArts</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+      <div class="contenedor-header">
+        <div class="item ">
+          <!--<button>Menu</button>--->
+          <i class="fa-solid fa-bars posicion-menu"></i>
+          <div class="drop-down">
+            <ul>
+              <li>Abstracto con espatula</li>
+              <li>Abstracto con pincel</li>
+              <li>Fotomontaje</li>
+              <li>Pouring</li>
+              <li>Cuadros decorativos</li>
+              <li>Artistas nuevos</li>
+            </ul>
+         </nav> 
+         </div>  
+        </div>  
+        <div class="item">
+         <img class="tamaño-logo" src="images/logo2.png" alt="logo">
+        </div>
+        <div class="acceso item">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-user"></i>
+          <i class="fa-solid fa-bag-shopping"></i>
+        </div>  
+       </div>       
+    </header>
+    <main>
+        <h1 class="login">REGISTRESE</h1>
+        <form action="resultado.html" method="POST" class="">
+            <div class="control-formulario">
+                <label>Nombre:</label>
+                <input type="text" name="nombre" class="control" required>
+            </div>
+      
+            <div class="control-formulario">
+                <label>Apellido:</label>
+                <input type="text" name="apellido" class="control" required>
+            </div>
+      
+            <div class="control-formulario">
+                <label>Correo electronico:</label>
+                <input type="email" name="email" class="control" required>
+            </div>
+
+            <div class="control-formulario">
+                <label>Contraseña:</label>
+                <input type="password" name="password" class="control" required>
+            </div>
+
+            <div class="control-formulario">
+                <label>Confirme su contraseña:</label>
+                <input type="password" name="password" class="control" required>
+            </div>
+
+            <div class="control-formulario">
+                <input type="checkbox" name="cuenta"> Al crear esta cuenta esta aceptando nuestras condiciones.<br>
+                <input type="checkbox" name="ofertas"> Acepto recibir ofertas promocionales.
+            </div>
+
+            <div class="control-formulario centrar-login">
+              <button type="submit" value="REGISTRATE" class="control button-login">REGISTRATE</button>
+            
+            </div>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="cajita margen-derecho">
+             <h4>¿Quienes somos?</h4>
+             <ul>
+               <li>Acerca de nosotros</li>
+               <li>Nuestros artistas</li>
+               <li>El equipo</li>
+               <li>Criterios de seleccion</li>
+             </ul>
+            </div>
+            <div class="cajita margen-derecho">
+             <h4>Contactenos</h4>
+             <ul>
+               <li>Tel: +23 1234 5678</li>
+               <li>contacto@digitalarts.com.ar</li>          
+             </ul>
+            </div>
+            <div class="cajita">
+             <h4>Nos podes encontrar en:</h4>
+             <div class="caja-redes"> 
+             <ul class="icono-redes">
+             <li><a href="#" style="color:deeppink;"><i class="fab fa-instagram"></i></a></li>   
+             <li><a href="#" style="color:deepskyblue;"><i class="fab fa-facebook"></i></a></li>
+             <li><a href="#" style="color:lawngreen;"><i class="fab fa-whatsapp"></i></a></li>
+             </ul> 
+             </div> 
+            </div>
+           </div>
+      </footer>
+  </body>
+  </html>
