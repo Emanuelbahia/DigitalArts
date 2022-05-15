@@ -37,9 +37,8 @@
     margin-left: 20px;
 }  
 .tamaño-icono-acceso{
-    width: 30%;
-    padding-right: 40px;
-    padding-left: 20px;
+    font-size: 4vw;
+    padding-right: 6vw;
 } 
 
 /* MAIN */
@@ -176,7 +175,7 @@ main{
     display: none;
     margin: 10px;
 }
-button {
+.boton-registro-color {
     border: none;
     position: relative;
     padding: 10px 10px;
@@ -322,4 +321,13 @@ p{
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 20px;
+}
+
+.centrado{
+    background-color: #11118d;
+    color: white;
+    border-radius: 15px;
+    border: 2px white solid;
+    font-size: 12px;
+    padding: 10px 10px;
 }
