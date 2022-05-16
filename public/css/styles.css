@@ -48,9 +48,20 @@
 main{
     background-color: #addddc;
 }
+
+.estilo-h1{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: 6vw;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 .img-cuadro {
     width: 100%;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    box-shadow: 10px 10px 5px 2px rgb(37 36 36 / 63%);
+    margin-bottom: 1vh;
 }
 
 .item{
