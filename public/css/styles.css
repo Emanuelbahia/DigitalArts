@@ -286,7 +286,7 @@ main{
 }
 
 .margin-button-login{
-    margin-top: 50px;
+    margin-top: 30px;
     padding-bottom: 20PX;
 }
 
@@ -409,4 +409,52 @@ p{
     border: 2px white solid;
     font-size: 12px;
     padding: 10px 10px;
+}
+
+/*media queries tablet*/
+
+@media (min-width: 481px){
+    .contenedor-home{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contenedor-otros-cuadros{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .item{
+        flex: 1 1 50%;
+    }
+    .caja-registro{
+        width: 60%;
+    }
+}
+
+/*media queries pc*/
+
+@media (min-width: 1024px){
+    .contenedor-home{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .item {
+        padding-left: 4%;
+        padding-right: 4%;
+        width: 25%;
+        flex: 1 1 25%;
+    }
+    .margin-bottom-h5{
+        font-size: 2vw;
+    }
+    .estilo-h1{
+        font-size: 5vw;
+    }
+    .subrayado{
+        font-size: 5vw;
+    }
+    .caja-registro{
+        width: 60%;
+    }
 }
