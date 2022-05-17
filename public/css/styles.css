@@ -145,6 +145,11 @@ main{
     padding: 4px;
 }
 
+.margin-registro-artista{
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
 /* FOOTER */
 .contenedor-footer{
     display: flex;
@@ -253,13 +258,19 @@ main{
 
 .button-login{
     background-color: black;
-    width: 40vw;
     color: white;
+    width: 90px;
 }
 
 .centrar-login{
     display:flex;
     justify-content: center;
+}
+
+.button-register{
+    width: 150px;
+    background-color: black;
+    color: white;
 }
 
 .cuadros_decorativos {
@@ -273,7 +284,7 @@ main{
 }
 
 .padding-register{
-    padding: 20px 20px;
+    padding: 30px 5%;
 }
 
 .margin-h2{
@@ -294,6 +305,12 @@ main{
     padding-top: 30px;
     padding-bottom: 20px;
     font-size: 40px;
+}
+
+.centrar-login{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 /*CUADROS DECORATIVOS*/
@@ -414,7 +431,7 @@ p{
 /*media queries tablet*/
 
 @media (min-width: 481px){
-    .contenedor-home{
+    .contenedor-home {
         display: flex;
         flex-wrap: wrap;
     }
@@ -423,10 +440,43 @@ p{
         flex-wrap: wrap;
     }
     .item{
-        flex: 1 1 50%;
+        flex: 1 1 50%;      
     }
     .caja-registro{
         width: 60%;
+    }
+    .contenedor-cuadros-espatula{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .padding-bottom{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .tamaño-letra-detalle-cuadro {
+        font-size: 2vw;
+    }
+    .margin-top {
+        padding-top: 3vh;
+        margin-bottom: 4vh;
+    } 
+    .ultimo-cuadro-querie{
+        width: 50%;
+    }
+    .padding-register{
+        padding: 30px 10%;
+    }
+    .querie-h-artistas{
+        text-align: center;
+        font-size: 3vh;
+        padding: 2px;
+    }
+    .padding-registro-artistas{
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    .width-input{
+        width: 70vw;
     }
 }
 
@@ -456,5 +506,17 @@ p{
     }
     .caja-registro{
         width: 60%;
+    }
+    .padding-bottom{
+        flex: 1 1 33%
+    }
+    .tamaño-letra-detalle-cuadro {
+        font-size: 2vh;
+    }
+    .padding-register{
+        padding: 30px 20%;
+    }
+    .width-input{
+        width: 60vw;
     }
 }
