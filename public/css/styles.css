@@ -52,7 +52,7 @@ main{
 .estilo-h1{
     padding-top: 2vh;
     padding-bottom: 2vh;
-    font-size: 6vw;
+    font-size: 4vh;
     text-align: center;
     text-decoration: underline;
     font-weight: bold;
@@ -84,12 +84,12 @@ main{
 
  .subrayado{
     text-decoration: underline;
-    font-size: 6vw;    
+    font-size: 4vh;    
 }
 
 .margin-bottom-h5{
     margin-bottom: 35px;
-    font-size: 4vw;
+    font-size: 2vh;
 }
 
 .margin-h3-home{
@@ -438,6 +438,7 @@ p{
     .contenedor-otros-cuadros{
         display: flex;
         flex-wrap: wrap;
+        padding-top: 4vh;
     }
     .item{
         flex: 1 1 50%;      
@@ -478,6 +479,10 @@ p{
     .width-input{
         width: 70vw;
     }
+    .estilo-h1{
+        padding-bottom: 5vh;
+    }
+   
 }
 
 /*media queries pc*/
@@ -500,10 +505,8 @@ p{
     }
     .estilo-h1{
         font-size: 5vw;
-    }
-    .subrayado{
-        font-size: 5vw;
-    }
+        padding-bottom: 5vh;
+    }  
     .caja-registro{
         width: 60%;
     }
@@ -518,5 +521,14 @@ p{
     }
     .width-input{
         width: 60vw;
+    }
+    .cuadro-achicado{
+        width: 30%;
+    }
+    .ultimo-detalle-pincel{
+        width: 17%;
+    }
+    .ultimo-carrito-pincel{
+        width: 80%;
     }
 }
