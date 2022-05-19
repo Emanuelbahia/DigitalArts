@@ -10,7 +10,8 @@
     background-color: white;
     display: flex;
     justify-content: space-between;
-    padding: 5px;
+    position: fixed;
+    width: 100%;
 }
 
 .tamaño-logo{
@@ -47,6 +48,7 @@
 /* MAIN */
 main{
     background-color: #addddc;
+    padding-top: 100px;
 }
 
 .estilo-h1{
@@ -531,4 +533,12 @@ p{
     .ultimo-carrito-pincel{
         width: 80%;
     }
+    main{
+        padding-top: 200px;
+    }
+    .posicion-menu{
+        display: none;
+    }
+    
+    
 }
