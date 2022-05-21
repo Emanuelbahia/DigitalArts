@@ -42,8 +42,29 @@
 .tamaño-icono-acceso{
     font-size: 4vw;
     color: black;
-    padding-right: 6vw;
+    padding-right: 5vw;
+    animation: float 5s ease-in-out infinite;
 } 
+
+.fa-bag-shopping{
+    animation-delay: 1s;
+    color: rgb(245 15 187);
+}
+
+.fa-house{
+    animation-delay: 2s;
+    color: rgb(27, 205, 205);
+}
+
+.fa-user{
+    color: #2f2fbb;
+}
+
+@keyframes float {
+    0% { transform: translateY(0);}
+    50% {transform: translateY(-15px);}
+    100% {transform: translateY(0);}
+}
 
 /* MAIN */
 main{
@@ -329,7 +350,7 @@ h5{
     border: 2px black solid;
     width: 60%;
     padding: 5px;
-    background-color: white;
+    background-color: #f2f2f2;
     margin-top: 10px;
 }
 
@@ -428,18 +449,19 @@ p{
 .dropbtn {
     background-color: white;
     color: black;
-    padding: 16px;
+    padding: 1.5vw;
     font-size: 3vh;
-    border: none;
     cursor: pointer;
-  }
+    border: 1px solid black;
+    border-radius: 10px;
+}
   
-  .dropdown {
+.dropdown {
     position: relative;
     display: inline-block;
-  }
+}
   
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #e8e28d;
@@ -447,28 +469,32 @@ p{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 5px;
-  }
+}
   
-  .dropdown-content a {
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
+}
   
-  .dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: #f1f1f1}
   
   .dropdown:hover .dropdown-content {
     display: block;
-  }
+}
   
-  .dropdown:hover .dropbtn {
+.dropdown:hover .dropbtn {
     background-color: white;
-  }
+}
 
-  .tamaño-letra-menu-desplegable{
+.tamaño-letra-menu-desplegable{
     font-size: 3vw;
-  }
+}
+
+.tamaño-galeria{
+    display: none;
+}
 
 /*media queries tablet*/
 
@@ -524,7 +550,10 @@ p{
     .estilo-h1{
         padding-bottom: 5vh;
     }
-    
+    .tamaño-galeria{
+        width: 100%;
+        display: block;
+    }
 }
 
 /*media queries pc*/
