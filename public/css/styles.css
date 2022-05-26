@@ -305,6 +305,7 @@ h5{
 
 .margin-h2{
     margin-bottom: 10px;
+    margin-top: 20%;
 }
 
 .margin-button-register{
@@ -318,7 +319,6 @@ h5{
 }
 
 .margin-h2-login{
-    padding-top: 30px;
     padding-bottom: 20px;
     font-size: 40px;
 }
@@ -554,6 +554,9 @@ p{
         width: 100%;
         display: block;
     }
+    .margin-h2-login {
+        padding-top: 5%;
+    }
 }
 
 /*media queries pc*/
@@ -613,7 +616,21 @@ p{
         padding: 20px 20px;
         transition: all .5s ease-in-out;
     }
-    
-    
-    
+    .margin-h2 {
+        margin-bottom: 10px;
+        margin-top: 30%;
+    }
+    .margin-h2-login {     
+        margin-top: 3%;
+    }
+    .margin-button-login {
+        margin-bottom: 2vw;
+    }
+    .margin-h2-login {
+        margin-top: 3%;
+        padding-top: 1%;
+    }
+    .dropdown-content{
+        display: block;
+    }
 }
