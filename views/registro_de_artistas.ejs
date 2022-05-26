@@ -10,32 +10,9 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <div class="contenedor-header">
-      <div class="posicion-menu width-cajas-header">       
-        
-        <div class="dropdown">
-          <i class="fa-solid fa-bars posicion-menu dropbtn"></i>
-           <div class="dropdown-content">
-            <a href="abstracto_espatula.html" class="tamaño-letra-menu-desplegable">Abstracto con espatula</a>
-            <a href="abstracto_pincel.html" class="tamaño-letra-menu-desplegable">Abstracto con pincel</a>
-            <a href="fotomontaje.html" class="tamaño-letra-menu-desplegable">Fotomontaje</a>
-            <a href="pouring.html" class="tamaño-letra-menu-desplegable">Pouring</a>
-            <a href="cuadros_decorativos.html" class="tamaño-letra-menu-desplegable">Cuadros decorativos</a>
-            <a href="cuadros_artistas_nuevos.html" class="tamaño-letra-menu-desplegable">Artistas nuevos</a>
-          </div>
-        </div>  
-      </div>  
-      <div class="posicion-logo width-cajas-header">
-       <img class="tamaño-logo " src="images/logo2.png" alt="logo">
-      </div>
-      <div class="acceso width-cajas-header">     
-        <a href="login.html" ><i class="fa-solid fa-user tamaño-icono-acceso"></i></a>
-        <a href="carrito.html" ><i class="fa-solid fa-bag-shopping tamaño-icono-acceso"></i></a>
-        <a href="/"><i class="fa-solid fa-house tamaño-icono-acceso"></i></a>
-      </div>  
-     </div>           
-   </header class="header_color">    
+
+    <%- include("./partials/header.ejs") %>
+
      <main  class="margin-registro-artista" >
       <div>
         <h3 class="margin-top querie-h-artistas">Unite a nuestra comunidad de artistas profesionales</h3>
@@ -81,31 +58,8 @@
           </label>
       </form>
      </main>
-     <footer>
-      <div class="contenedor-footer">
-        <div class="margen-derecho width-cajas-footer">
-         <h4 class="margen-h4-footer">¿Quienes somos?</h4>
-         <ul>
-           <li>Acerca de nosotros</li>
-           <li>Nuestros artistas</li>
-           <li>El equipo</li>
-           <li>Criterios de seleccion</li>
-         </ul>
-        </div>
-        <div class="margen-derecho width-cajas-footer">
-         <h4 class="margen-h4-footer">Contactenos</h4>
-         <ul>
-           <li>Tel: +23 1234 5678</li>
-           <li>contacto@digitalarts.com.ar</li>          
-         </ul>             
-         <h4 class="margen-h4-footer">Nos podes encontrar en:</h4>         
-         <ul class="icono-redes caja-redes">
-         <li><a href="#" style="color:deeppink;"><i class="fab fa-instagram"></i></a></li>   
-         <li><a href="#" style="color:deepskyblue;"><i class="fab fa-facebook"></i></a></li>
-         <li><a href="#" style="color:lawngreen;"><i class="fab fa-whatsapp"></i></a></li>
-         </ul> 
-        </div> 
-       </div>
-    </footer>
+
+     <%- include("./partials/footer.ejs") %>
+
 </body>
 </html>
