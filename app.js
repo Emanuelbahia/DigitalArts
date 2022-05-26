@@ -9,6 +9,7 @@ app.use(express.static(__dirname + "/public"));
 const views = path.join(__dirname, "views/");
 const mainRutas = require("./routes/main");
 const carritoRutas = require("./routes/carrito");
+const usersRutas = require("./routes/users")
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
@@ -17,6 +18,8 @@ app.set("views", path.join(__dirname, "views"));
 app.use("/", mainRutas); /*home */
 app.use("/", carritoRutas); /*carrito */
 app.use("/", mainRutas); /* login */
+app.use("/", usersRutas); /* users*/
+
 
 /* RUTAS VIEJAS */
 
@@ -42,10 +45,10 @@ app.get("/cuadros_decorativos.html", function (req, res) {
 app.get("/categoria.html", function (req, res) {
   res.sendFile(path.join(views, "categoria.html"));
 });
-
+/*
 app.get("/registro_de_artistas.html", function (req, res) {
   res.sendFile(path.join(views, "registro_de_artistas.html"));
-});
+});*/
 
 app.get("/abstracto_espatula.html", function (req, res) {
   res.sendFile(path.join(views, "abstracto_espatula.html"));
