@@ -14,8 +14,8 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
 /* RUTAS NUEVAS */
-app.use("/home", mainRutas);
-app.use("/carrito", carritoRutas);
+app.use("/", mainRutas); /*home */
+app.use("/", carritoRutas); /*carrito */
 app.use("/", mainRutas); /* login */
 
 /* RUTAS VIEJAS */
