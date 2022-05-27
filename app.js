@@ -10,6 +10,7 @@ const views = path.join(__dirname, "views/");
 const mainRutas = require("./routes/main");
 const carritoRutas = require("./routes/carrito");
 const usersRutas = require("./routes/users")
+const productosRutas = require("./routes/productos");
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
@@ -19,7 +20,12 @@ app.use("/", mainRutas); /*home */
 app.use("/", carritoRutas); /*carrito */
 app.use("/", mainRutas); /* login */
 app.use("/", usersRutas); /* users*/
-
+app.use("/", productosRutas); /*cuadros decorativos*/
+app.use("/", productosRutas);/*cuadros_artistas_nuevos*/
+app.use("/", productosRutas);/*abstracto_espatula*/
+app.use("/", productosRutas);/*abstracto_pincel*/
+app.use("/", productosRutas);/*fotomontaje*/
+app.use("/", productosRutas);/*pouring*/
 
 /* RUTAS VIEJAS */
 
@@ -38,6 +44,7 @@ app.get("/login.html", function (req, res) {
   res.sendFile(path.join(views, "login.html"));
 });*/
 
+/*
 app.get("/cuadros_decorativos.html", function (req, res) {
   res.sendFile(path.join(views, "cuadros_decorativos.html"));
 });
@@ -49,7 +56,7 @@ app.get("/categoria.html", function (req, res) {
 app.get("/registro_de_artistas.html", function (req, res) {
   res.sendFile(path.join(views, "registro_de_artistas.html"));
 });*/
-
+/*
 app.get("/abstracto_espatula.html", function (req, res) {
   res.sendFile(path.join(views, "abstracto_espatula.html"));
 });
@@ -57,11 +64,11 @@ app.get("/abstracto_espatula.html", function (req, res) {
 app.get("/abstracto_pincel.html", function (req, res) {
   res.sendFile(path.join(views, "abstracto_pincel.html"));
 });
-
+/*
 app.get("/cuadros_artistas_nuevos.html", function (req, res) {
   res.sendFile(path.join(views, "cuadros_artistas_nuevos.html"));
-});
-
+});*/
+/*
 app.get("/fotomontaje.html", function (req, res) {
   res.sendFile(path.join(views, "fotomontaje.html"));
 });
@@ -73,7 +80,7 @@ app.get("/pouring.html", function (req, res) {
 app.get("/register.html", function (req, res) {
   res.sendFile(path.join(views, "register.html"));
 });
-
+*/
 app.listen(port, () => {
   console.log("hola mundo");
 });
