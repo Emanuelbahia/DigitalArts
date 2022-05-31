@@ -606,7 +606,7 @@ p{
         width: 80%;
     }
     main{
-        padding-top: 200px;
+        padding-top: 0px;
     }
     .posicion-menu{
         display: none;
@@ -632,5 +632,17 @@ p{
     }
     .dropdown-content{
         display: block;
+    }
+    .contenedor-header{
+        position: static;
+    }
+    .tamaño-icono-acceso {
+        font-size: 2.5vw;
+    }
+    .tamaño-logo {
+        width: 200px;
+        height: 150px;
+        margin-right: 50%;       
+        margin-top: 15px;
     }
 }

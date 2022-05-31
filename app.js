@@ -6,14 +6,14 @@ const port = 3000;
 
 app.use(express.static(__dirname + "/public"));
 
-const views = path.join(__dirname, "views/");
-const mainRutas = require("./routes/main");
-const carritoRutas = require("./routes/carrito");
-const usersRutas = require("./routes/users")
-const productosRutas = require("./routes/productos");
+const views = path.join(__dirname, "src/views/");
+const mainRutas = require("./src/routes/main");
+const carritoRutas = require("./src/routes/carrito");
+const usersRutas = require("./src/routes/users");
+const productosRutas = require("./src/routes/productos");
 
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "views"));
+app.set("views", path.join(__dirname, "src/views"));
 
 /* RUTAS NUEVAS */
 app.use("/", mainRutas); /*home */
@@ -21,11 +21,11 @@ app.use("/", carritoRutas); /*carrito */
 app.use("/", mainRutas); /* login */
 app.use("/", usersRutas); /* users*/
 app.use("/", productosRutas); /*cuadros decorativos*/
-app.use("/", productosRutas);/*cuadros_artistas_nuevos*/
-app.use("/", productosRutas);/*abstracto_espatula*/
-app.use("/", productosRutas);/*abstracto_pincel*/
-app.use("/", productosRutas);/*fotomontaje*/
-app.use("/", productosRutas);/*pouring*/
+app.use("/", productosRutas); /*cuadros_artistas_nuevos*/
+app.use("/", productosRutas); /*abstracto_espatula*/
+app.use("/", productosRutas); /*abstracto_pincel*/
+app.use("/", productosRutas); /*fotomontaje*/
+app.use("/", productosRutas); /*pouring*/
 
 /* RUTAS VIEJAS */
 
