@@ -11,23 +11,22 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <%- include("./partials/header.ejs") %>
+    <%- include("./partials/header") %>
 
     <main>
         <h3 class="margin-top subrayado">Artistas nuevos</h3>
         <div class="contenedor-cuadros-espatula">
         <div class="item padding-bottom"> 
-            <%= cuadrosArtistasNuevos.forEach (cuadro) => {  %>                   
-           <div><a href="carrito"><img class="img-cuadro" src=<%= cuadro.title %>></a></div>            
+             
+           <div><a href="carrito"><img class="img-cuadro" src="images/artista nuevo 2.jpg.jpg"></a></div>            
            <div class="contenedor-detalle-carrito">
             <div class="caja-detalle-cuadro">
                 <p class="tamaño-letra-detalle-cuadro">
-                    <b>Artista: <%= cuadro.artista %></b><br>
-                    <b>Técnica: <%= cuadro.tecnica %></b> <br>
-                    <b>Dimensiones: <%= cuadro.dimensiones %></b> <br>
-                    <b><%= cuadro.detalle %></b><br>
-                </p>
-            <% } %>
+                    <b>Artista: Stephen King</b><br>
+                    <b>Técnica: abstracto espátula</b> <br>
+                    <b>Dimensiones: 40x70</b> <br>
+                    <b>Bastidor en lienzo</b><br>
+                 </p>  
             </div>
             <div class="carrito-centrado">
                 <a href="carrito"><button class="centrado">añadir<br> al carrito</button></a>
@@ -149,7 +148,7 @@
         </div> 
     </main>
     
-    <%- include("./partials/footer.ejs") %>
+    <%- include("./partials/footer") %>
 
   </body>
   </html>
