@@ -1,0 +1,433 @@
+[
+  {
+    "id": 1,
+    "category": "Abstracto espátula",
+    "image": "",
+    "size": "60x80",
+    "description": "técnica de acrilico con espátula",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 2,
+    "category": "Abstracto espátula",
+    "image": "",
+    "size": "40x50",
+    "description": "técnica de acrilico con espátula",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 3,
+    "category": "Abstracto espátula",
+    "image": "",
+    "size": "40x60",
+    "description": "técnica de acrilico con espátula",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 4,
+    "category": "Abstracto espátula",
+    "image": "",
+    "size": "40x40",
+    "description": "técnica de acrilico con espátula",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 5,
+    "category": "Abstracto espátula",
+    "image": "",
+    "size": "60x80",
+    "description": "técnica de acrilico con espátula",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 6,
+    "category": "Abstracto espátula",
+    "image": "",
+    "size": "50x70",
+    "description": "técnica de acrilico con espátula",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 7,
+    "category": "Abstracto espátula",
+    "image": "",
+    "size": "60x80",
+    "description": "técnica de acrilico con espátula",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 8,
+    "category": "Abstracto espátula",
+    "image": "",
+    "size": "70x90",
+    "description": "técnica de acrilico con espátula",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 9,
+    "category": "Abstracto espátula",
+    "image": "",
+    "size": "70x90",
+    "description": "técnica de acrilico con espátula",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 10,
+    "category": "Abstracto espátula",
+    "image": "",
+    "size": "50x60",
+    "description": "técnica de acrilico con espátula",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 11,
+    "category": "Abstracto espátula",
+    "image": "",
+    "size": "40x60",
+    "description": "técnica de acrilico con espátula",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 12,
+    "category": "Abstracto pincel",
+    "image": "",
+    "size": "50x70",
+    "description": "técnica de acrilico con pincel",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 13,
+    "category": "Abstracto pincel",
+    "image": "",
+    "size": "70x90",
+    "description": "técnica de acrilico con pincel",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 14,
+    "category": "Abstracto pincel",
+    "image": "",
+    "size": "50x70",
+    "description": "técnica de acrilico con pincel",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 15,
+    "category": "Abstracto pincel",
+    "image": "",
+    "size": "70x90",
+    "description": "técnica de acrilico con pincel",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 16,
+    "category": "Abstracto pincel",
+    "image": "",
+    "size": "60x80",
+    "description": "técnica de acrilico con pincel",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 17,
+    "category": "Abstracto pincel",
+    "image": "",
+    "size": "90x60",
+    "description": "técnica de acrilico con pincel",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 18,
+    "category": "Abstracto pincel",
+    "image": "",
+    "size": "60x80",
+    "description": "técnica de acrilico con pincel",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 19,
+    "category": "Abstracto pincel",
+    "image": "",
+    "size": "100x80",
+    "description": "técnica de acrilico con pincel",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 20,
+    "category": "Abstracto pincel",
+    "image": "",
+    "size": "60x80",
+    "description": "técnica de acrilico con pincel",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 21,
+    "category": "Abstracto pincel",
+    "image": "",
+    "size": "60x80",
+    "description": "técnica de acrilico con pincel",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 22,
+    "category": "Pouring",
+    "image": "",
+    "size": "40x40",
+    "description": "técnica de Pouring",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 23,
+    "category": "Pouring",
+    "image": "",
+    "size": "40x40",
+    "description": "técnica de Pouring",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 24,
+    "category": "Pouring",
+    "image": "",
+    "size": "45x65",
+    "description": "técnica de Pouring",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 25,
+    "category": "Pouring",
+    "image": "",
+    "size": "45x65",
+    "description": "técnica de Pouring",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 26,
+    "category": "Pouring",
+    "image": "",
+    "size": "30x30",
+    "description": "técnica de Pouring",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 27,
+    "category": "Pouring",
+    "image": "",
+    "size": "30x30",
+    "description": "técnica de Pouring",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 28,
+    "category": "Fotomontaje",
+    "image": "",
+    "size": "90x60",
+    "description": "técnica de Fotomontaje",
+    "material": "Madera",
+    "price": ""
+  },
+  {
+    "id": 29,
+    "category": "Fotomontaje",
+    "image": "",
+    "size": "50x70",
+    "description": "técnica de Fotomontaje",
+    "material": "Madera",
+    "price": ""
+  },
+  {
+    "id": 30,
+    "category": "Cuadro decorativo",
+    "image": "",
+    "size": "200x150",
+    "description": "técnica de impresión de Vinilo Mate con tintas Latex",
+    "material": "Bastidor macizo en madera",
+    "price": ""
+  },
+  {
+    "id": 31,
+    "category": "Cuadro decorativo",
+    "image": "",
+    "size": "200x150",
+    "description": "técnica de impresión de Vinilo Mate con tintas Latex",
+    "material": "Bastidor macizo en madera",
+    "price": ""
+  },
+  {
+    "id": 32,
+    "category": "Cuadro decorativo",
+    "image": "",
+    "size": "200x150",
+    "description": "técnica de impresión de Vinilo Mate con tintas Latex",
+    "material": "Bastidor macizo en madera",
+    "price": ""
+  },
+  {
+    "id": 33,
+    "category": "Cuadro decorativo",
+    "image": "",
+    "size": "200x150",
+    "description": "técnica de impresión de Vinilo Mate con tintas Latex",
+    "material": "Bastidor macizo en madera",
+    "price": ""
+  },
+  {
+    "id": 34,
+    "category": "Cuadro decorativo",
+    "image": "",
+    "size": "200x150",
+    "description": "técnica de impresión de Vinilo Mate con tintas Latex",
+    "material": "Bastidor macizo en madera",
+    "price": ""
+  },
+  {
+    "id": 35,
+    "category": "Cuadro decorativo",
+    "image": "",
+    "size": "200x150",
+    "description": "técnica de impresión de Vinilo Mate con tintas Latex",
+    "material": "Bastidor macizo en madera",
+    "price": ""
+  },
+  {
+    "id": 36,
+    "category": "Cuadro decorativo",
+    "image": "",
+    "size": "200x150",
+    "description": "técnica de impresión de Vinilo Mate con tintas Latex",
+    "material": "Bastidor macizo en madera",
+    "price": ""
+  },
+  {
+    "id": 37,
+    "category": "Cuadro decorativo",
+    "image": "",
+    "size": "200x150",
+    "description": "técnica de impresión de Vinilo Mate con tintas Latex",
+    "material": "Bastidor macizo en madera",
+    "price": ""
+  },
+  {
+    "id": 38,
+    "category": "Cuadro decorativo",
+    "image": "",
+    "size": "200x150",
+    "description": "técnica de impresión de Vinilo Mate con tintas Latex",
+    "material": "Bastidor macizo en madera",
+    "price": ""
+  },
+  {
+    "id": 39,
+    "category": "Cuadro decorativo",
+    "image": "",
+    "size": "200x150",
+    "description": "técnica de impresión de Vinilo Mate con tintas Latex",
+    "material": "Bastidor macizo en madera",
+    "price": ""
+  },
+  {
+    "id": 40,
+    "category": "Cuadro de artistas nuevos",
+    "author": "Stephen king",
+    "image": "",
+    "size": "40x70",
+    "description": "Técnica de abstracto con espátula",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 41,
+    "category": "Cuadro de artistas nuevos",
+    "author": "Stephen king",
+    "image": "",
+    "size": "40x70",
+    "description": "Técnica de abstracto con espátula",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 42,
+    "category": "Cuadro de artistas nuevos",
+    "author": "Stephen king",
+    "image": "",
+    "size": "30x70",
+    "description": "Técnica de abstracto con espátula",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 43,
+    "category": "Cuadro de artistas nuevos",
+    "author": "Stephen king",
+    "image": "",
+    "size": "50x80",
+    "description": "Técnica de abstracto con espátula",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 44,
+    "category": "Cuadro de artistas nuevos",
+    "author": "Clive barker",
+    "image": "",
+    "size": "50x70",
+    "description": "Técnica de abstracto con espátula",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 45,
+    "category": "Cuadro de artistas nuevos",
+    "author": "Clive barker",
+    "image": "",
+    "size": "70x50",
+    "description": "Técnica de abstracto con espátula",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 46,
+    "category": "Cuadro de artistas nuevos",
+    "author": "Clive barker",
+    "image": "",
+    "size": "30x70",
+    "description": "Técnica de abstracto con espátula",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  },
+  {
+    "id": 47,
+    "category": "Cuadro de artistas nuevos",
+    "author": "Clive barker",
+    "image": "",
+    "size": "50x70",
+    "description": "Técnica de abstracto con espátula",
+    "material": "Bastidor en lienzo",
+    "price": ""
+  }
+]
