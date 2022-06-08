@@ -6,7 +6,7 @@
     "size": "60x80",
     "description": "técnica de acrilico con espátula",
     "material": "Bastidor en lienzo",
-    "price": ""
+    "price": 16000
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "size": "40x50",
     "description": "técnica de acrilico con espátula",
     "material": "Bastidor en lienzo",
-    "price": ""
+    "price": 12000
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "size": "40x60",
     "description": "técnica de acrilico con espátula",
     "material": "Bastidor en lienzo",
-    "price": ""
+    "price": 21000
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "size": "40x40",
     "description": "técnica de acrilico con espátula",
     "material": "Bastidor en lienzo",
-    "price": ""
+    "price": 12000
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "size": "60x80",
     "description": "técnica de acrilico con espátula",
     "material": "Bastidor en lienzo",
-    "price": ""
+    "price": 15000
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "size": "50x70",
     "description": "técnica de acrilico con espátula",
     "material": "Bastidor en lienzo",
-    "price": ""
+    "price": 17000
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "size": "60x80",
     "description": "técnica de acrilico con espátula",
     "material": "Bastidor en lienzo",
-    "price": ""
+    "price": 16500
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "size": "70x90",
     "description": "técnica de acrilico con espátula",
     "material": "Bastidor en lienzo",
-    "price": ""
+    "price": 18000
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "size": "70x90",
     "description": "técnica de acrilico con espátula",
     "material": "Bastidor en lienzo",
-    "price": ""
+    "price": 21000
   },
   {
     "id": 10,
@@ -87,7 +87,7 @@
     "size": "50x60",
     "description": "técnica de acrilico con espátula",
     "material": "Bastidor en lienzo",
-    "price": ""
+    "price": 25000
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
     "size": "40x60",
     "description": "técnica de acrilico con espátula",
     "material": "Bastidor en lienzo",
-    "price": ""
+    "price": 13000
   },
   {
     "id": 12,
@@ -105,7 +105,7 @@
     "size": "50x70",
     "description": "técnica de acrilico con pincel",
     "material": "Bastidor en lienzo",
-    "price": ""
+    "price": 17600
   },
   {
     "id": 13,
@@ -114,7 +114,7 @@
     "size": "70x90",
     "description": "técnica de acrilico con pincel",
     "material": "Bastidor en lienzo",
-    "price": ""
+    "price": 19300
   },
   {
     "id": 14,
@@ -123,7 +123,7 @@
     "size": "50x70",
     "description": "técnica de acrilico con pincel",
     "material": "Bastidor en lienzo",
-    "price": ""
+    "price": 13600
   },
   {
     "id": 15,
@@ -132,7 +132,7 @@
     "size": "70x90",
     "description": "técnica de acrilico con pincel",
     "material": "Bastidor en lienzo",
-    "price": ""
+    "price": 23500
   },
   {
     "id": 16,
@@ -141,7 +141,7 @@
     "size": "60x80",
     "description": "técnica de acrilico con pincel",
     "material": "Bastidor en lienzo",
-    "price": ""
+    "price": 21000
   },
   {
     "id": 17,
@@ -150,7 +150,7 @@
     "size": "90x60",
     "description": "técnica de acrilico con pincel",
     "material": "Bastidor en lienzo",
-    "price": ""
+    "price": 17500
   },
   {
     "id": 18,
@@ -159,7 +159,7 @@
     "size": "60x80",
     "description": "técnica de acrilico con pincel",
     "material": "Bastidor en lienzo",
-    "price": ""
+    "price": 18200
   },
   {
     "id": 19,
@@ -168,7 +168,7 @@
     "size": "100x80",
     "description": "técnica de acrilico con pincel",
     "material": "Bastidor en lienzo",
-    "price": ""
+    "price": 26000
   },
   {
     "id": 20,
@@ -177,7 +177,7 @@
     "size": "60x80",
     "description": "técnica de acrilico con pincel",
     "material": "Bastidor en lienzo",
-    "price": ""
+    "price": 23000
   },
   {
     "id": 21,
@@ -186,7 +186,7 @@
     "size": "60x80",
     "description": "técnica de acrilico con pincel",
     "material": "Bastidor en lienzo",
-    "price": ""
+    "price": 14800
   },
   {
     "id": 22,
@@ -195,7 +195,7 @@
     "size": "40x40",
     "description": "técnica de Pouring",
     "material": "Bastidor en lienzo",
-    "price": ""
+    "price": 23000
   },
   {
     "id": 23,
@@ -204,7 +204,7 @@
     "size": "40x40",
     "description": "técnica de Pouring",
     "material": "Bastidor en lienzo",
-    "price": ""
+    "price": 26400
   },
   {
     "id": 24,
@@ -213,7 +213,7 @@
     "size": "45x65",
     "description": "técnica de Pouring",
     "material": "Bastidor en lienzo",
-    "price": ""
+    "price": 22300
   },
   {
     "id": 25,
@@ -222,7 +222,7 @@
     "size": "45x65",
     "description": "técnica de Pouring",
     "material": "Bastidor en lienzo",
-    "price": ""
+    "price": 18600
   },
   {
     "id": 26,
@@ -231,7 +231,7 @@
     "size": "30x30",
     "description": "técnica de Pouring",
     "material": "Bastidor en lienzo",
-    "price": ""
+    "price": 23000
   },
   {
     "id": 27,
@@ -240,7 +240,7 @@
     "size": "30x30",
     "description": "técnica de Pouring",
     "material": "Bastidor en lienzo",
-    "price": ""
+    "price": 14800
   },
   {
     "id": 28,
@@ -249,7 +249,7 @@
     "size": "90x60",
     "description": "técnica de Fotomontaje",
     "material": "Madera",
-    "price": ""
+    "price": 19500
   },
   {
     "id": 29,
@@ -258,7 +258,7 @@
     "size": "50x70",
     "description": "técnica de Fotomontaje",
     "material": "Madera",
-    "price": ""
+    "price": 25600
   },
   {
     "id": 30,
@@ -267,7 +267,7 @@
     "size": "200x150",
     "description": "técnica de impresión de Vinilo Mate con tintas Latex",
     "material": "Bastidor macizo en madera",
-    "price": ""
+    "price": 21000
   },
   {
     "id": 31,
@@ -276,7 +276,7 @@
     "size": "200x150",
     "description": "técnica de impresión de Vinilo Mate con tintas Latex",
     "material": "Bastidor macizo en madera",
-    "price": ""
+    "price": 26700
   },
   {
     "id": 32,
@@ -285,7 +285,7 @@
     "size": "200x150",
     "description": "técnica de impresión de Vinilo Mate con tintas Latex",
     "material": "Bastidor macizo en madera",
-    "price": ""
+    "price": 23000
   },
   {
     "id": 33,
@@ -294,7 +294,7 @@
     "size": "200x150",
     "description": "técnica de impresión de Vinilo Mate con tintas Latex",
     "material": "Bastidor macizo en madera",
-    "price": ""
+    "price": 18600
   },
   {
     "id": 34,
@@ -303,7 +303,7 @@
     "size": "200x150",
     "description": "técnica de impresión de Vinilo Mate con tintas Latex",
     "material": "Bastidor macizo en madera",
-    "price": ""
+    "price": 17600
   },
   {
     "id": 35,
@@ -312,7 +312,7 @@
     "size": "200x150",
     "description": "técnica de impresión de Vinilo Mate con tintas Latex",
     "material": "Bastidor macizo en madera",
-    "price": ""
+    "price": 25300
   },
   {
     "id": 36,
@@ -321,7 +321,7 @@
     "size": "200x150",
     "description": "técnica de impresión de Vinilo Mate con tintas Latex",
     "material": "Bastidor macizo en madera",
-    "price": ""
+    "price": 21800
   },
   {
     "id": 37,
@@ -330,7 +330,7 @@
     "size": "200x150",
     "description": "técnica de impresión de Vinilo Mate con tintas Latex",
     "material": "Bastidor macizo en madera",
-    "price": ""
+    "price": 18600
   },
   {
     "id": 38,
@@ -339,6 +339,6 @@
     "size": "200x150",
     "description": "técnica de impresión de Vinilo Mate con tintas Latex",
     "material": "Bastidor macizo en madera",
-    "price": ""
+    "price": 23700
   }
 ]
