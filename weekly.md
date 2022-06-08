@@ -11,3 +11,15 @@ Taresa completadas:
 Impedimentos:
 
 -No sabemos como hacer las rutas para las 6 categorias de cuadros. Si hacer una ruta para cada categoria o hacer una ruta parametrizada, y como hacerla.
+
+Semana 30/5 al 5/6
+
+Tareas completadas:
+
+-Instalamos multer.
+-Creamos la carpeta data con los archivos products.json, users.json y otherArtistsProducts.json.
+-Completamos con datos los archivos de products.json y otherArtistsProducts.json.
+
+Impedimentos:
+
+-Nos esta costando el CRUD de productos.
