@@ -5,7 +5,7 @@
     "lastName": "King",
     "email": "stephenking@gmail.com",
     "password": "stephen1950",
-    "category": "",
+    "category": "vendedor",
     "image": ""
   },
   {
@@ -14,7 +14,98 @@
     "lastName": "Barker",
     "email": "clivebarker@gmail.com",
     "password": "soyclive1975",
+    "category": "comprador",
+    "image": ""
+  },
+  {
+    "id": 3,
+    "firstName": "Stephen",
+    "lastName": "King",
+    "email": "stephenking@gmail.com",
+    "password": "stephen1950",
     "category": "",
     "image": ""
-  }
+  },
+  {
+    "id": 4,
+    "firstName": "Clive",
+    "lastName": "Barker",
+    "email": "clivebarker@gmail.com",
+    "password": "soyclive1975",
+    "category": "",
+    "image": ""
+  },
+  {
+    "id": 5,
+    "firstName": "Madonna",
+    "lastName": "King",
+    "email": "madonnaking@gmail.com",
+    "password": "madonna1990",
+    "category": "",
+    "image": ""
+  },
+  {
+    "id": 6,
+    "firstName": "Olive",
+    "lastName": "Newton",
+    "email": "olivenewton@gmail.com",
+    "password": "soyolive1975",
+    "category": "",
+    "image": ""
+  },
+  {
+    "id": 7,
+    "firstName": "Sonia",
+    "lastName": "King",
+    "email": "soniaking@gmail.com",
+    "password": "sonia1950",
+    "category": "",
+    "image": ""
+  },
+  {
+    "id": 8,
+    "firstName": "Alan",
+    "lastName": "Parker",
+    "email": "AlanParker@gmail.com",
+    "password": "soyAlan1909",
+    "category": "",
+    "image": ""
+  },
+  { 
+   "id": 9,
+   "firstName": "Teresa",
+   "lastName": "Parodi",
+   "email": "teresita_pa@gmail.com",
+   "password": "soytere1975",
+   "category": "",
+   "image": ""
+},
+{
+  "id": 10,
+  "firstName": "Diego",
+  "lastName": "Maradona",
+  "email": "el_10@gmail.com",
+  "password": "soyeldiego10",
+  "category": "",
+  "image": ""
+},
+{
+  "id": 11,
+  "firstName": "Antonella",
+  "lastName": "Diaz",
+  "email": "anto_diaz@gmail.com",
+  "password": "soyanto1975",
+  "category": "",
+  "image": ""
+},
+{
+  "id": 12,
+  "firstName": "Paul",
+  "lastName": "Mac",
+  "email": "paul_mac@gmail.com",
+  "password": "paul1950",
+  "category": "",
+  "image": ""
+}
+
 ]
