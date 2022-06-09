@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "category": "Abstracto espátula",
+    "category": "AbstractoEspátula",
     "image": "abstracto espatula 1m.jpg",
     "size": "60x80",
     "description": "técnica de acrilico con espátula",
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "category": "Abstracto espátula",
+    "category": "AbstractoEspátula",
     "image": "abstracto espatula 2m.jpg",
     "size": "40x50",
     "description": "técnica de acrilico con espátula",
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "category": "Abstracto espátula",
+    "category": "AbstractoEspátula",
     "image": "abstracto espatula 3m.jpg",
     "size": "40x60",
     "description": "técnica de acrilico con espátula",
@@ -28,7 +28,7 @@
   },
   {
     "id": 4,
-    "category": "Abstracto espátula",
+    "category": "AbstractoEspátula",
     "image": "abstracto espatula 4m.jpg",
     "size": "40x40",
     "description": "técnica de acrilico con espátula",
@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "category": "Abstracto espátula",
+    "category": "AbstractoEspátula",
     "image": "abstracto espatula 5m.jpg",
     "size": "60x80",
     "description": "técnica de acrilico con espátula",
@@ -46,7 +46,7 @@
   },
   {
     "id": 6,
-    "category": "Abstracto espátula",
+    "category": "AbstractoEspátula",
     "image": "abstracto espatula 6m.jpg",
     "size": "50x70",
     "description": "técnica de acrilico con espátula",
@@ -55,7 +55,7 @@
   },
   {
     "id": 7,
-    "category": "Abstracto espátula",
+    "category": "AbstractoEspátula",
     "image": "abstracto espatula 7m.jpg",
     "size": "60x80",
     "description": "técnica de acrilico con espátula",
@@ -64,7 +64,7 @@
   },
   {
     "id": 8,
-    "category": "Abstracto espátula",
+    "category": "AbstractoEspátula",
     "image": "abstracto espatula 8m.jpg",
     "size": "70x90",
     "description": "técnica de acrilico con espátula",
@@ -73,7 +73,7 @@
   },
   {
     "id": 9,
-    "category": "Abstracto espátula",
+    "category": "AbstractoEspátula",
     "image": "abstracto espatula 9m.jpg",
     "size": "70x90",
     "description": "técnica de acrilico con espátula",
@@ -82,7 +82,7 @@
   },
   {
     "id": 10,
-    "category": "Abstracto espátula",
+    "category": "AbstractoEspátula",
     "image": "abstracto espatula 10m.jpg",
     "size": "50x60",
     "description": "técnica de acrilico con espátula",
@@ -91,7 +91,7 @@
   },
   {
     "id": 11,
-    "category": "Abstracto espátula",
+    "category": "AbstractoEspátula",
     "image": "abstracto espatula 11m.jpg",
     "size": "40x60",
     "description": "técnica de acrilico con espátula",

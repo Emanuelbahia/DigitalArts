@@ -5,33 +5,26 @@
     <%- include("./partials/header") %>
 
     <main>
-        <h3>Nuestros cuadros</h3>
-        <img href="images/abstracto espatula 1m.jpg" alt="cuadro espatula 1">
-        <p>
-            Detalle del producto: <br>
-            Tecnica: <br>
-            Dimensiones: <br>
-            Bastidor en lienzo. <br>
-        </p>
-
-        <h3>Cuadros decorativos</h3>
-        <img href="images/cuadro decorativo.png" alt="cuadro decorativo">
-        <p>
-            Detalle del producto: <br>
-            Tecnica: <br>
-            Dimensiones: <br>
-            Bastidor macizo en madera. <br>
-        </p>
-
-        <h3>Cuadros de artistas nuevos</h3>
-        <img href="images/artista nuevo 1.jpg.jpg" alt="cuadro artista nuevo">
-        <p>
-            Detalle del producto: <br>
-            Tecnica: <br>
-            Dimensiones: <br>
-            Bastidor en lienzo. <br>
-        </p>
-
+        <h3 class="margin-top subrayado">Abstracto espatula</h3>
+        <% categoryProducts.forEach(cuadro => {  %>
+        <div class="contenedor-cuadros-espatula">
+          <div class="item padding-bottom">                       
+             <div><a href="carrito"><img class="img-cuadro" src="images/<%= cuadro.image %>"></a></div>            
+              <div class="contenedor-detalle-carrito">
+               <div class="caja-detalle-cuadro">
+                <p class="tamaño-letra-detalle-cuadro">
+                    <b> <%= cuadro.description %></b><br>
+                    <b>Dimensiones: <%= cuadro.size %></b> <br>
+                    <b><%= cuadro.material %></b><br>
+                </p>
+               </div>
+              <div class="carrito-centrado">
+                <a href="carrito"><button class="centrado">añadir<br> al carrito</button></a>
+              </div>
+            </div>
+           </div>
+        </div>
+         <% }) %>
     </main>
 
     <%- include("./partials/footer") %>

@@ -27,10 +27,13 @@
 }
 
 .posicion-menu{
-    margin: auto;
     font-size: 25px;
-    margin-left: 10px;
+    font-size: 25px;
+    padding-left: 3%;
+    padding-top: 5%;
+    background: linear-gradient(90deg, rgb(45 100 136 / 88%) 0%, rgb(222 222 235 / 94%) 51%, rgb(45 100 136 / 0%) 100%);
 }
+
 .posicion-logo{
     display: flex;
     justify-content: center;
@@ -42,6 +45,7 @@
     padding-bottom: 2%;
     justify-content: flex-end;
     margin-left: 20px;
+    background: linear-gradient(90deg, rgb(203 187 187 / 0%) 0%, rgb(222 222 235 / 94%) 51%, rgba(45,100,136,1) 100%);
 }  
 .tamaño-icono-acceso{
     font-size: 4vw;
@@ -200,10 +204,10 @@ h5{
     display: flex;
     justify-content: space-around;
     padding: 2%;
-    background-color: rgb(225 188 33 / 61%);;
-    width: 95%;
+    background: radial-gradient(circle, rgba(203,187,187,0) 0%, rgb(222 222 235) 51%, rgba(45,100,136,1) 100%);
+    width: 100%;
     margin: auto;
-    border-radius: 10px;
+    
 }
 
 .margen-h4-footer{
@@ -234,7 +238,7 @@ h5{
     color: rgb(64, 64, 209);
 }
 .caja-redes{
-    background: black;
+    background: radial-gradient(circle, rgb(37 36 36) 0%, rgb(37 36 36 / 97%) 51%, rgb(37 36 36 / 52%) 100%);
     width: 50%;
 }
 .icono-redes{
@@ -451,8 +455,8 @@ p{
 /*MENU HAMBURGUESAA*/
 
 .dropbtn {
-    background-color: white;
-    color: black;
+    background-color: rgb(37 36 36);
+    color: rgb(37 36 36);
     padding: 1.5vw;
     font-size: 3vh;
     cursor: pointer;
@@ -649,8 +653,9 @@ p{
     }
     .contenedor-header{
         position: static;
-        height: 25vh;
+        height: 32vh;
         flex-wrap: wrap;
+        background: linear-gradient(90deg, rgba(203,187,187,0) 0%, rgb(222 222 235 / 23%) 51%, rgba(45,100,136,1) 100%);
     }
     .tamaño-icono-acceso {
         font-size: 2.5vw;
@@ -663,6 +668,8 @@ p{
     }
     .acceso{
         padding-top: 14vh;
+        background: none;
+        
     }
     .navbar{
         display: inline;
@@ -682,6 +689,7 @@ p{
      }
     .width-cajas-header {
         width: 40%;
+        height: 20vh;
     }
     .tamaño-letra-menu-desplegable {
         font-size: 1.5vw;
