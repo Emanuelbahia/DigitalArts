@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "firstName": "Stephen",
+    "lastName": "King",
+    "email": "stephenking@gmail.com",
+    "password": "stephen1950",
+    "category": "",
+    "image": ""
+  },
+  {
+    "id": 2,
+    "firstName": "Clive",
+    "lastName": "Barker",
+    "email": "clivebarker@gmail.com",
+    "password": "soyclive1975",
+    "category": "",
+    "image": ""
+  }
+]

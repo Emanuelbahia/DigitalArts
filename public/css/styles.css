@@ -14,6 +14,10 @@
     width: 100%;
 }
 
+.navbar{
+   display: none;
+}
+
 .tamaño-logo{
     width: 60%;
 }
@@ -69,7 +73,7 @@
 /* MAIN */
 main{
     background-color: white;
-    padding-top: 100px;
+    padding-top: 17vw;
 }
 
 .estilo-h1{
@@ -557,6 +561,16 @@ p{
     .margin-h2-login {
         padding-top: 5%;
     }
+    .contenedor-header{
+        position: static;
+    }
+    main{
+        padding-top: 0;
+    }
+    .navbar{
+        display: none;
+     }
+   
 }
 
 /*media queries pc*/
@@ -635,6 +649,8 @@ p{
     }
     .contenedor-header{
         position: static;
+        height: 25vh;
+        flex-wrap: wrap;
     }
     .tamaño-icono-acceso {
         font-size: 2.5vw;
@@ -644,5 +660,32 @@ p{
         height: 150px;
         margin-right: 50%;       
         margin-top: 15px;
+    }
+    .acceso{
+        padding-top: 14vh;
+    }
+    .navbar{
+        display: inline;
+        text-decoration: none;
+        width: 100%;
+        list-style-type: none;
+        border: 2px black solid;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #000000b8;
+     }
+     .navbar li {
+         display: inline;
+         padding: 10px 2vw;
+        
+     }
+    .width-cajas-header {
+        width: 40%;
+    }
+    .tamaño-letra-menu-desplegable {
+        font-size: 1.5vw;
+        text-decoration: none;
+        color: white;
     }
 }

@@ -36,5 +36,3 @@ Estas son:
 *fotomontaje
 *cuadros decorativos
 *cuadros de artistas nuevos
-
-En el sprint 4 nos piden que creemos la carpeta data con los archivos products.json y users.json, pero decidimos agregar otro archivo llamado otherArtistsProducts.json para tener los datos almacenados de los artistas que quieran subir sus cuadros a la pagina para venderlos.
