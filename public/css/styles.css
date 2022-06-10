@@ -83,10 +83,12 @@ main{
 .estilo-h1{
     padding-top: 2vh;
     padding-bottom: 2vh;
-    font-size: 4vh;
+    font-size: 8vw;
     text-align: center;
     text-decoration: underline;
     font-weight: bold;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
 }
 
 .img-cuadro {
@@ -96,8 +98,8 @@ main{
 }
 
 .item{
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 h5{
@@ -169,7 +171,7 @@ h5{
     box-shadow: 0px 10px 25px rgba(46, 223, 229, 0.445);
 }
 .caja-registro{
-    width: 90%;
+    width: 80%;
     margin: auto;
     margin-top: 5%;
     border: 3px solid black;
@@ -354,6 +356,10 @@ h5{
     justify-content: space-between;
 }
 
+.contenedor-cuadros-espatula{
+    margin-top: 50px;
+}
+
 .caja-detalle-cuadro{
     border: 2px black solid;
     width: 60%;
@@ -519,12 +525,10 @@ p{
     .item{
         flex: 1 1 50%;      
     }
-    .caja-registro{
-        width: 60%;
-    }
     .contenedor-cuadros-espatula{
         display: flex;
         flex-wrap: wrap;
+        
     }
     .padding-bottom{
         padding-left: 3%;
@@ -557,10 +561,12 @@ p{
     }
     .estilo-h1{
         padding-bottom: 5vh;
+        font-size: 6vw;
     }
     .tamaño-galeria{
         width: 100%;
         display: block;
+        height: 25vw;
     }
     .margin-h2-login {
         padding-top: 5%;
@@ -573,7 +579,10 @@ p{
     }
     .navbar{
         display: none;
-     }
+    }
+    .caja-registro{
+        width: 400px;
+    }
    
 }
 
@@ -596,12 +605,9 @@ p{
         font-size: 2vw;
     }
     .estilo-h1{
-        font-size: 5vw;
+        font-size: 4vw;
         padding-bottom: 5vh;
     }  
-    .caja-registro{
-        width: 40vw;
-    }
     .padding-bottom{
         flex: 1 1 33%
     }
@@ -653,7 +659,7 @@ p{
     }
     .contenedor-header{
         position: static;
-        height: 32vh;
+        height: 25vh;
         flex-wrap: wrap;
         background: linear-gradient(90deg, rgba(203,187,187,0) 0%, rgb(222 222 235 / 23%) 51%, rgba(45,100,136,1) 100%);
     }
@@ -695,5 +701,8 @@ p{
         font-size: 1.5vw;
         text-decoration: none;
         color: white;
+    }
+    .tamaño-galeria{
+        height: 20vw;
     }
 }
