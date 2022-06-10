@@ -510,6 +510,87 @@ p{
     display: none;
 }
 
+/* DETALLE DE PRODUCTO */
+
+.contenedor-detail{
+    display: flex;
+    margin-top: 4%;
+    margin-bottom: 7%;
+}
+
+.caja-detail-1{
+    width: 70%;
+}
+
+.caja-detail-2{
+    width: 35%;
+    margin-top: 3%;
+}
+
+.img-detail{
+    width: 65%;
+    padding-left: 5%;
+}
+
+.h2-detail{
+    padding-left: 5%;
+    margin-top: 7%;
+    font-size: 4vw;
+}
+
+.p-detail{
+    font-size: 3vw;
+}
+
+.caja-edit{
+    width: 60%;
+    
+}
+
+.caja-comprar{
+    margin-top: 10%;
+}
+
+.comprar-detail{
+    width: 60%;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 6% 15%;
+    background-color: #162bcb;
+    color: rgb(241, 233, 233);
+    border-radius: 5px;
+}
+
+.edit-detail{
+    width: 60%;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10%;
+    background-color: #2ceae5;
+    color: black;
+    border-radius: 5px;
+}
+
+.caja-detail{
+    width: 60%;
+}
+
+.delete-detail{
+    width: 80%;
+    background-color: red;
+    border: 1px solid black;
+    color: black;
+    border-radius: 5px;
+    padding: 10%;
+}
+
+.contenedor-edit-delete{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13%;
+    align-items: center;
+}
+
 /*media queries tablet*/
 
 @media (min-width: 481px){

@@ -1,0 +1,39 @@
+<%- include("./partials/head") %>
+
+<body>
+
+    <%- include("./partials/header") %>
+
+    <main>
+       <h2 class="h2-detail">Detalle del producto:</h2>
+       <div class="contenedor-detail">
+            <div class="caja-detail-1">
+                  <img src="/images/<%= detailProduct.image %>" class="img-detail" alt="imagen del producto">
+            </div>
+            <div class="caja-detail-2">
+                <p class="p-detail"><b>Descripcion:</b><br><%= detailProduct.description %></p>
+                <p class="p-detail"><b>Dimensiones:</b><br><%= detailProduct.size %></p>
+                <p class="p-detail"><b>Material:</b><br><%= detailProduct.material %></p>
+                <p class="p-detail"><b>Precio:</b><br>$<%= detailProduct.price %></p>
+                <div class="caja-comprar">
+                     <a href="/carrito" class="comprar-detail">COMPRAR</a>
+                </div>
+                <div class="contenedor-edit-delete">
+                    <div class="caja-edit">
+                         <a class="edit-detail" href="/products/edit/<%= detailProduct.id %>" > EDITAR</a>
+                    </div>
+                    <div class="caja-detail">
+                        <form action="/products/delete/<%= detailProduct.id %>?_method=DELETE" method="POST">
+							<button type="submit" class="delete-detail">ELIMINAR</button>
+						</form>
+                    </div>
+                </div>                 
+            </div>
+       </div> 
+    </main>
+
+    <%- include("./partials/footer") %>
+
+</body>
+
+</html>    
