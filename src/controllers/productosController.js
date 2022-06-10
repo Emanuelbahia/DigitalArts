@@ -9,7 +9,7 @@ const productosController = {
     let cuadros = JSON.parse(fs.readFileSync(cuadrosFilePath, "utf-8"));
     let category = req.params.category;
     let categoryProducts = cuadros.filter((cuadro) => {
-      return cuadro.category == "AbstractoEspátula";
+      return cuadro.category == category;
     });
     res.render("products", { categoryProducts });
   },

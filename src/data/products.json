@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "category": "AbstractoEspátula",
+    "category": "abstractoEspatula",
     "image": "abstracto espatula 1m.jpg",
     "size": "60x80",
     "description": "técnica de acrilico con espátula",
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "category": "AbstractoEspátula",
+    "category": "abstractoEspatula",
     "image": "abstracto espatula 2m.jpg",
     "size": "40x50",
     "description": "técnica de acrilico con espátula",
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "category": "AbstractoEspátula",
+    "category": "abstractoEspatula",
     "image": "abstracto espatula 3m.jpg",
     "size": "40x60",
     "description": "técnica de acrilico con espátula",
@@ -28,7 +28,7 @@
   },
   {
     "id": 4,
-    "category": "AbstractoEspátula",
+    "category": "abstractoEspatula",
     "image": "abstracto espatula 4m.jpg",
     "size": "40x40",
     "description": "técnica de acrilico con espátula",
@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "category": "AbstractoEspátula",
+    "category": "abstractoEspatula",
     "image": "abstracto espatula 5m.jpg",
     "size": "60x80",
     "description": "técnica de acrilico con espátula",
@@ -46,7 +46,7 @@
   },
   {
     "id": 6,
-    "category": "AbstractoEspátula",
+    "category": "abstractoEspatula",
     "image": "abstracto espatula 6m.jpg",
     "size": "50x70",
     "description": "técnica de acrilico con espátula",
@@ -55,7 +55,7 @@
   },
   {
     "id": 7,
-    "category": "AbstractoEspátula",
+    "category": "abstractoEspatula",
     "image": "abstracto espatula 7m.jpg",
     "size": "60x80",
     "description": "técnica de acrilico con espátula",
@@ -64,7 +64,7 @@
   },
   {
     "id": 8,
-    "category": "AbstractoEspátula",
+    "category": "abstractoEspatula",
     "image": "abstracto espatula 8m.jpg",
     "size": "70x90",
     "description": "técnica de acrilico con espátula",
@@ -73,7 +73,7 @@
   },
   {
     "id": 9,
-    "category": "AbstractoEspátula",
+    "category": "abstractoEspatula",
     "image": "abstracto espatula 9m.jpg",
     "size": "70x90",
     "description": "técnica de acrilico con espátula",
@@ -82,7 +82,7 @@
   },
   {
     "id": 10,
-    "category": "AbstractoEspátula",
+    "category": "abstractoEspatula",
     "image": "abstracto espatula 10m.jpg",
     "size": "50x60",
     "description": "técnica de acrilico con espátula",
@@ -91,7 +91,7 @@
   },
   {
     "id": 11,
-    "category": "AbstractoEspátula",
+    "category": "abstractoEspatula",
     "image": "abstracto espatula 11m.jpg",
     "size": "40x60",
     "description": "técnica de acrilico con espátula",
@@ -100,7 +100,7 @@
   },
   {
     "id": 12,
-    "category": "Abstracto pincel",
+    "category": "abstractoPincel",
     "image": "abstracto pincel 1m.jpg",
     "size": "50x70",
     "description": "técnica de acrilico con pincel",
@@ -109,7 +109,7 @@
   },
   {
     "id": 13,
-    "category": "Abstracto pincel",
+    "category": "abstractoPincel",
     "image": "abstracto pincel 2m.jpg",
     "size": "70x90",
     "description": "técnica de acrilico con pincel",
@@ -118,7 +118,7 @@
   },
   {
     "id": 14,
-    "category": "Abstracto pincel",
+    "category": "abstractoPincel",
     "image": "abstracto pincel 3m.jpg",
     "size": "50x70",
     "description": "técnica de acrilico con pincel",
@@ -127,7 +127,7 @@
   },
   {
     "id": 15,
-    "category": "Abstracto pincel",
+    "category": "abstractoPincel",
     "image": "abstracto pincel 4m.jpg",
     "size": "70x90",
     "description": "técnica de acrilico con pincel",
@@ -136,7 +136,7 @@
   },
   {
     "id": 16,
-    "category": "Abstracto pincel",
+    "category": "abstractoPincel",
     "image": "abstracto pincel 5m.jpg",
     "size": "60x80",
     "description": "técnica de acrilico con pincel",
@@ -145,7 +145,7 @@
   },
   {
     "id": 17,
-    "category": "Abstracto pincel",
+    "category": "abstractoPincel",
     "image": "abstracto pincel 6m.jpg",
     "size": "90x60",
     "description": "técnica de acrilico con pincel",
@@ -154,7 +154,7 @@
   },
   {
     "id": 18,
-    "category": "Abstracto pincel",
+    "category": "abstractoPincel",
     "image": "abstracto pincel 7m.jpg",
     "size": "60x80",
     "description": "técnica de acrilico con pincel",
@@ -163,7 +163,7 @@
   },
   {
     "id": 19,
-    "category": "Abstracto pincel",
+    "category": "abstractoPincel",
     "image": "abstracto pincel 8m.jpg",
     "size": "100x80",
     "description": "técnica de acrilico con pincel",
@@ -172,7 +172,7 @@
   },
   {
     "id": 20,
-    "category": "Abstracto pincel",
+    "category": "abstractoPincel",
     "image": "abstracto pincel 9m.jpg",
     "size": "60x80",
     "description": "técnica de acrilico con pincel",
@@ -181,7 +181,7 @@
   },
   {
     "id": 21,
-    "category": "Abstracto pincel",
+    "category": "abstractoPincel",
     "image": "abstracto pincel 10m.jpg",
     "size": "60x80",
     "description": "técnica de acrilico con pincel",
@@ -190,7 +190,7 @@
   },
   {
     "id": 22,
-    "category": "Pouring",
+    "category": "pouring",
     "image": "pouring 1m.jpg",
     "size": "40x40",
     "description": "técnica de Pouring",
@@ -199,7 +199,7 @@
   },
   {
     "id": 23,
-    "category": "Pouring",
+    "category": "pouring",
     "image": "pouring 2m.jpg",
     "size": "40x40",
     "description": "técnica de Pouring",
@@ -208,7 +208,7 @@
   },
   {
     "id": 24,
-    "category": "Pouring",
+    "category": "pouring",
     "image": "pouring 3m.jpg",
     "size": "45x65",
     "description": "técnica de Pouring",
@@ -217,7 +217,7 @@
   },
   {
     "id": 25,
-    "category": "Pouring",
+    "category": "pouring",
     "image": "pouring 4m.jpg",
     "size": "45x65",
     "description": "técnica de Pouring",
@@ -226,7 +226,7 @@
   },
   {
     "id": 26,
-    "category": "Pouring",
+    "category": "pouring",
     "image": "pouring 5m.jpg.jpg",
     "size": "30x30",
     "description": "técnica de Pouring",
@@ -235,7 +235,7 @@
   },
   {
     "id": 27,
-    "category": "Pouring",
+    "category": "pouring",
     "image": "pouring 6m.jpg.jpg",
     "size": "30x30",
     "description": "técnica de Pouring",
@@ -244,7 +244,7 @@
   },
   {
     "id": 28,
-    "category": "Fotomontaje",
+    "category": "fotomontaje",
     "image": "fotomontaje 1m.jpg",
     "size": "90x60",
     "description": "técnica de Fotomontaje",
@@ -253,7 +253,7 @@
   },
   {
     "id": 29,
-    "category": "Fotomontaje",
+    "category": "fotomontaje",
     "image": "fotomontaje 2m.jpg",
     "size": "50x70",
     "description": "técnica de Fotomontaje",
@@ -262,7 +262,7 @@
   },
   {
     "id": 30,
-    "category": "Cuadro decorativo",
+    "category": "cuadroDecorativo",
     "image": "cuadro decorativo.png",
     "size": "200x150",
     "description": "técnica de impresión de Vinilo Mate con tintas Latex",
@@ -271,7 +271,7 @@
   },
   {
     "id": 31,
-    "category": "Cuadro decorativo",
+    "category": "cuadroDecorativo",
     "image": "cuadro decorativo1.png",
     "size": "200x150",
     "description": "técnica de impresión de Vinilo Mate con tintas Latex",
@@ -280,7 +280,7 @@
   },
   {
     "id": 32,
-    "category": "Cuadro decorativo",
+    "category": "cuadroDecorativo",
     "image": "cuadro decorativo2.png",
     "size": "200x150",
     "description": "técnica de impresión de Vinilo Mate con tintas Latex",
@@ -289,7 +289,7 @@
   },
   {
     "id": 33,
-    "category": "Cuadro decorativo",
+    "category": "cuadroDecorativo",
     "image": "cuadro decorativo3.png",
     "size": "200x150",
     "description": "técnica de impresión de Vinilo Mate con tintas Latex",
@@ -298,7 +298,7 @@
   },
   {
     "id": 34,
-    "category": "Cuadro decorativo",
+    "category": "cuadroDecorativo",
     "image": "cuadro decorativo4.png",
     "size": "200x150",
     "description": "técnica de impresión de Vinilo Mate con tintas Latex",
@@ -307,7 +307,7 @@
   },
   {
     "id": 35,
-    "category": "Cuadro decorativo",
+    "category": "cuadroDecorativo",
     "image": "cuadro decorativo5.png",
     "size": "200x150",
     "description": "técnica de impresión de Vinilo Mate con tintas Latex",
@@ -316,7 +316,7 @@
   },
   {
     "id": 36,
-    "category": "Cuadro decorativo",
+    "category": "cuadroDecorativo",
     "image": "cuadro decorativo6.png",
     "size": "200x150",
     "description": "técnica de impresión de Vinilo Mate con tintas Latex",
@@ -325,7 +325,7 @@
   },
   {
     "id": 37,
-    "category": "Cuadro decorativo",
+    "category": "cuadroDecorativo",
     "image": "cuadro decorativo7.png",
     "size": "200x150",
     "description": "técnica de impresión de Vinilo Mate con tintas Latex",
@@ -334,7 +334,7 @@
   },
   {
     "id": 38,
-    "category": "Cuadro decorativo",
+    "category": "cuadroDecorativo",
     "image": "cuadro decorativo8.png",
     "size": "200x150",
     "description": "técnica de impresión de Vinilo Mate con tintas Latex",
@@ -343,9 +343,72 @@
   },
   {
     "id": 39,
-    "category": "artistas nuevos",
+    "category": "artistasNuevos",
     "image": "artista nuevo 1.jpg.jpg",
-    "size": "40x60",
+    "size": "40x70",
+    "description": "técnica abstracto con espatula",
+    "material": "Bastidor macizo en madera",
+    "price": 12000
+  },
+  {
+    "id": 40,
+    "category": "artistasNuevos",
+    "image": "artista nuevo 1.jpg.jpg",
+    "size": "40x70",
+    "description": "técnica abstracto con espatula",
+    "material": "Bastidor macizo en madera",
+    "price": 12000
+  },
+  {
+    "id": 41,
+    "category": "artistasNuevos",
+    "image": "artista nuevo 1.jpg.jpg",
+    "size": "30x70",
+    "description": "técnica abstracto con espatula",
+    "material": "Bastidor macizo en madera",
+    "price": 12000
+  },
+  {
+    "id": 42,
+    "category": "artistasNuevos",
+    "image": "artista nuevo 1.jpg.jpg",
+    "size": "50x80",
+    "description": "técnica abstracto con espatula",
+    "material": "Bastidor macizo en madera",
+    "price": 12000
+  },
+  {
+    "id": 43,
+    "category": "artistasNuevos",
+    "image": "artista nuevo 1.jpg.jpg",
+    "size": "50x70",
+    "description": "técnica abstracto con espatula",
+    "material": "Bastidor macizo en madera",
+    "price": 12000
+  },
+  {
+    "id": 44,
+    "category": "artistasNuevos",
+    "image": "artista nuevo 1.jpg.jpg",
+    "size": "70x50",
+    "description": "técnica abstracto con espatula",
+    "material": "Bastidor macizo en madera",
+    "price": 12000
+  },
+  {
+    "id": 45,
+    "category": "artistasNuevos",
+    "image": "artista nuevo 1.jpg.jpg",
+    "size": "30x70",
+    "description": "técnica abstracto con espatula",
+    "material": "Bastidor macizo en madera",
+    "price": 12000
+  },
+  {
+    "id": 46,
+    "category": "artistasNuevos",
+    "image": "artista nuevo 1.jpg.jpg",
+    "size": "50x70",
     "description": "técnica abstracto con espatula",
     "material": "Bastidor macizo en madera",
     "price": 12000

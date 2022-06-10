@@ -10,6 +10,6 @@ router.get("/fotomontaje", productosController.fotomontaje);
 router.get("/pouring", productosController.pouring);
 */
 
-router.get("/products", productosController.cuadros);
+router.get("/products/:category", productosController.cuadros);
 
 module.exports = router;
