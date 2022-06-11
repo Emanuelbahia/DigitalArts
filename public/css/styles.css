@@ -519,16 +519,16 @@ p{
 }
 
 .caja-detail-1{
-    width: 70%;
+    width: 60%;
 }
 
 .caja-detail-2{
-    width: 35%;
-    margin-top: 3%;
+    width:40%;
+    margin-top: 1%;
 }
 
 .img-detail{
-    width: 65%;
+    width: 80%;
     padding-left: 5%;
 }
 
@@ -540,15 +540,12 @@ p{
 
 .p-detail{
     font-size: 3vw;
+    margin-bottom: 2%;
 }
 
 .caja-edit{
-    width: 60%;
+    width: 65%;
     
-}
-
-.caja-comprar{
-    margin-top: 10%;
 }
 
 .comprar-detail{
@@ -561,27 +558,32 @@ p{
     border-radius: 5px;
 }
 
+.caja-comprar{
+    margin-top: 10%;
+    width: 80%;
+}
+
 .edit-detail{
-    width: 60%;
+    width: 90%;
     text-decoration: none;
     border: 1px solid black;
-    padding: 10%;
+    padding: 10% 12%;
     background-color: #2ceae5;
     color: black;
     border-radius: 5px;
 }
 
 .caja-detail{
-    width: 60%;
+    width: 65%;
 }
 
 .delete-detail{
-    width: 80%;
+    width: 90%;
     background-color: red;
     border: 1px solid black;
     color: black;
     border-radius: 5px;
-    padding: 10%;
+    padding: 10% 6%;
 }
 
 .contenedor-edit-delete{

@@ -9,6 +9,7 @@ const productosController = {
   cuadros: function (req, res) {
     const cuadros = JSON.parse(fs.readFileSync(cuadrosFilePath, "utf-8"));
     let category = req.params.category;
+
     let categoryProducts = cuadros.filter((cuadro) => {
       return cuadro.category == category;
     });
@@ -36,7 +37,19 @@ const productosController = {
   edit: function (req, res) {},
 
   /* eliminar producto */
-  delete: function (req, res) {},
+  delete: function (req, res) {
+    const cuadros = JSON.parse(fs.readFileSync(cuadrosFilePath, "utf-8"));
+    let id = req.params.id;
+
+    let deleteProduct = cuadros.filter((cuadro) => {
+      return cuadro.id != id;
+    });
+
+    let borrar = JSON.stringify(deleteProduct, null, 2);
+    fs.writeFileSync(cuadrosFilePath, borrar, "utf-8");
+
+    return res.redirect("/products/:category");
+  },
 };
 
 module.exports = productosController;
