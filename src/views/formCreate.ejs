@@ -1,0 +1,40 @@
+<%- include("./partials/head", {title: "Formulario de creación"}) %>
+
+<body>
+
+  <%- include("./partials/header") %>
+   <h2>Formulario de Carga y Edición de Productos</h2>
+    <main>
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <div>gi
+                <label for="name">Nombre del Producto</label>
+                <input type="text" name="name" id="name">
+            </div>
+      
+            <div>
+                <label for="description">Descripción</label>
+                <textarea name="description"  id="description"></textarea>
+            </div>
+      
+            <div>
+                <label for="image">Imagen</label>
+                <input type="file" name="image" id="image" accept=".jpg" multiple>
+            </div>
+
+            <div>
+                <label for="price">Precio</label>
+                <input type="number" name="price" id="price">
+            </div>
+
+    </main>
+
+      <%- include("./partials/footer") %>
+
+  </body>
+  </html>
+
+
+
+
+
+

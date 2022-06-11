@@ -21,3 +21,16 @@ Sprint 2:
  * Hacer una API simple, resaltando el producto que se ofrece.
  * Logramos formar un equipo de trabajo donde el dialogo y la colaboración son el eje del desarrollo.  
 
+Sprint 3:
+
+1.Problemas que surgieron:
+ * Problemas en la definición del HTML Y CSS del HEADER, especialmente no pudimos lograr hacer el navbar horizontal.
+ * Tanto de los cuadros como del header quedaron fuera de escala en desktop.
+ 
+2.Para mejorar: 
+ * Seguir dándole más estilo a la API: animaciones, etc)....especialmente enfocarnos en darle una fachada mas impactante a la aplicación.
+
+3.¿Que hicimos bien?
+ * Coordinamos de manera extraordinaria el trabajo en equipo.
+ * Lograos resolver problemas que surgen del código en colaboración grupal.
+
