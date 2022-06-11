@@ -24,7 +24,7 @@ router.get("/products/create", productosController.formCreate);
 router.post("/products", productosController.create);
 
 /* ruta de editar un producto */
-router.get("products/edit/:id", productosController.formEdit);
+router.get("/products/edit/:id", productosController.formEdit);
 router.put("/products/edit/:id", productosController.edit);
 
 /* ruta de eliminar un producto */
