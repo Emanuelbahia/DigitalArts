@@ -5,28 +5,36 @@
     <%- include("./partials/header") %>
 
     <main>
-        <h3 class="margin-top subrayado">Abstracto espatula</h3>
+      
 
-        <% categoryProducts.forEach(cuadro => {  %>
-          
+      <!--<h3 class="margin-top subrayado"></h3>-->
+     
         <div class="contenedor-cuadros-espatula">
-          <div class="item padding-bottom">                       
-             <div><a href="carrito"><img class="img-cuadro" src="images/<%= cuadro.image %>"></a></div>            
+        
+          <% categoryProducts.forEach(cuadro => {  %>
+
+           <div class="item padding-bottom">  
+              <div>
+                 <a href="/products/detail/<%= cuadro.id %>"><img class="img-cuadro" src="../images/<%= cuadro.image %>"></a>
+              </div>            
               <div class="contenedor-detalle-carrito">
-               <div class="caja-detalle-cuadro">
-                <p class="tamaño-letra-detalle-cuadro">
-                    <b> <%= cuadro.description %></b><br>
-                    <b>Dimensiones: <%= cuadro.size %></b> <br>
-                    <b><%= cuadro.material %></b><br>
-                </p>
-               </div>
-              <div class="carrito-centrado">
-                <a href="carrito"><button class="centrado">añadir<br> al carrito</button></a>
+                  <div class="caja-detalle-cuadro">
+                    <p class="tamaño-letra-detalle-cuadro">
+                       <b> <%= cuadro.description %></b><br>
+                       <b>Dimensiones: <%= cuadro.size %></b> <br>
+                       <b><%= cuadro.material %></b><br>
+                    </p>
+                  </div>
+                  <div class="carrito-centrado">
+                      <a href="/carrito"><button class="centrado">añadir<br> al carrito</button></a>
+                  </div>
               </div>
-            </div>
            </div>
+
+           <% }) %>
+
         </div>
-         <% }) %>
+             
     </main>
 
     <%- include("./partials/footer") %>
