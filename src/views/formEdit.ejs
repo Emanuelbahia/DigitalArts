@@ -9,31 +9,31 @@
 	<div >
 		<div>
 			<div>
-				<h2>Estás editando: <i><%= editProduct.name %></i></h2>
+				<h2>Estás editando: <i><%= cuadrosEditar.name %></i></h2>
 			</div>
 		</div>
 		<div>
-			<form action="/products/edit?_method=PUT" method="POST">
+			<form action="/products/edit/<%= cuadrosEditar.id %>?_method=PUT" method="POST">
 				<div>
 					<div>
 						<label for="category" class="form-label">Categoría del producto:</label>
-						<input type="text" id="category" name="category" placeholder="Ej: Abstracto con espátula" class="" value="<%= editProduct.category%>">
+						<input type="text" id="category" name="category" placeholder="Ej: Abstracto con espátula" class="" value="<%= cuadrosEditar.category%>">
 					</div>
 					<div>
 						<label for="size" class="form-label">Medida del producto:</label>
-						<input type="text" id="size" name="size" placeholder="Ej: 60x80" class="form-input" value="<%= editProduct.size %>"> 
+						<input type="text" id="size" name="size" placeholder="Ej: 60x80" class="form-input" value="<%= cuadrosEditar.size %>"> 
 					</div>
                     <div>
 						<label for="description" class="form-label">Descipción:</label>
-						<textarea name="description" id="description" class="form-input" value="<%= editProduct.description %>"></textarea>
+						<textarea name="description" id="description" class="form-input" value="<%= cuadrosEditar.description %>"></textarea>
 					</div>
 					<div>
 						<label for="material" class="form-label">Material:</label>
-						<input type="text" id="material" name="material" placeholder="Ej: Bastidor en lienzo" class="form-input" value="<%= editProduct.material %>">
+						<input type="text" id="material" name="material" placeholder="Ej: Bastidor en lienzo" class="form-input" value="<%= cuadrosEditar.material %>">
 					</div>
                     <div>
 						<label for="price" class="form-label">Precio:</label>
-						<input type="text" id="price" name="price" placeholder="Ej: 15000" class="form-input" value="<%= editProduct.price %>">
+						<input type="text" id="price" name="price" placeholder="Ej: 15000" class="form-input" value="<%= cuadrosEditar.price %>">
 					</div>
 					
 					<div class="col-12">

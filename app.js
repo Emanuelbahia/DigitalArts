@@ -3,7 +3,8 @@ const app = express();
 const path = require("path");
 const { ppid } = require("process");
 const port = 3000;
-
+const methodOverride = require('method-override')
+app.use(methodOverride('_method'));
 app.use(express.static(__dirname + "/public"));
 
 const views = path.join(__dirname, "src/views/");
