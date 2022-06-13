@@ -22,7 +22,7 @@ router.get("/products/detail/:id", productosController.detail);
 
 /* ruta de crear un producto */
 router.get("/products/create", productosController.formCreate);
-router.post("/products", upload.single("image"), productosController.create);
+router.post("/products/", upload.single("image"), productosController.create);
 
 /* ruta de editar un producto */
 router.get("/products/edit/:id", productosController.formEdit);
