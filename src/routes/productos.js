@@ -12,6 +12,7 @@ const storage = multer.diskStorage({
     cb(null, Date.now() + " - " + path.extname(file.originalname));
   },
 });
+const upload = multer({ storage });
 
 /* ruta categoria de cuadros */
 router.get("/products/:category", productosController.cuadros);
@@ -28,6 +29,6 @@ router.get("/products/edit/:id", productosController.formEdit);
 router.put("/products/edit/:id", productosController.edit);
 
 /* ruta de eliminar un producto */
-router.delete("/products/detele/:id", productosController.delete);
+router.delete("/products/delete/:id", productosController.delete);
 
 module.exports = router;

@@ -28,7 +28,7 @@ const productosController = {
 
   /* crear producto */
   formCreate: function (req, res) {
-    return res.render("product-create-form");
+    return res.render("formCreate");
   },
 
   create: function (req, res) {
