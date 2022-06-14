@@ -9,27 +9,52 @@
 
         <h2>Formulario de Carga y Creación de Productos</h2>
 
-        <form action="/products/create" method="POST" enctype="multipart/form-data" >
-            <div>
-                <label for="name">Nombre del Producto</label>
+        <form action="/products" method="POST" enctype="multipart/form-data" >
+            <div class="contenedor-create">
+            <div class="box-create">
+                <label for="">Elija la categoría:</label>
+                <select  name="category" class="custom-select" id="" required>
+                   
+                
+                  <option value="abstractoEspatula">abstractoEspatula</option>
+                  <option value="abstractoPincel">abstractoPincel</option>
+                  <option value="pouring">pouring</option>
+                  <option value="fotomontaje">fotomontaje</option>
+                  <option value="cuadroDecorativo">cuadroDecorativo</option>
+                  <option value="artistasNuevos">artistasNuevos</option>
+                </select>
+            </div>
+
+            <div class="box-create">
+                <label for="name">Nombre del Producto:</label>
                 <input type="text" name="name" id="name">
             </div>
       
-            <div>
+            <div class="box-create">
                 <label for="description">Descripción</label>
-                <textarea name="description"  id="description"></textarea>
+                <input name="description"  id="description"></input>
+            </div>
+             
+            <div class="box-create">
+                <label for="size">Tamaño:</label>
+                <input name="size"  id="size"></input>
+            </div>
+            
+            <div class="box-create">
+                <label for="material">Material:</label>
+                <input name="material"  id="material"></input>
             </div>
       
-            <div>
+            
+            <div class="box-create">
+                <label for="price">Precio:</label>
+                <input type="text" name="price" id="price">
+            </div>
+            <div class="box-create" >
                 <label for="image">Imagen</label>
                 <input type="file" name="image" id="image" accept=".jpg" multiple>
             </div>
-
-            <div>
-                <label for="price">Precio</label>
-                <input type="number" name="price" id="price">
-            </div>
-
+        </div>
     </main>
 
       <%- include("./partials/footer") %>

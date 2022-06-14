@@ -603,6 +603,21 @@ p{
     align-items: center;
 }
 
+
+/*formulario de creación de productos*/
+
+.contenedor-create{
+    width: 90%;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+}
+
+.box-create{
+    padding-bottom:  15px;
+}
+
 /*media queries tablet*/
 
 @media (min-width: 481px){

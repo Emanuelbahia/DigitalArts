@@ -47,7 +47,7 @@ const productosController = {
     let newProductSave = JSON.stringify(cuadros, null, 2);
     fs.writeFileSync(cuadrosFilePath, newProductSave, "utf-8");
 
-    return res.redirect("/products");
+    return res.redirect("/products/");
   },
 
   /* editar producto */

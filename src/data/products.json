@@ -1,15 +1,5 @@
 [
   {
-    "id": 1,
-    "category": "abstractoEspatula",
-    "name": "Abstracto Espátula",
-    "image": "abstracto espatula 1m.jpg",
-    "size": "60x80",
-    "description": "técnica de acrilico con espátula",
-    "material": "Bastidor en lienzo",
-    "price": 16000
-  },
-  {
     "id": 2,
     "category": "abstractoEspatula",
     "name": "Abstracto Espátula",
