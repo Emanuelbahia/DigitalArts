@@ -21,8 +21,8 @@ router.get("/products/:category", productosController.cuadros);
 router.get("/products/detail/:id", productosController.detail);
 
 /* ruta de crear un producto */
-router.get("/products/create", productosController.formCreate);
-router.post("/products/", upload.single("image"), productosController.create);
+router.get("/products", productosController.formCreate);
+router.post("/products", upload.single("image"), productosController.create);
 
 /* ruta de editar un producto */
 router.get("/products/edit/:id", productosController.formEdit);
