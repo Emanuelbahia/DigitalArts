@@ -3,9 +3,13 @@
 <body>
 
   <%- include("./partials/header") %>
-   <h2>Formulario de Carga y Creación de Productos</h2>
+
+   
     <main>
-        <form action="/products/create" method="POST" enctype="multipart/form-data">
+
+        <h2>Formulario de Carga y Creación de Productos</h2>
+
+        <form action="/products/create" method="POST" enctype="multipart/form-data" >
             <div>
                 <label for="name">Nombre del Producto</label>
                 <input type="text" name="name" id="name">

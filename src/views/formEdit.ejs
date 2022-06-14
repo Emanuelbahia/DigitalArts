@@ -2,9 +2,10 @@
 <%- include("./partials/head") %>
 
 <body>
-	<!-- Header -->
+	
 	<%- include('partials/header.ejs') %>
-	<!-- /Header -->
+	
+  <main>
 
 	<div >
 		<div>
@@ -17,23 +18,23 @@
 				<div>
 					<div>
 						<label for="category" class="form-label">Categoría del producto:</label>
-						<input type="text" id="category" name="category" placeholder="Ej: Abstracto con espátula" class="" value="<%= cuadrosEditar.category%>">
+						<input type="text" id="category" name="category"  class="" value="<%= cuadrosEditar.category%>">
 					</div>
 					<div>
 						<label for="size" class="form-label">Medida del producto:</label>
-						<input type="text" id="size" name="size" placeholder="Ej: 60x80" class="form-input" value="<%= cuadrosEditar.size %>"> 
+						<input type="text" id="size" name="size"  class="form-input" value="<%= cuadrosEditar.size %>"> 
 					</div>
                     <div>
-						<label for="description" class="form-label">Descipción:</label>
-						<textarea name="description" id="description" class="form-input" value="<%= cuadrosEditar.description %>"></textarea>
+						<label for="description" class="form-label">Descripción:</label>
+						<input name="description" id="description" class="form-input" value="<%= cuadrosEditar.description %>">
 					</div>
 					<div>
 						<label for="material" class="form-label">Material:</label>
-						<input type="text" id="material" name="material" placeholder="Ej: Bastidor en lienzo" class="form-input" value="<%= cuadrosEditar.material %>">
+						<input type="text" id="material" name="material"  class="form-input" value="<%= cuadrosEditar.material %>">
 					</div>
                     <div>
 						<label for="price" class="form-label">Precio:</label>
-						<input type="text" id="price" name="price" placeholder="Ej: 15000" class="form-input" value="<%= cuadrosEditar.price %>">
+						<input type="text" id="price" name="price"  class="form-input" value="<%= cuadrosEditar.price %>">
 					</div>
 					
 					<div class="col-12">
@@ -42,12 +43,10 @@
 				</div>
 			</form>
 		</div>
-
 	</div>
-	<!-- /todos los productos -->
-
-	<!-- footer -->
+	
+ </main>
 	<%- include('partials/footer') %>
-	<!-- /footer -->
+	
 </body>	
 </html>

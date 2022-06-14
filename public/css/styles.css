@@ -215,9 +215,14 @@ h5{
 .margen-h4-footer{
     margin-top: 5px;
     margin-bottom: 10px;
+    font-size: 3vw;
 }
 
-.width-cajas-footer{
+.width-cajas-footer-left{
+    width: 50%;
+}
+
+.width-cajas-footer-right{
     width: 50%;
 }
 
@@ -248,6 +253,11 @@ h5{
     justify-content: center;
     list-style: none;
 }
+
+.fab{
+    font-size: 3vw;
+}
+
 .icono-redes li{
     padding: 7%;
 }
@@ -666,6 +676,21 @@ p{
     .caja-registro{
         width: 400px;
     }
+    .caja-contacto{
+        width: 50%;
+
+    }
+    .caja-link-redes{
+       width: 50%;
+       padding-left: 5%;
+    }
+    .width-cajas-footer-left{
+        width: 35%;
+    }
+    .width-cajas-footer-right{
+        width: 65%;
+        display: flex;
+    }
    
 }
 
@@ -787,5 +812,8 @@ p{
     }
     .tamaño-galeria{
         height: 20vw;
+    }
+    .margen-h4-footer{
+        font-size: 2vw;
     }
 }
