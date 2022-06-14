@@ -66,12 +66,13 @@ const productosController = {
       if (cuadro.id == req.body.id) {
         let newProduct = {
           id: cuadro.id,
-          name: req.body.name,
-          price: req.body.price,
-          discount: req.body.discount,
           category: req.body.category,
-          description: req.body.description,
+          name: req.body.name,
           image: cuadro.image,
+          size: cuadro.size,
+          description: req.body.description,
+          material: req.body.material,
+          price: req.body.price,
         };
         if (req.file) {
           newProduct = req.file.filename;
