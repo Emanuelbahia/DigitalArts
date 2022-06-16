@@ -6,27 +6,23 @@ const multer = require("multer");
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, path.join(__dirname, "../../public/images/products/"));
+    cb(null, path.join(__dirname, "../../public/images/news"));
   },
   filename: (req, file, cb) => {
-    cb(null, Date.now() + " - " + path.extname(file.originalname));
+    cb(null, Date.now() + path.extname(file.originalname));
   },
 });
 const upload = multer({ storage });
+
+/* ruta de crear un producto */
+router.get("/products/create", productosController.formCreate);
+router.post("/products", upload.single("image"), productosController.create);
 
 /* ruta categoria de cuadros */
 router.get("/products/:category", productosController.cuadros);
 
 /* ruta detalle de producto */
 router.get("/products/detail/:id", productosController.detail);
-
-/* ruta de crear un producto */
-router.get("/products", productosController.formCreate);
-router.post(
-  "/products/create",
-  upload.single("image"),
-  productosController.create
-);
 
 /* ruta de editar un producto */
 router.get("/products/edit/:id", productosController.formEdit);

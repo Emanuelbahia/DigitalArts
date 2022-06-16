@@ -23,3 +23,9 @@ Tareas completadas:
 Impedimentos:
 
 -Nos esta costando el CRUD de productos.
+
+Semana 12/6 al 18/6
+
+Tareas completadas:
+
+-Instalamos session, cookies y el paquete bryptjs

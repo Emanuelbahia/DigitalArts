@@ -33,6 +33,7 @@ const productosController = {
 
   create: function (req, res) {
     const cuadros = JSON.parse(fs.readFileSync(cuadrosFilePath, "utf-8"));
+
     let newProduct = {
       id: cuadros[cuadros.length - 1].id + 1,
       name: req.body.name,

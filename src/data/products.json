@@ -458,5 +458,61 @@
     "description": "técnica abstracto con espatula",
     "material": "Bastidor macizo en madera",
     "price": 12000
+  },
+  {
+    "id": 47,
+    "name": "nuevooo",
+    "price": "43",
+    "category": "abstractoEspatula",
+    "description": "hola",
+    "image": "1655339218443 - .jpg"
+  },
+  {
+    "id": 48,
+    "name": "nuevooo",
+    "price": "43",
+    "category": "abstractoEspatula",
+    "description": "hola",
+    "image": "image-.jpg"
+  },
+  {
+    "id": 49,
+    "name": "nuevooo",
+    "price": "3",
+    "category": "abstractoEspatula",
+    "description": "hola",
+    "image": "image-.jpg"
+  },
+  {
+    "id": 50,
+    "name": "nuevooo",
+    "price": "3",
+    "category": "abstractoEspatula",
+    "description": "hola",
+    "image": "image-.jpg"
+  },
+  {
+    "id": 51,
+    "name": "nuevooo",
+    "price": "44",
+    "category": "abstractoEspatula",
+    "description": "hola",
+    "image": "1655340008493.jpg"
+  },
+  {
+    "id": 52,
+    "name": "nuevooo",
+    "price": "44",
+    "category": "abstractoEspatula",
+    "description": "hola",
+    "image": "1655340063856.jpg"
+  },
+  {
+    "id": 53,
+    "name": "gdfg",
+    "price": "44",
+    "category": "abstractoEspatula",
+    "description": "hola",
+    "image": "1655340078446.jpg"
   }
 ]
