@@ -10,39 +10,39 @@
 	<div >
 		<div>
 			<div>
-				<h2>Estás editando: <i><%= cuadrosEditar.name %></i></h2>
+				<h2 class="h2-create">Estás editando: <i><%= cuadrosEditar.name %></i></h2>
 			</div>
 		</div>
 		<div>
 			<form action="/products/edit/<%= cuadrosEditar.id %>?_method=PUT" method="POST">
-				<div>
-					<div>
+				<div class="contenedor-create">
+					<div class="box-create">
 						<label for="category" class="form-label">Categoría del producto:</label>
-						<input type="text" id="category" name="category"  class="" value="<%= cuadrosEditar.category%>">
+						<input type="text" id="category" name="category"  class="form-input" value="<%= cuadrosEditar.category%>">
 					</div>
-					<div>
+					<div class="box-create">
 						<label for="name" class="form-label">Nombre del producto:</label>
-						<input type="text" id="name" name="name"  class="" value="<%= cuadrosEditar.name%>">
+						<input type="text" id="name" name="name"  class="form-input" value="<%= cuadrosEditar.name%>">
 					</div>
-					<div>
+					<div class="box-create">
 						<label for="size" class="form-label">Medida del producto:</label>
-						<input type="text" id="size" name="size"  class="form-input" value="<%= cuadrosEditar.size %>"> 
+						<input type="text" id="size" name="size"  class="form-input large-size" value="<%= cuadrosEditar.size %>"> 
 					</div>
-                    <div>
+                    <div class="box-create " >
 						<label for="description" class="form-label">Descripción:</label>
-						<input name="description" id="description" class="form-input" value="<%= cuadrosEditar.description %>">
+						<input name="description" id="description" class="form-input large-description" value="<%= cuadrosEditar.description %>">
 					</div>
-					<div>
+					<div class="box-create">
 						<label for="material" class="form-label">Material:</label>
-						<input type="text" id="material" name="material"  class="form-input" value="<%= cuadrosEditar.material %>">
+						<input type="text" id="material" name="material"  class="form-input large-description" value="<%= cuadrosEditar.material %>">
 					</div>
-                    <div>
+                    <div class="box-create">
 						<label for="price" class="form-label">Precio:</label>
-						<input type="text" id="price" name="price"  class="form-input" value="<%= cuadrosEditar.price %>">
+						<input type="text" id="price" name="price"  class="form-input large-price" value="<%= cuadrosEditar.price %>">
 					</div>
 					
-					<div class="col-12">
-						<button type="submit" class="buy-now-button">Guardar producto</button>
+					<div class="box-create margin-button-save">
+						<button type="submit" class="save-product">Guardar producto</button>
 					</div>
 				</div>
 			</form>

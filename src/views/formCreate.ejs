@@ -11,9 +11,10 @@
 
         <form action="/products" method="POST" enctype="multipart/form-data" >
             <div class="contenedor-create">
+
             <div class="box-create">
-                <label for="">Elija la categoría:</label>
-                <select  name="category" class="custom-select" id="" required>              
+                <label for="" class="form-label">Elija la categoría:</label>
+                <select  name="category" class="form-input" id="" required>              
                   <option value="abstractoEspatula">abstractoEspatula</option>
                   <option value="abstractoPincel">abstractoPincel</option>
                   <option value="pouring">pouring</option>
@@ -24,38 +25,38 @@
             </div>
 
             <div class="box-create">
-                <label for="name">Nombre del Producto:</label>
-                <input type="text" name="name" id="name">
+                <label for="name" class="form-label">Nombre del Producto:</label>
+                <input type="text" name="name" class="form-input" id="name">
             </div>
       
             <div class="box-create">
-                <label for="description">Descripción</label>
-                <input name="description"  id="description"></input>
+                <label for="description" class="form-label">Descripción</label>
+                <input name="description"  id="description" class="form-input large-description"></input>
             </div>
              
             <div class="box-create">
-                <label for="size">Tamaño:</label>
-                <input name="size"  id="size"></input>
+                <label for="size" class="form-label">Tamaño:</label>
+                <input name="size" class="form-input large-size"  id="size"></input>
             </div>
             
             <div class="box-create">
-                <label for="material">Material:</label>
-                <input name="material"  id="material"></input>
+                <label for="material" class="form-label">Material:</label>
+                <input name="material" class="form-input large-description" id="material"></input>
             </div>
       
             
             <div class="box-create">
-                <label for="price">Precio:</label>
-                <input type="text" name="price" id="price">
+                <label for="price" class="form-label">Precio:</label>
+                <input type="text" name="price" class="form-input large-price" id="price">
             </div>
+
             <div class="box-create" >
-                <label for="image">Imagen</label>
-                <input type="file" name="image" id="image" accept=".jpg" /> 
+                <label for="image" class="form-label">Imagen</label>
+                <input type="file" name="image" id="image" class="form-input" accept=".jpg" /> 
+
+            </div class=" ">
+                <button type="submit" class="save-product margin-button-save">Guardar</button>
             </div>
-
-            <button type="submit" class="button-guardar-create">Guardar</button>
-
-        </div>
     </main>
 
       <%- include("./partials/footer") %>

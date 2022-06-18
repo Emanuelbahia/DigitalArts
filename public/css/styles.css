@@ -616,6 +616,7 @@ p{
 
 .box-create{
     padding-bottom:  15px;
+    margin: auto;
 }
 
 .h2-create{
@@ -623,6 +624,27 @@ p{
     width: 80%;
     margin-top: 5%;
 }
+
+.large-description{
+     width: 60%;
+}
+
+.large-size{
+    width: 15%;
+}
+
+.large-price{
+    width: 20%;
+}
+
+.save-product{
+    font-size: 2.5vw;
+    padding: 1%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+
 
 /*media queries tablet*/
 
@@ -713,6 +735,18 @@ p{
         display: flex;
     }
    
+    .contenedor-create{
+       width: 80%;
+    }
+    .form-input{
+       font-size: 2.5vw;
+    }
+    .form-label{
+       font-size: 3vw;
+    }
+    .h2-create{
+        font-size: 4vw;
+    }
 }
 
 /*media queries pc*/
