@@ -7,7 +7,7 @@
     "size": "60x80",
     "description": "técnica de acrilico con espátula",
     "material": "Bastidor en lienzo",
-    "price": 16000
+    "price": "16000"
   },
   {
     "id": 2,
@@ -460,59 +460,23 @@
     "price": 12000
   },
   {
-    "id": 47,
-    "name": "nuevooo",
-    "price": "43",
+    "id": 56,
     "category": "abstractoEspatula",
-    "description": "hola",
-    "image": "1655339218443 - .jpg"
-  },
-  {
-    "id": 48,
-    "name": "nuevooo",
-    "price": "43",
-    "category": "abstractoEspatula",
-    "description": "hola",
-    "image": "image-.jpg"
-  },
-  {
-    "id": 49,
-    "name": "nuevooo",
-    "price": "3",
-    "category": "abstractoEspatula",
-    "description": "hola",
-    "image": "image-.jpg"
-  },
-  {
-    "id": 50,
-    "name": "nuevooo",
-    "price": "3",
-    "category": "abstractoEspatula",
-    "description": "hola",
-    "image": "image-.jpg"
-  },
-  {
-    "id": 51,
-    "name": "nuevooo",
-    "price": "44",
-    "category": "abstractoEspatula",
-    "description": "hola",
-    "image": "1655340008493.jpg"
-  },
-  {
-    "id": 52,
-    "name": "nuevooo",
-    "price": "44",
-    "category": "abstractoEspatula",
-    "description": "hola",
-    "image": "1655340063856.jpg"
-  },
-  {
-    "id": 53,
     "name": "gdfg",
-    "price": "44",
+    "image": "1655559694993.jpg",
+    "size": "40x40",
+    "description": "prueba",
+    "material": "lienzo",
+    "price": "434"
+  },
+  {
+    "id": 57,
     "category": "abstractoEspatula",
+    "name": "nuevooo",
+    "image": "1655559771083.jpg",
+    "size": "1000x10000",
     "description": "hola",
-    "image": "1655340078446.jpg"
+    "material": "lienzo",
+    "price": "43"
   }
 ]

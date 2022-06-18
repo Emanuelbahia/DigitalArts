@@ -36,19 +36,20 @@ const productosController = {
 
     let newProduct = {
       id: cuadros[cuadros.length - 1].id + 1,
-      name: req.body.name,
-      price: req.body.price,
-      discount: req.body.discount,
       category: req.body.category,
-      description: req.body.description,
+      name: req.body.name,
       image: req.file.filename,
+      size: req.body.size,
+      description: req.body.description,
+      material: req.body.material,
+      price: req.body.price,
     };
     cuadros.push(newProduct);
 
     let newProductSave = JSON.stringify(cuadros, null, 2);
     fs.writeFileSync(cuadrosFilePath, newProductSave, "utf-8");
 
-    return res.redirect("/products");
+    return res.redirect("/");
   },
 
   /* editar producto */
@@ -85,7 +86,7 @@ const productosController = {
 
     let actualizarProduct = JSON.stringify(productUpdate, null, 2);
     fs.writeFileSync(cuadrosFilePath, actualizarProduct, "utf-8");
-    return res.redirect(`/products/edit/${req.body.id}`);
+    return res.redirect(`/products/detail/${req.body.id}`);
   },
 
   /* eliminar producto */
@@ -100,7 +101,7 @@ const productosController = {
     let borrar = JSON.stringify(deleteProduct, null, 2);
     fs.writeFileSync(cuadrosFilePath, borrar, "utf-8");
 
-    return res.redirect("/products/:category");
+    return res.redirect("/");
   },
 };
 

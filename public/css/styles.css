@@ -245,7 +245,7 @@ h5{
     color: rgb(64, 64, 209);
 }
 .caja-redes{
-    background: radial-gradient(circle, rgb(37 36 36) 0%, rgb(37 36 36 / 97%) 51%, rgb(37 36 36 / 52%) 100%);
+    background: black;
     width: 50%;
 }
 .icono-redes{
