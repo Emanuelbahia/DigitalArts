@@ -468,15 +468,5 @@
     "description": "prueba",
     "material": "lienzo",
     "price": "434"
-  },
-  {
-    "id": 57,
-    "category": "abstractoEspatula",
-    "name": "nuevooo",
-    "image": "1655559771083.jpg",
-    "size": "1000x10000",
-    "description": "hola",
-    "material": "lienzo",
-    "price": "43"
   }
 ]
