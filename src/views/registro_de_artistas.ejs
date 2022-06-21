@@ -11,17 +11,20 @@
       <div>
          <h3 class="margin-top querie-h-artistas">Envia las fotos de tus obras</h3>
       </div>
+      <div class="box-register-artist">
         <form class="padding-registro-artistas" action="/index" method="post">
-        <div class="control-formulario width-input">
-          <label for="file1">
-             <input type="file" name="file" id="file1"  class="file">
-          </label>
-        </div>
-        <div class="control-formulario padding-bottom">
+          <div class="control-formulario width-input">
+            <label for="file1">
+              <input type="file" name="file" id="file1"  class="file">
+            </label>
+          </div>
+          <div class="control-formulario padding-bottom">
           <label for="submit">
             <input type="submit" name="submit" id="submit" class="submit">
           </label>
-      </form>
+          </div>
+        </form>
+      </div>
      </main>
 
      <%- include("./partials/footer.ejs") %>
