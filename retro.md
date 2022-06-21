@@ -39,3 +39,18 @@ Sprint 3:
 
 - Coordinamos de manera extraordinaria el trabajo en equipo.
 - Lograos resolver problemas que surgen del código en colaboración grupal.
+
+Sprint 4:
+
+1.Problemas que surgieron:
+
+- Tuvimos algunos problemas con las rutas de creacion y edicion del producto, con la subida de la imagen del producto, y unos detalles de los formularios.
+
+  2.Para mejorar:
+
+- Seguimos buscando en distintas paginas para darle mas estilo a la pagina.
+
+  3.¿Que hicimos bien?
+
+- Nos mantenemos en contacto via whatsapp casi todos los dias para mantenernos bien informado de que hizo cada uno y si subio todo al repositorio.
+- Seguimos reuniendonos por zoom todas las semanas para ver en conjunto que hizo cada uno, explicarlo y ver si modificamos algo o lo dejamos asi.

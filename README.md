@@ -26,7 +26,7 @@ De esta pagina tambien nos gusto la pagina de inicio pero po sobre todo el video
 https://www.mercadolibre.com.ar/:
 De esta pagina seguimos los pasos para confeccionar la seccion de compras (carrito).
 
-Creación de tablero de trabajo: https://trello.com/b/xuLrEeGC/digitalarts#
+Creación de tablero de trabajo: https://trello.com/b/xuLrEeGC/digitalarts
 
 En el wireframe hicimos una pagina de detalle del producto como nos pidieron en el sprint. Pero ahora, en el transcurso del proyecto, decidimos hacer una pagina para cada una de las categorias de cuadro, que son 6.
 Estas son:
