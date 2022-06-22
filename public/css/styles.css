@@ -95,7 +95,7 @@ main{
 .img-cuadro {
     width: 100%;
     box-shadow: 10px 10px 5px 2px rgb(37 36 36 / 63%);
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
 }
 
 .item{
@@ -128,8 +128,9 @@ h5{
 
 .margin-bottom-h5{
     margin-bottom: 35px;
-    font-size: 2vh;
+    font-size: 2.2vh;
     padding-top: 10px;
+    font-weight: bold;
 }
 
 .margin-h3-home{
@@ -305,6 +306,7 @@ h5{
     background-color: black;
     color: white;
     width: 90px;
+    margin-bottom: 20px;
 }
 
 .centrar-login{
@@ -666,10 +668,17 @@ p{
 
 .remember-box{
     padding-bottom: 15px;
-    margin-right: 8%;
+    padding-top: 15px;
+    margin-right: 20%;
 }
 
+.carousel {
+    display: none;
+}
 
+.login-box{
+    width: 70%;
+}
 
 /*media queries tablet*/
 
@@ -784,6 +793,18 @@ p{
     }
     .box-register-artist{
         width: 40%;
+    }
+    .carousel {
+        display: block;
+    }
+    .control-formulario {
+        margin-bottom: 15px;
+        width: 80%;
+        margin: auto;
+        padding-bottom: 15px;
+    }
+    .login-box{
+        width: 360px;
     }
 }
 
