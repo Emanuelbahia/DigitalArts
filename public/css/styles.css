@@ -879,7 +879,7 @@ p{
     }
     .contenedor-header{
         position: static;
-        height: 25vh;
+        height: 35vh;
         flex-wrap: wrap;
         background: linear-gradient(90deg, rgba(203,187,187,0) 0%, rgb(222 222 235 / 23%) 51%, rgba(45,100,136,1) 100%);
     }
@@ -907,6 +907,8 @@ p{
         justify-content: space-around;
         align-items: center;
         background-color: #000000b8;
+        height: 6vh;
+        align-content: space-between;
      }
      .navbar li {
          display: inline;
@@ -916,6 +918,7 @@ p{
     .width-cajas-header {
         width: 40%;
         height: 20vh;
+        margin-bottom: 30px;
     }
     .tamaño-letra-menu-desplegable {
         font-size: 1.5vw;
