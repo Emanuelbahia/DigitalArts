@@ -6,15 +6,15 @@
   
     <main class="padding-register">
         <h2 class="margin-h2 centrar-login">REGISTRESE</h2>
-        <form action="resultado.html" method="POST" class="">
+        <form action="resultado.html" method="POST" enctype="multipart/form-data">
             <div class="control-formulario ">
                 <label>Nombre:</label>
-                <input type="text" name="nombre" class="control" required>
+                <input type="text" name="name" class="control" required>
             </div>
       
             <div class="control-formulario ">
                 <label>Apellido:</label>
-                <input type="text" name="apellido" class="control" required>
+                <input type="text" name="surname" class="control" required>
             </div>
       
             <div class="control-formulario ">
@@ -31,7 +31,10 @@
                 <label>Confirme su contraseña:</label>
                 <input type="password" name="password" class="control" required>
             </div>
-
+            <div class="control-formulario " >
+               <label for="avatar">Imagen de perfil</label>
+               <input type="file" name="avatar" id="avatar" class="control" accept=".jpg" /> 
+             </div>
             <div class="control-formulario ">
                 <input type="checkbox" name="cuenta"> Al crear esta cuenta esta aceptando nuestras condiciones.<br>
                 <input type="checkbox" name="ofertas"> Acepto recibir ofertas promocionales.
