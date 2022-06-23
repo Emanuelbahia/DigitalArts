@@ -71,41 +71,84 @@
     "category": "",
     "image": ""
   },
-  { 
-   "id": 9,
-   "firstName": "Teresa",
-   "lastName": "Parodi",
-   "email": "teresita_pa@gmail.com",
-   "password": "soytere1975",
-   "category": "",
-   "image": ""
-},
-{
-  "id": 10,
-  "firstName": "Diego",
-  "lastName": "Maradona",
-  "email": "el_10@gmail.com",
-  "password": "soyeldiego10",
-  "category": "",
-  "image": ""
-},
-{
-  "id": 11,
-  "firstName": "Antonella",
-  "lastName": "Diaz",
-  "email": "anto_diaz@gmail.com",
-  "password": "soyanto1975",
-  "category": "",
-  "image": ""
-},
-{
-  "id": 12,
-  "firstName": "Paul",
-  "lastName": "Mac",
-  "email": "paul_mac@gmail.com",
-  "password": "paul1950",
-  "category": "",
-  "image": ""
-}
-
+  {
+    "id": 9,
+    "firstName": "Teresa",
+    "lastName": "Parodi",
+    "email": "teresita_pa@gmail.com",
+    "password": "soytere1975",
+    "category": "",
+    "image": ""
+  },
+  {
+    "id": 10,
+    "firstName": "Diego",
+    "lastName": "Maradona",
+    "email": "el_10@gmail.com",
+    "password": "soyeldiego10",
+    "category": "",
+    "image": ""
+  },
+  {
+    "id": 11,
+    "firstName": "Antonella",
+    "lastName": "Diaz",
+    "email": "anto_diaz@gmail.com",
+    "password": "soyanto1975",
+    "category": "",
+    "image": ""
+  },
+  {
+    "id": 12,
+    "firstName": "Paul",
+    "lastName": "Mac",
+    "email": "paul_mac@gmail.com",
+    "password": "paul1950",
+    "category": "",
+    "image": ""
+  },
+  {
+    "id": 13,
+    "email": "emanuelazcona@hotmail.com",
+    "password": "1234",
+    "image": "1656012771796.jpg"
+  },
+  {
+    "id": 14,
+    "email": "emanuelazcona@hotmail.com",
+    "password": "1234",
+    "image": "1656012785870.jpg"
+  },
+  {
+    "id": 15,
+    "firstName": "emanuel",
+    "lastName": "azcona",
+    "email": "emanuelazcona@hotmail.com",
+    "password": "1234",
+    "image": "1656012960987.jpg"
+  },
+  {
+    "id": 16,
+    "firstName": "emanuel",
+    "lastName": "azcona",
+    "email": "emanuelazcona@hotmail.com",
+    "password": "12345",
+    "image": "1656012980515.jpg"
+  },
+  {
+    "id": 17,
+    "firstName": "emanuel",
+    "lastName": "azcona",
+    "email": "emanuelazcona@hotmail.com",
+    "password": "12345",
+    "image": "1656013068985.jpg"
+  },
+  {
+    "id": 18,
+    "firstName": "emanuel",
+    "lastName": "azcona",
+    "email": "emanuelazcona@hotmail.com",
+    "password": "123",
+    "image": "1656013116430.jpg"
+  }
 ]

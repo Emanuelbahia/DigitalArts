@@ -680,6 +680,12 @@ p{
     width: 70%;
 }
 
+.red-message-register{
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
+}
+
 /*media queries tablet*/
 
 @media (min-width: 481px){
