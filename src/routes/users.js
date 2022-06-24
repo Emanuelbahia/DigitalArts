@@ -47,5 +47,26 @@ router.post(
   validations,
   usersController.processRegister
 );
+//validacion de login
+const validateLog = [
+  body("email")
+  .notEmpty()
+  .withMessage("Tienes que escribir un email")
+  .bail()
+  .isEmail()
+  .withMessage("Tienes que poner un formato de correo válido"),
+body("password").notEmpty().withMessage("Tienes que poner una contraseña"),
+body("confirmPassword")
+  .notEmpty()
+  .withMessage("Tienes que confirmar la contraseña"),
+]
+//formulario de login
+router.get("/login", usersController.login);
+
+
+//Procesar el login
+router.post("/login", validateLog, usersController.loginProcess);
+
+
 
 module.exports = router;

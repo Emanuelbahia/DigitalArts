@@ -150,5 +150,21 @@
     "email": "emanuelazcona@hotmail.com",
     "password": "123",
     "image": "1656013116430.jpg"
+  },
+  {
+    "id": 19,
+    "firstName": "MARIA CARO",
+    "lastName": "cirillo",
+    "email": "carolinacirillo@hotmail.com",
+    "password": "holitas",
+    "image": "1656022363883.png"
+  },
+  {
+    "id": 20,
+    "firstName": "carolina",
+    "lastName": "patino",
+    "email": "alber@gmail.com",
+    "password": "$2a$10$kl/fKZ43n3.pvUC2Cj.OgeNy/0J5MyMF5dyAnZfBmHWl.goLQzrMG",
+    "image": "1656032909169.png"
   }
 ]

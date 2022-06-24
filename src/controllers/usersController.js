@@ -1,5 +1,6 @@
 const path = require("path");
 const fs = require("fs");
+const bcryptjs = require ("bcryptjs");
 
 const usersFilePath = path.join(__dirname, "../data/users.json");
 const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
@@ -27,7 +28,7 @@ const usersController = {
       firstName: req.body.name,
       lastName: req.body.surname,
       email: req.body.email,
-      password: req.body.password,
+      password: bcryptjs.hashSync (req.body.password, 10 ),
       image: req.file.filename,
     };
     users.push(newUser);
@@ -37,6 +38,12 @@ const usersController = {
 
     return res.send("no tienes errores");
   },
-};
+  login: function (req, res) {
+      return res.render("login");
+  },
+  loginProcess: function (req, res) {
+      return res.render("login")
+ },
+  }
 
-module.exports = usersController;
+module.exports = usersController
