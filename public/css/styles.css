@@ -299,7 +299,7 @@ h5{
 .control{
     width: 100%;
     padding: 8px 8px;
-    font-size: 15px;
+    font-size: 10px;
 }
 
 .button-login{
@@ -318,6 +318,7 @@ h5{
     width: 150px;
     background-color: black;
     color: white;
+    padding: 8px 8px;
 }
 
 .cuadros_decorativos {
@@ -403,8 +404,8 @@ p{
 }
 
 .padding-bottom{
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
     display: flex;
     flex-direction: column;
     padding-bottom: 35px;
@@ -510,7 +511,7 @@ p{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #e8e28d;
+    background-color: #212529;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -518,7 +519,7 @@ p{
 }
   
 .dropdown-content a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -699,7 +700,8 @@ p{
         padding-top: 4vh;
     }
     .item{
-        flex: 1 1 50%;      
+        flex: 1 1 50%;  
+        max-width: 50%;    
     }
     .contenedor-cuadros-espatula{
         display: flex;
@@ -707,11 +709,11 @@ p{
         
     }
     .padding-bottom{
-        padding-left: 3%;
-        padding-right: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
         display: flex;
-    flex-direction: column;
-    padding-bottom: 35px;
+        flex-direction: column;
+        padding-bottom: 35px;
     }
     .tamaño-letra-detalle-cuadro {
         font-size: 2vw;
@@ -828,6 +830,7 @@ p{
         padding-right: 4%;
         width: 25%;
         flex: 1 1 25%;
+        max-width: 33%;
     }
     .margin-bottom-h5{
         font-size: 2vw;
@@ -843,7 +846,7 @@ p{
         font-size: 2vh;
     }
     .padding-register{
-        padding: 30px 20%;
+        padding: 30px 10%;
     }
     
     .cuadro-achicado{
@@ -867,7 +870,7 @@ p{
         transition: all .5s ease-in-out;
     }
     .margin-h2 {
-        margin-bottom: 10px;
+        margin-bottom: 2.5vw;
         
     }
     .margin-h2-login {     
@@ -939,5 +942,16 @@ p{
     }
     .box-register-artist{
         width: 30%;
+    }
+    .control-formulario{
+        width: 50%;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    .conteiner-register{
+        display: flex;
+        flex-wrap: wrap;
+    }.margin-button-register{
+        padding-top: 2vw;
     }
 }

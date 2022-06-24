@@ -9,7 +9,7 @@
         <h2 class="margin-h2 centrar-login">REGISTRESE</h2>
 
         <form action="/register" method="POST" enctype="multipart/form-data">
-
+          <div class="conteiner-register">
             <div class="control-formulario ">
                 <label>Nombre:</label>
                 <input type="text" name="name" class="control" value="<%= locals.oldData ? oldData.name : null %>">
@@ -49,7 +49,7 @@
                     </div>
                 <% } %>
             </div>
-
+        
             <div class="control-formulario ">
                 <label>Confirme su contraseña:</label>
                 <input type="password" name="confirmPassword" class="control">
@@ -59,7 +59,7 @@
                     </div>
                 <% } %>
             </div>
-
+        
             <div class="control-formulario " >
                <label for="avatar">Imagen de perfil</label>
                <input type="file" name="avatar" id="avatar" class="control" accept=".jpg ,.png" /> 
@@ -69,16 +69,16 @@
                 </div>
             <% } %>
              </div>
-
+         </div>
             <div class="control-formulario ">
                 <input type="checkbox" name="cuenta"> Al crear esta cuenta esta aceptando nuestras condiciones.<br>
                 <input type="checkbox" name="ofertas"> Acepto recibir ofertas promocionales.
             </div>
 
             <div class="control-formulario centrar-login margin-button-register">
-              <button type="submit" value="REGISTRATE" class="control button-register">REGISTRATE</button>
-            
+              <button type="submit" value="REGISTRATE" class="button-register">REGISTRATE</button>           
             </div>
+          
     </main>
 
       <%- include("./partials/footer.ejs") %>
