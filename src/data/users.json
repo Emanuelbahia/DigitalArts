@@ -166,5 +166,13 @@
     "email": "alber@gmail.com",
     "password": "$2a$10$kl/fKZ43n3.pvUC2Cj.OgeNy/0J5MyMF5dyAnZfBmHWl.goLQzrMG",
     "image": "1656032909169.png"
+  },
+  {
+    "id": 21,
+    "firstName": "emanuel",
+    "lastName": "azcona",
+    "email": "emanuelazcona@hotmail.com",
+    "password": "$2a$10$fmUCR3rcY4oIX/xYuPPPI.1a1wPw/tq5WTn7sgmfFXbR9oNMUIU0K",
+    "image": "1656092713203.jpg"
   }
 ]

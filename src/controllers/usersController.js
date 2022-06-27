@@ -1,6 +1,6 @@
 const path = require("path");
 const fs = require("fs");
-const bcryptjs = require ("bcryptjs");
+const bcryptjs = require("bcryptjs");
 
 const usersFilePath = path.join(__dirname, "../data/users.json");
 const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
@@ -11,6 +11,20 @@ const usersController = {
   register: function (req, res) {
     return res.render("register");
   },
+
+  //genero un id para crear un usuario (si hay un usuario es id +1, sino arranca de 1)
+
+  generatedId: function () {
+    const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
+
+    let lastUser = users.pop();
+
+    if (lastUser) {
+      return lastUser.id + 1;
+    }
+    return 1;
+  },
+
   processRegister: function (req, res) {
     const resultValidation = validationResult(req);
 
@@ -24,11 +38,11 @@ const usersController = {
     const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
 
     let newUser = {
-      id: users[users.length - 1].id + 1,
+      id: this.generatedId,
       firstName: req.body.name,
       lastName: req.body.surname,
       email: req.body.email,
-      password: bcryptjs.hashSync (req.body.password, 10 ),
+      password: bcryptjs.hashSync(req.body.password, 10),
       image: req.file.filename,
     };
     users.push(newUser);
@@ -38,12 +52,14 @@ const usersController = {
 
     return res.send("no tienes errores");
   },
-  login: function (req, res) {
-      return res.render("login");
-  },
-  loginProcess: function (req, res) {
-      return res.render("login")
- },
-  }
 
-module.exports = usersController
+  login: function (req, res) {
+    return res.render("login");
+  },
+
+  loginProcess: function (req, res) {
+    return res.render("login");
+  },
+};
+
+module.exports = usersController;

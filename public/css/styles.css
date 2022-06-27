@@ -5,6 +5,11 @@
     font-family:'Times New Roman', Times, serif;
 }
 
+main{
+    background-image: url("../images/others/backkk.jpg");
+ 
+}
+
 /* HEADER */
 .contenedor-header{
     border-bottom: 1px solid #00000054;
@@ -82,19 +87,26 @@ main{
 }
 
 .estilo-h1{
+    border-radius: 10px;
     padding-top: 2vh;
     padding-bottom: 2vh;
     font-size: 8vw;
     text-align: center;
-    text-decoration: underline;
     font-weight: bold;
     padding-left: 2.5%;
     padding-right: 2.5%;
+    background-color: #1c5454;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    opacity: 0.9;
+    color: #f9fafb;
 }
 
 .img-cuadro {
     width: 100%;
-    box-shadow: 10px 10px 5px 2px rgb(37 36 36 / 63%);
+    box-shadow: 15px 15px 3px 5px rgb(37 36 36 / 72%);
     margin-bottom: 2vh;
 }
 
@@ -123,7 +135,8 @@ h5{
 
 .subrayado{
     text-decoration: underline;
-    font-size: 4vh;    
+    font-size: 4vh;   
+    font-weight: bold; 
 }
 
 .margin-bottom-h5{
@@ -186,7 +199,12 @@ h5{
     margin-top: 5%;
     border: 3px solid black;
     padding: 2%;
-    background-color: #f1def1;
+    background-color: #385454fa;
+    color: white;
+}
+
+.link-register{
+    color: #ff9900;
 }
 
 .boton-registro-color {
@@ -298,8 +316,8 @@ h5{
 
 .control{
     width: 100%;
-    padding: 8px 8px;
-    font-size: 10px;
+    padding: 4px 8px;
+    font-size: 15px;
 }
 
 .button-login{
@@ -380,7 +398,7 @@ h5{
 }
 
 .contenedor-cuadros-espatula{
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
 .caja-detalle-cuadro{
@@ -687,6 +705,12 @@ p{
     font-weight: bold;
 }
 
+
+
+
+
+
+
 /*media queries tablet*/
 
 @media (min-width: 481px){
@@ -744,7 +768,7 @@ p{
         align-items: center;
     }
     .estilo-h1{
-        padding-bottom: 5vh;
+        padding-bottom: 2vh;
         font-size: 6vw;
     }
     .tamaño-galeria{
@@ -894,6 +918,7 @@ p{
     }
     .tamaño-icono-acceso {
         font-size: 2.5vw;
+        padding-right: 3.5vw;
     }
     .tamaño-logo {
         width: 200px;
@@ -904,6 +929,7 @@ p{
     .acceso{
         padding-top: 14vh;
         background: none;
+        padding-top: 10%;
         
     }
     .navbar{
@@ -916,18 +942,18 @@ p{
         justify-content: space-around;
         align-items: center;
         background-color: #000000b8;
-        height: 6vh;
+        height: 7vh;
         align-content: space-between;
      }
      .navbar li {
          display: inline;
-         padding: 10px 2vw;
+         padding: 20px 2vw;
         
      }
     .width-cajas-header {
         width: 40%;
         height: 20vh;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
     .tamaño-letra-menu-desplegable {
         font-size: 1.5vw;
