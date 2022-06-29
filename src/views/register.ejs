@@ -11,7 +11,7 @@
         <form action="/register" method="POST" enctype="multipart/form-data">
           <div class="conteiner-register">
             <div class="control-formulario ">
-                <label>Nombre:</label>
+                <label class="weight-label">Nombre:</label>
                 <input type="text" name="name" class="control" value="<%= locals.oldData ? oldData.name : null %>">
                 <% if(locals.errors && errors.name) { %>
                     <div class="red-message-register">
@@ -21,7 +21,7 @@
             </div>
       
             <div class="control-formulario ">
-                <label>Apellido:</label>
+                <label class="weight-label">Apellido:</label>
                 <input type="text" name="surname" class="control" value="<%= locals.oldData ? oldData.surname : null %>">
                 <% if(locals.errors && errors.surname) { %>
                     <div class="red-message-register">
@@ -31,7 +31,7 @@
             </div>
       
             <div class="control-formulario ">
-                <label>Correo electronico:</label>
+                <label class="weight-label">Correo electronico:</label>
                 <input type="email" name="email" class="control" value="<%= locals.oldData ? oldData.email : null %>">
                 <% if(locals.errors && errors.email) { %>
                     <div class="red-message-register">
@@ -41,24 +41,18 @@
             </div>
 
             <div class="control-formulario ">
-                <label>Contraseña:</label>
-                <input type="password" name="password" class="control">
+                <label class="weight-label">Contraseña:</label>
+                <input type="password" name="password" class="control" minlength="6" maxlength="20" required pattern="[A-Za-z0-9]+" >
                 <% if(locals.errors && errors.password) { %>
                     <div class="red-message-register">
                         <%= errors.password.msg %>
                     </div>
                 <% } %>
             </div>
-
-            <!-- validacion contraseña-->
-
-           
-
-            <!--termina validacion-->
         
             <div class="control-formulario ">
-                <label>Confirme su contraseña:</label>
-                <input type="password" name="confirmPassword" class="control">
+                <label class="weight-label">Confirme su contraseña:</label>
+                <input type="password" name="confirmPassword" class="control" minlength="6" maxlength="20" required pattern="[A-Za-z0-9]+">
                 <% if(locals.errors && errors.confirmPassword) { %>
                     <div class="red-message-register">
                         <%= errors.confirmPassword.msg %>
@@ -67,7 +61,7 @@
             </div>
         
             <div class="control-formulario " >
-               <label for="avatar">Imagen de perfil</label>
+               <label class="weight-label" for="avatar">Imagen de perfil</label>
                <input type="file" name="avatar" id="avatar" class="control" accept=".jpg ,.png" /> 
                <% if(locals.errors && errors.avatar) { %>
                 <div class="red-message-register">

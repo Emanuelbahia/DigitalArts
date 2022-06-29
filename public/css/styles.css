@@ -7,6 +7,9 @@
 
 main{
     background-image: url("../images/others/backkk.jpg");
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
  
 }
 
@@ -106,7 +109,7 @@ main{
 
 .img-cuadro {
     width: 100%;
-    box-shadow: 15px 15px 3px 5px rgb(37 36 36 / 72%);
+    box-shadow: 15px 15px 3px 5px rgb(37 36 36 / 87%);
     margin-bottom: 2vh;
 }
 
@@ -565,8 +568,8 @@ p{
 
 .contenedor-detail{
     display: flex;
-    margin-top: 4%;
-    margin-bottom: 7%;
+    padding-top: 4%;
+    padding-bottom: 7%;
 }
 
 .caja-detail-1{
@@ -580,12 +583,13 @@ p{
 
 .img-detail{
     width: 80%;
+    box-shadow: 15px 15px 3px 5px rgb(37 36 36 / 87%);
     padding-left: 5%;
 }
 
 .h2-detail{
     padding-left: 5%;
-    margin-top: 7%;
+    padding-top: 7%;
     font-size: 4vw;
 }
 
@@ -596,7 +600,7 @@ p{
 
 .caja-edit{
     width: 65%;
-    
+    padding-bottom: 10%;
 }
 
 .comprar-detail{
@@ -625,7 +629,7 @@ p{
 }
 
 .caja-detail{
-    width: 65%;
+    width: 93%;
 }
 
 .delete-detail{
@@ -634,14 +638,13 @@ p{
     border: 1px solid black;
     color: black;
     border-radius: 5px;
-    padding: 10% 6%;
+    padding: 6% 2%;
 }
 
 .contenedor-edit-delete{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     margin-top: 13%;
-    align-items: center;
 }
 
 
@@ -663,7 +666,7 @@ p{
 .h2-create{
     margin: auto;
     width: 80%;
-    margin-top: 5%;
+    padding-top: 5%;
 }
 
 .large-description{
@@ -679,10 +682,11 @@ p{
 }
 
 .save-product{
-    font-size: 2.5vw;
-    padding: 1%;
+    font-size: 3vw;
+    padding: 1% 3%;
     margin-top: 3%;
     margin-bottom: 3%;
+    background-color: #1ee3a1;
 }
 
 .remember-box{
@@ -705,9 +709,18 @@ p{
     font-weight: bold;
 }
 
+.weight-label{
+    font-weight: bold;
+    font-size: 20px;
+}
 
+.form-label{
+    font-weight: bold;
+}
 
-
+.color-link-index{
+    color: black;
+}
 
 
 
@@ -815,13 +828,16 @@ p{
        width: 80%;
     }
     .form-input{
-       font-size: 2.5vw;
+       font-size: 2vw;
     }
     .form-label{
-       font-size: 3vw;
+       font-size: 2vw;
+    }
+    .save-product{
+        font-size: 2vw;
     }
     .h2-create{
-        font-size: 4vw;
+        font-size: 3vw;
     }
     .box-register-artist{
         width: 40%;
@@ -837,6 +853,18 @@ p{
     }
     .login-box{
         width: 360px;
+    }
+    .w-100{
+        height: 25vw;
+    }
+    .caja-detail{
+        width: 140px;
+    }
+    .caja-edit{
+        width: 160px;
+    }
+    .caja-comprar{
+        width: 160px;
     }
 }
 
@@ -897,15 +925,8 @@ p{
         margin-bottom: 2.5vw;
         
     }
-    .margin-h2-login {     
-        margin-top: 3%;
-    }
     .margin-button-login {
         margin-bottom: 2vw;
-    }
-    .margin-h2-login {
-        margin-top: 3%;
-        padding-top: 1%;
     }
     .dropdown-content{
         display: block;
@@ -979,5 +1000,18 @@ p{
         flex-wrap: wrap;
     }.margin-button-register{
         padding-top: 2vw;
+    }
+    .w-100{
+        height: 33vh;
+    }
+    .form-input{
+        font-size: 1.5vw;
+    }
+    .form-label{
+        font-size: 1.5vw;
+        font-weight: bold;
+    }
+    .save-product{
+        font-size: 1.5vw;
     }
 }

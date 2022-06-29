@@ -5,19 +5,19 @@ const { ppid } = require("process");
 const port = 3000;
 const methodOverride = require("method-override");
 app.use(methodOverride("_method"));
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "../../public"));
 
-const views = path.join(__dirname, "src/views/");
-const mainRutas = require("./src/routes/main");
-const carritoRutas = require("./src/routes/carrito");
-const usersRutas = require("./src/routes/users");
-const productosRutas = require("./src/routes/productos");
+const views = path.join(__dirname, "views/");
+const mainRutas = require("./routes/main");
+const carritoRutas = require("./routes/carrito");
+const usersRutas = require("./routes/users");
+const productosRutas = require("./routes/productos");
 
 /* Recibo la informacion q viaja a traves de un formulario via POST en req.body */
 app.use(express.urlencoded({ extended: false }));
 
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "src/views"));
+app.set("views", path.join(__dirname, "views"));
 
 /* RUTAS NUEVAS */
 app.use("/", mainRutas); /*home */
