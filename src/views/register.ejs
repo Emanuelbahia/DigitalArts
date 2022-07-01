@@ -32,7 +32,7 @@
       
             <div class="control-formulario ">
                 <label class="weight-label">Correo electronico:</label>
-                <input type="email" name="email" class="control" value="<%= locals.oldData ? oldData.email : null %>">
+                <input type="email" name="email" class="control" placeholder="por ej: juan@gmail.com" value="<%= locals.oldData ? oldData.email : null %>">
                 <% if(locals.errors && errors.email) { %>
                     <div class="red-message-register">
                         <%= errors.email.msg %>

@@ -10,7 +10,7 @@ main{
     object-fit: cover;
     width: 100%;
     height: 100%;
- 
+    background-size: cover;
 }
 
 /* HEADER */
@@ -114,8 +114,8 @@ main{
 }
 
 .item{
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 h5{
@@ -214,11 +214,10 @@ h5{
     border: none;
     position: relative;
     padding: 10px 10px;
-    /*width: 50%;*/
     color: white;
     cursor: pointer;
     background: black;
-    font-size: 1rem;
+    font-size: 4vw;
     font-weight: bold;
 }
 
@@ -722,6 +721,9 @@ p{
     color: black;
 }
 
+.frase-header{
+    display: none;
+}
 
 
 /*media queries tablet*/
@@ -738,7 +740,9 @@ p{
     }
     .item{
         flex: 1 1 50%;  
-        max-width: 50%;    
+        max-width: 50%;  
+        padding-left: 12%;
+        padding-right: 12%;
     }
     .contenedor-cuadros-espatula{
         display: flex;
@@ -746,8 +750,8 @@ p{
         
     }
     .padding-bottom{
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 7%;
+        padding-right: 7%;
         display: flex;
         flex-direction: column;
         padding-bottom: 35px;
@@ -866,6 +870,9 @@ p{
     .caja-comprar{
         width: 160px;
     }
+    .boton-registro-color {
+        font-size: 80%;
+    }
 }
 
 /*media queries pc*/
@@ -933,24 +940,25 @@ p{
     }
     .contenedor-header{
         position: static;
-        height: 35vh;
-        flex-wrap: wrap;
+        display: flex;
+        height: 105px;
+        flex-wrap: nowrap;
         background: linear-gradient(90deg, rgba(203,187,187,0) 0%, rgb(222 222 235 / 23%) 51%, rgba(45,100,136,1) 100%);
     }
     .tamaño-icono-acceso {
-        font-size: 2.5vw;
-        padding-right: 3.5vw;
+        font-size: 2vw;
+        padding-right: 3vw;
     }
     .tamaño-logo {
-        width: 200px;
-        height: 150px;
+        width: 150px;
+        height: 100px;
         margin-right: 50%;       
-        margin-top: 15px;
+        
     }
     .acceso{
         padding-top: 14vh;
         background: none;
-        padding-top: 10%;
+        padding-top: 70px;
         
     }
     .navbar{
@@ -958,28 +966,44 @@ p{
         text-decoration: none;
         width: 100%;
         list-style-type: none;
-        border: 2px black solid;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #000000b8;
-        height: 7vh;
-        align-content: space-between;
+        height: 32px;
+        display: flex;   
+     }
+     .navbar ul{
+         padding: 0px;
      }
      .navbar li {
          display: inline;
-         padding: 20px 2vw;
+         padding: 10px 1vw;
         
      }
     .width-cajas-header {
-        width: 40%;
-        height: 20vh;
-        margin-bottom: 10px;
+        width: 20%;
+        height: 16vh;
+        margin-bottom: 2vw;
     }
     .tamaño-letra-menu-desplegable {
-        font-size: 1.5vw;
+        font-size: 1.2vw;
         text-decoration: none;
-        color: white;
+        font-weight: bold;
+    }
+    .colour-1{
+        color: orangered ;
+    }
+    .colour-2{
+        color: rgb(96, 232, 202) ;
+    }
+    .colour-3{
+        color:rgb(29, 29, 237) ;
+    }
+    .colour-4{
+        color:#0fb324;
+    }
+    .colour-5{
+        color:rgb(233, 58, 151) ;
+    }
+    .colour-6{
+        color:rgb(7, 236, 7) ;
     }
     .tamaño-galeria{
         height: 20vw;
@@ -998,7 +1022,8 @@ p{
     .conteiner-register{
         display: flex;
         flex-wrap: wrap;
-    }.margin-button-register{
+    }
+    .margin-button-register{
         padding-top: 2vw;
     }
     .w-100{
@@ -1014,4 +1039,24 @@ p{
     .save-product{
         font-size: 1.5vw;
     }
-}
+    .frase-header{
+        margin: auto;
+        display: block;
+        width: 97%;
+        height: 60%;
+        display: flex;
+        padding-top: 27px;
+
+    }
+    .p-frase-header{
+        font-family: 'Dancing Script', cursive;
+        font-weight: bold;
+        font-size: 2vw;
+    }
+    .tamaño-logo{
+        margin-right: 30%;
+    }
+    
+}    
+
+
