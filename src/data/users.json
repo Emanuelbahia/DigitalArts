@@ -174,5 +174,33 @@
     "email": "emanuelazcona@hotmail.com",
     "password": "$2a$10$fmUCR3rcY4oIX/xYuPPPI.1a1wPw/tq5WTn7sgmfFXbR9oNMUIU0K",
     "image": "1656092713203.jpg"
+  },
+  {
+    "firstName": "carolina",
+    "lastName": "cirillo",
+    "email": "carolinacirillo@hotmail.com",
+    "password": "$2a$10$MRoUQN/3TRMn0jV1.LAO3OjfNwmXIzisatUODHAGm6X7aBOfxTyte",
+    "image": "1656630038757.png"
+  },
+  {
+    "firstName": "carolina",
+    "lastName": "cirillo",
+    "email": "carolinacirillo@hotmail.com",
+    "password": "$2a$10$.oVYEfUyD5dDgwsU17TIk.vAJJcZMrjTZPblAZQSsnCB9RktdaNXi",
+    "image": "1656630070732.png"
+  },
+  {
+    "firstName": "carolina",
+    "lastName": "cirillo",
+    "email": "carolinacirillo@hotmail.com",
+    "password": "$2a$10$u50Na.22KEHUYRfD57eUoOXgqoIS1EIydXtjfdVbs9o03F52Skyue",
+    "image": "1656630098347.png"
+  },
+  {
+    "firstName": "carolina",
+    "lastName": "cirillo",
+    "email": "carolinacirillo@hotmail.com",
+    "password": "$2a$10$zG6YJfwgNfQGjhdytNt8rez0lnc8lDwv5y.vn28xGOWDyAV0SM026",
+    "image": "1656630479489.png"
   }
 ]
