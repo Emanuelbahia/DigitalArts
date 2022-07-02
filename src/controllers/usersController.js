@@ -1,13 +1,13 @@
 const path = require("path");
 const fs = require("fs");
 const bcryptjs = require("bcryptjs");
+const { text } = require('express');
 
 const usersFilePath = path.join(__dirname, "../data/users.json");
 const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
 
 const { validationResult } = require("express-validator");
 
-const User = require ("../../models/Users");
 
 const usersController = {
   register: function (req, res) {
@@ -26,26 +26,28 @@ const usersController = {
     }
     return 1;
   },
-
-  processRegister: function (req, res) {
+  
+    processRegister: function (req, res) {
     const resultValidation = validationResult(req);
 
     if (resultValidation.errors.length > 0) {
-      return res.render("register", {    // al poner renderizar  crashea arreglar//
+      return res.render("register", {    
         errors: resultValidation.mapped(),  
         oldData: req.body,
       });
     }
 
-    let userDB = User.findByfield('email', req.body.email);
+     //validacion por email//
+
+   /*let userDB = this.findByEmail('email', req.body.email);
 
     if (userDB) {
       return res.render("register", {
         errors: { msg: 'Email ya registrado'},
         oldData: req.body
       });
-       }
-       
+        }
+       */
     
 
     const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
@@ -66,16 +68,47 @@ const usersController = {
     return res.redirect ("/login")
    
   },
+  findByPK: function(id) {
+    const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
+    let userFound = users.find(oneUser => oneUser.id == id);
+    return userFound;
+  },
+
+  delete: function(id){
+    const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
+    let finalUsers = users.filter (oneUser => oneUser.id !== id);
+    let deleteUser = JSON.stringify(finalUsers, null, 2);
+    fs.writeFileSync(usersFilePath, deleteUser, "utf-8");
+  },
 
   login: function (req, res) {
     return res.render("login");
   },
-
-
+  /***terminar****/
   loginProcess: function (req, res) {
- //   let userLog = users.finByField('email, req.body.email')
-    return res.render("login")
-     }
-};
+    const errors = validationResult(req);
+    const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
+    if (errors.isEmpty()){
+     
+      for (let i=0; i< users.length; i++) {
+        if (users[i].email == req.body.email) {
+          if (bcryptjs.compareSync(req.body.password, users[i].password)) {
+            let usuarioLog = users [i];
+            break;
+          }
+        }
+      }
+      if (usuarioLog == undefined) {
+        return res.render ("login", {errors: { 
+          email: {msg: "Credenciales invalidas"}
+         }});
+      }
+      req.session.usuarioLogueado = usuarioLog;  /***empezar cookie */
+      res.render('Logueado!!')
+    } else {
+      return res.render ("login", {errors: errors.errors});
+    }
+ }
+    };
 
 module.exports = usersController;

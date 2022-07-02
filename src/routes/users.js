@@ -65,7 +65,10 @@ router.get("/login", usersController.login);
 
 
 //Procesar el login
-router.post("/login", validateLog, usersController.loginProcess);
+router.post("/login", [
+  body("email").isEmail().withMessage('Email inválido'),
+  body("password").isLength({min: 6}).withMessage('La contraseña es inválida')
+], usersController.loginProcess);
 
 //perfil
 //router.get('/users/:userId', usersController.profile)
