@@ -4,8 +4,16 @@ const path = require("path");
 const { ppid } = require("process");
 const port = 3000;
 const methodOverride = require("method-override");
+const session = require("express-session");
+const cookies = require("cookie-parser");
 app.use(methodOverride("_method"));
 app.use(express.static(__dirname + "../../public"));
+
+app.use(
+  session({ secret: "secreto", resave: false, saveUninitialized: false })
+);
+
+app.use(cookies());
 
 const views = path.join(__dirname, "views/");
 const mainRutas = require("./routes/main");
