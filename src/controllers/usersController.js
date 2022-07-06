@@ -42,19 +42,22 @@ const usersController = {
     }
 
     //validacion por email//
-    /*
-    let userDb = this.findByEmail("email", req.body.email);
+
+    let userDb = usersController.findByEmail("email", req.body.email); //busca si el mail ya esta en la BD
     if (userDb) {
       return res.render("register", {
-        errors: { msg: "Email ya registrado" },
+        //si el mail ya esta registrado te redirije a register, sino vas a login
+        errors: {
+          email: { msg: "Este email ya esta registrado" },
+        },
         oldData: req.body,
       });
-    }*/
+    }
 
     const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
 
     let newUser = {
-      id: this.generatedId(), //no me deja llamar a la funcion generatedId(), me da error
+      id: usersController.generatedId(), //no me deja llamar a la funcion generatedId(), me da error
       firstName: req.body.name,
       lastName: req.body.surname,
       email: req.body.email,
@@ -85,7 +88,7 @@ const usersController = {
   login: function (req, res) {
     return res.render("login");
   },
-  /***terminar****/
+  /***terminar****/ /*
   loginProcess: function (req, res) {
     const errors = validationResult(req);
     const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
@@ -105,11 +108,36 @@ const usersController = {
           },
         });
       }
-      req.session.usuarioLogueado = usuarioLog; /***empezar cookie */
+      req.session.usuarioLogueado = usuarioLog; 
       res.render("Logueado!!");
     } else {
       return res.render("login", { errors: errors.errors });
     }
+  },*/
+  loginProcess: (req, res) => {
+    let userToLogin = usersController.findByEmail("email", req.body.email); //busco por email al usuario
+    if (userToLogin) {
+      let isOkThePassword = bcryptjs.compareSync(
+        //comparo las contraseñas de cuando se registro y la de login del usuario
+        req.body.password,
+        userToLogin.password
+      );
+      if (isOkThePassword) {
+        req.session.userLogged = userToLogin;
+        return res.redirect("/"); // si esta todo bien lo redirijo al home
+      }
+      return res.render("login", {
+        errors: {
+          email: { msg: " las credenciales son invalidas" },
+        },
+      });
+    }
+    return res.render("login", {
+      //si no se encuentra el mail en la BD lo mando a login
+      errors: {
+        email: { msg: "no se encuentra el email en la base de datos" },
+      },
+    });
   },
 };
 

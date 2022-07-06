@@ -176,17 +176,19 @@
     "image": "1656092713203.jpg"
   },
   {
-    "firstName": "carolina",
-    "lastName": "cirillo",
-    "email": "carolinacirillo@hotmail.com",
-    "password": "$2a$10$MRoUQN/3TRMn0jV1.LAO3OjfNwmXIzisatUODHAGm6X7aBOfxTyte",
-    "image": "1656630038757.png"
-  },
-  {
+    "id": 22,
     "firstName": "nuevooo",
     "lastName": "otrooooo",
     "email": "emanuelazcona@hotmail.com",
-    "password": "$2a$10$gtnNTiwfOcPeO1gqctKK/eAQ8LDaXKkgPAh43OZTsG3ZyllZ6qdkq",
-    "image": "1656775161971.jpg"
+    "password": "$2a$10$Fv6BEyMP.3zD2IrKfckO2efBt2/eJU4d0QThLokXJxs8euAKN8LkK",
+    "image": "1657131702160.jpg"
+  },
+  {
+    "id": 23,
+    "firstName": "emanuel",
+    "lastName": "azcona",
+    "email": "emanuel@hotmail.com",
+    "password": "$2a$10$nMU6J9whJR9z75qdY95x/unOcjchGYViKBlaueC3Y.BJnAy/gX0.e",
+    "image": "1657132591617.jpg"
   }
 ]
