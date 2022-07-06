@@ -93,7 +93,9 @@ const usersController = {
       for (let i = 0; i < users.length; i++) {
         if (users[i].email == req.body.email) {
           if (bcryptjs.compareSync(req.body.password, users[i].password)) {
+            
             let usuarioLog = users[i];
+            return usuarioLog;
             break;
           }
         }
@@ -106,7 +108,7 @@ const usersController = {
         });
       }
       req.session.usuarioLogueado = usuarioLog; /***empezar cookie */
-      res.render("Logueado!!");
+      res.redirect("index");
     } else {
       return res.render("login", { errors: errors.errors });
     }
