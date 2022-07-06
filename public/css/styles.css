@@ -1042,7 +1042,6 @@ p{
     .frase-header{
         margin: auto;
         display: block;
-        width: 97%;
         height: 60%;
         display: flex;
         padding-top: 27px;
@@ -1055,6 +1054,11 @@ p{
     }
     .tamaño-logo{
         margin-right: 30%;
+    }
+    .contenedor-otros-cuadros{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 4vh;
     }
     
 }    
