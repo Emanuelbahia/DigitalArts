@@ -115,7 +115,8 @@ const usersController = {
     }
   },*/
   loginProcess: (req, res) => {
-    let userToLogin = usersController.findByEmail("email", req.body.email); //busco por email al usuario
+    //comparo el email q esta en la BD con el email q viene por el req.body
+    let userToLogin = usersController.findByEmail("email", req.body.email);
     if (userToLogin) {
       let isOkThePassword = bcryptjs.compareSync(
         //comparo las contraseñas de cuando se registro y la de login del usuario
@@ -127,6 +128,7 @@ const usersController = {
         return res.redirect("/"); // si esta todo bien lo redirijo al home
       }
       return res.render("login", {
+        //si las contraseñas no concuerdan redirijo a login
         errors: {
           email: { msg: " las credenciales son invalidas" },
         },
