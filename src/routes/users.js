@@ -4,6 +4,7 @@ const router = express.Router();
 const multer = require("multer");
 const path = require("path");
 const { body } = require("express-validator");
+const guestMiddleware = require ("../../middlewares/guestMiddleware");
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
@@ -38,7 +39,7 @@ const validations = [
 ];
 
 // formulario de registro
-router.get("/register", usersController.register);
+router.get("/register",guestMiddleware, usersController.register);
 
 // procesar el registro
 router.post(
@@ -61,13 +62,13 @@ body("confirmPassword")
   .withMessage("Tienes que confirmar la contraseña"),
 ]
 //formulario de login
-router.get("/login", usersController.login);
+router.get("/login",guestMiddleware, usersController.login);
 
 
 //Procesar el login
 router.post("/login",validateLog , usersController.loginProcess);
 
 //perfil
-//router.get('/users/:userId', usersController.profile)
+router.get('/users', usersController.profile)
 
 module.exports = router;

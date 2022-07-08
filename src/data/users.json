@@ -114,5 +114,13 @@
     "email": "emanuelazcona@hotmail.com",
     "password": "$2a$10$NlnK2Ly.tf/EFO/r7EB8UO3KFL.VRH4DET7vfSISc/EbsAa9YbWmi",
     "image": "1657139988366.jpg"
+  },
+  {
+    "id": 14,
+    "firstName": "carolina",
+    "lastName": "cirillo",
+    "email": "carolinacirillo@hotmail.com",
+    "password": "$2a$10$MsCElxJIVnpUD7//Wx0fTeTFMUyo8AyjOaewY1.HKZd0j0vKbTD36",
+    "image": "1657141126546.png"
   }
 ]
