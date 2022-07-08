@@ -4,6 +4,8 @@ const router = express.Router();
 const multer = require("multer");
 const path = require("path");
 const { body } = require("express-validator");
+const guestMiddleware = require("../middlewares/guestMiddleware");
+const authMiddleware = require("../middlewares/authMiddleware");
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
@@ -38,7 +40,9 @@ const validations = [
 ];
 
 // formulario de registro
-router.get("/register", usersController.register);
+
+//si esta registrado, el middleware de ruta no me deja ir al form de register, me redirige al home
+router.get("/register", guestMiddleware, usersController.register);
 
 // procesar el registro
 router.post(
@@ -50,27 +54,37 @@ router.post(
 //validacion de login
 const validateLog = [
   body("email")
-  .notEmpty()
-  .withMessage("Tienes que escribir un email")
-  .bail()
-  .isEmail()
-  .withMessage("Tienes que poner un formato de correo válido"),
-body("password").notEmpty().withMessage("Tienes que poner una contraseña"),
-body("confirmPassword")
-  .notEmpty()
-  .withMessage("Tienes que confirmar la contraseña"),
-]
+    .notEmpty()
+    .withMessage("Tienes que escribir un email")
+    .bail()
+    .isEmail()
+    .withMessage("Tienes que poner un formato de correo válido"),
+  body("password").notEmpty().withMessage("Tienes que poner una contraseña"),
+  body("confirmPassword")
+    .notEmpty()
+    .withMessage("Tienes que confirmar la contraseña"),
+];
 //formulario de login
-router.get("/login", usersController.login);
 
+//si esta registrado, el middleware de ruta no me deja ir al form de login, me redirige al home
+router.get("/login", guestMiddleware, usersController.login);
 
 //Procesar el login
-router.post("/login", [
-  body("email").isEmail().withMessage('Email inválido'),
-  body("password").isLength({min: 6}).withMessage('La contraseña es inválida')
-], usersController.loginProcess);
+router.post(
+  "/login",
+  [
+    body("email").isEmail().withMessage("Email inválido"),
+    body("password")
+      .isLength({ min: 6 })
+      .withMessage("La contraseña es inválida"),
+  ],
+  usersController.loginProcess
+);
 
 //perfil
-//router.get('/users/:userId', usersController.profile)
+router.get("/users/", authMiddleware, usersController.profile);
+
+//logout
+router.get("/logout/", usersController.logout);
 
 module.exports = router;

@@ -114,5 +114,13 @@
     "email": "emanuelazcona@hotmail.com",
     "password": "$2a$10$NlnK2Ly.tf/EFO/r7EB8UO3KFL.VRH4DET7vfSISc/EbsAa9YbWmi",
     "image": "1657139988366.jpg"
+  },
+  {
+    "id": 14,
+    "firstName": "nuevooo",
+    "lastName": "otrooooo",
+    "email": "azconaemanuel@gmail.com",
+    "password": "$2a$10$BoLLx4SEhyvoQFOyXHe60epw54b1Rn.lse8H4SBe2GDfS2uHpMFfS",
+    "image": "1657222673282.jpg"
   }
 ]

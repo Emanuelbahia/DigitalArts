@@ -5,10 +5,22 @@
   <%- include("./partials/header") %>
 
     <main>
+       <div class="conteiner-logout">
+           <H2>hola</H2>
+      
+            <% if(locals.isLogged) { %>
 
+            <p><%= locals.userLogged.name %></p>
+            <img src="/images/users/<%= locals.userLogged.avatar %>" alt="foto de perfil">
+            
+           <% } %>
+
+           <a href="/logout/"><button>Cerra sesion</button></a>
+
+      </div>
     </main>
     
-    <%- include("./partials/footer") %>
+  <%- include("./partials/footer") %>
 
 </body>
 </html>

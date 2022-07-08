@@ -88,32 +88,7 @@ const usersController = {
   login: function (req, res) {
     return res.render("login");
   },
-  /***terminar****/ /*
-  loginProcess: function (req, res) {
-    const errors = validationResult(req);
-    const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
-    if (errors.isEmpty()) {
-      for (let i = 0; i < users.length; i++) {
-        if (users[i].email == req.body.email) {
-          if (bcryptjs.compareSync(req.body.password, users[i].password)) {
-            let usuarioLog = users[i];
-            break;
-          }
-        }
-      }
-      if (usuarioLog == undefined) {
-        return res.render("login", {
-          errors: {
-            email: { msg: "Credenciales invalidas" },
-          },
-        });
-      }
-      req.session.usuarioLogueado = usuarioLog; 
-      res.render("Logueado!!");
-    } else {
-      return res.render("login", { errors: errors.errors });
-    }
-  },*/
+
   loginProcess: (req, res) => {
     //comparo el email q esta en la BD con el email q viene por el req.body
     let userToLogin = usersController.findByEmail("email", req.body.email);
@@ -125,10 +100,10 @@ const usersController = {
       );
       if (isOkThePassword) {
         req.session.userLogged = userToLogin;
-        return res.redirect("/"); // si esta todo bien lo redirijo al home
+        return res.redirect("/users"); // si esta todo bien lo redirijo a la vista de su perfil de usuario
       }
       return res.render("login", {
-        //si las contraseñas no concuerdan redirijo a login
+        //si las contraseñas no concuerdan lo mando a login
         errors: {
           email: { msg: " las credenciales son invalidas" },
         },
@@ -140,6 +115,17 @@ const usersController = {
         email: { msg: "no se encuentra el email en la base de datos" },
       },
     });
+  },
+
+  profile: (req, res) => {
+    return res.render("users", {
+      user: req.session.userLogged,
+    });
+  },
+
+  logout: (req, res) => {
+    req.session.destroy(); //borra todo lo q esta en session
+    return res.redirect("/"); //dsps redirijo a la home
   },
 };
 
