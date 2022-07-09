@@ -27,6 +27,25 @@ main{
    display: none;
 }
 
+.profile-image{
+    width: 38px;
+    height: 38px;
+    border-radius: 25px;
+}
+
+.profile-none{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2vw;
+}
+
+.conteiner-profile{
+    display: flex;
+    justify-content: flex-end;
+}
+
 .tamaño-logo{
     width: 60%;
 }
@@ -50,16 +69,15 @@ main{
 
 .acceso{
     display: flex;
-    padding-top: 10%;
-    padding-bottom: 2%;
-    justify-content: flex-end;
-    margin-left: 20px;
-    background: linear-gradient(90deg, rgb(203 187 187 / 0%) 0%, rgb(222 222 235 / 94%) 51%, rgba(45,100,136,1) 100%);
+    align-items: flex-end;
+    padding-bottom: 5%;
+    /*
+    background: linear-gradient(90deg, rgb(203 187 187 / 0%) 0%, rgb(222 222 235 / 94%) 51%, rgba(45,100,136,1) 100%);*/
 }  
 .tamaño-icono-acceso{
     font-size: 4vw;
     color: black;
-    padding-right: 5vw;
+    padding-right: 3vw;
     animation: float 5s ease-in-out infinite;
 } 
 
@@ -725,6 +743,11 @@ p{
     display: none;
 }
 
+.conteiner-logout{
+   display: flex;
+   flex-direction: column;
+}
+
 
 /*media queries tablet*/
 
@@ -802,6 +825,10 @@ p{
     }
     .contenedor-header{
         position: static;
+        display: flex;
+        
+        
+        flex-wrap: nowrap;
     }
     main{
         padding-top: 0;
@@ -873,6 +900,15 @@ p{
     .boton-registro-color {
         font-size: 80%;
     }
+    .tamaño-icono-acceso {
+        font-size: 3vw;
+        padding-right: 5vw;
+    }
+    .profile-image{
+        width: 55px;
+        height: 55px;
+        border-radius: 30px;
+    }
 }
 
 /*media queries pc*/
@@ -933,7 +969,7 @@ p{
         
     }
     .margin-button-login {
-        margin-bottom: 2vw;
+        padding-bottom: 4vw;
     }
     .dropdown-content{
         display: block;
@@ -958,7 +994,7 @@ p{
     .acceso{
         padding-top: 14vh;
         background: none;
-        padding-top: 70px;
+        padding-top: 60px;
         
     }
     .navbar{
@@ -1060,7 +1096,18 @@ p{
         justify-content: space-evenly;
         padding-top: 4vh;
     }
-    
+    .conteiner-profile {
+        display: contents;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+    .fa-user {
+        color: #ff9c07;
+    }
+    .profile-none{
+        padding-top: 22px;
+    }
 }    
 
 

@@ -1,49 +1,69 @@
 <header>
     <div class="contenedor-header">
-     <div class="posicion-menu width-cajas-header">       
+       <div class="posicion-menu width-cajas-header">       
        
-       <div class="dropdown">
-         <i class="fa-solid fa-bars posicion-menu dropbtn"></i>
-          <div class="dropdown-content">
-            <a href="/products/abstractoEspatula" class="tamaño-letra-menu-desplegable">Abstracto con espatula</a>
-            <a href="/products/abstractoPincel" class="tamaño-letra-menu-desplegable">Abstracto con pincel</a>
-            <a href="/products/fotomontaje" class="tamaño-letra-menu-desplegable">Fotomontaje</a>
-            <a href="/products/pouring" class="tamaño-letra-menu-desplegable">Pouring</a>
-            <a href="/products/cuadroDecorativo" class="tamaño-letra-menu-desplegable">Cuadros decorativos</a>
-            <a href="/products/artistasNuevos" class="tamaño-letra-menu-desplegable">Artistas nuevos</a>
-         </div>
-       </div>  
-     </div>  
-     <div class="posicion-logo width-cajas-header">
-      <img class="tamaño-logo " src="/images/logo2.png" alt="logo">
-     </div>
+         <div class="dropdown">
+           <i class="fa-solid fa-bars posicion-menu dropbtn"></i>
+             <div class="dropdown-content">
+                <a href="/products/abstractoEspatula" class="tamaño-letra-menu-desplegable">Abstracto con espatula</a>
+                <a href="/products/abstractoPincel" class="tamaño-letra-menu-desplegable">Abstracto con pincel</a>
+                <a href="/products/fotomontaje" class="tamaño-letra-menu-desplegable">Fotomontaje</a>
+                <a href="/products/pouring" class="tamaño-letra-menu-desplegable">Pouring</a>
+                <a href="/products/cuadroDecorativo" class="tamaño-letra-menu-desplegable">Cuadros decorativos</a>
+                <a href="/products/artistasNuevos" class="tamaño-letra-menu-desplegable">Artistas nuevos</a>
+             </div>
+         </div>  
+      </div>  
+      <div class="posicion-logo width-cajas-header">
+           <img class="tamaño-logo " src="/images/logo2.png" alt="logo">
+      </div>
 
-     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Lato:wght@300&display=swap');
+      <style>
+          @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Lato:wght@300&display=swap');
       </style>
-    <div class="frase-navbar">
-     <div class="frase-header">
-      <p class="p-frase-header">Sumérgete en nuestro catálogo y descubrí tu próxima obra de arte favorita...</p>
-    </div>
-    <div class="navbar">
-      <ul>
-         <li><a href="/products/abstractoEspatula" class="tamaño-letra-menu-desplegable colour-1">Espatula</a></li>
-         <li><a href="/products/abstractoPincel" class="tamaño-letra-menu-desplegable colour-2">Pincel</a></li> 
-         <li><a href="/products/fotomontaje" class="tamaño-letra-menu-desplegable colour-3">Fotomontaje</a></li>
-         <li><a href="/products/pouring" class="tamaño-letra-menu-desplegable colour-4">Pouring</a></li>
-         <li><a href="/products/cuadroDecorativo" class="tamaño-letra-menu-desplegable colour-5">Cuadros decorativos</a></li>
-         <li><a href="/products/artistasNuevos" class="tamaño-letra-menu-desplegable colour-6">Artistas nuevos</a></li>  
-      </ul>  
-    </div>  
+      <div class="frase-navbar">
+         <div class="frase-header">
+              <p class="p-frase-header">Sumérgete en nuestro catálogo y descubrí tu próxima obra de arte favorita...</p>
+         </div>
+         <div class="navbar">
+            <ul>
+              <li><a href="/products/abstractoEspatula" class="tamaño-letra-menu-desplegable colour-1">Espatula</a></li>
+              <li><a href="/products/abstractoPincel" class="tamaño-letra-menu-desplegable colour-2">Pincel</a></li> 
+              <li><a href="/products/fotomontaje" class="tamaño-letra-menu-desplegable colour-3">Fotomontaje</a></li>
+              <li><a href="/products/pouring" class="tamaño-letra-menu-desplegable colour-4">Pouring</a></li>
+              <li><a href="/products/cuadroDecorativo" class="tamaño-letra-menu-desplegable colour-5">Cuadros decorativos</a></li>
+              <li><a href="/products/artistasNuevos" class="tamaño-letra-menu-desplegable colour-6">Artistas nuevos</a></li>  
+            </ul>  
+        </div>  
 
-    </div>
+      </div>
+
+   
+      <div class="conteiner-profile width-cajas-header">
         
-     <div class="acceso width-cajas-header">     
-       <a href="../login" ><i class="fa-solid fa-user tamaño-icono-acceso"></i></a>
-       <a href="../carrito" ><i class="fa-solid fa-bag-shopping tamaño-icono-acceso"></i></a>
-       <a href="/"><i class="fa-solid fa-house tamaño-icono-acceso"></i></a>
-     </div>  
+         <div class="acceso ">
+             <a href="/"><i class="fa-solid fa-house tamaño-icono-acceso"></i></a>    
+            <a href="../carrito" ><i class="fa-solid fa-bag-shopping tamaño-icono-acceso"></i></a>  
+          </div>
+
+          <% if(locals.isLogged) { %>
+
+         <div class="profile-none  "> 
+          <a href="/users/"> <img class="profile-image" src="/images/users/1657222673282.jpg" alt="foto de perfil"> </a>
+              <p>hola <%= locals.userLogged.name %> </p>
+         </div>
+
+          <% } else { %> 
+
+         <div class="acceso ">             
+              <a href="../login" ><i class="fa-solid fa-user tamaño-icono-acceso"></i></a> 
+         </div>  
+
+          <% } %>
+
+      </div>
     
   </div>
+ 
 
    </header>     

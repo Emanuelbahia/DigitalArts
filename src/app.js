@@ -6,12 +6,16 @@ const port = 3000;
 const methodOverride = require("method-override");
 const session = require("express-session");
 const cookies = require("cookie-parser");
+const userLoggedMiddleware = require("./middlewares/userLoggedMiddleware");
+
 app.use(methodOverride("_method"));
 app.use(express.static(__dirname + "../../public"));
 
 app.use(
   session({ secret: "secreto", resave: false, saveUninitialized: false })
 );
+
+app.use(userLoggedMiddleware); //middleware de aplicacion, va dsps de la session
 
 app.use(cookies());
 

@@ -100,10 +100,16 @@ const usersController = {
       );
       if (isOkThePassword) {
         req.session.userLogged = userToLogin;
-        return res.redirect("/"); // si esta todo bien lo redirijo al home
+
+        //seteo la cookie//
+        if(req.body.remember_user != undefined){
+          res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 5})
+        }
+
+        return res.redirect("/users"); // si esta todo bien lo redirijo a la vista de su perfil de usuario
       }
       return res.render("login", {
-        //si las contraseñas no concuerdan redirijo a login
+        //si las contraseñas no concuerdan lo mando a login
         errors: {
           email: { msg: " las credenciales son invalidas" },
         },
@@ -115,6 +121,19 @@ const usersController = {
         email: { msg: "no se encuentra el email en la base de datos" },
       },
     });
+  },
+
+  profile: (req, res) => {
+    
+    return res.render("users", {
+      user: req.session.userLogged,
+    });
+  },
+
+  logout: (req, res) => {
+   /* res.clearCookie('userEmail')*/
+    req.session.destroy(); //borra todo lo q esta en session
+    return res.redirect("/"); //dsps redirijo a la home
   },
 };
 
