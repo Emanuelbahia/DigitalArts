@@ -82,6 +82,8 @@ router.post(
 );
 
 //perfil
+
+//con el middleware si no tengo a nadie en sesion y quiero entrar a /users me redirije al login
 router.get("/users/", authMiddleware, usersController.profile);
 
 //logout

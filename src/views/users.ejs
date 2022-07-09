@@ -6,17 +6,17 @@
 
     <main>
        <div class="conteiner-logout">
-           <H2>hola</H2>
       
             <% if(locals.isLogged) { %>
-
-            <p><%= locals.userLogged.name %></p>
-            <img src="/images/users/<%= locals.userLogged.avatar %>" alt="foto de perfil">
+            <!--el firstName e image es como puse el nombre y la imagen en el json de nuestra base de datos de users-->
+            <p class="user-name">Hola <%= locals.userLogged.firstName %></p>
+            <img class="image-size" src="/images/users/<%= locals.userLogged.image %>" alt="foto de perfil">
             
            <% } %>
-
-           <a href="/logout/"><button>Cerra sesion</button></a>
-
+             
+           <div class="button-logout">
+               <a href="/logout/"><button>Cerrar sesion</button></a>
+           </div>
       </div>
     </main>
     

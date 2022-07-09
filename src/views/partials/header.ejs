@@ -47,14 +47,14 @@
           </div>
 
           <% if(locals.isLogged) { %>
-
+           <!--si estoy logueado se muestra la foto y el nombre del usuario-->
          <div class="profile-none  "> 
-          <a href="/users/"> <img class="profile-image" src="/images/users/1657222673282.jpg" alt="foto de perfil"> </a>
-              <p>hola <%= locals.userLogged.name %> </p>
+          <a href="/users/"> <img class="profile-image" src="/images/users/<%= locals.userLogged.image %>" alt="foto de perfil"> </a>
+              <p> <%= locals.userLogged.firstName %> </p>
          </div>
 
           <% } else { %> 
-
+           <!--si no estoy logueado se muestra el icono del login-->
          <div class="acceso ">             
               <a href="../login" ><i class="fa-solid fa-user tamaño-icono-acceso"></i></a> 
          </div>  
