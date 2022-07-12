@@ -38,3 +38,8 @@ Semana 26/6 al 2/7
 
 -Hicimos la estructura de archivos y empezamos con las rutas y controlador.
 -Nos trabamos con las validaciones del registro y login.
+
+Semana 03/07 al 10/07
+
+-Terminamos el login y las rutas de los logueados y los que no.
+-Estamos en proceso de implementar las cookies
