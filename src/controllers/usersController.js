@@ -88,7 +88,7 @@ const usersController = {
   login: function (req, res) {
     return res.render("login");
   },
-  
+
   loginProcess: (req, res) => {
     //comparo el email q esta en la BD con el email q viene por el req.body
     let userToLogin = usersController.findByEmail("email", req.body.email);
@@ -102,8 +102,8 @@ const usersController = {
         req.session.userLogged = userToLogin;
 
         //seteo la cookie//
-        if(req.body.remember_user != undefined){
-          res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 5})
+        if (req.body.remember_user) {
+          res.cookie("userEmail", req.body.email, { maxAge: 1000 * 60 * 5 });
         }
 
         return res.redirect("/users"); // si esta todo bien lo redirijo a la vista de su perfil de usuario
@@ -124,14 +124,13 @@ const usersController = {
   },
 
   profile: (req, res) => {
-    
     return res.render("users", {
       user: req.session.userLogged,
     });
   },
 
   logout: (req, res) => {
-   /* res.clearCookie('userEmail')*/
+    res.clearCookie("userEmail"); //destruyo la cookie
     req.session.destroy(); //borra todo lo q esta en session
     return res.redirect("/"); //dsps redirijo a la home
   },
