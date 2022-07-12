@@ -43,3 +43,8 @@ Semana 03/07 al 10/07
 
 -Terminamos el login y las rutas de los logueados y los que no.
 -Estamos en proceso de implementar las cookies
+
+Semana 11/7 al 18/7
+
+-Terminamos los cookies y el sprint 5 (12/7).
+-Empezamos el sprint 6.
