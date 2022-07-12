@@ -49,8 +49,16 @@
           <% if(locals.isLogged) { %>
            <!--si estoy logueado se muestra la foto y el nombre del usuario-->
          <div class="profile-none  "> 
-          <a href="/users/"> <img class="profile-image" src="/images/users/<%= locals.userLogged.image %>" alt="foto de perfil"> </a>
-              <p> <%= locals.userLogged.firstName %> </p>
+              <a href="/users/"> <img class="profile-image" src="/images/users/<%= locals.userLogged.image %>" alt="foto de perfil"> </a>
+              
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <%= locals.userLogged.firstName %> 
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/users/">Perfil</a></li>
+                <li><a class="dropdown-item" href="/logout/">Cerrar sesion</a></li>
+              </ul>
+
          </div>
 
           <% } else { %> 
