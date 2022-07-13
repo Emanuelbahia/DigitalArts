@@ -54,3 +54,11 @@ Sprint 4:
 
 - Nos mantenemos en contacto via whatsapp casi todos los dias para mantenernos bien informado de que hizo cada uno y si subio todo al repositorio.
 - Seguimos reuniendonos por zoom todas las semanas para ver en conjunto que hizo cada uno, explicarlo y ver si modificamos algo o lo dejamos asi.
+
+Sprint 5:
+
+1. Comenzar a hacer: Buscar mas info de bases de datos en otras páginas
+2. Hacer más: Tratar de coordinar  mas reuniones semanales por zoom
+3. Continuar haciendo: seguir teniendo buena comunicación grupal por whatsapp.
+4. Hacer menos: no estresarnos y tener paciencia cuando algo no sale y recurrir a los compañeros/ profesores.
+5. Dejar de hacer: Respetar los tiempos de los compañeros para realizar el trabajo.
