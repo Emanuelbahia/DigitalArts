@@ -767,6 +767,13 @@ p{
 .user-name{
     padding: 2%;
     font-size: 2vw;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 20%;
+    animation: anim 5s infinite;
+}
+@keyframes anim {
+    from { width: 0;}
 }
 
 

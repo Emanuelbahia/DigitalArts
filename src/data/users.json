@@ -5,7 +5,6 @@
     "lastName": "King",
     "email": "stephenking@gmail.com",
     "password": "stephen1950",
-    "category": "vendedor",
     "image": ""
   },
   {
@@ -14,7 +13,6 @@
     "lastName": "Barker",
     "email": "clivebarker@gmail.com",
     "password": "soyclive1975",
-    "category": "comprador",
     "image": ""
   },
   {
@@ -23,7 +21,6 @@
     "lastName": "King",
     "email": "stephenking@gmail.com",
     "password": "stephen1950",
-    "category": "",
     "image": ""
   },
   {
@@ -32,7 +29,6 @@
     "lastName": "Barker",
     "email": "clivebarker@gmail.com",
     "password": "soyclive1975",
-    "category": "",
     "image": ""
   },
   {
@@ -41,7 +37,6 @@
     "lastName": "King",
     "email": "madonnaking@gmail.com",
     "password": "madonna1990",
-    "category": "",
     "image": ""
   },
   {
@@ -50,7 +45,6 @@
     "lastName": "Newton",
     "email": "olivenewton@gmail.com",
     "password": "soyolive1975",
-    "category": "",
     "image": ""
   },
   {
@@ -59,7 +53,6 @@
     "lastName": "King",
     "email": "soniaking@gmail.com",
     "password": "sonia1950",
-    "category": "",
     "image": ""
   },
   {
@@ -68,7 +61,6 @@
     "lastName": "Parker",
     "email": "AlanParker@gmail.com",
     "password": "soyAlan1909",
-    "category": "",
     "image": ""
   },
   {

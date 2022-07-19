@@ -458,15 +458,5 @@
     "description": "técnica abstracto con espatula",
     "material": "Bastidor macizo en madera",
     "price": 12000
-  },
-  {
-    "id": 56,
-    "category": "abstractoEspatula",
-    "name": "gdfg",
-    "image": "1655559694993.jpg",
-    "size": "40x40",
-    "description": "prueba",
-    "material": "lienzo",
-    "price": "434"
   }
 ]
