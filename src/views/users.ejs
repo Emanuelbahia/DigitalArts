@@ -7,18 +7,33 @@
  
     <main>
        <div class="conteiner-logout">
-      
+           <div class="container-users-perfil">
             <% if(locals.isLogged) { %>
             <!--el firstName e image es como puse el nombre y la imagen en el json de nuestra base de datos de users-->
             <p class="user-name">Hola <%= locals.userLogged.firstName %></p>
             <img class="image-size" src="/images/users/<%= locals.userLogged.image %>" alt="foto de perfil">
             
            <% } %>
-             
-           <div class="button-logout">
-               <a href="/logout/"><button>Cerrar sesion</button></a>
-           </div>
+          </div>
+
+          <div class="container-users-link">
+              <h3 class="title-users">Empezá a recorrer nuestras galerias:</h3>
+              <ul class="none-point">
+                <li><a href="/products/abstractoEspatula" class="tamaño-link-user colour-1">Espatula</a></li>
+                <li><a href="/products/abstractoPincel" class="tamaño-link-user colour-2">Pincel</a></li> 
+                <li><a href="/products/fotomontaje" class="tamaño-link-user colour-3">Fotomontaje</a></li>
+                <li><a href="/products/pouring" class="tamaño-link-user colour-4">Pouring</a></li>
+                <li><a href="/products/cuadroDecorativo" class="tamaño-link-user colour-5">Cuadros decorativos</a></li>
+                <li><a href="/products/artistasNuevos" class="tamaño-link-user colour-6">Artistas nuevos</a></li>  
+              </ul> 
+          </div>
       </div>
+     
+      <div class="session-perfil">
+        <a href="/logout/"><button type="button" class="btn btn-primary">Cerrar sesion</button></a>
+      </div>
+
+
     </main>
     
   <%- include("./partials/footer") %>
