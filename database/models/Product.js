@@ -1,9 +1,9 @@
 module.exports = (sequelize, dataTypes) => {
-  let alias = "Product"; //va en singular
+  let alias = "Products"; //se suele poner el nombre del modelo en plural
 
   let cols = {
     id: {
-      type: dataTypes.BIGINT(10).UNSIGNED,
+      type: dataTypes.INTEGER,
       primaryKey: true,
       allowNull: false,
       autoIncrement: true,
@@ -38,9 +38,11 @@ module.exports = (sequelize, dataTypes) => {
   };
 
   let config = {
-    tableName: "products",
+    tableName: "products", // nombre de la tabla en nuestra BD
     timestamps: false,
   };
 
   const Product = sequelize.define(alias, cols, config);
+
+  return Product;
 };
