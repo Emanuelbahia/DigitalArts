@@ -22,6 +22,8 @@ module.exports = (sequelize, dataTypes) => {
   };
 
   const Pedido = sequelize.define(alias, cols, config);
+  
 
-  return Pedido;
+
+   return Pedido;
 };

@@ -43,6 +43,34 @@ module.exports = (sequelize, dataTypes) => {
   };
 
   const Product = sequelize.define(alias, cols, config);
+  
+  Product.associate = function(models) {
+
+    // relacion producto usuarios muchos a muchos
+    Product.belongsToMany(models.Users, {
+        as: "users",
+        through: "pedidos",
+        foreingKey: "product_id",
+        otherKey: "user_id",
+        timestamps: false
+    }),
+    //relacion producto material uno a muchos
+    Product.belongsTo(models.Materials, {
+    as: "material",
+    foreingKey: "material_id"
+    }),
+     //relacion producto description uno a muchos
+    Product.belongsTo(models.Descriptions, {
+    as: "description",
+    foreingKey: "description_id"
+    }),
+     //relacion producto category uno a muchos
+    Product.belongsTo(models.categories, {
+    as: "category",
+    foreingKey: "category_id"
+    })
+
+    }
 
   return Product;
 };

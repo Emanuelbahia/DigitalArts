@@ -55,3 +55,8 @@ Semana 19/7 al 24/7
 -Hicimos el DER de nuestra base de datos.
 -Creamos los archivos de la carpeta models y la funcion que exporta cada uno de ellos.
 -Creamos el archivo structure.sql que permite crear la base de datos completa y data.sql para poblar la base de datos.
+
+Semana 25/7 al 31/7
+
+-Relaciones entre los modelos.
+-Comenzamos con el CRUD.
