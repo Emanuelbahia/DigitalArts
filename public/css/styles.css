@@ -107,24 +107,6 @@ main{
     padding-top: 17vw;
 }
 
-.estilo-h1{
-    border-radius: 10px;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    font-size: 8vw;
-    text-align: center;
-    font-weight: bold;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    background-color: #1c5454;
-    width: 90%;
-    margin: auto;
-    margin-bottom: 35px;
-    margin-top: 35px;
-    opacity: 0.9;
-    color: #f9fafb;
-}
-
 .img-cuadro {
     width: 100%;
     box-shadow: 15px 15px 3px 5px rgb(37 36 36 / 87%);
@@ -820,6 +802,46 @@ p{
     font-size: 4vw;
 }
 
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+}
+
+.wrapper h1 {
+    margin: 0; 
+    color: rgba(225, 225 , 225, 0.01);
+    background-image: url("../images/users/1657134609500.jpg");
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    animation: animate 10s ease-in-out infinite;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+h1{
+    font-size: 6vw;
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        background-position: left top;
+    }
+    25% {
+        background-position: right bottom;
+    }
+    50% {
+        background-position: left bottom;
+    }
+    75% {
+        background-position: right top;
+    }
+
+}
+
 
 /*media queries tablet*/
 
@@ -879,10 +901,7 @@ p{
         flex-direction: column;
         align-items: center;
     }
-    .estilo-h1{
-        padding-bottom: 2vh;
-        font-size: 6vw;
-    }
+    
     .tamaño-galeria{
         width: 100%;
         display: block;
@@ -898,8 +917,6 @@ p{
     .contenedor-header{
         position: static;
         display: flex;
-        
-        
         flex-wrap: nowrap;
     }
     main{
@@ -1002,8 +1019,11 @@ p{
     .user-name{
         width: 80%;
     }
+    h1 {
+        font-size: 4vw;
+    }
 
-/*media queries pc*/
+    /*media queries pc*/
 
 @media (min-width: 1024px){
     .contenedor-home{
@@ -1022,10 +1042,7 @@ p{
     .margin-bottom-h5{
         font-size: 2vw;
     }
-    .estilo-h1{
-        font-size: 4vw;
-        padding-bottom: 5vh;
-    }  
+    
     .padding-bottom{
         flex: 1 1 33%
     }
@@ -1210,6 +1227,7 @@ p{
     .tamaño-link-user{
         font-size: 2.5vw;
     }
+    
 }    
 
 
