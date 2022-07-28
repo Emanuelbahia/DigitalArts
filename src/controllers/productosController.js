@@ -52,6 +52,14 @@ const productosController = {
     return res.redirect("/");
   },
 
+  /* crear categoria de producto */
+  categoryCreate: (req, res) => {
+    return res.render("createCategory");
+  },
+  createCat: (req, res) => {
+    return res.redirect("/");
+  },
+
   /* editar producto */
   formEdit: (req, res) => {
     const cuadros = JSON.parse(fs.readFileSync(cuadrosFilePath, "utf-8"));

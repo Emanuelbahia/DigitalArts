@@ -18,7 +18,15 @@
 				<div class="contenedor-create">
 					<div class="box-create">
 						<label for="category" class="form-label">Categoría del producto:</label>
-						<input type="text" id="category" name="category"  class="form-input" value="<%= cuadrosEditar.category%>">
+						<select  name="category" class="form-input" id="category" required> 
+							<option><%= cuadrosEditar.category%></option>             
+							<option value="abstractoEspatula">abstractoEspatula</option>
+							<option value="abstractoPincel">abstractoPincel</option>
+							<option value="pouring">pouring</option>
+							<option value="fotomontaje">fotomontaje</option>
+							<option value="cuadroDecorativo">cuadroDecorativo</option>
+							<option value="artistasNuevos">artistasNuevos</option>
+						  </select>
 					</div>
 					<div class="box-create">
 						<label for="name" class="form-label">Nombre del producto:</label>
@@ -29,12 +37,24 @@
 						<input type="text" id="size" name="size"  class="form-input large-size" value="<%= cuadrosEditar.size %>"> 
 					</div>
                     <div class="box-create " >
-						<label for="description" class="form-label">Descripción:</label>
-						<input name="description" id="description" class="form-input large-description" value="<%= cuadrosEditar.description %>">
+						<label for="description" class="form-label">Descripción:</label>	
+						<select  name="description" class="form-input large-description" id="description" required>   
+							<option><%= cuadrosEditar.description %></option>           
+							<option value="técnica de acrilico con espátula">técnica de acrilico con espátula</option>
+							<option value="técnica de acrilico con pincel">técnica de acrilico con pincel</option>
+							<option value="técnica de Pouring">técnica de Pouring</option>
+							<option value="técnica de Fotomontaje">técnica de Fotomontaje</option>
+							<option value="técnica de impresión de Vinilo Mate con tintas Latex">técnica de impresión de Vinilo Mate con tintas Latex</option>
+						</select>
 					</div>
 					<div class="box-create">
 						<label for="material" class="form-label">Material:</label>
-						<input type="text" id="material" name="material"  class="form-input large-description" value="<%= cuadrosEditar.material %>">
+						<select  name="material" class="form-input large-description" id="material" required> 
+							<option><%= cuadrosEditar.material %></option>             
+							<option value="Bastidor en lienzo">Bastidor en lienzo</option>
+							<option value="Bastidor macizo en madera">Bastidor macizo en madera</option>
+							<option value="Madera">Madera</option>                 
+						</select>
 					</div>
                     <div class="box-create">
 						<label for="price" class="form-label">Precio:</label>

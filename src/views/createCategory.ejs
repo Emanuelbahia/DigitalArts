@@ -1,0 +1,27 @@
+<%- include("./partials/head") %>
+
+<body>
+
+  <%- include("./partials/header") %>
+
+   
+    <main>
+            
+        <h2 class="h2-create">Formulario de creacion de categoria de producto</h2>
+
+        <form action="/category" method="POST"  >
+            <div class="contenedor-create">
+
+                <div class="box-create">
+                    <label for="newCategory" class="form-label">Nueva categoria:</label>
+                    <input type="text" name="newCategory" class="form-input" id="newCategory">
+                </div>
+
+            </div>
+
+    </main>
+
+    <%- include("./partials/footer") %>
+
+</body>
+</html>        
