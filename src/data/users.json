@@ -122,5 +122,13 @@
     "email": "carolinacirillo@hotmail.com",
     "password": "$2a$10$MsCElxJIVnpUD7//Wx0fTeTFMUyo8AyjOaewY1.HKZd0j0vKbTD36",
     "image": "1657141126546.png"
+  },
+  {
+    "id": 15,
+    "firstName": "Franco",
+    "lastName": "Feierstein",
+    "email": "feiersteinfranco@hotmail.com",
+    "password": "$2a$10$7f4rWiyGbAw5Xk5L2LuvounpBNV8xkw.py1E0aYibUj0HgRB0NxhO",
+    "image": "1657660817886.jpg"
   }
 ]
