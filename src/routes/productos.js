@@ -18,6 +18,10 @@ const upload = multer({ storage });
 router.get("/products/create", productosController.formCreate);
 router.post("/products", upload.single("image"), productosController.create);
 
+/* ruta para crear una categoria */
+router.get("/category/create", productosController.categoryCreate);
+router.post("/category", productosController.createCat);
+
 /* ruta categoria de cuadros */
 router.get("/products/:category", productosController.cuadros);
 
