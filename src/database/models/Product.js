@@ -44,7 +44,7 @@ module.exports = (sequelize, dataTypes) => {
 
   const Product = sequelize.define(alias, cols, config);
   
-  Product.associate = function(models) {
+ /* Product.associate = function(models) {
 
     // relacion producto usuarios muchos a muchos
     Product.belongsToMany(models.Users, {
@@ -65,12 +65,12 @@ module.exports = (sequelize, dataTypes) => {
     foreingKey: "description_id"
     }),
      //relacion producto category uno a muchos
-    Product.belongsTo(models.categories, {
+    Product.belongsTo(models.Categories, {
     as: "category",
     foreingKey: "category_id"
     })
 
-    }
+    }*/
 
   return Product;
 };

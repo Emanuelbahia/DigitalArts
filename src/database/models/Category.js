@@ -19,13 +19,13 @@ module.exports = (sequelize, dataTypes) => {
 
   const Category = sequelize.define(alias, cols, config);
     //relacion categoria producto muchos  a uno
-  Category.associate = function(models){
-    Category.hasMany(models.Products, {
-      as: "products",
-      foreingKey: "category_id"
-     })
-    
-  }
+ // Category.associate = function(models){
+ //   Category.hasMany(models.Products, {
+  //    as: "products",
+  //    foreingKey: "category_id"
+  //   })
+  //  
+ // }
 
   return Category;
 };
