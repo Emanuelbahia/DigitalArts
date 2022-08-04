@@ -20,12 +20,12 @@ module.exports = (sequelize, dataTypes) => {
 
   const Material = sequelize.define(alias, cols, config);
 
- /* Material.associate = function(models) {
+  Material.associate = function(models) {
      Material.hasMany(models.Products, {
       as: "products",
       foreingKey: "material_id"
      })
-  }*/
+  }
 
   return Material;
 };

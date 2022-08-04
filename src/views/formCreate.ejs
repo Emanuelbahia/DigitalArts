@@ -9,7 +9,7 @@
 
         <h2 class="h2-create">Formulario de Carga y Creación de Productos</h2>
 
-        <form action="/products/create" method="POST" enctype="multipart/form-data" >
+        <form action="/productsDb/create" method="POST" enctype="multipart/form-data" >
         <div class="contenedor-create">
 
             <div class="box-create">
@@ -50,7 +50,7 @@
                 <select  name="material" class="form-input large-description" id="material" required>              
                     <% for (let i = 0; i < materials.length; i++)  { %>             
                         <option value="<%=materials[i].id%>">
-                            <%=materials[i].materials%> 
+                            <%=materials[i].material%> 
                         </option>
                      <%  } %>  
                 </select>

@@ -2,6 +2,7 @@ const db = require("../../database/models")
 
 
 const productosControllerDb = {
+   //traigo todas los productos
    index: (req, res) => {
       db.Products.findAll().then((products) => res.send(products));
     },
@@ -28,15 +29,16 @@ const productosControllerDb = {
  //Recibo del usuario los parametros ( name, img, size, price, descripcion, material, categoria)
   create: function (req, res) {
    //Se utiliza create para crear y viaja por post
-     db.Products.create ({
-        name: req.body.name,
-        image:req.file.filename,
-        size: req.body.size,
-        price: req.body.price,
-        description_id: req.body.description,
-        material_id: req.body.material,
-        category_id:req.body.category
-     })
+    let newProduct = {
+      name: req.body.name,
+      image:req.file.filename,
+      size: req.body.size,
+      price: req.body.price,
+      description_id: req.body.description,
+      material_id: req.body.material,
+      category_id:req.body.category
+    } 
+   db.Products.create ({newProduct})
        return res.redirect("/");
   },
   /* detalle del producto */
@@ -71,7 +73,7 @@ const productosControllerDb = {
    //Se edita el producto con los datos provenientes del formulario
   edit: (req, res) => {
    //Se utiliza update para editar 
-    db.Products.update ({
+   let editProduct = {
         name: req.body.name,
         image: req.file.filename,
         size: req.body.size,
@@ -79,7 +81,9 @@ const productosControllerDb = {
         description_id: req.body.description,
         material_id: req.body.material,
         category_id:req.body.category
-     }, {
+   }
+    db.Products.update ({editProduct}, 
+      {
         where: {
             id: req.params.id   //Se requiere el id que se quiere editar
         }

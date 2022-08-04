@@ -1,5 +1,5 @@
 module.exports = (sequelize, dataTypes) => {
-  let alias = "Users";
+  let alias = "Users"; //idem comentarios en Product.js
   let cols = {
     id: {
       type: dataTypes.INTEGER,
@@ -36,7 +36,7 @@ module.exports = (sequelize, dataTypes) => {
   const User = sequelize.define(alias, cols, config);
   
   //Relacion user con Products -muchos a muchos
- /* User.associate = function(models) {
+ User.associate = function(models) {
     User.belongsToMany(models.Products, {
      as: "products",
      through: "pedidos",
@@ -44,6 +44,6 @@ module.exports = (sequelize, dataTypes) => {
      otherKey: "product_id",
      timestamps: false
     });
-   }*/
+   }
   return User;
  }

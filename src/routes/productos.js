@@ -1,4 +1,4 @@
- const express = require("express");
+const express = require("express");
 const path = require("path");
 const productosController = require("../controllers/productosController");
 const router = express.Router();
@@ -15,7 +15,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 
 /* ruta de crear un producto */
-router.get("/products/create", productosController.formCreate);
+//router.get("/products/create", productosController.formCreate);
 router.post("/products", upload.single("image"), productosController.create);
 
 /* ruta para crear una categoria */

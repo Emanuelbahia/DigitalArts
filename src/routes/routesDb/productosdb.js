@@ -15,18 +15,18 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 
 /* ruta de crear un producto */
-router.get("/productsDb/create", productosControllerDb.formCreate);
-router.post("/productsDb", upload.single("image"), productosControllerDb.create);
+router.get("/create", productosControllerDb.formCreate);
+router.post("/", upload.single("image"), productosControllerDb.create);
 
 /* ruta detalle de producto */
-router.get("/productsDb/detail/:id", productosControllerDb.detail);
+router.get("/detail/:id", productosControllerDb.detail);
 
 /* ruta de editar un producto */
-router.get("/productsDb/edit/:id", productosControllerDb.formEdit);
-router.put("/productsDb/edit/:id", productosControllerDb.edit);
+router.get("/edit/:id", productosControllerDb.formEdit);
+router.put("/edit/:id", productosControllerDb.edit);
 
 /* ruta de eliminar un producto */
-router.delete("/productsDb/delete/:id", productosControllerDb.delete);
+router.delete("/delete/:id", productosControllerDb.delete);
 
 module.exports = router;
 
