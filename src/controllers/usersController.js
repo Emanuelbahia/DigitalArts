@@ -62,6 +62,7 @@ const usersController = {
       lastName: req.body.surname,
       email: req.body.email,
       password: bcryptjs.hashSync(req.body.password, 10),
+      esAdmin: 0, //por defecto lo pongo igual a 0 par q no sea administrador
       image: req.file.filename,
     };
     users.push(newUser);

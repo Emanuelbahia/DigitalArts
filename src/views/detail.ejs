@@ -16,8 +16,11 @@
                 <p class="p-detail"><b>Material:</b><br><%= detailProduct.material %></p>
                 <p class="p-detail"><b>Precio:</b><br>$<%= detailProduct.price %></p>
                 <div class="caja-comprar">
-                     <a href="/carrito" class="comprar-detail">COMPRAR</a>
+                     <a href="/carrito/<%= detailProduct.id %>" class="comprar-detail">COMPRAR</a>
                 </div>
+
+                <!-- si el que se loguea es administrador, puede ver los botones de editar y eliminar -->
+                    <% if (locals.userLogged.esAdmin == 1) {  %>
                 <div class="contenedor-edit-delete">
                     <div class="caja-edit">
                          <a class="edit-detail" href="/products/edit/<%= detailProduct.id %>" > EDITAR</a>
@@ -27,7 +30,10 @@
 							<button type="submit" class="delete-detail">ELIMINAR</button>
 						</form>
                     </div>
-                </div>                 
+                </div>  
+                <% } %>  
+
+                             
             </div>
        </div> 
     </main>

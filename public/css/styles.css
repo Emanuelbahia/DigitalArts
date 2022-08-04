@@ -842,6 +842,31 @@ h1{
 
 }
 
+/* carrito */
+.contenedor-carrito{
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+    padding: 2% 1%;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+.imagen-carrito{
+    width: 20%;
+}
+
+.tamaño-precio-carrito{
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.centrar-boton-carrito{
+    display: flex;
+    justify-content: center;
+}
 
 /*media queries tablet*/
 

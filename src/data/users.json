@@ -5,6 +5,7 @@
     "lastName": "King",
     "email": "stephenking@gmail.com",
     "password": "stephen1950",
+    "esAdmin": 0,
     "image": ""
   },
   {
@@ -13,6 +14,7 @@
     "lastName": "Barker",
     "email": "clivebarker@gmail.com",
     "password": "soyclive1975",
+    "esAdmin": 0,
     "image": ""
   },
   {
@@ -21,6 +23,7 @@
     "lastName": "King",
     "email": "stephenking@gmail.com",
     "password": "stephen1950",
+    "esAdmin": 0,
     "image": ""
   },
   {
@@ -29,6 +32,7 @@
     "lastName": "Barker",
     "email": "clivebarker@gmail.com",
     "password": "soyclive1975",
+    "esAdmin": 0,
     "image": ""
   },
   {
@@ -37,6 +41,7 @@
     "lastName": "King",
     "email": "madonnaking@gmail.com",
     "password": "madonna1990",
+    "esAdmin": 0,
     "image": ""
   },
   {
@@ -45,6 +50,7 @@
     "lastName": "Newton",
     "email": "olivenewton@gmail.com",
     "password": "soyolive1975",
+    "esAdmin": 0,
     "image": ""
   },
   {
@@ -53,6 +59,7 @@
     "lastName": "King",
     "email": "soniaking@gmail.com",
     "password": "sonia1950",
+    "esAdmin": 0,
     "image": ""
   },
   {
@@ -61,6 +68,7 @@
     "lastName": "Parker",
     "email": "AlanParker@gmail.com",
     "password": "soyAlan1909",
+    "esAdmin": 0,
     "image": ""
   },
   {
@@ -69,7 +77,7 @@
     "lastName": "Parodi",
     "email": "teresita_pa@gmail.com",
     "password": "soytere1975",
-    "category": "",
+    "esAdmin": 0,
     "image": ""
   },
   {
@@ -78,7 +86,7 @@
     "lastName": "Maradona",
     "email": "el_10@gmail.com",
     "password": "soyeldiego10",
-    "category": "",
+    "esAdmin": 0,
     "image": ""
   },
   {
@@ -87,7 +95,7 @@
     "lastName": "Diaz",
     "email": "anto_diaz@gmail.com",
     "password": "soyanto1975",
-    "category": "",
+    "esAdmin": 0,
     "image": ""
   },
   {
@@ -96,7 +104,7 @@
     "lastName": "Mac",
     "email": "paul_mac@gmail.com",
     "password": "paul1950",
-    "category": "",
+    "esAdmin": 0,
     "image": ""
   },
   {
@@ -105,6 +113,7 @@
     "lastName": "azcona",
     "email": "emanuelazcona@hotmail.com",
     "password": "$2a$10$NlnK2Ly.tf/EFO/r7EB8UO3KFL.VRH4DET7vfSISc/EbsAa9YbWmi",
+    "esAdmin": 1,
     "image": "1657139988366.jpg"
   },
   {
@@ -113,6 +122,16 @@
     "lastName": "cirillo",
     "email": "carolinacirillo@hotmail.com",
     "password": "$2a$10$MsCElxJIVnpUD7//Wx0fTeTFMUyo8AyjOaewY1.HKZd0j0vKbTD36",
+    "esAdmin": 1,
     "image": "1657141126546.png"
+  },
+  {
+    "id": 15,
+    "firstName": "nuevooo",
+    "lastName": "eee",
+    "email": "pepe@gmail.com",
+    "password": "$2a$10$Rmo.ixEyDZW0GJseLucqHe43rfx7hBLkyHxOPzqDOjZqgEdeHlG2m",
+    "esAdmin": 0,
+    "image": "1659126671109.jpg"
   }
 ]
