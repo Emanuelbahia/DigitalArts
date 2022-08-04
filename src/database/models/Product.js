@@ -1,9 +1,9 @@
 module.exports = (sequelize, dataTypes) => {
-  let alias = "Products"; //se suele poner el nombre del modelo en plural
-
+  let alias = "Products"; //se suele poner el nombre del modelo en plural, Asi sequalize va a llamar a la tabla
+   //detallo las columnas de la tabla product. Definimos el modelo
   let cols = {
     id: {
-      type: dataTypes.INTEGER,
+      type: dataTypes.INTEGER,//tipo de dato (datatype)
       primaryKey: true,
       allowNull: false,
       autoIncrement: true,
@@ -44,7 +44,7 @@ module.exports = (sequelize, dataTypes) => {
 
   const Product = sequelize.define(alias, cols, config);
   
-  Product.associate = function(models) {
+ Product.associate = function(models) {
 
     // relacion producto usuarios muchos a muchos
     Product.belongsToMany(models.Users, {
@@ -65,7 +65,7 @@ module.exports = (sequelize, dataTypes) => {
     foreingKey: "description_id"
     }),
      //relacion producto category uno a muchos
-    Product.belongsTo(models.categories, {
+    Product.belongsTo(models.Categories, {
     as: "category",
     foreingKey: "category_id"
     })

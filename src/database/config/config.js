@@ -1,7 +1,7 @@
 module.exports = {
   development: {
     username: "root",
-    password: "root", //cambiar contraseña
+    password: null, //cambiar contraseña
     database: "db_digital_arts", //la base de datos
     host: "127.0.0.1",
     dialect: "mysql",

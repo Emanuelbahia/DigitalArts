@@ -9,18 +9,18 @@
 
         <h2 class="h2-create">Formulario de Carga y Creación de Productos</h2>
 
-        <form action="/products" method="POST" enctype="multipart/form-data" >
+        <form action="/productsDb/create" method="POST" enctype="multipart/form-data" >
         <div class="contenedor-create">
 
             <div class="box-create">
                 <label for="" class="form-label">Elija la categoría:</label>
-                <select  name="category" class="form-input" id="" required>              
-                  <option value="abstractoEspatula">abstractoEspatula</option>
-                  <option value="abstractoPincel">abstractoPincel</option>
-                  <option value="pouring">pouring</option>
-                  <option value="fotomontaje">fotomontaje</option>
-                  <option value="cuadroDecorativo">cuadroDecorativo</option>
-                  <option value="artistasNuevos">artistasNuevos</option>
+                <select  name="category" class="form-input" id="" required> 
+                    <% for (let i = 0; i < categories.length; i++)  { %>             
+                  <option value="<%=categories[i].id%>">
+                      <%=categories[i].category  %> 
+                  </option>
+                 
+                  <%  } %>
                 </select>
             </div>
 
@@ -32,11 +32,11 @@
             <div class="box-create">
                 <label for="description" class="form-label">Descripción</label>
                 <select  name="description" class="form-input large-description" id="description" required>              
-                    <option value="técnica de acrilico con espátula">técnica de acrilico con espátula</option>
-                    <option value="técnica de acrilico con pincel">técnica de acrilico con pincel</option>
-                    <option value="técnica de Pouring">técnica de Pouring</option>
-                    <option value="técnica de Fotomontaje">técnica de Fotomontaje</option>
-                    <option value="técnica de impresión de Vinilo Mate con tintas Latex">técnica de impresión de Vinilo Mate con tintas Latex</option>
+                    <% for (let i = 0; i < descriptions.length; i++)  { %>             
+                        <option value="<%=descriptions[i].id%>">
+                            <%=descriptions[i].description %> 
+                        </option>
+                     <%  } %>
                 </select>
             </div>
              
@@ -48,9 +48,11 @@
             <div class="box-create">
                 <label for="material" class="form-label">Material:</label>
                 <select  name="material" class="form-input large-description" id="material" required>              
-                    <option value="Bastidor en lienzo">Bastidor en lienzo</option>
-                    <option value="Bastidor macizo en madera">Bastidor macizo en madera</option>
-                    <option value="Madera">Madera</option>                 
+                    <% for (let i = 0; i < materials.length; i++)  { %>             
+                        <option value="<%=materials[i].id%>">
+                            <%=materials[i].material%> 
+                        </option>
+                     <%  } %>  
                 </select>
             </div>
       
