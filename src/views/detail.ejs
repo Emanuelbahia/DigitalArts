@@ -11,9 +11,9 @@
                   <img src="/images/<%= detailProduct.image %>" class="img-detail" alt="imagen del producto">
             </div>
             <div class="caja-detail-2">
-                <p class="p-detail"><b>Descripcion:</b><br><%= detailProduct.description %></p>
+                <p class="p-detail"><b>Descripcion:</b><br><%= detailProduct.description.description %></p>
                 <p class="p-detail"><b>Dimensiones:</b><br><%= detailProduct.size %></p>
-                <p class="p-detail"><b>Material:</b><br><%= detailProduct.material %></p>
+                <p class="p-detail"><b>Material:</b><br><%= detailProduct.material.material %></p>
                 <p class="p-detail"><b>Precio:</b><br>$<%= detailProduct.price %></p>
                 <div class="caja-comprar">
                      <a href="/carrito/<%= detailProduct.id %>" class="comprar-detail">COMPRAR</a>

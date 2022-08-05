@@ -19,13 +19,12 @@ module.exports = (Sequelize, dataTypes) => {
   };
 
   const Description = Sequelize.define(alias, cols, config);
-   //relacion descripcion producto muchos  a uno
- Description.associate = function(models){
+  //relacion descripcion producto muchos  a uno
+  Description.associate = function (models) {
     Description.hasMany(models.Products, {
       as: "products",
-      foreingKey: "description_id"
-     })
-    
-  }
+      foreingKey: "description_id",
+    });
+  };
   return Description;
 };

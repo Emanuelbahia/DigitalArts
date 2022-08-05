@@ -15,9 +15,9 @@
             <div class="box-create">
                 <label for="" class="form-label">Elija la categoría:</label>
                 <select  name="category" class="form-input" id="" required> 
-                    <% for (let i = 0; i < categories.length; i++)  { %>             
-                  <option value="<%=categories[i].id%>">
-                      <%=categories[i].category  %> 
+                    <% for (let i = 0; i < cate.length; i++)  { %>             
+                  <option value="<%= cate[i].id%>">
+                      <%= cate[i].category  %> 
                   </option>
                  
                   <%  } %>
@@ -32,9 +32,9 @@
             <div class="box-create">
                 <label for="description" class="form-label">Descripción</label>
                 <select  name="description" class="form-input large-description" id="description" required>              
-                    <% for (let i = 0; i < descriptions.length; i++)  { %>             
-                        <option value="<%=descriptions[i].id%>">
-                            <%=descriptions[i].description %> 
+                    <% for (let i = 0; i < descrip.length; i++)  { %>             
+                        <option value="<%= descrip[i].id%>">
+                            <%= descrip[i].description %> 
                         </option>
                      <%  } %>
                 </select>
@@ -48,9 +48,9 @@
             <div class="box-create">
                 <label for="material" class="form-label">Material:</label>
                 <select  name="material" class="form-input large-description" id="material" required>              
-                    <% for (let i = 0; i < materials.length; i++)  { %>             
-                        <option value="<%=materials[i].id%>">
-                            <%=materials[i].material%> 
+                    <% for (let i = 0; i < mate.length; i++)  { %>             
+                        <option value="<%=mate[i].id%>">
+                            <%=mate[i].material%> 
                         </option>
                      <%  } %>  
                 </select>
