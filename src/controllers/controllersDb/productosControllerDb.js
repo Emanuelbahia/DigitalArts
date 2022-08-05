@@ -11,21 +11,23 @@ const productosControllerDb = {
    //Primero creo el formulario para que sea completado
   formCreate: function (req, res) {
    //traigo todas las categorias
-     db.Categories.findAll()
-         .then(function(categories){
-            return res.render("formCreate", {categories:categories})
-         });
+    
    //traigo todas las descripciones
-     db.Descriptions.findAll()
-         .then(function(descriptions){
-            return res.render("formCreate", {descriptions:descriptions})
-         });   
+     
    //traigo todos los materiales 
-     db.Materials.findAll()
-         .then(function(materials){
-            return res.render("formCreate", {materials:materials})
-         });    
-  },
+    let cat = db.Categories.findAll();
+    let desc = db.Descriptions.findAll();
+    let mat = db.Materials.findAll();
+
+    
+    Promise.all([cat, desc, mat])
+      .then(function([cat, desc, mat]){
+         
+         res.render("formCreate", {cat: cat, descrip: descrip, mate: mate });
+      });
+      },
+     
+
  //Recibo del usuario los parametros ( name, img, size, price, descripcion, material, categoria)
   create: function (req, res) {
    //Se utiliza create para crear y viaja por post
@@ -73,21 +75,21 @@ const productosControllerDb = {
    //Se edita el producto con los datos provenientes del formulario
   edit: (req, res) => {
    //Se utiliza update para editar 
-   let editProduct = {
-        name: req.body.name,
+    db.Products.update ({
+      name: req.body.name,
         image: req.file.filename,
         size: req.body.size,
         price: req.body.price,
         description_id: req.body.description,
         material_id: req.body.material,
         category_id:req.body.category
-   }
-    db.Products.update ({editProduct}, 
-      {
+   })
+    }, 
+      
         where: {
             id: req.params.id   //Se requiere el id que se quiere editar
-        }
-     });
+        },
+    }  
      return res.redirect(`/products/detail/${req.body.id}`);
   
   },
