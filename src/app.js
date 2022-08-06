@@ -44,7 +44,7 @@ app.use("/usersDb", userRutasDb); /* usersDb*/
 
 // ************ DON'T TOUCH FROM HERE ************
 // ************ catch 404 and forward to error handler ************
-/*app.use((req, res, next) => next(createError(404)));*/
+app.use((req, res, next) => next(createError(404)));
 
 // ************ error handler ************
 app.use((err, req, res, next) => {

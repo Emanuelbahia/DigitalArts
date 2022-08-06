@@ -8,46 +8,57 @@ const productosControllerDb = {
 
   /* crear producto */
   //Primero creo el formulario para que sea completado
-  formCreate: function (req, res) {
+  formCreate: async function (req, res) {
     //traigo todas las categorias, descripciones y materiales y las guardo en variables
-    let cat = db.Categories.findAll();
-    let desc = db.Descriptions.findAll();
-    let mat = db.Materials.findAll();
 
-    Promise.all([cat, desc, mat]).then(function ([cate, descrip, mate]) {
-      res.render("formCreate", { cate: cate, descrip: descrip, mate: mate });
+    let cat = await db.Categories.findAll();
+    let desc = await db.Descriptions.findAll();
+    let mat = await db.Materials.findAll();
+
+   Promise.all([cat, desc, mat]).then(function ([cate, descrip, mate]) {
+      res.render("formCreate", { cate, descrip, mate});
     });
   },
 
   //Recibo del usuario los parametros ( name, img, size, price, descripcion, material, categoria)
-  create: function (req, res) {
+
+  create: async function (req, res) {
     //Se utiliza create para crear y viaja por post
-    db.Products.create({
+    await db.Products.create({
       name: req.body.name,
       image: req.file.filename,
       size: req.body.size,
       price: req.body.price,
       description_id: req.body.description,
       material_id: req.body.material,
-      category_id: req.body.category,
+      category_id: req.body.category
     });
-
+//redirecciono el producto
     return res.redirect("/");
   },
+
+//listado de categoria de cuadros
+    cuadros: async function (req, res) {
+      await db.Products.findAll({include:[{association: "category"}]})
+      .then(function (categoryProducts) {
+        res.render("products", { categoryProducts: categoryProducts });
+      });
+       },
+
   /* detalle del producto */
-  detail: function (req, res) {
-    //Traigo de db el producto a detallar, con las asociaciones que se hicieron en los modelos ( ver moelos)
-    db.Products.findByPk(req.params.id, {
+  detail: async function (req, res) {
+    //Traigo de db el producto a detallar, con las asociaciones que se hicieron en los modelos
+   await db.Products.findByPk(req.params.id, {
       include: [
-        { association: "description" },
-        { association: "material" },
-        { association: "category" },
+        { association: "description"},
+        { association: "material"},
       ],
     }).then(function (detailProduct) {
-      return res.render("detail", { detailProduct: detailProduct });
+      return res.render("detail", { detailProduct});
     });
   },
   /* editar producto */
+<<<<<<< HEAD
   formEdit: (req, res) => {
     //tengo 4 pedidos asincronicos, y por eso los defino por separado
     let productUpdate = db.Products.findByPk(req.params.id);
@@ -77,10 +88,38 @@ const productosControllerDb = {
       {
         name: req.body.name,
         image: req.file.filename,
+=======
+  formEdit:  async (req, res) => {
+   //id del producto a editar
+    let cuadrosEditar =  await db.Products.findByPk(req.params.id);
+   
+    //traigo todas las categorias, descripciones y materiales y las guardo en variables
+
+   let cat = await db.Categories.findAll();
+   let desc = await db.Descriptions.findAll();
+   let mat = await db.Materials.findAll();
+  
+  //  let cuadrosEditar = cuadros.find((cuadro) => cuadro.id == id);
+  //  res.render("formEdit", { cuadrosEditar });
+    
+    Promise.all([cuadrosEditar,cat,desc,mat])
+      .then(function ([cuadrosEditar, cate, descrip, mate]) {
+      res.render("formEdit", { cuadrosEditar, cate, descrip, mate}) }
+    );
+   },
+  //Se edita el producto con los datos provenientes del formulario
+  edit: (req, res) => {
+
+   //Se utiliza update para editar 
+    db.Products.update ({
+        name: req.body.name,
+      //  image: req.file.filename,
+>>>>>>> ef27131f9ec59b233c3eeb52f095921912e9424f
         size: req.body.size,
         price: req.body.price,
         description_id: req.body.description,
         material_id: req.body.material,
+<<<<<<< HEAD
         category_id: req.body.category,
       },
 
@@ -128,6 +167,19 @@ const productosControllerDb = {
     }); */
   },
 
+=======
+        category_id:req.body.category
+   }, { 
+    
+    where: {
+            id: req.params.id   //Se requiere el id que se quiere editar
+        },
+    }); 
+      res.redirect(`/productsDb/detail/${req.body.id}`);
+   },
+ 
+  
+>>>>>>> ef27131f9ec59b233c3eeb52f095921912e9424f
   /* eliminar producto */
   delete: function (req, res) {
     //Para eliminar se utiliza el metodo destroy """"NO TE OLVIDES DEL WHERE"""""

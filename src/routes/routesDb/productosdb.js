@@ -14,21 +14,21 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage });
 
-/* ruta de crear un producto */
+/* ruta de crear un producto (Create)*/
 router.get("/create", productosControllerDb.formCreate);
 router.post("/create", upload.single("image"), productosControllerDb.create);
 
-/* ruta categoria de cuadros */
+/* ruta categoria de cuadros (Read) */ 
 router.get("/:category", productosControllerDb.cuadros);
 
 /* ruta detalle de producto */
 router.get("/detail/:id", productosControllerDb.detail);
 
-/* ruta de editar un producto */
+/* ruta de editar un producto  (Update)*/
 router.get("/edit/:id", productosControllerDb.formEdit);
 router.put("/edit/:id", productosControllerDb.edit);
 
-/* ruta de eliminar un producto */
+/* ruta de eliminar un producto  (Delete)*/
 router.delete("/delete/:id", productosControllerDb.delete);
 
 module.exports = router;
