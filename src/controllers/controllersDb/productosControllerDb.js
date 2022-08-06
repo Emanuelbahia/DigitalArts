@@ -100,9 +100,6 @@ const productosControllerDb = {
     return res.redirect(`/products/detail/${req.body.id}`);
   },
 
-  //listado de categoria de cuadros
-  cuadros: function (req, res) {},
-
   /* eliminar producto */
   delete: function (req, res) {
     //Para eliminar se utiliza el metodo destroy """"NO TE OLVIDES DEL WHERE"""""
