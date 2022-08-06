@@ -60,7 +60,7 @@ const productosControllerDb = {
   /* editar producto */
   formEdit:  async (req, res) => {
    //id del producto a editar
-    let cuadrosUpdate =  await db.Products.findByPk(req.params.id);
+    let cuadrosEditar =  await db.Products.findByPk(req.params.id);
    
     //traigo todas las categorias, descripciones y materiales y las guardo en variables
 
@@ -68,19 +68,21 @@ const productosControllerDb = {
    let desc = await db.Descriptions.findAll();
    let mat = await db.Materials.findAll();
   
+  //  let cuadrosEditar = cuadros.find((cuadro) => cuadro.id == id);
+  //  res.render("formEdit", { cuadrosEditar });
     
-    Promise.all([cuadrosUpdate,cat,desc,mat])
+    Promise.all([cuadrosEditar,cat,desc,mat])
       .then(function ([cuadrosEditar, cate, descrip, mate]) {
-      res.render("formEdit", { cuadrosEditar, cate, descrip, mate})
-    });
-  },
+      res.render("formEdit", { cuadrosEditar, cate, descrip, mate}) }
+    );
+   },
   //Se edita el producto con los datos provenientes del formulario
   edit: (req, res) => {
 
    //Se utiliza update para editar 
     db.Products.update ({
-      name: req.body.name,
-        image: req.file.filename,
+        name: req.body.name,
+      //  image: req.file.filename,
         size: req.body.size,
         price: req.body.price,
         description_id: req.body.description,
