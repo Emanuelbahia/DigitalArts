@@ -5,45 +5,27 @@
   <%- include("./partials/header") %>
 
     <main>
-      <br>
-      <div class="contenedor-detalle-carrito caja-carrito-unidad ">
-          <div class="caja-compra-cuadro">
-            <img class="cuadro-carrito" src="images/abstracto espatula 10m.jpg" alt="imagen de prueba">
+
+       <h3 class="margin-h2-login centrar-login">Carrito de compras</h3>
+
+       <% compraCuadro.forEach(cuadro => { %> 
+
+        <div class="contenedor-carrito">
+          <div >
+            <img src="/images/<%= cuadro.image %> " class="imagen-carrito">
           </div>
-          <div class="caja-precio-cuadro">
-            <p class="tamaño-precio">$10.000</p>
+          <div class="precio-carrito">
+            <p class="tamaño-precio-carrito">$<%= cuadro.price %></p>
           </div>
-      </div>
-      <br>
-      <div class="contenedor-detalle-carrito caja-carrito-unidad">
-        <div class="caja-compra-cuadro">
-          <img class="cuadro-carrito" src="images/abstracto espatula 1m.jpg" alt="imagen de prueba">
         </div>
-        <div class="caja-precio-cuadro">
-          <p class="tamaño-precio">$15.000</p>
-        </div>
+
+      <% })  %> 
+      
+      <div class="centrar-boton-carrito">
+      <button type="button" class="btn btn-primary centrar-boton-carrito">Comprar</button>
       </div>
-      <br>
-      <div class="contenedor-detalle-carrito caja-carrito-unidad">
-        <div class="caja-compra-cuadro">
-          <img class="cuadro-carrito" src="images/abstracto espatula 2m.jpg"  alt="imagen de prueba">
-        </div>
-        <div class="caja-precio-cuadro">
-          <p class="tamaño-precio">$20.000</p>
-        </div>
-      </div>
-      <br>
-      <div class="contenedor-detalle-carrito caja-total">
-          <div>
-              <p class="tamaño-letra-total">TOTAL</p>
-          </div>
-          <div class="medida-caja-precio">
-              <p>$</p>
-          </div>
-      </div>
-      <div class="icono-redes">
-        <button class="boton-compra-carrito">CONTINUAR COMPRA</button>
-      </div>
+      <br><br>
+
     </main>
     
     <%- include("./partials/footer") %>
