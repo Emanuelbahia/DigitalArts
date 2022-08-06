@@ -57,38 +57,7 @@ const productosControllerDb = {
       return res.render("detail", { detailProduct});
     });
   },
-  /* editar producto */
-<<<<<<< HEAD
-  formEdit: (req, res) => {
-    //tengo 4 pedidos asincronicos, y por eso los defino por separado
-    let productUpdate = db.Products.findByPk(req.params.id);
-    let productCategory = db.Categories.findAll();
-    let productDescription = db.Descriptions.findAll();
-    let productMaterial = db.Materials.findAll();
-
-    Promise.all([
-      productUpdate,
-      productCategory,
-      productDescription,
-      productMaterial,
-      //el then se ejecuta cuando se cumplan las 4 promesas
-    ]).then(function ([products, category, description, material]) {
-      res.render("formEdit", {
-        products: products,
-        category: category,
-        description: description,
-        material: material,
-      });
-    });
-  },
-  //Se edita el producto con los datos provenientes del formulario
-  edit: (req, res) => {
-    //Se utiliza update para editar
-    db.Products.update(
-      {
-        name: req.body.name,
-        image: req.file.filename,
-=======
+ /*Edicion del producto*/
   formEdit:  async (req, res) => {
    //id del producto a editar
     let cuadrosEditar =  await db.Products.findByPk(req.params.id);
@@ -113,13 +82,10 @@ const productosControllerDb = {
    //Se utiliza update para editar 
     db.Products.update ({
         name: req.body.name,
-      //  image: req.file.filename,
->>>>>>> ef27131f9ec59b233c3eeb52f095921912e9424f
         size: req.body.size,
         price: req.body.price,
         description_id: req.body.description,
         material_id: req.body.material,
-<<<<<<< HEAD
         category_id: req.body.category,
       },
 
@@ -131,55 +97,7 @@ const productosControllerDb = {
     return res.redirect(`/products/detail/${req.body.id}`);
   },
 
-  //listado de categoria de cuadros
-  cuadros: function (req, res) {
-    /* db.Products.findAll([
-      {
-        include: [
-          { association: "description" },
-          { association: "material" },
-          { association: "category" },
-        ],
-      },
-    ]) */
-    /*  let prod = db.Products.findAll();
-    let cat = db.Categories.findAll();
-    let desc = db.Descriptions.findAll();
-    let mat = db.Materials.findAll();
-
-    Promise.all([prod, cat, desc, mat]).then(function ([
-      productos,
-      categorias,
-      descripciones,
-      materiales,
-    ]) {
-      let category = req.params.category;
-      let categoryProducts = prod.filter((cate) => {
-        return cate.category_id == category;
-      });
-      res.render("products", {
-        categoryProducts,
-        productos: productos,
-        categorias: categorias,
-        descripciones: descripciones,
-        materiales: materiales,
-      });
-    }); */
-  },
-
-=======
-        category_id:req.body.category
-   }, { 
-    
-    where: {
-            id: req.params.id   //Se requiere el id que se quiere editar
-        },
-    }); 
-      res.redirect(`/productsDb/detail/${req.body.id}`);
-   },
- 
   
->>>>>>> ef27131f9ec59b233c3eeb52f095921912e9424f
   /* eliminar producto */
   delete: function (req, res) {
     //Para eliminar se utiliza el metodo destroy """"NO TE OLVIDES DEL WHERE"""""
