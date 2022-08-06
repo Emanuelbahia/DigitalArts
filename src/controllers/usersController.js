@@ -57,7 +57,7 @@ const usersController = {
     const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
 
     let newUser = {
-      id: usersController.generatedId(), //no me deja llamar a la funcion generatedId(), me da error
+      id: usersController.generatedId(),
       firstName: req.body.name,
       lastName: req.body.surname,
       email: req.body.email,

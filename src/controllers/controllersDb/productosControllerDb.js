@@ -49,12 +49,10 @@ const productosControllerDb = {
   },
   /* editar producto */
   formEdit: (req, res) => {
+    //tengo 4 pedidos asincronicos, y por eso los defino por separado
     let productUpdate = db.Products.findByPk(req.params.id);
-
     let productCategory = db.Categories.findAll();
-
     let productDescription = db.Descriptions.findAll();
-
     let productMaterial = db.Materials.findAll();
 
     Promise.all([
@@ -62,9 +60,10 @@ const productosControllerDb = {
       productCategory,
       productDescription,
       productMaterial,
-    ]).then(function ([cuadrosEditar, category, description, material]) {
+      //el then se ejecuta cuando se cumplan las 4 promesas
+    ]).then(function ([products, category, description, material]) {
       res.render("formEdit", {
-        cuadrosEditar: cuadrosEditar,
+        products: products,
         category: category,
         description: description,
         material: material,
@@ -74,35 +73,59 @@ const productosControllerDb = {
   //Se edita el producto con los datos provenientes del formulario
   edit: (req, res) => {
     //Se utiliza update para editar
-    let editProduct = {
-      name: req.body.name,
-      image: req.file.filename,
-      size: req.body.size,
-      price: req.body.price,
-      description_id: req.body.description,
-      material_id: req.body.material,
-      category_id: req.body.category,
-    };
     db.Products.update(
-      { editProduct },
       {
-        where: {
-          id: req.params.id, //Se requiere el id que se quiere editar
-        },
+        name: req.body.name,
+        image: req.file.filename,
+        size: req.body.size,
+        price: req.body.price,
+        description_id: req.body.description,
+        material_id: req.body.material,
+        category_id: req.body.category,
+      },
+
+      {
+        where: { id: req.params.id }, //Se requiere el id que se quiere editar
       }
     );
+
     return res.redirect(`/products/detail/${req.body.id}`);
   },
 
   //listado de categoria de cuadros
   cuadros: function (req, res) {
-    db.Products.findAll().then(function (categoria) {
+    /* db.Products.findAll([
+      {
+        include: [
+          { association: "description" },
+          { association: "material" },
+          { association: "category" },
+        ],
+      },
+    ]) */
+    /*  let prod = db.Products.findAll();
+    let cat = db.Categories.findAll();
+    let desc = db.Descriptions.findAll();
+    let mat = db.Materials.findAll();
+
+    Promise.all([prod, cat, desc, mat]).then(function ([
+      productos,
+      categorias,
+      descripciones,
+      materiales,
+    ]) {
       let category = req.params.category;
-      let categoryProducts = categoria.filter((cate) => {
-        return cate.category == category;
+      let categoryProducts = prod.filter((cate) => {
+        return cate.category_id == category;
       });
-      res.render("products", { categoryProducts });
-    });
+      res.render("products", {
+        categoryProducts,
+        productos: productos,
+        categorias: categorias,
+        descripciones: descripciones,
+        materiales: materiales,
+      });
+    }); */
   },
 
   /* eliminar producto */
