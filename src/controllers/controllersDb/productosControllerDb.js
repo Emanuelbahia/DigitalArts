@@ -39,7 +39,8 @@ const productosControllerDb = {
 
 //listado de categoria de cuadros
     cuadros: async function (req, res) {
-      await db.Products.findAll({include:[{association: "category"}]})
+      await db.Products.findAll({include:[{association: "category"},{ association: "material"},
+      { association: "category"}]})
       .then(function (categoryProducts) {
         res.render("products", { categoryProducts: categoryProducts });
       });
@@ -52,6 +53,7 @@ const productosControllerDb = {
       include: [
         { association: "description"},
         { association: "material"},
+        { association: "category"},
       ],
     }).then(function (detailProduct) {
       return res.render("detail", { detailProduct});
@@ -60,7 +62,13 @@ const productosControllerDb = {
  /*Edicion del producto*/
   formEdit:  async (req, res) => {
    //id del producto a editar
-    let cuadrosEditar =  await db.Products.findByPk(req.params.id);
+    let cuadrosEditar =  await db.Products.findByPk(req.params.id,{
+      include: [
+        { association: "description"},
+        { association: "material"},
+        { association: "category"},
+      ],
+    } );
    
     //traigo todas las categorias, descripciones y materiales y las guardo en variables
 
