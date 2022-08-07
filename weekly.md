@@ -60,3 +60,8 @@ Semana 25/7 al 31/7
 
 -Relaciones entre los modelos.
 -Comenzamos con el CRUD.
+
+Semana 1/8 al 8/8
+
+-Creamos las rutas en al app.js y en la carpeta routes/routesDb para los productos y usarios.
+-De la parte del CRUD de productos y usuarios pudimos hacer el create, en lo demas nos da error.

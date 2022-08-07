@@ -38,8 +38,8 @@ const productosControllerDb = {
   },
 
   //listado de categoria de cuadros
-  cuadros: async function (req, res) {
-    await db.Products.findAll({ include: [{ association: "category" }] }).then(
+  cuadros: function (req, res) {
+    db.Products.findAll({ include: [{ association: "category" }] }).then(
       function (categoryProducts) {
         res.render("products", { categoryProducts: categoryProducts });
       }
@@ -47,21 +47,20 @@ const productosControllerDb = {
   },
 
   /* detalle del producto */
-  detail: async function (req, res) {
+  detail: function (req, res) {
     //Traigo de db el producto a detallar, con las asociaciones que se hicieron en los modelos
-    await db.Products.findByPk(req.params.id, {
+    db.Products.findByPk(req.params.id, {
       include: [{ association: "description" }, { association: "material" }],
     }).then(function (detailProduct) {
       return res.render("detail", { detailProduct });
     });
   },
-  /* editar producto */
+  /*Edicion del producto*/
   formEdit: async (req, res) => {
     //id del producto a editar
     let cuadrosEditar = await db.Products.findByPk(req.params.id);
 
     //traigo todas las categorias, descripciones y materiales y las guardo en variables
-
     let cat = await db.Categories.findAll();
     let desc = await db.Descriptions.findAll();
     let mat = await db.Materials.findAll();
@@ -84,7 +83,6 @@ const productosControllerDb = {
     db.Products.update(
       {
         name: req.body.name,
-        //  image: req.file.filename,
         size: req.body.size,
         price: req.body.price,
         description_id: req.body.description,
