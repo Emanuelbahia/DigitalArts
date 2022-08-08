@@ -21,17 +21,11 @@ app.use(userLoggedMiddleware); //middleware de aplicacion porq el navbar esta en
 const views = path.join(__dirname, "views/");
 const mainRutas = require("./routes/main");
 const carritoRutas = require("./routes/carrito");
-<<<<<<< HEAD
-const usersRutas = require("./routes/users");
-const productosRutas = require("./routes/productos");
-const usersDbRutas = require("./routes/routesDb/usersdb")
-=======
 //const usersRutas = require("./routes/users");
 // const productosRutas = require("./routes/productos");
 
 const userRutasDb = require("./routes/routesDb/usersdb");
 const productosRutasDb = require("./routes/routesDb/productosdb");
->>>>>>> edc8818162ee0293bd35d292cf2b5966b5f942fc
 
 /* Recibo la informacion q viaja a traves de un formulario via POST en req.body */
 app.use(express.urlencoded({ extended: false }));
@@ -42,17 +36,11 @@ app.set("views", path.join(__dirname, "views"));
 /* RUTAS NUEVAS */
 app.use("/", mainRutas); /*home */
 app.use("/carrito", carritoRutas); /*carrito */
-<<<<<<< HEAD
-app.use("/", usersRutas); /* users*/
-app.use("/", productosRutas); /*productos*/
-app.use("/", usersDbRutas)
-=======
 //app.use("/", usersRutas); /* users*/
 //app.use("/", productosRutas); /*productos*/
 
 app.use("/productsDb", productosRutasDb); /*productosDb*/
 app.use("/usersDb", userRutasDb); /* usersDb*/
->>>>>>> edc8818162ee0293bd35d292cf2b5966b5f942fc
 
 // ************ DON'T TOUCH FROM HERE ************
 // ************ catch 404 and forward to error handler ************
