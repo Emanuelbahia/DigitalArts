@@ -134,6 +134,13 @@ const usersController = {
     req.session.destroy(); //borra todo lo q esta en session
     return res.redirect("/"); //dsps redirijo a la home
   },
+
+  crear: function(req, res){
+    db.Users.findAll()
+      .then(function(users){
+       return res.render("users", {users:users})
+      })
+  }
 };
 
 module.exports = usersController;
