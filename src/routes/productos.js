@@ -15,24 +15,24 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 
 /* ruta de crear un producto */
-router.get("/products/create", productosController.formCreate);
-router.post("/products", upload.single("image"), productosController.create);
+//router.get("/products/create", productosController.formCreate);
+// router.post("/products", upload.single("image"), productosController.create);
 
 /* ruta para crear una categoria */
-router.get("/category/create", productosController.categoryCreate);
-router.post("/category", productosController.createCat);
+// router.get("/category/create", productosController.categoryCreate);
+// router.post("/category", productosController.createCat);
 
 /* ruta categoria de cuadros */
-router.get("/products/:category", productosController.cuadros);
+// router.get("/products/:category", productosController.cuadros);
 
 /* ruta detalle de producto */
-router.get("/products/detail/:id", productosController.detail);
+// router.get("/products/detail/:id", productosController.detail);
 
 /* ruta de editar un producto */
-router.get("/products/edit/:id", productosController.formEdit);
-router.put("/products/edit/:id", productosController.edit);
+// router.get("/products/edit/:id", productosController.formEdit);
+// router.put("/products/edit/:id", productosController.edit);
 
 /* ruta de eliminar un producto */
-router.delete("/products/delete/:id", productosController.delete);
+// router.delete("/products/delete/:id", productosController.delete);
 
 module.exports = router;

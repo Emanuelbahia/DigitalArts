@@ -11,23 +11,29 @@
                   <img src="/images/<%= detailProduct.image %>" class="img-detail" alt="imagen del producto">
             </div>
             <div class="caja-detail-2">
-                <p class="p-detail"><b>Descripcion:</b><br><%= detailProduct.description %></p>
+                <p class="p-detail"><b>Descripcion:</b><br><%= detailProduct.description.description %></p>
                 <p class="p-detail"><b>Dimensiones:</b><br><%= detailProduct.size %></p>
-                <p class="p-detail"><b>Material:</b><br><%= detailProduct.material %></p>
+                <p class="p-detail"><b>Material:</b><br><%= detailProduct.material.material %></p>
                 <p class="p-detail"><b>Precio:</b><br>$<%= detailProduct.price %></p>
                 <div class="caja-comprar">
-                     <a href="/carrito" class="comprar-detail">COMPRAR</a>
+                     <a href="/carrito/<%= detailProduct.id %>" class="comprar-detail">COMPRAR</a>
                 </div>
+
+                <!-- si el que se loguea es administrador, puede ver los botones de editar y eliminar -->
+                    <% if (locals.userLogged.esAdmin == 1) {  %>
                 <div class="contenedor-edit-delete">
                     <div class="caja-edit">
-                         <a class="edit-detail" href="/products/edit/<%= detailProduct.id %>" > EDITAR</a>
+                         <a class="edit-detail" href="/productsDb/edit/<%= detailProduct.id %>" > EDITAR</a>
                     </div>
                     <div class="caja-detail">
-                        <form action="/products/delete/<%= detailProduct.id %>?_method=DELETE" method="POST">
+                        <form action="/productsDb/delete/<%= detailProduct.id %>?_method=DELETE" method="POST">
 							<button type="submit" class="delete-detail">ELIMINAR</button>
 						</form>
                     </div>
-                </div>                 
+                </div>  
+                <% } %>  
+
+                             
             </div>
        </div> 
     </main>

@@ -1,5 +1,5 @@
-module.expots = (sequelize, dataTypes) => {
-  let alias = "Users";
+module.exports = (sequelize, dataTypes) => {
+  let alias = "Users"; //idem comentarios en Product.js
   let cols = {
     id: {
       type: dataTypes.INTEGER,
@@ -36,7 +36,7 @@ module.expots = (sequelize, dataTypes) => {
   const User = sequelize.define(alias, cols, config);
   
   //Relacion user con Products -muchos a muchos
-  User.associate = function(models) {
+ User.associate = function(models) {
     User.belongsToMany(models.Products, {
      as: "products",
      through: "pedidos",
@@ -46,4 +46,4 @@ module.expots = (sequelize, dataTypes) => {
     });
    }
   return User;
-}
+ }

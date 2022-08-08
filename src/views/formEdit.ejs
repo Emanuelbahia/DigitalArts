@@ -14,18 +14,22 @@
 			</div>
 		</div>
 		<div>
-			<form action="/products/edit/<%= cuadrosEditar.id %>?_method=PUT" method="POST">
+			<form action="/productsDb/edit/<%= cuadrosEditar.id %>?_method=PUT" method="POST">
 				<div class="contenedor-create">
 					<div class="box-create">
 						<label for="category" class="form-label">Categoría del producto:</label>
-						<select  name="category" class="form-input" id="category" required> 
-							<option><%= cuadrosEditar.category%></option>             
-							<option value="abstractoEspatula">abstractoEspatula</option>
-							<option value="abstractoPincel">abstractoPincel</option>
-							<option value="pouring">pouring</option>
-							<option value="fotomontaje">fotomontaje</option>
-							<option value="cuadroDecorativo">cuadroDecorativo</option>
-							<option value="artistasNuevos">artistasNuevos</option>
+						<select  name="category" class="form-input" id="" required> 
+							<% for (let i = 0; i < cate.length; i++)  { %>  
+								  <%  if(cate[i].id == cuadrosEditar.category_id) { %>  
+								<option value="<%= cate[i].id%>" selected>
+									<%= cate[i].category  %> 
+								</option>
+							    <%  } else {  %> 
+								<option value="<%= cate[i].id%>">
+								    <%= cate[i].category  %> 
+								</option>
+								<%  } %> 
+								<%  } %>
 						  </select>
 					</div>
 					<div class="box-create">
@@ -38,22 +42,34 @@
 					</div>
                     <div class="box-create " >
 						<label for="description" class="form-label">Descripción:</label>	
-						<select  name="description" class="form-input large-description" id="description" required>   
-							<option><%= cuadrosEditar.description %></option>           
-							<option value="técnica de acrilico con espátula">técnica de acrilico con espátula</option>
-							<option value="técnica de acrilico con pincel">técnica de acrilico con pincel</option>
-							<option value="técnica de Pouring">técnica de Pouring</option>
-							<option value="técnica de Fotomontaje">técnica de Fotomontaje</option>
-							<option value="técnica de impresión de Vinilo Mate con tintas Latex">técnica de impresión de Vinilo Mate con tintas Latex</option>
+						<select  name="description" class="form-input large-description" id="description" required>              
+							<% for (let i = 0; i < descrip.length; i++)  { %>  
+								<%  if(descrip[i].id == cuadrosEditar.description_id) { %>           
+								<option value="<%= descrip[i].id%>" selected>
+									<%= descrip[i].description  %> 
+								</option>
+							    <%  } else {  %> 
+								<option value="<%= descrip[i].id%>">
+								    <%= descrip[i].description  %> 
+								</option>
+								<%  } %>
+								<%  } %>
 						</select>
 					</div>
 					<div class="box-create">
 						<label for="material" class="form-label">Material:</label>
-						<select  name="material" class="form-input large-description" id="material" required> 
-							<option><%= cuadrosEditar.material %></option>             
-							<option value="Bastidor en lienzo">Bastidor en lienzo</option>
-							<option value="Bastidor macizo en madera">Bastidor macizo en madera</option>
-							<option value="Madera">Madera</option>                 
+						<select  name="material" class="form-input large-description" id="material" required>              
+							<% for (let i = 0; i < mate.length; i++)  { %>  
+								<%  if(mate[i].id == cuadrosEditar.material_id) { %>           
+								<option value="<%= mate[i].id%>" selected>
+									<%= mate[i].material  %> 
+								</option>
+							    <%  } else {  %> 
+								<option value="<%= mate[i].id%>">
+								    <%= mate[i].material  %> 
+								</option>
+								<%  } %>
+								<%  } %>
 						</select>
 					</div>
                     <div class="box-create">

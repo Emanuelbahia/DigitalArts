@@ -57,11 +57,12 @@ const usersController = {
     const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
 
     let newUser = {
-      id: usersController.generatedId(), //no me deja llamar a la funcion generatedId(), me da error
+      id: usersController.generatedId(),
       firstName: req.body.name,
       lastName: req.body.surname,
       email: req.body.email,
       password: bcryptjs.hashSync(req.body.password, 10),
+      esAdmin: 0, //por defecto lo pongo igual a 0 par q no sea administrador
       image: req.file.filename,
     };
     users.push(newUser);
