@@ -16,7 +16,7 @@ app.use(
 );
 app.use(cookies());
 
-app.use(userLoggedMiddleware); //middleware de aplicacion porq el navbar esta en todas las vistas, va dsps de la session
+// app.use(userLoggedMiddleware); //middleware de aplicacion porq el navbar esta en todas las vistas, va dsps de la session
 
 const views = path.join(__dirname, "views/");
 const mainRutas = require("./routes/main");

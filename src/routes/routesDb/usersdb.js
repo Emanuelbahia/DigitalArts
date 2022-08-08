@@ -67,26 +67,26 @@ const validateLog = [
 //formulario de login
 
 //si esta registrado, el middleware de ruta no me deja ir al form de login, me redirige al home
-router.get("/login", guestMiddleware, usersControllerDb.login);
+// router.get("/login", guestMiddleware, usersControllerDb.login);
 
-//Procesar el login
-router.post(
-  "/login",
-  [
-    body("email").isEmail().withMessage("Email inválido"),
-    body("password")
-      .isLength({ min: 6 })
-      .withMessage("La contraseña es inválida"),
-  ],
-  usersControllerDb.loginProcess
-);
+// //Procesar el login
+// router.post(
+//   "/login",
+//   [
+//     body("email").isEmail().withMessage("Email inválido"),
+//     body("password")
+//       .isLength({ min: 6 })
+//       .withMessage("La contraseña es inválida"),
+//   ],
+//   usersControllerDb.loginProcess
+// );
 
-//perfil
+// //perfil
 
-//con el middleware si no tengo a nadie en sesion y quiero entrar a /users me redirije al login
-router.get("/users/", authMiddleware, usersControllerDb.profile);
+// //con el middleware si no tengo a nadie en sesion y quiero entrar a /users me redirije al login
+// router.get("/users/", authMiddleware, usersControllerDb.profile);
 
-//logout
-router.get("/logout/", usersControllerDb.logout);
+// //logout
+// router.get("/logout/", usersControllerDb.logout);
 
 module.exports = router;
