@@ -1,4 +1,4 @@
-/* const usersControllerDb = require("../controllers/controllersDb/usersControllersDb");
+const usersControllerDb = require("../controllers/controllersDb/usersControllersDb");
 
 //middleware de aplicacion para mostrar una navbar cuando estoy logueado y otra cuando no!
 
@@ -7,7 +7,7 @@ function userLoggedMiddleware(req, res, next) {
 
   //cookie//
   let emailInCookie = req.cookies.userEmail;
-  let userFromCookie = usersControllerDb.findByEmail("email", emailInCookie);
+  let userFromCookie = usersControllerDb.findByField("email", emailInCookie);
 
   if (userFromCookie) {
     req.session.userLogged = userFromCookie;
@@ -21,4 +21,3 @@ function userLoggedMiddleware(req, res, next) {
 }
 
 module.exports = userLoggedMiddleware;
- */
