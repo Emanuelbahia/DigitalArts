@@ -20,7 +20,7 @@
 						<label for="category" class="form-label">Categoría del producto:</label>
 						<select  name="category" class="form-input" id="" required> 
 							<% for (let i = 0; i < cate.length; i++)  { %>  
-								<%  if(cate[i].id == cuadrosEditar.category_id) { %>           
+								  <%  if(cate[i].id == cuadrosEditar.category_id) { %>  
 								<option value="<%= cate[i].id%>" selected>
 									<%= cate[i].category  %> 
 								</option>
@@ -28,7 +28,7 @@
 								<option value="<%= cate[i].id%>">
 								    <%= cate[i].category  %> 
 								</option>
-								<%  } %>
+								<%  } %> 
 								<%  } %>
 						  </select>
 					</div>

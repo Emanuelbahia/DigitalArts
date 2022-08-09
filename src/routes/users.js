@@ -42,51 +42,51 @@ const validations = [
 // formulario de registro
 
 //si esta registrado, el middleware de ruta no me deja ir al form de register, me redirige al home
-router.get("/register", guestMiddleware, usersController.register);
+// router.get("/register", guestMiddleware, usersController.register);
 
-// procesar el registro
-router.post(
-  "/register",
-  upload.single("avatar"),
-  validations,
-  usersController.processRegister
-);
-//validacion de login
-const validateLog = [
-  body("email")
-    .notEmpty()
-    .withMessage("Tienes que escribir un email")
-    .bail()
-    .isEmail()
-    .withMessage("Tienes que poner un formato de correo válido"),
-  body("password").notEmpty().withMessage("Tienes que poner una contraseña"),
-  body("confirmPassword")
-    .notEmpty()
-    .withMessage("Tienes que confirmar la contraseña"),
-];
-//formulario de login
+// // procesar el registro
+// router.post(
+//   "/register",
+//   upload.single("avatar"),
+//   validations,
+//   usersController.processRegister
+// );
+// //validacion de login
+// const validateLog = [
+//   body("email")
+//     .notEmpty()
+//     .withMessage("Tienes que escribir un email")
+//     .bail()
+//     .isEmail()
+//     .withMessage("Tienes que poner un formato de correo válido"),
+//   body("password").notEmpty().withMessage("Tienes que poner una contraseña"),
+//   body("confirmPassword")
+//     .notEmpty()
+//     .withMessage("Tienes que confirmar la contraseña"),
+// ];
+// //formulario de login
 
-//si esta registrado, el middleware de ruta no me deja ir al form de login, me redirige al home
-router.get("/login", guestMiddleware, usersController.login);
+// //si esta registrado, el middleware de ruta no me deja ir al form de login, me redirige al home
+// router.get("/login", guestMiddleware, usersController.login);
 
-//Procesar el login
-router.post(
-  "/login",
-  [
-    body("email").isEmail().withMessage("Email inválido"),
-    body("password")
-      .isLength({ min: 6 })
-      .withMessage("La contraseña es inválida"),
-  ],
-  usersController.loginProcess
-);
+// //Procesar el login
+// router.post(
+//   "/login",
+//   [
+//     body("email").isEmail().withMessage("Email inválido"),
+//     body("password")
+//       .isLength({ min: 6 })
+//       .withMessage("La contraseña es inválida"),
+//   ],
+//   usersController.loginProcess
+// );
 
-//perfil
+// //perfil
 
-//con el middleware si no tengo a nadie en sesion y quiero entrar a /users me redirije al login
-router.get("/users/", authMiddleware, usersController.profile);
+// //con el middleware si no tengo a nadie en sesion y quiero entrar a /users me redirije al login
+// router.get("/users/", authMiddleware, usersController.profile);
 
-//logout
-router.get("/logout/", usersController.logout);
+// //logout
+// router.get("/logout/", usersController.logout);
 
 module.exports = router;
