@@ -38,17 +38,20 @@ const productosControllerDb = {
   },
 
   //listado de categoria de cuadros
-  cuadros: function (req, res) {
+  cuadros: async function (req, res) {
     // return res.send(req.params.category);
+    let categoria = await db.Categories.findOne({
+      where: { category: req.params.category },
+    });
     db.Products.findAll({
+      where: { category_id: categoria.id },
+
       include: [
         { association: "category" },
         { association: "material" },
         { association: "description" },
       ],
     }).then(function (categoryProducts) {
-      // return res.send(categoryProducts);
-
       res.render("products", {
         categoryProducts: categoryProducts,
       });

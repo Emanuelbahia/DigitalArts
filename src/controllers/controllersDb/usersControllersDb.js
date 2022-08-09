@@ -35,11 +35,13 @@ const usersControllerDb = {
   },
 
   findByEmail: function (email, text) {
-    let allUsers = db.Users.findAll().then((all) => {
-      let userFound = allUsers.find((oneUser) => oneUser[email] === text);
-
-      return userFound;
-    });
+    let userFound = db.Users.findOne({ where: { email: email } }).then(
+      (user) => {
+        if (user) {
+          return userFound;
+        }
+      }
+    );
   },
 
   login: function (req, res) {

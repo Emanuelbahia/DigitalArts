@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 19-07-2022 a las 19:57:24
+-- Tiempo de generación: 09-08-2022 a las 18:13:33
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -96,7 +96,8 @@ CREATE TABLE `users` (
   `lastName` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
   `password` varchar(100) NOT NULL,
-  `image` varchar(50) NOT NULL
+  `image` varchar(50) NOT NULL,
+  `isAdmin` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -107,19 +108,22 @@ CREATE TABLE `users` (
 -- Indices de la tabla `category_products`
 --
 ALTER TABLE `category_products`
-  ADD PRIMARY KEY (`ID`);
+  ADD PRIMARY KEY (`ID`),
+  ADD KEY `category` (`category`);
 
 --
 -- Indices de la tabla `description_products`
 --
 ALTER TABLE `description_products`
-  ADD PRIMARY KEY (`ID`);
+  ADD PRIMARY KEY (`ID`),
+  ADD KEY `description` (`description`);
 
 --
 -- Indices de la tabla `material_products`
 --
 ALTER TABLE `material_products`
-  ADD PRIMARY KEY (`ID`);
+  ADD PRIMARY KEY (`ID`),
+  ADD KEY `material` (`material`);
 
 --
 -- Indices de la tabla `pedidos`
@@ -136,7 +140,8 @@ ALTER TABLE `products`
   ADD PRIMARY KEY (`ID`),
   ADD KEY `category_id` (`category_id`),
   ADD KEY `description_id` (`description_id`),
-  ADD KEY `material_id` (`material_id`);
+  ADD KEY `material_id` (`material_id`),
+  ADD KEY `vendido_id` (`vendido_id`);
 
 --
 -- Indices de la tabla `users`
