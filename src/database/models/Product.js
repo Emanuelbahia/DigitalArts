@@ -50,24 +50,24 @@ module.exports = (sequelize, dataTypes) => {
     Product.belongsToMany(models.Users, {
         as: "users",
         through: "pedidos",
-        foreingKey: "product_id",
+        foreignKey: "product_id",
         otherKey: "user_id",
         timestamps: false
     }),
     //relacion producto material uno a muchos
     Product.belongsTo(models.Materials, {
     as: "material",
-    foreingKey: "material_id"
+    foreignKey: "material_id"
     }),
      //relacion producto description uno a muchos
     Product.belongsTo(models.Descriptions, {
     as: "description",
-    foreingKey: "description_id"
+    foreignKey: "description_id"
     }),
      //relacion producto category uno a muchos
     Product.belongsTo(models.Categories, {
     as: "category",
-    foreingKey: "category_id"
+    foreignKey: "category_id"
     })
 
     }

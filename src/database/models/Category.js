@@ -22,7 +22,7 @@ module.exports = (sequelize, dataTypes) => {
   Category.associate = function(models){
    Category.hasMany(models.Products, {
      as: "products",
-     foreingKey: "category_id"
+     foreignKey: "category_id"
   })
     
  }
