@@ -404,6 +404,7 @@ h5{
 
 .contenedor-cuadros-espatula{
     padding-top: 50px;
+    
 }
 
 .caja-detalle-cuadro{
@@ -1157,7 +1158,7 @@ h1{
         padding-right: 4%;
         width: 25%;
         flex: 1 1 25%;
-        max-width: 28%;
+        max-width: 34%;
     }
     .margin-bottom-h5{
         font-size: 2vw;

@@ -34,14 +34,13 @@ const usersControllerDb = {
     return res.redirect("/");
   },
 
-  findByEmail: function (email, text) {
-    let userFound = db.Users.findOne({ where: { email: email } }).then(
-      (user) => {
-        if (user) {
-          return userFound;
-        }
+  findByField: async function (field, text) {
+    await db.Users.findOne({ where: { email: text } }).then((userFound) => {
+      if (userFound) {
+        // console.log(userFound.dataValues.email);
+        return userFound.dataValues.email;
       }
-    );
+    });
   },
 
   login: function (req, res) {
@@ -50,13 +49,16 @@ const usersControllerDb = {
 
   loginProcess: (req, res) => {
     //comparo el email q esta en la BD con el email q viene por el req.body
-    let userToLogin = usersControllerDb.findByEmail("email", req.body.email);
+    let userToLogin = usersControllerDb.findByField("email", req.body.email);
+    // console.log(req.body.email);
+    // return res.send(userToLogin);
     if (userToLogin) {
       let isOkThePassword = bcryptjs.compareSync(
-        //comparo las contraseñas de cuando se registro y la de login del usuario
+        //compauserToLoginro las contraseñas de cuando se registro y la de login del usuario
         req.body.password,
         userToLogin.password
       );
+
       if (isOkThePassword) {
         req.session.userLogged = userToLogin;
 
@@ -67,6 +69,7 @@ const usersControllerDb = {
 
         return res.redirect("/usersDb/users"); // si esta todo bien lo redirijo a la vista de su perfil de usuario
       }
+
       return res.render("login", {
         //si las contraseñas no concuerdan lo mando a login
         errors: {
@@ -74,6 +77,7 @@ const usersControllerDb = {
         },
       });
     }
+
     return res.render("login", {
       //si no se encuentra el mail en la BD lo mando a login
       errors: {
@@ -83,7 +87,7 @@ const usersControllerDb = {
   },
 
   profile: (req, res) => {
-    return res.render("users", {
+    return res.render("profile", {
       user: req.session.userLogged,
     });
   },
