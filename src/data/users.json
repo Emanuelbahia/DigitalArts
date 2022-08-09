@@ -127,19 +127,10 @@
   },
   {
     "id": 15,
-<<<<<<< HEAD
     "firstName": "Franco",
     "lastName": "Feierstein",
     "email": "feiersteinfranco@hotmail.com",
     "password": "$2a$10$7f4rWiyGbAw5Xk5L2LuvounpBNV8xkw.py1E0aYibUj0HgRB0NxhO",
     "image": "1657660817886.jpg"
-=======
-    "firstName": "nuevooo",
-    "lastName": "eee",
-    "email": "pepe@gmail.com",
-    "password": "$2a$10$Rmo.ixEyDZW0GJseLucqHe43rfx7hBLkyHxOPzqDOjZqgEdeHlG2m",
-    "esAdmin": 0,
-    "image": "1659126671109.jpg"
->>>>>>> edc8818162ee0293bd35d292cf2b5966b5f942fc
   }
 ]

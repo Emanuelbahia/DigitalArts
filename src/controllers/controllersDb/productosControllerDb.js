@@ -38,15 +38,20 @@ const productosControllerDb = {
   },
 
   //listado de categoria de cuadros
-  cuadros: async function (req, res) {
-    await db.Products.findAll({
+  cuadros: function (req, res) {
+    // return res.send(req.params.category);
+    db.Products.findAll({
       include: [
         { association: "category" },
         { association: "material" },
-        { association: "category" },
+        { association: "description" },
       ],
     }).then(function (categoryProducts) {
-      res.render("products", { categoryProducts: categoryProducts });
+      // return res.send(categoryProducts);
+
+      res.render("products", {
+        categoryProducts: categoryProducts,
+      });
     });
   },
 
@@ -73,8 +78,6 @@ const productosControllerDb = {
         { association: "category" },
       ],
     });
-
-    //traigo todas las categorias, descripciones y materiales y las guardo en variables
 
     //traigo todas las categorias, descripciones y materiales y las guardo en variables
     let cat = await db.Categories.findAll();
@@ -111,7 +114,7 @@ const productosControllerDb = {
       }
     );
 
-    return res.redirect(`/products/detail/${req.body.id}`);
+    return res.redirect("/productsDb/detail/" + req.params.id);
   },
 
   /* eliminar producto */

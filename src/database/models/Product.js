@@ -1,9 +1,9 @@
 module.exports = (sequelize, dataTypes) => {
   let alias = "Products"; //se suele poner el nombre del modelo en plural, Asi sequalize va a llamar a la tabla
-   //detallo las columnas de la tabla product. Definimos el modelo
+  //detallo las columnas de la tabla product. Definimos el modelo
   let cols = {
     id: {
-      type: dataTypes.INTEGER,//tipo de dato (datatype)
+      type: dataTypes.INTEGER, //tipo de dato (datatype)
       primaryKey: true,
       allowNull: false,
       autoIncrement: true,
@@ -43,34 +43,32 @@ module.exports = (sequelize, dataTypes) => {
   };
 
   const Product = sequelize.define(alias, cols, config);
-  
- Product.associate = function(models) {
 
+  Product.associate = function (models) {
     // relacion producto usuarios muchos a muchos
     Product.belongsToMany(models.Users, {
-        as: "users",
-        through: "pedidos",
-        foreingKey: "product_id",
-        otherKey: "user_id",
-        timestamps: false
+      as: "users",
+      through: "pedidos",
+      foreignKey: "product_id",
+      otherKey: "user_id",
+      timestamps: false,
     }),
-    //relacion producto material uno a muchos
-    Product.belongsTo(models.Materials, {
-    as: "material",
-    foreingKey: "material_id"
-    }),
-     //relacion producto description uno a muchos
-    Product.belongsTo(models.Descriptions, {
-    as: "description",
-    foreingKey: "description_id"
-    }),
-     //relacion producto category uno a muchos
-    Product.belongsTo(models.Categories, {
-    as: "category",
-    foreingKey: "category_id"
-    })
-
-    }
+      //relacion producto material uno a muchos
+      Product.belongsTo(models.Materials, {
+        as: "material",
+        foreignKey: "material_id",
+      }),
+      //relacion producto description uno a muchos
+      Product.belongsTo(models.Descriptions, {
+        as: "description",
+        foreignKey: "description_id",
+      }),
+      //relacion producto category uno a muchos
+      Product.belongsTo(models.Categories, {
+        as: "category",
+        foreignKey: "category_id",
+      });
+  };
 
   return Product;
 };

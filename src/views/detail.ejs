@@ -19,21 +19,17 @@
                      <a href="/carrito/<%= detailProduct.id %>" class="comprar-detail">COMPRAR</a>
                 </div>
 
-                <!-- si el que se loguea es administrador, puede ver los botones de editar y eliminar -->
-                    <% if (locals.userLogged.esAdmin == 1) {  %>
                 <div class="contenedor-edit-delete">
                     <div class="caja-edit">
                          <a class="edit-detail" href="/productsDb/edit/<%= detailProduct.id %>" > EDITAR</a>
                     </div>
                     <div class="caja-detail">
                         <form action="/productsDb/delete/<%= detailProduct.id %>?_method=DELETE" method="POST">
-							<button type="submit" class="delete-detail">ELIMINAR</button>
-						</form>
+                            <button type="submit" class="delete-detail">ELIMINAR</button>
+                        </form>
                     </div>
                 </div>  
-                <% } %>  
-
-                             
+                
             </div>
        </div> 
     </main>
