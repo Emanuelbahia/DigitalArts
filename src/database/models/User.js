@@ -23,10 +23,11 @@ module.exports = (sequelize, dataTypes) => {
       type: dataTypes.STRING,
       allowNull: false,
     },
-    image: {
-      type: dataTypes.STRING,
-      allowNull: false,
-    },
+   // isAdmin: {
+   //   type: dataTypes.INTEGER,
+    //  allowNull: false,
+   // },
+    
   };
   let config = {
     tableName: "users",
@@ -38,7 +39,7 @@ module.exports = (sequelize, dataTypes) => {
   //Relacion user con Products -muchos a muchos
   User.associate = function (models) {
     User.belongsToMany(models.Products, {
-     as: "products",
+     as: "manyproducts",
      through: "pedidos",
      foreignKey: "user_id",
      otherKey: "product_id",

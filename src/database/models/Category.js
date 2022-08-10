@@ -18,7 +18,6 @@ module.exports = (sequelize, dataTypes) => {
   };
 
   const Category = sequelize.define(alias, cols, config);
-<<<<<<< HEAD
     //relacion categoria producto muchos  a uno ( una categoria tiene muchos productos)
   Category.associate = function(models){
    Category.hasMany(models.Products, {

@@ -13,7 +13,7 @@
               
             <div class="control-formulario ">
                 <label class="weight-label">Nombre:</label>
-                <input type="text" name="name" class="control" value="<%= locals.oldData ? oldData.name : null %>">
+                <input type="text" name="name" class="control" value="<%= locals.oldData ? oldData.name : null %>" autofocus>
                 <% if(locals.errors && errors.name) { %>
                     <div class="red-message-register">
                         <%= errors.name.msg %>

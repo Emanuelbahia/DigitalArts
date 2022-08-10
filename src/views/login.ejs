@@ -10,7 +10,7 @@
       <div class="centrar-login">
         <div class="login-box">
            <label class="weight-label">Email:</label>
-           <input type="email" name="email" class="control" value="<%= locals.oldData ? oldData.email : null %>">
+           <input type="email" name="email" class="control" value="<%= locals.oldData ? oldData.email : null %>" autofocus>
            <% if(locals.errors && errors.email) { %>
             <div class="red-message-register">
                 <%= errors.email.msg %>
