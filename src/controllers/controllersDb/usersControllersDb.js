@@ -33,26 +33,37 @@ const usersControllerDb = {
 
     return res.redirect("/");
   },
- 
+
   login: function (req, res) {
     return res.render("login");
   },
 
-  loginProcess: (req, res) => {
-       let mailLogin = req.body.email
-       db.Users.findOne({where: {email: mailLogin}})
-       .then(userToLogin => {
-    
+  loginProcess: async (req, res) => {
+    //el mail q viene por el body lo busco en la base de datos
+    let bodyEmail = req.body.email;
+    let userToLogin = await db.Users.findOne({
+      where: { email: bodyEmail },
+    }).then((email) => {
+      return email.email;
+    });
+    // si el mail esta, sigo con el proceso comparando la contraseña q pone con la q esta en la base de datos
+    if (userToLogin) {
+      //busco al usario a traves de su email, y de ahi obtengo su contraseña
+      let userPassword = await db.Users.findOne({
+        where: { email: bodyEmail },
+      }).then((email) => {
+        return email.password;
+      });
       let isOkThePassword = bcryptjs.compareSync(
-            //compauserToLoginro las contraseñas de cuando se registro y la de login del usuario
-            req.body.password,
-            userToLogin.password
-          );
-    
-        if (isOkThePassword) {
-            req.session.userLogged = userToLogin;
-    
-            //seteo la cookie//
+        //comparo las contraseñas de cuando se registro y la de login del usuario
+        req.body.password,
+        userPassword
+      );
+
+      if (isOkThePassword) {
+        req.session.userLogged = userToLogin;
+
+        //seteo la cookie//
         if (req.body.remember_user) {
               res.cookie("userEmail", req.body.email, { maxAge: 1000 * 60 * 5 });
             }
@@ -66,15 +77,8 @@ const usersControllerDb = {
               email: { msg: " las credenciales son invalidas" },
             },
           });
-        })
-
-        return res.render("login", {
-          //si no se encuentra el mail en la BD lo mando a login
-          errors: {
-            email: { msg: "no se encuentra el email en la base de datos" },
-          },
-        })
-         },
+        }
+       },
 
   profile: (req, res) => {
     return res.render("profile", {
