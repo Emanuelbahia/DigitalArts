@@ -67,7 +67,7 @@ const usersControllerDb = {
         }).then((email) => {
           return email;
         });
-        //console.log(loginUser);
+        console.log(loginUser);
         req.session.userLogged = loginUser;
 
         //seteo la cookie//
