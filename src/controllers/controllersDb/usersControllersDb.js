@@ -46,7 +46,7 @@ const usersControllerDb = {
     }).then((email) => {
       return email.email;
     });
-    // si el mail esta, sigo con el proceso comparando la contraseña q pone con la q esta en la base de datos
+    // si el mail esta, sigo con el proceso comparando la contraseña q pone cuando se registra con la q esta en la base de datos
     if (userToLogin) {
       //busco al usario a traves de su email, y de ahi obtengo su contraseña
       let userPassword = await db.Users.findOne({
@@ -59,12 +59,20 @@ const usersControllerDb = {
         req.body.password,
         userPassword
       );
-
+      //console.log(isOkThePassword);
       if (isOkThePassword) {
-        req.session.userLogged = userToLogin;
+        //aca en loginUser me traigo todos los datos del usuario q se logueo para guardarlo en req.session.userLogged
+        let loginUser = await db.Users.findOne({
+          where: { email: bodyEmail },
+        }).then((email) => {
+          return email;
+        });
+        //console.log(loginUser);
+        req.session.userLogged = loginUser;
 
         //seteo la cookie//
         if (req.body.remember_user) {
+          //  console.log(req.body.remember_user);
           res.cookie("userEmail", req.body.email, { maxAge: 1000 * 60 * 5 });
         }
 
@@ -88,6 +96,7 @@ const usersControllerDb = {
   },
 
   profile: (req, res) => {
+    //console.log(req.cookies.userEmail);
     return res.render("profile", {
       user: req.session.userLogged,
     });
