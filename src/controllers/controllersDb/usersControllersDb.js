@@ -34,29 +34,30 @@ const usersControllerDb = {
     return res.redirect("/");
   },
 
-  findByField: async function (field, text) {
-    await db.Users.findOne({ where: { email: text } }).then((userFound) => {
-      if (userFound) {
-        // console.log(userFound.dataValues.email);
-        return userFound.dataValues.email;
-      }
-    });
-  },
-
   login: function (req, res) {
     return res.render("login");
   },
 
-  loginProcess: (req, res) => {
-    //comparo el email q esta en la BD con el email q viene por el req.body
-    let userToLogin = usersControllerDb.findByField("email", req.body.email);
-    // console.log(req.body.email);
-    // return res.send(userToLogin);
+  loginProcess: async (req, res) => {
+    //el mail q viene por el body lo busco en la base de datos
+    let bodyEmail = req.body.email;
+    let userToLogin = await db.Users.findOne({
+      where: { email: bodyEmail },
+    }).then((email) => {
+      return email.email;
+    });
+    // si el mail esta, sigo con el proceso comparando la contraseña q pone con la q esta en la base de datos
     if (userToLogin) {
+      //busco al usario a traves de su email, y de ahi obtengo su contraseña
+      let userPassword = await db.Users.findOne({
+        where: { email: bodyEmail },
+      }).then((email) => {
+        return email.password;
+      });
       let isOkThePassword = bcryptjs.compareSync(
-        //compauserToLoginro las contraseñas de cuando se registro y la de login del usuario
+        //comparo las contraseñas de cuando se registro y la de login del usuario
         req.body.password,
-        userToLogin.password
+        userPassword
       );
 
       if (isOkThePassword) {
@@ -67,7 +68,7 @@ const usersControllerDb = {
           res.cookie("userEmail", req.body.email, { maxAge: 1000 * 60 * 5 });
         }
 
-        return res.redirect("/usersDb/users"); // si esta todo bien lo redirijo a la vista de su perfil de usuario
+        return res.redirect("/usersDb/profile"); // si esta todo bien lo redirijo a la vista de su perfil de usuario
       }
 
       return res.render("login", {
