@@ -47,28 +47,35 @@ module.exports = (sequelize, dataTypes) => {
   Product.associate = function (models) {
     // relacion producto usuarios muchos a muchos
     Product.belongsToMany(models.Users, {
-      as: "users",
+        as: "users",
+        through: "pedidos",
+        foreignKey: "product_id",
+        otherKey: "user_id",
+        timestamps: false
+    }),
+    //relacion producto material uno a muchos
+    Product.belongsTo(models.Materials, {
+    as: "material",
+    foreignKey: "material_id"
+    }),
+     //relacion producto description uno a muchos
+    Product.belongsTo(models.Descriptions, {
+    as: "description",
+    foreignKey: "description_id"
+    }),
+     //relacion producto category uno a muchos
+    Product.belongsTo(models.Categories, {
+    as: "category",
+    foreignKey: "category_id"
+    }),
+    Product.belongsToMany(models.Users, {
+      as: "manyusers",
       through: "pedidos",
       foreignKey: "product_id",
       otherKey: "user_id",
-      timestamps: false,
-    }),
-      //relacion producto material uno a muchos
-      Product.belongsTo(models.Materials, {
-        as: "material",
-        foreignKey: "material_id",
-      }),
-      //relacion producto description uno a muchos
-      Product.belongsTo(models.Descriptions, {
-        as: "description",
-        foreignKey: "description_id",
-      }),
-      //relacion producto category uno a muchos
-      Product.belongsTo(models.Categories, {
-        as: "category",
-        foreignKey: "category_id",
-      });
-  };
+      timestamps: false
+     });
+   }
 
   return Product;
 };

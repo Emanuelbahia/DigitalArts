@@ -12,7 +12,7 @@ const usersControllerDb = {
     return res.render("register");
   },
 
-  processRegister: function (req, res) {
+  processRegister: async function (req, res) {
     const resultValidation = validationResult(req);
 
     if (resultValidation.errors.length > 0) {
@@ -22,7 +22,7 @@ const usersControllerDb = {
       });
     }
 
-    db.Users.create({
+    await db.Users.create({
       firstName: req.body.name,
       lastName: req.body.surname,
       email: req.body.email,
@@ -72,7 +72,6 @@ const usersControllerDb = {
 
         //seteo la cookie//
         if (req.body.remember_user) {
-          //  console.log(req.body.remember_user);
           res.cookie("userEmail", req.body.email, { maxAge: 1000 * 60 * 5 });
         }
 
@@ -86,13 +85,6 @@ const usersControllerDb = {
         },
       });
     }
-
-    return res.render("login", {
-      //si no se encuentra el mail en la BD lo mando a login
-      errors: {
-        email: { msg: "no se encuentra el email en la base de datos" },
-      },
-    });
   },
 
   profile: (req, res) => {

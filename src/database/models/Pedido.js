@@ -1,4 +1,4 @@
-module.exports = (sequelize, dataTypes) => {
+module.exports = (sequelize, dataTypes) => {  //tabla pivot entre usuarios y productos
   let alias = "Pedidos";
   let cols = {
     id: {

@@ -23,9 +23,8 @@ module.exports = (sequelize, dataTypes) => {
   Material.associate = function (models) {
     Material.hasMany(models.Products, {
       as: "products",
-      foreignKey: "material_id",
-    });
-  };
-
+      foreignKey: "material_id"
+     })
+  }
   return Material;
 };
