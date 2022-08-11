@@ -9,12 +9,12 @@
 
         <h2 class="h2-create">Formulario de Carga y Creación de Productos</h2>
 
-        <form action="/productsDb/create" method="POST" enctype="multipart/form-data" >
+        <form action="/productsDb/create" method="POST" enctype="multipart/form-data" class="formValidation">
         <div class="contenedor-create">
 
             <div class="box-create">
                 <label for="" class="form-label">Elija la categoría:</label>
-                <select  name="category" class="form-input" id="" required> 
+                <select  name="category" class="form-input" id="category" required> 
                     <% for (let i = 0; i < cate.length; i++)  { %>             
                   <option value="<%= cate[i].id%>">
                       <%= cate[i].category  %> 
@@ -72,6 +72,6 @@
     </main>
 
       <%- include("./partials/footer") %>
-
+   <script src="/js/formCreate.js" ></script>
   </body>
   </html>
