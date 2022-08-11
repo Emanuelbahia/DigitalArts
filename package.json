@@ -4,6 +4,7 @@
   "description": "DigitalArts es una pagina donde se va a poder comprar cuadros hechos por artistas argentinos de distintos puntos del país, ofreciendo una nueva manera de vender y mostrar el trabajo de los mismos. También va a ser posible encargar cuadros decorativos realizados en madera con una lámina adherida, impresa en calidad fotográfica con tintas de látex para mayor durabilidad, y cuadros personalizados pintados con acrílico en lienzo realizados por un artista.",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon src/app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
