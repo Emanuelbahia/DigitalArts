@@ -34,6 +34,16 @@ const usersControllerDb = {
     return res.redirect("/");
   },
 
+  userEmail: async (req, res) => {
+    let bodyEmail = req.body.email;
+    let userLogin = await db.Users.findOne({
+      where: { email: bodyEmail },
+    }).then((email) => {
+      return email.email;
+    });
+    console.log(userLogin);
+  },
+
   login: function (req, res) {
     return res.render("login");
   },
@@ -46,6 +56,7 @@ const usersControllerDb = {
     }).then((email) => {
       return email.email;
     });
+
     // si el mail esta, sigo con el proceso comparando la contraseña q pone cuando se registra con la q esta en la base de datos
     if (userToLogin) {
       //busco al usario a traves de su email, y de ahi obtengo su contraseña
@@ -67,12 +78,12 @@ const usersControllerDb = {
         }).then((email) => {
           return email;
         });
-        console.log(loginUser);
+        //console.log(loginUser);
         req.session.userLogged = loginUser;
 
         //seteo la cookie//
         if (req.body.remember_user) {
-          res.cookie("userEmail", req.body.email, { maxAge: 1000 * 60 * 5 });
+          res.cookie("userEmail", req.body.email, { maxAge: 5 });
         }
 
         return res.redirect("/usersDb/profile"); // si esta todo bien lo redirijo a la vista de su perfil de usuario

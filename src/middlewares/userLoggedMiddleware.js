@@ -1,19 +1,21 @@
-const usersControllerDb = require("../controllers/controllersDb/usersControllersDb");
+const db = require("../database/models");
 
 //middleware de aplicacion para mostrar una navbar cuando estoy logueado y otra cuando no!
 
 function userLoggedMiddleware(req, res, next) {
   res.locals.isLogged = false;
 
-  //cookie//
-  /*  let emailInCookie = req.cookies.userEmail;
-  let userFromCookie = usersControllerDb.findByField("email", emailInCookie);
-   let userFromCookie = await db.Users.findOne({
-          where: { email: userFromCookie },
-        }).then((email) => {
-          return email;
-        });
+  //cookie, para loguear de manera automatica al usuario//
+  let emailInCookie = req.cookies.userEmail;
 
+  /*let userFromCookie = usersControllerDb.findByField("email", emailInCookie);*/
+  /*  let userFromCookie = db.Users.findOne({
+    where: { email: emailInCookie },
+  }).then((email) => {
+    return email;
+  });
+
+  console.log(userFromCookie);
   if (userFromCookie) {
     req.session.userLogged = userFromCookie;
   } */
