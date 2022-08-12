@@ -658,6 +658,7 @@ p{
     margin: auto;
     padding-top: 5%;
     padding-bottom: 5%;
+    cursor: pointer;
 
 }
 
@@ -667,9 +668,12 @@ p{
 }
 
 .h2-create{
+    text-align: center;
     margin: auto;
     width: 80%;
-    padding-top: 5%;
+    padding-top: 3%;
+    font-weight: bold;
+    opacity: 0.9;
 }
 
 .large-description{
@@ -958,6 +962,9 @@ h1{
     display: flex;
     justify-content: center;
     padding: 3%;
+}
+.container-edit-form{
+    padding: 4%;
 }
 
 

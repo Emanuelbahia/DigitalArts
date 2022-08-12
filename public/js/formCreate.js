@@ -1,46 +1,46 @@
 window.addEventListener("load", function(){
     let form = document.querySelector("form")
     
-
+    console.log(form)
     //hago foco en el primer campo a completar
     form.category.focus(),
 
    //validaciones on-line
-   category.addEventListener ("change", function(){
+   form.category.addEventListener ("change", function(){
     alert("Estas seguro que quieres esa categoría?")
     }),
 
    form.name.addEventListener ("blur", function(){
-    if(form.name.value == ""){
-      form.name.classList.add("inValid");
-    }else {
-      form.name.classList.remove("inValid");
-      form.name.classList.add("valid");
+    if(form.name.value == " "){
+      form.name.style.border = "red 3px solid";
+      div1.innerHTML = "Tienes que poner un nombre";
+    }else{
+      form.name.style.border = "green 3px solid";
     }
     }),
 
-   form.description.addEventListener ("change", function(){
+   description.addEventListener ("change", function(){
     alert("Estas seguro que quieres esa técnica?")
    }),
 
-   form.size.addEventListener ("blur", function(){
-    if(form.size.value == ""){
-        form.size.classList.add("inValid");
+   size.addEventListener ("blur", function(){
+    if(size.value == " "){
+      size.style.border = "red 3px solid";
+      div2.innerHTML = "Tienes que poner un nombre";
       }else {
-        form.size.classList.remove("inValid");
-        form.size.classList.add("valid");
+      size.style.border = "green 3px solid";
       }
    }),
 
-   form.material.addEventListener ("change", function(){
+   material.addEventListener ("change", function(){
     alert("Estas seguro que quieres esa material?")
    }),
-   form.price.addEventListener ("blur", function(){
-    if(form.price.value == ""){
-        form.price.classList.add("inValid");
+   price.addEventListener ("blur", function(){
+    if(form.price.value == " "){
+      form.price.style.border = "red 3px solid";
+      div3.innerHTML = "Tienes que poner un nombre";
       }else {
-        form.price.classList.remove("inValid");
-        form.price.classList.add("valid");
+        form.price.style.border = "green 3px solid";
       }
    }),
    form.image.addEventListener ("blur", function(){
@@ -54,16 +54,17 @@ window.addEventListener("load", function(){
         //campo nombre
     if(form.name.value ="") {
         errors.push("El campo nombre no puede estar vacio");
-      form.classList.add("inValid");
+        form.name.style.border = "red 3px solid";
+        this.p.innerHTML = "Tienes que poner un nombre";
+        this.p.color = "red";
     }else{
-        form.name.classList.remove("inValid");
-        form.name.classList.add("valid");
+        form.size.style.border = "green 3px solid";
         form.name.focus(); 
     }
       //campo tamaño
     if(form.size.value ="") {
         errors.push("El campo tamaño no puede estar vacio");
-      form.classList.add("inValid");
+  
     }else{
         form.size.classList.remove("inValid");
         form.size.classList.add("valid");

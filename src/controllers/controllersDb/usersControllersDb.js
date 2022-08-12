@@ -84,6 +84,8 @@ const usersControllerDb = {
           email: { msg: " las credenciales son invalidas" },
         },
       });
+    } else {
+      return res.redirect("/usersDb/register");
     }
   },
 

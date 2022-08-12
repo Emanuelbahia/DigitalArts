@@ -5,16 +5,17 @@
   <%- include("./partials/header") %>
 
    
-    <main>
+  <main>
 
+    <div>
+      <div>
         <h2 class="h2-create">Formulario de Carga y Creación de Productos</h2>
-
-        <form action="/productsDb/create" method="POST" enctype="multipart/form-data" class="formValidation">
-        <div class="contenedor-create">
-
-            <div class="box-create">
-                <label for="" class="form-label">Elija la categoría:</label>
-                <select  name="category" class="form-input" id="category" required> 
+      </div>
+      <div class="container-edit-form">
+        <form action="/productsDb/create" method="POST" enctype="multipart/form-data" class="row g-3 needs-validation">
+            <div class="col-md-4">
+                <label for="category" class="form-label">Elija la categoría:</label>
+                <select  name="category" class="form-select" id="category" required> 
                     <% for (let i = 0; i < cate.length; i++)  { %>             
                   <option value="<%= cate[i].id%>">
                       <%= cate[i].category  %> 
@@ -24,14 +25,21 @@
                 </select>
             </div> 
 
-            <div class="box-create">
+            <div class="col-md-4">
                 <label for="name" class="form-label">Nombre del Producto:</label>
-                <input type="text" name="name" class="form-input" id="name">
+                <input type="text" name="name" class="form-control" id="name">
+            <div class="div1"></div>
             </div>
-      
-            <div class="box-create">
+            <div class="col-md-3">
+                <label for="size" class="form-label">Tamaño:</label>
+                <input name="size" class="form-control size-input"  id="size"></input>
+            <div class="div2">
+
+            </div>
+            </div>
+            <div class="col-md-3">
                 <label for="description" class="form-label">Descripción</label>
-                <select  name="description" class="form-input large-description" id="description" required>              
+                <select  name="description" class="form-select" id="description" required>              
                     <% for (let i = 0; i < descrip.length; i++)  { %>             
                         <option value="<%= descrip[i].id%>">
                             <%= descrip[i].description %> 
@@ -40,14 +48,10 @@
                 </select>
             </div>
              
-            <div class="box-create">
-                <label for="size" class="form-label">Tamaño:</label>
-                <input name="size" class="form-input large-size"  id="size"></input>
-            </div>
             
-            <div class="box-create">
+            <div class="col-md-4">
                 <label for="material" class="form-label">Material:</label>
-                <select  name="material" class="form-input large-description" id="material" required>              
+                <select  name="material" class="form-select" id="material" required>              
                     <% for (let i = 0; i < mate.length; i++)  { %>             
                         <option value="<%=mate[i].id%>">
                             <%=mate[i].material%> 
@@ -55,19 +59,22 @@
                      <%  } %>  
                 </select>
             </div>
-            <div class="box-create">
+            <div class="col-md-3">
                 <label for="price" class="form-label">Precio:</label>
-                <input type="text" name="price" class="form-input large-price" id="price">
+                <input type="text" name="price" class="form-control" id="price">
+            <div class="div3"></div>   
             </div>
-
-            <div class="box-create" >
+            
+            <div class="col-md-3" >
                 <label for="image" class="form-label">Imagen</label>
                 <input type="file" name="image" id="image" class="form-input" accept=".jpg" /> 
             </div>
 
-            <div class=" ">
-                <button type="submit" class="save-product margin-button-save">Guardar</button>
+            <div class="button-create ">
+                <button type="submit" class="btn btn-primary">Crear producto</button>
             </div>
+        </form>
+       </div>   
       </div>      
     </main>
 
