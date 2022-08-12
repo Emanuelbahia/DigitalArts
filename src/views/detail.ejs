@@ -16,16 +16,16 @@
                 <p class="p-detail"><b>Material:</b><br><%= detailProduct.material.material %></p>
                 <p class="p-detail"><b>Precio:</b><br>$<%= detailProduct.price %></p>
                 <div class="caja-comprar">
-                     <a href="/carrito/<%= detailProduct.id %>" class="comprar-detail">COMPRAR</a>
+                     <a href="/carrito/<%= detailProduct.id %>" ><button type="button" class="btn btn-primary">COMPRAR</button></a>
                 </div>
 
                 <div class="contenedor-edit-delete">
                     <div class="caja-edit">
-                         <a class="edit-detail" href="/productsDb/edit/<%= detailProduct.id %>" > EDITAR</a>
+                         <a href="/productsDb/edit/<%= detailProduct.id %>"><button type="button" class="btn btn-info">EDITAR</button></a>
                     </div>
                     <div class="caja-detail">
                         <form action="/productsDb/delete/<%= detailProduct.id %>?_method=DELETE" method="POST">
-                            <button type="submit" class="delete-detail">ELIMINAR</button>
+                            <button type="submit" class="btn btn-danger">ELIMINAR</button>
                         </form>
                     </div>
                 </div>  

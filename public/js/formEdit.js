@@ -1,5 +1,5 @@
 window.addEventListener("load", function () {
-  let form = document.querySelector("form.row");
+  let form = document.querySelector("form");
   let category = document.querySelector("#category");
   let name = document.querySelector("#name");
   let description = document.querySelector("#description");
@@ -10,20 +10,22 @@ window.addEventListener("load", function () {
   let div2 = document.querySelector(".div2");
   let div3 = document.querySelector(".div3");
 
+  console.log(form);
+
   form.addEventListener("submit", (e) => {
     let errores = [];
     console.log(errores);
 
     if ((name.value = "")) {
-      errores.push("tenes que completar el campo!");
+      errores.push("tenes que completar el campo del nombre!");
     }
 
     if ((size.value = "")) {
-      errores.push("tenes que completar el campo!");
+      errores.push("tenes que completar el campo del tamaño!");
     }
 
     if ((price.value = "")) {
-      errores.push("tenes que completar el campo!");
+      errores.push("tenes que completar el campo del precio!");
     }
 
     if (errores.length > 0) {
@@ -50,7 +52,7 @@ window.addEventListener("load", function () {
     alert("¿ estas seguro que es ese material ?");
   });
 
-  name.addEventListener("blur", function (e) {
+  /* name.addEventListener("blur", function (e) {
     if (name.value == "") {
       // alert("tenes que poner un nombre");
       name.style.border = "red 3px solid";
@@ -85,5 +87,5 @@ window.addEventListener("load", function () {
       div3.innerHTML = "Campo completo !";
       div3.style.color = "green";
     }
-  });
+  }); */
 });

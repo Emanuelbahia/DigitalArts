@@ -571,12 +571,12 @@ p{
 
 .contenedor-detail{
     display: flex;
-    padding-top: 4%;
-    padding-bottom: 7%;
+    padding-top: 2%;
+    padding-bottom: 5%;
 }
 
 .caja-detail-1{
-    width: 60%;
+    width: 45%;
 }
 
 .caja-detail-2{
@@ -585,19 +585,19 @@ p{
 }
 
 .img-detail{
-    width: 80%;
+    width: 70%;
     box-shadow: 15px 15px 3px 5px rgb(37 36 36 / 87%);
     padding-left: 5%;
 }
 
 .h2-detail{
     padding-left: 5%;
-    padding-top: 7%;
+    padding-top: 2%;
     font-size: 4vw;
 }
 
 .p-detail{
-    font-size: 3vw;
+    font-size: 2.2vw;
     margin-bottom: 2%;
 }
 
@@ -647,7 +647,7 @@ p{
 .contenedor-edit-delete{
     display: flex;
     flex-direction: column;
-    margin-top: 13%;
+    margin-top: 6%;
 }
 
 
@@ -1148,6 +1148,10 @@ h1{
     h1 {
         font-size: 4vw;
     }
+    .contenedor-edit-delete { 
+        flex-direction: row;
+    }
+    
 
     /*media queries pc*/
 
