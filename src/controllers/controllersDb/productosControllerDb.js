@@ -37,6 +37,16 @@ const productosControllerDb = {
     return res.redirect("/");
   },
 
+  //creacion de categorias
+  formCreateCategory: function (req, res) {
+    res.render("formCreateCategory");
+  },
+
+  createCategory: function (req, res) {
+    db.Categories.create();
+    return res.redirect("/");
+  },
+
   //listado de categoria de cuadros
   cuadros: async function (req, res) {
     // return res.send(req.params.category);

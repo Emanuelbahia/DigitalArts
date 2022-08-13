@@ -47,12 +47,10 @@ const usersControllerDb = {
   loginProcess: async (req, res) => {
     //el mail q viene por el body lo busco en la base de datos
     let bodyEmail = req.body.email;
-    // let userToLogin = await usersControllerDb.findByField("email", bodyEmail);
-    // console.log(userToLogin);
     let userToLogin = await db.Users.findOne({
       where: { email: bodyEmail },
     }).then((email) => {
-      return email.email;
+      return email;
     });
 
     // si el mail esta, sigo con el proceso comparando la contraseña q pone cuando se registra con la q esta en la base de datos
@@ -76,7 +74,7 @@ const usersControllerDb = {
         }).then((email) => {
           return email;
         });
-        //console.log(loginUser);
+
         req.session.userLogged = loginUser;
 
         //si por el body vino remember_user, seteo una cookie, que la llamo userEmail y va a guardar el email que vino por el body
@@ -99,7 +97,7 @@ const usersControllerDb = {
   },
 
   profile: (req, res) => {
-    console.log(req.cookies.userEmail); //tengo que tildar recordar usuario
+    // console.log(req.cookies.userEmail); //tengo que tildar recordar usuario
     return res.render("profile", {
       user: req.session.userLogged,
     });
