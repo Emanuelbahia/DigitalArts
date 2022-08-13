@@ -26,11 +26,12 @@ module.exports = (sequelize, dataTypes) => {
     image: {
       type: dataTypes.STRING,
     },
-    // isAdmin: {
-    //   type: dataTypes.INTEGER,
-    //  allowNull: false,
-    // },
+    isAdmin: {
+      type: dataTypes.INTEGER,
+      allowNull: false,
+    },
   };
+
   let config = {
     tableName: "users",
     timestamps: false,

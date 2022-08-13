@@ -34,14 +34,10 @@ const usersControllerDb = {
     return res.redirect("/");
   },
 
-  userEmail: async (req, res) => {
-    let bodyEmail = req.body.email;
-    let userLogin = await db.Users.findOne({
-      where: { email: bodyEmail },
-    }).then((email) => {
-      return email.email;
-    });
-    console.log(userLogin);
+  findByField: function (field, text) {
+    let userFound = db.Users.findOne((oneUser) => oneUser[field] === text);
+
+    return userFound;
   },
 
   login: function (req, res) {
@@ -51,6 +47,8 @@ const usersControllerDb = {
   loginProcess: async (req, res) => {
     //el mail q viene por el body lo busco en la base de datos
     let bodyEmail = req.body.email;
+    // let userToLogin = await usersControllerDb.findByField("email", bodyEmail);
+    // console.log(userToLogin);
     let userToLogin = await db.Users.findOne({
       where: { email: bodyEmail },
     }).then((email) => {
@@ -81,9 +79,9 @@ const usersControllerDb = {
         //console.log(loginUser);
         req.session.userLogged = loginUser;
 
-        //seteo la cookie//
+        //si por el body vino remember_user, seteo una cookie, que la llamo userEmail y va a guardar el email que vino por el body
         if (req.body.remember_user) {
-          res.cookie("userEmail", req.body.email, { maxAge: 5 });
+          res.cookie("userEmail", req.body.email, { maxAge: 1000 * 60 * 50 });
         }
 
         return res.redirect("/usersDb/profile"); // si esta todo bien lo redirijo a la vista de su perfil de usuario
@@ -101,7 +99,7 @@ const usersControllerDb = {
   },
 
   profile: (req, res) => {
-    //console.log(req.cookies.userEmail);
+    console.log(req.cookies.userEmail); //tengo que tildar recordar usuario
     return res.render("profile", {
       user: req.session.userLogged,
     });

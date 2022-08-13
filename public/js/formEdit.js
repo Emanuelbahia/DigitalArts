@@ -12,7 +12,7 @@ window.addEventListener("load", function () {
 
   console.log(form);
 
-  form.addEventListener("submit", (e) => {
+  /* form.addEventListener("submit", (e) => {
     let errores = [];
     console.log(errores);
 
@@ -38,7 +38,7 @@ window.addEventListener("load", function () {
       alert("La validación fué exitosa");
       form.submit();
     }
-  });
+  }); */
 
   category.addEventListener("change", function (e) {
     alert("¿ estas seguro que es esa categoria ?");
@@ -52,7 +52,7 @@ window.addEventListener("load", function () {
     alert("¿ estas seguro que es ese material ?");
   });
 
-  /* name.addEventListener("blur", function (e) {
+  name.addEventListener("blur", function (e) {
     if (name.value == "") {
       // alert("tenes que poner un nombre");
       name.style.border = "red 3px solid";
@@ -87,5 +87,5 @@ window.addEventListener("load", function () {
       div3.innerHTML = "Campo completo !";
       div3.style.color = "green";
     }
-  }); */
+  });
 });

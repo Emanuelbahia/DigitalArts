@@ -742,11 +742,11 @@ p{
 .session-perfil{
     display: flex;
     justify-content: center;
-    padding: 5%;
+    padding: 3%;
 }
 
 .user-name{
-    margin-top: 10%;
+    margin-top: 2%;
     padding: 2%;
     font-size: 5vw;
     font-weight: bold;
@@ -1131,7 +1131,7 @@ h1{
         flex-direction: row;
     }
     .container-users-link{
-        padding-top: 12%;
+        padding-top: 4%;
         width: 60%;
     }
     .container-users-perfil{
@@ -1354,10 +1354,10 @@ h1{
         font-size: 3vw;
     }
     .title-users{
-        font-size: 3.5vw;
+        font-size: 3vw;
     }
     .tamaño-link-user{
-        font-size: 2.5vw;
+        font-size: 2vw;
     }
     .wraper {
         display: flex;

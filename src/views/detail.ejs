@@ -18,6 +18,7 @@
                 <div class="caja-comprar">
                      <a href="/carrito/<%= detailProduct.id %>" ><button type="button" class="btn btn-primary">COMPRAR</button></a>
                 </div>
+                <% if(locals.userLogged.isAdmin == 1) { %>
 
                 <div class="contenedor-edit-delete">
                     <div class="caja-edit">
@@ -29,7 +30,7 @@
                         </form>
                     </div>
                 </div>  
-                
+                <% } %>
             </div>
        </div> 
     </main>

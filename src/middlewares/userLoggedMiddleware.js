@@ -7,14 +7,15 @@ function userLoggedMiddleware(req, res, next) {
 
   //cookie, para loguear de manera automatica al usuario//
   let emailInCookie = req.cookies.userEmail;
+  // let bodyEmail = req.body.email;
+  // console.log(bodyEmail);
+  // console.log(emailInCookie);
 
-  /*let userFromCookie = usersControllerDb.findByField("email", emailInCookie);*/
-  /*  let userFromCookie = db.Users.findOne({
-    where: { email: emailInCookie },
+  /* let userFromCookie = db.Users.findOne({
+    where: { email:  },
   }).then((email) => {
     return email;
   });
-
   console.log(userFromCookie);
   if (userFromCookie) {
     req.session.userLogged = userFromCookie;
