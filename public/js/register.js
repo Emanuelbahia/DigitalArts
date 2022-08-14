@@ -1,0 +1,83 @@
+window.addEventListener("load", function () {
+  let form = document.querySelector("form");
+  let div1 = document.querySelector(".div1");
+  let div2 = document.querySelector(".div2");
+  let div3 = document.querySelector(".div3");
+  let div4 = document.querySelector(".div4");
+  let div5 = document.querySelector(".div5");
+  let div6 = document.querySelector(".div6");
+  //let name = document.querySelector("#name");
+  console.log(form);
+
+  form.name.addEventListener("blur", function () {
+    if (form.name.value == "") {
+      form.name.style.border = "red 3px solid";
+      div1.innerHTML = "tienes que poner un nombre";
+      div1.style.color = "red";
+    } else {
+      form.name.style.border = "green 3px solid";
+      div1.innerHTML = "campo completo";
+      div1.style.color = "green";
+    }
+  });
+
+  form.surname.addEventListener("blur", function () {
+    if (form.surname.value == "") {
+      form.surname.style.border = "red 3px solid";
+      div2.innerHTML = "tienes que poner un nombre";
+      div2.style.color = "red";
+    } else {
+      form.surname.style.border = "green 3px solid";
+      div2.innerHTML = "campo completo";
+      div2.style.color = "green";
+    }
+  });
+
+  form.email.addEventListener("blur", function () {
+    if (form.email.value == "") {
+      form.email.style.border = "red 3px solid";
+      div3.innerHTML = "tienes que poner un nombre";
+      div3.style.color = "red";
+    } else {
+      form.email.style.border = "green 3px solid";
+      div3.innerHTML = "campo completo";
+      div3.style.color = "green";
+    }
+  });
+
+  form.password.addEventListener("blur", function () {
+    if (form.password.value == "") {
+      form.password.style.border = "red 3px solid";
+      div4.innerHTML = "tienes que poner un nombre";
+      div4.style.color = "red";
+    } else {
+      form.password.style.border = "green 3px solid";
+      div4.innerHTML = "campo completo";
+      div4.style.color = "green";
+    }
+  });
+
+  form.confirmPassword.addEventListener("blur", function () {
+    if (form.confirmPassword.value == "") {
+      form.confirmPassword.style.border = "red 3px solid";
+      div5.innerHTML = "tienes que poner un nombre";
+      div5.style.color = "red";
+    } else {
+      form.confirmPassword.style.border = "green 3px solid";
+      div5.innerHTML = "campo completo";
+      div5.style.color = "green";
+    }
+  });
+
+  form.avatar.addEventListener("blur", function () {
+    if (form.avatar.value == "") {
+      form.avatar.style.border = "red 3px solid";
+      div6.innerHTML = "tienes que poner un nombre";
+      div6.style.color = "red";
+    } else {
+      form.avatar.style.border = "green 3px solid";
+      div6.innerHTML = "campo completo";
+      div6.style.color = "green";
+    }
+  });
+});

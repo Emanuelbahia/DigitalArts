@@ -60,9 +60,9 @@ const validateLog = [
     .isEmail()
     .withMessage("Tienes que poner un formato de correo válido"),
   body("password").notEmpty().withMessage("Tienes que poner una contraseña"),
-  body("confirmPassword")
+  /*   body("confirmPassword")
     .notEmpty()
-    .withMessage("Tienes que confirmar la contraseña"),
+    .withMessage("Tienes que confirmar la contraseña"), */
 ];
 //formulario de login
 
@@ -70,16 +70,7 @@ const validateLog = [
 router.get("/login", guestMiddleware, usersControllerDb.login);
 
 //Procesar el login
-router.post(
-  "/login",
-  [
-    body("email").isEmail().withMessage("Email inválido"),
-    body("password")
-      .isLength({ min: 6 })
-      .withMessage("La contraseña es inválida"),
-  ],
-  usersControllerDb.loginProcess
-);
+router.post("/login", validateLog, usersControllerDb.loginProcess);
 
 //perfil
 
@@ -90,3 +81,10 @@ router.get("/profile/", authMiddleware, usersControllerDb.profile);
 router.get("/logout/", usersControllerDb.logout);
 
 module.exports = router;
+
+/* [
+  body("email").isEmail().withMessage("Email inválido"),
+  body("password")
+    .isLength({ min: 6 })
+    .withMessage("La contraseña es inválida"),
+] */

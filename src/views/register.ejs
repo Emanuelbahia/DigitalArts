@@ -13,12 +13,13 @@
               
             <div class="control-formulario ">
                 <label class="weight-label">Nombre:</label>
-                <input type="text" name="name" class="control" value="<%= locals.oldData ? oldData.name : null %>" autofocus>
+                <input type="text" name="name" id="name" class="control" value="<%= locals.oldData ? oldData.name : null %>" autofocus>
                 <% if(locals.errors && errors.name) { %>
                     <div class="red-message-register">
                         <%= errors.name.msg %>
                     </div>
                 <% } %>
+                <div class="div1"></div>
             </div>
       
             <div class="control-formulario ">
@@ -29,6 +30,7 @@
                         <%= errors.surname.msg %>
                     </div>
                 <% } %>
+                <div class="div2"></div>
             </div>
       
             <div class="control-formulario ">
@@ -39,6 +41,7 @@
                         <%= errors.email.msg %>
                     </div>
                 <% } %>
+                <div class="div3"></div>
             </div>
 
             <div class="control-formulario ">
@@ -49,6 +52,7 @@
                         <%= errors.password.msg %>
                     </div>
                 <% } %>
+                <div class="div4"></div>
             </div>
         
             <div class="control-formulario ">
@@ -59,6 +63,7 @@
                         <%= errors.confirmPassword.msg %>
                     </div>
                 <% } %>
+                <div class="div5"></div>
             </div>
         
             <div class="control-formulario " >
@@ -69,6 +74,7 @@
                     <%= errors.avatar.msg %>
                 </div>
             <% } %>
+            <div class="div6"></div>
              </div>
          </div>
             <div class="control-formulario ">
@@ -83,6 +89,6 @@
     </main>
 
       <%- include("./partials/footer.ejs") %>
-
+      <script src="/js/register.js" ></script>
   </body>
   </html>

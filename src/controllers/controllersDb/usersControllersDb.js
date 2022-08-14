@@ -88,7 +88,7 @@ const usersControllerDb = {
       return res.render("login", {
         //si las contraseñas no concuerdan lo mando a login
         errors: {
-          email: { msg: " las credenciales son invalidas" },
+          password: { msg: " la contraseña es invalida" },
         },
       });
     } else {
