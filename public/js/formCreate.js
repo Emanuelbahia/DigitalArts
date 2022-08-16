@@ -69,11 +69,11 @@ window.addEventListener("load", function () {
         let errors = [];
         //chequeamos que no haya errores
         //campo categoria
-        if(form.category.value =""){
-          errors.push("Debe selleccionar una categoria");
+        if(form.category.value ==""){
+          errors.push("Debe seleccionar una categoria");
         }
         //campo nombre
-        if (form.name.value = "") {
+        if (form.name.value == "") {
           errors.push("El campo nombre no puede estar vacio");
           form.name.style.border = "red 3px solid";
           div1.innerHTML = "Tienes que poner un nombre";
@@ -83,7 +83,7 @@ window.addEventListener("load", function () {
           form.name.focus();
         }
         //campo tamaño
-        if (form.size.value = "") {
+        if (form.size.value == "") {
           errors.push("El campo nombre no puede estar vacio");
           form.size.style.border = "red 3px solid";
           div1.innerHTML = "Tienes que poner un tamaño";
@@ -93,27 +93,29 @@ window.addEventListener("load", function () {
           form.size.focus();
         }
         //campo descripcion
-        if(form.description.value =""){
+        if(form.description.value ==""){
           errors.push("Debe seleccionar una descripción");
         }
          //campo material
-         if(form.material.value =""){
+         if(form.material.value ==""){
           errors.push("Debe seleccionar una material");
         }
         //campo precio
-        if (form.price.value = "") {
+        if (form.price.value == "") {
           errors.push("El campo precio no puede estar vacio");
           form.price.style.border = "red 3px solid";
           div1.innerHTML = "Tienes que poner un tamaño";
           div1.style.color = "red";
         } else {
-          form.price.style.border = "green 3px solid";
+          form.price.style.border =="green 3px solid";
           form.price.focus();
         }
         //campo imagen
-        if(form.imagen.value =""){
+        if(form.image.value ==""){
           errors.push("Debe seleccionar una imagen");
         }
+        console.log(errors)
+       
         if (errors.length > 0) {
           e.preventDefault();
           let ulerrors = document.querySelector(".errores");
