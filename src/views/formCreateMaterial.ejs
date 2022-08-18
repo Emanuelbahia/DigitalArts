@@ -1,0 +1,33 @@
+<%- include("./partials/head") %>
+
+<body>
+
+  <%- include("./partials/header") %>
+
+   
+    <main>
+            
+        <h2 class="h2-create">Formulario de creacion de el material</h2>
+
+        <form action="/productsDb/material" method="POST"  >
+            <div class="contenedor-create">
+
+                <div class="box-create">
+                    <label for="newMaterial" class="form-label">Nueva descripcion:</label>
+                    <input type="text" name="newMaterial" class="form-input" id="newMaterial">
+                </div>
+
+            </div >
+
+            <div class="button-create">
+                 <button type="submit" class="btn btn-primary">Crear material</button>
+            </div>
+
+        </form>
+
+    </main>
+
+    <%- include("./partials/footer") %>
+
+</body>
+</html>        

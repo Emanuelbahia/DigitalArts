@@ -1,0 +1,33 @@
+<%- include("./partials/head") %>
+
+<body>
+
+  <%- include("./partials/header") %>
+
+   
+    <main>
+            
+        <h2 class="h2-create">Formulario de creacion de descripcion de producto</h2>
+
+        <form action="/productsDb/description" method="POST"  >
+            <div class="contenedor-create">
+
+                <div class="box-create">
+                    <label for="newDescription" class="form-label">Nueva descripcion:</label>
+                    <input type="text" name="newDescription" class="form-input" id="newDescription">
+                </div>
+
+            </div >
+
+            <div class="button-create">
+                 <button type="submit" class="btn btn-primary">Crear descripcion</button>
+            </div>
+
+        </form>
+
+    </main>
+
+    <%- include("./partials/footer") %>
+
+</body>
+</html>        

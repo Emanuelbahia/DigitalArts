@@ -47,6 +47,14 @@ router.post(
 router.get("/category/create", productosControllerDb.formCreateCategory);
 router.post("/category", productosControllerDb.createCategory);
 
+/* ruta para crear una descripcion */
+router.get("/description/create", productosControllerDb.formCreateDescription);
+router.post("/description", productosControllerDb.createDescription);
+
+/* ruta para crear material */
+router.get("/material/create", productosControllerDb.formCreateMaterial);
+router.post("/material", productosControllerDb.createMaterial);
+
 /* ruta categoria de cuadros (Read) */
 router.get("/:category", productosControllerDb.cuadros);
 

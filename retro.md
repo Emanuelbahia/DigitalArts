@@ -17,7 +17,7 @@ Sprint 2:
 
   2.Para mejorar:
 
-- Darle mas estilo a la API: animaciones, etc).
+- Darle mas estilo a la API: animaciones, etc.
 
   3.¿Que hicimos bien?
 
@@ -33,7 +33,7 @@ Sprint 3:
 
   2.Para mejorar:
 
-- Seguir dándole más estilo a la API: animaciones, etc)....especialmente enfocarnos en darle una fachada mas impactante a la aplicación.
+- Seguir dándole más estilo a la API: animaciones, etc....especialmente enfocarnos en darle una fachada mas impactante a la aplicación.
 
   3.¿Que hicimos bien?
 

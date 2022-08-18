@@ -45,7 +45,7 @@ const usersControllerDb = {
       image: req.file.filename,
     });
 
-    return res.redirect("/");
+    return res.redirect("/usersDb/login");
   },
 
   login: function (req, res) {
@@ -96,11 +96,15 @@ const usersControllerDb = {
       return res.render("login", {
         //si las contraseñas no concuerdan lo mando a login
         errors: {
-          password: { msg: " la contraseña es invalida" },
+          password: { msg: " La contraseña es invalida" },
         },
       });
     } else {
-      return res.redirect("/usersDb/register");
+      return res.render("login", {
+        errors: {
+          email: { msg: "El email no esta registrado. Registrate!" },
+        },
+      });
     }
   },
 

@@ -53,8 +53,34 @@ const productosControllerDb = {
     res.render("formCreateCategory");
   },
 
-  createCategory: function (req, res) {
-    db.Categories.create();
+  createCategory: async function (req, res) {
+    await db.Categories.create({
+      category: req.body.newCategory,
+    });
+    return res.redirect("/");
+  },
+
+  //creacion de descripcion
+  formCreateDescription: function (req, res) {
+    res.render("formCreateDescription");
+  },
+
+  createDescription: async function (req, res) {
+    await db.Descriptions.create({
+      description: req.body.newDescription,
+    });
+    return res.redirect("/");
+  },
+
+  //creacion de material
+  formCreateMaterial: function (req, res) {
+    res.render("formCreateMaterial");
+  },
+
+  createMaterial: async function (req, res) {
+    await db.Materials.create({
+      material: req.body.newMaterial,
+    });
     return res.redirect("/");
   },
 
@@ -92,6 +118,7 @@ const productosControllerDb = {
       return res.render("detail", { detailProduct });
     });
   },
+
   /*Edicion del producto*/
   formEdit: async (req, res) => {
     //id del producto a editar
