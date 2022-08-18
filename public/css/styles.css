@@ -967,6 +967,27 @@ h1{
     padding: 4%;
 }
 
+/*confirma contraseña*/
+
+.new-password .fa-eye, .fa-eye-slash {
+    position: absolute;
+    right: 40px;
+    margin-top: 17px;
+    color:grey;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.fa-eye-slash{
+    visibility: hidden;
+}
+
+.confirm-password .message {
+    display: none;
+}
+
+
+
 
 /*media queries tablet*/
 

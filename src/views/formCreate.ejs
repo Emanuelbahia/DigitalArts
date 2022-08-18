@@ -29,13 +29,22 @@
             <div class="col-md-4">
                 <label for="name" class="form-label">Nombre del Producto:</label>
                 <input type="text" name="name" class="form-control" id="name">
-            <div class="div1"></div>
+                <% if(locals.errors && errors.name) { %>
+                    <div class="red-message-register">
+                        <%= errors.name.msg %>
+                    </div>
+                <% } %>
+                <div class="div1"></div>
             </div>
             <div class="col-md-3">
                 <label for="size" class="form-label">Tamaño:</label>
                 <input name="size" class="form-control size-input"  id="size"></input>
-            <div class="div2">
-
+                <% if(locals.errors && errors.size) { %>
+                    <div class="red-message-register">
+                        <%= errors.size.msg %>
+                    </div>
+                <% } %>
+                <div class="div2">
             </div>
             </div>
             <div class="col-md-3">
@@ -63,12 +72,17 @@
             <div class="col-md-3">
                 <label for="price" class="form-label">Precio:</label>
                 <input type="text" name="price" class="form-control" id="price">
-            <div class="div3"></div>   
+                <% if(locals.errors && errors.price) { %>
+                    <div class="red-message-register">
+                        <%= errors.price.msg %>
+                    </div>
+                <% } %>
+                <div class="div3"></div>   
             </div>
             
             <div class="col-md-3" >
                 <label for="image" class="form-label">Imagen</label>
-                <input type="file" name="image" id="image" class="form-input" accept=".jpg" /> 
+                <input type="file" name="image" id="image" class="form-input" accept=".jpg ,.png, .jpeg, .gif" /> 
             </div>
 
             <div class="button-create ">

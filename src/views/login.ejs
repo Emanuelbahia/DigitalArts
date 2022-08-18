@@ -14,7 +14,7 @@
       <div class="centrar-login">
         <div class="login-box">
            <label class="weight-label">Email:</label>
-           <input type="email" name="email" class="control" id ="email" value="<%= locals.oldData ? oldData.email : null %>" autofocus>
+           <input type="email" name="email" class="control" id ="email" placeholder="Ej: juan@gmail.com" value="<%= locals.oldData ? oldData.email : null %>" autofocus>
            <% if(locals.errors && errors.email) { %>
             <div class="red-message-register">
                 <%= errors.email.msg %>
@@ -25,7 +25,7 @@
 
         <div class="login-box">
            <label class="weight-label">Contraseña:</label>
-           <input type="password" name="password" class="control" id="password" >
+           <input type="password" name="password" class="control" id="password" placeholder="Password">
            <% if(locals.errors && errors.password) { %>
             <div class="red-message-register">
                 <%= errors.password.msg %>

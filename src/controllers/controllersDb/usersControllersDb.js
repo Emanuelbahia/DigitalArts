@@ -1,5 +1,3 @@
-const path = require("path");
-const fs = require("fs");
 const bcryptjs = require("bcryptjs");
 const { text } = require("express");
 const express = require("express");
@@ -13,6 +11,22 @@ const usersControllerDb = {
   },
 
   processRegister: async function (req, res) {
+    //busco si el email con el q se quiere registrar ya esta en la base de datos
+    let bodyEmail = req.body.email;
+    let userToLogin = await db.Users.findOne({
+      where: { email: bodyEmail },
+    }).then((email) => {
+      return email;
+    });
+    //si el email ya esta registrado, renderizo la vista del formulario de registro con el cartel de q el email ya esta registrado
+    if (userToLogin) {
+      return res.render("register", {
+        errors: {
+          email: { msg: "El email ya se encuentra registrado" },
+        },
+      });
+    }
+
     const resultValidation = validationResult(req);
 
     if (resultValidation.errors.length > 0) {
@@ -32,12 +46,6 @@ const usersControllerDb = {
     });
 
     return res.redirect("/");
-  },
-
-  findByField: function (field, text) {
-    let userFound = db.Users.findOne((oneUser) => oneUser[field] === text);
-
-    return userFound;
   },
 
   login: function (req, res) {
@@ -79,7 +87,7 @@ const usersControllerDb = {
 
         //si por el body vino remember_user, seteo una cookie, que la llamo userEmail y va a guardar el email que vino por el body
         if (req.body.remember_user) {
-          res.cookie("userEmail", req.body.email, { maxAge: 1000 * 60 * 50 });
+          res.cookie("userEmail", req.body.email, { maxAge: 10000 * 60 * 50 });
         }
 
         return res.redirect("/usersDb/profile"); // si esta todo bien lo redirijo a la vista de su perfil de usuario

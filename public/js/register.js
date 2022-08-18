@@ -6,16 +6,15 @@ window.addEventListener("load", function () {
   let div4 = document.querySelector(".div4");
   let div5 = document.querySelector(".div5");
   let div6 = document.querySelector(".div6");
-  //let name = document.querySelector("#name");
-  console.log(form);
+  let name = document.querySelector("#name");
 
-  form.name.addEventListener("blur", function () {
-    if (form.name.value == "") {
-      form.name.style.border = "red 3px solid";
+  name.addEventListener("blur", function () {
+    if (name.value == "") {
+      name.style.border = "red 3px solid";
       div1.innerHTML = "tienes que poner un nombre";
       div1.style.color = "red";
     } else {
-      form.name.style.border = "green 3px solid";
+      name.style.border = "green 3px solid";
       div1.innerHTML = "campo completo";
       div1.style.color = "green";
     }

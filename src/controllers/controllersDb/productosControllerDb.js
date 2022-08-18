@@ -1,4 +1,5 @@
 const db = require("../../database/models");
+const { validationResult } = require("express-validator");
 
 const productosControllerDb = {
   //traigo todas los productos
@@ -24,6 +25,16 @@ const productosControllerDb = {
 
   create: async function (req, res) {
     //Se utiliza create para crear y viaja por post
+
+    /* const resultValidation = validationResult(req);
+
+    if (resultValidation.errors.length > 0) {
+      return res.render("formCreate", {
+        errors: resultValidation.mapped(),
+        oldData: req.body,
+      });
+    } */
+
     await db.Products.create({
       name: req.body.name,
       image: req.file.filename,
@@ -33,7 +44,7 @@ const productosControllerDb = {
       material_id: req.body.material,
       category_id: req.body.category,
     });
-    //redirecciono el producto
+    //redirecciono al home
     return res.redirect("/");
   },
 

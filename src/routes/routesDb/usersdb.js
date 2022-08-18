@@ -18,15 +18,30 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 
 const validations = [
-  body("name").notEmpty().withMessage("Debes completar el campo nombre"),
-  body("surname").notEmpty().withMessage("Debes completar el campo apellido"),
+  //el campo nombre no tiene q estar vacio y mas de 2 caracteres
+  body("name")
+    .notEmpty()
+    .withMessage("Debes completar el campo nombre")
+    .isLength({ min: 2 })
+    .withMessage("Tiene que tener mas de 2 caracteres"),
+  //el campo apellido no tiene q estar vacio y mas de 2 caracteres
+  body("surname")
+    .notEmpty()
+    .withMessage("Debes completar el campo apellido")
+    .isLength({ min: 2 })
+    .withMessage("Tiene que tener mas de 2 caracteres"),
+  //el campo email no puede estar vacio, tiene q tener un formato de email valido
   body("email")
     .notEmpty()
     .withMessage("Tienes que escribir un email")
     .bail()
     .isEmail()
     .withMessage("Tienes que poner un formato de correo válido"),
-  body("password").notEmpty().withMessage("Tienes que poner una contraseña"),
+  body("password")
+    .notEmpty()
+    .withMessage("Tienes que poner una contraseña")
+    .isLength({ min: 2 })
+    .withMessage("Tiene que tener mas de 6 caracteres"),
   body("confirmPassword")
     .notEmpty()
     .withMessage("Tienes que confirmar la contraseña"),

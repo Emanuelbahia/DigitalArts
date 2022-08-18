@@ -8,7 +8,6 @@ window.addEventListener("load", function () {
 
   email.addEventListener("blur", function (e) {
     if (email.value == "") {
-      // alert("tenes que poner un nombre");
       email.style.border = "red 3px solid";
       div1.innerHTML = "Tienes que poner un email !!";
       div1.style.color = "red";
@@ -31,11 +30,10 @@ window.addEventListener("load", function () {
     }
   });
 
-  /*  form.addEventListener("submit", function (e) {
+  form.addEventListener("submit", function (e) {
     let errores = [];
 
-    if ((email.value = "")) {
-      // e.preventDefault();
+    if (email.value == "") {
       email.style.border = "red 3px solid";
       div1.innerHTML = "tienes que poner un email";
       div1.style.color = "red";
@@ -45,8 +43,7 @@ window.addEventListener("load", function () {
       div1.innerHTML = "campo completo";
       div1.style.color = "green";
     }
-    if ((password.value = "")) {
-      //e.preventDefault();
+    if (password.value == "") {
       password.style.border = "red 3px solid";
       div2.innerHTML = "tienes que poner una contraseña";
       div2.style.color = "red";
@@ -59,12 +56,12 @@ window.addEventListener("load", function () {
   });
   if (errores.length > 0) {
     e.preventDefault();
-    this.alert("no te podes loguear !");
-    let ulerrors = document.querySelector(".errores");
+
+    /* let ulerrors = document.querySelector(".errores");
     for (let i = 0; i < errores.length; i++) {
-      ulerrors.innerHTML += "<li>" + errores[i] + "</li>";
-    }
+      ulerrors.innerHTML += "<li>" + errores[i] + "</li>"; 
+    }*/
   } else {
     alert("Estas logueado!!");
-  } */
+  }
 });

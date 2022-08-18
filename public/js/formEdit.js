@@ -12,33 +12,32 @@ window.addEventListener("load", function () {
 
   console.log(form);
 
-  /* form.addEventListener("submit", (e) => {
+  form.addEventListener("submit", (e) => {
     let errores = [];
     console.log(errores);
 
-    if ((name.value = "")) {
+    if (name.value == "") {
       errores.push("tenes que completar el campo del nombre!");
     }
 
-    if ((size.value = "")) {
+    if (size.value == "") {
       errores.push("tenes que completar el campo del tamaño!");
     }
 
-    if ((price.value = "")) {
+    if (price.value == "") {
       errores.push("tenes que completar el campo del precio!");
     }
 
     if (errores.length > 0) {
       e.preventDefault();
-      let ulErrores = document.querySelector(".errores");
+      /*  let ulErrores = document.querySelector(".errores");
       for (let i = 0; i < errores.length; i++) {
         ulErrores.innerHTML += "<li>" + errores[i] + "</li>";
-      }
+      } */
     } else {
-      alert("La validación fué exitosa");
       form.submit();
     }
-  }); */
+  });
 
   category.addEventListener("change", function (e) {
     alert("¿ estas seguro que es esa categoria ?");
@@ -54,12 +53,12 @@ window.addEventListener("load", function () {
 
   name.addEventListener("blur", function (e) {
     if (name.value == "") {
-      // alert("tenes que poner un nombre");
-      name.style.border = "red 3px solid";
+      name.classList.add("is-invalid");
       div1.innerHTML = "Tienes que poner un nombre";
       div1.style.color = "red";
     } else {
-      name.style.border = "green 3px solid";
+      name.classList.add("is-valid");
+      name.classList.remove("is-invalid");
       div1.innerHTML = "Campo completo !";
       div1.style.color = "green";
     }
@@ -67,11 +66,12 @@ window.addEventListener("load", function () {
 
   size.addEventListener("blur", function (e) {
     if (size.value == "") {
-      size.style.border = "red 3px solid";
+      size.classList.add("is-invalid");
       div2.innerHTML = "Tienes que ponerle un tamaño !";
       div2.style.color = "red";
     } else {
-      size.style.border = "green 3px solid";
+      size.classList.add("is-valid");
+      size.classList.remove("is-invalid");
       div2.innerHTML = "Campo completo !";
       div2.style.color = "green";
     }
@@ -79,11 +79,12 @@ window.addEventListener("load", function () {
 
   price.addEventListener("blur", function (e) {
     if (price.value == "") {
-      price.style.border = "red 3px solid";
+      price.classList.add("is-invalid");
       div3.innerHTML = "Tienes que poner un precio !";
       div3.style.color = "red";
     } else {
-      price.style.border = "green 3px solid";
+      price.classList.add("is-valid");
+      price.classList.remove("is-invalid");
       div3.innerHTML = "Campo completo !";
       div3.style.color = "green";
     }
