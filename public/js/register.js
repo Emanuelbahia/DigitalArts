@@ -23,7 +23,7 @@ window.addEventListener("load", function () {
   form.surname.addEventListener("blur", function () {
     if (form.surname.value == "") {
       form.surname.style.border = "red 3px solid";
-      div2.innerHTML = "tienes que poner un nombre";
+      div2.innerHTML = "Ingresa tu apellido";
       div2.style.color = "red";
     } else {
       form.surname.style.border = "green 3px solid";
@@ -35,7 +35,7 @@ window.addEventListener("load", function () {
   form.email.addEventListener("blur", function () {
     if (form.email.value == "") {
       form.email.style.border = "red 3px solid";
-      div3.innerHTML = "tienes que poner un nombre";
+      div3.innerHTML = "Ingresa tu email";
       div3.style.color = "red";
     } else {
       form.email.style.border = "green 3px solid";
@@ -47,7 +47,7 @@ window.addEventListener("load", function () {
   form.password.addEventListener("blur", function () {
     if (form.password.value == "") {
       form.password.style.border = "red 3px solid";
-      div4.innerHTML = "tienes que poner un nombre";
+      div4.innerHTML = "Ingresa una contraseña";
       div4.style.color = "red";
     } else {
       form.password.style.border = "green 3px solid";
@@ -59,7 +59,7 @@ window.addEventListener("load", function () {
   form.confirmPassword.addEventListener("blur", function () {
     if (form.confirmPassword.value == "") {
       form.confirmPassword.style.border = "red 3px solid";
-      div5.innerHTML = "tienes que poner un nombre";
+      div5.innerHTML = "Confirma tu contraseña";
       div5.style.color = "red";
     } else {
       form.confirmPassword.style.border = "green 3px solid";
@@ -71,7 +71,7 @@ window.addEventListener("load", function () {
   form.avatar.addEventListener("blur", function () {
     if (form.avatar.value == "") {
       form.avatar.style.border = "red 3px solid";
-      div6.innerHTML = "tienes que poner un nombre";
+      div6.innerHTML = "Ingresa tu foto de perfil";
       div6.style.color = "red";
     } else {
       form.avatar.style.border = "green 3px solid";
