@@ -69,8 +69,16 @@ Semana 1/8 al 7/8
 Semana 8/8 al 14/8
 
 -Comenzamos con la validación de los formularios:
-  *formCreate
-  *formEdit
-  *login 
-  *register
+*formCreate
+*formEdit
+*login
+*register
 Implementamos bootstrap en los formjularios.
+
+Semana 15/8 al 21/8
+
+-terminamos las validaciones de el lado del front y back-end para:
+*formCreate
+*formEdit
+*login
+*register

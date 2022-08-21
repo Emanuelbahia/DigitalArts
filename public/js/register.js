@@ -79,4 +79,36 @@ window.addEventListener("load", function () {
       div6.style.color = "green";
     }
   });
+
+  form.addEventListener("submit", (e) => {
+    let errores = [];
+    console.log(errores);
+
+    if (form.name.value == "") {
+      errores.push("tenes que completar el campo del nombre!");
+    }
+
+    if (form.surname.value == "") {
+      errores.push("tenes que completar el campo del apellido!");
+    }
+
+    if (form.email.value == "") {
+      errores.push("tenes que completar el campo del email!");
+    }
+    if (form.password.value == "") {
+      errores.push("tenes que completar el campo de la contraseña");
+    }
+    if (form.confirmPassword.value == "") {
+      errores.push("tenes que completar el campo de la contraseña");
+    }
+    if (form.avatar.value == "") {
+      errores.push("tenes que completar el campo de la foto");
+    }
+
+    if (errores.length > 0) {
+      e.preventDefault();
+    } else {
+      form.submit();
+    }
+  });
 });
