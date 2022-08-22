@@ -15,7 +15,7 @@ window.addEventListener("load", function () {
     form.name.addEventListener("blur", function () {
       if (form.name.value == "") {
         form.name.style.border = "red 3px solid";
-        div1.innerHTML = "Tienes que poner un nombre";
+        div1.innerHTML = "Introduce tu nombre";
         div1.style.color = "red";
       } else {
         form.name.style.border = "green 3px solid";
@@ -31,7 +31,7 @@ window.addEventListener("load", function () {
     form.size.addEventListener("blur", function () {
       if (form.size.value == "") {
         form.size.style.border = "red 3px solid";
-        div2.innerHTML = "Tienes que poner el tamaño";
+        div2.innerHTML = "Introduce el tamaño";
         div2.style.color = "red";
       } else {
         form.size.style.border = "green 3px solid";
@@ -47,7 +47,7 @@ window.addEventListener("load", function () {
     form.price.addEventListener("blur", function () {
       if (form.price.value == "") {
         form.price.style.border = "red 3px solid";
-        div3.innerHTML = "Tienes que poner un precio";
+        div3.innerHTML = "Introduce el precio";
         div3.style.color = "red";
       } else {
         form.price.style.border = "green 3px solid";
@@ -73,7 +73,7 @@ window.addEventListener("load", function () {
     if (form.name.value == "") {
       errors.push("El campo nombre no puede estar vacio");
       form.name.style.border = "red 3px solid";
-      div1.innerHTML = "Tienes que poner un nombre";
+      div1.innerHTML = "Introduce tu nombre";
       div1.style.color = "red";
     } else {
       form.name.style.border = "green 3px solid";
@@ -101,7 +101,7 @@ window.addEventListener("load", function () {
     if (form.price.value == "") {
       errors.push("El campo precio no puede estar vacio");
       form.price.style.border = "red 3px solid";
-      div1.innerHTML = "Tienes que poner un tamaño";
+      div1.innerHTML = "Introduce el tamaño";
       div1.style.color = "red";
     } else {
       form.price.style.border == "green 3px solid";
