@@ -54,3 +54,31 @@ Sprint 4:
 
 - Nos mantenemos en contacto via whatsapp casi todos los dias para mantenernos bien informado de que hizo cada uno y si subio todo al repositorio.
 - Seguimos reuniendonos por zoom todas las semanas para ver en conjunto que hizo cada uno, explicarlo y ver si modificamos algo o lo dejamos asi.
+
+Sprint 5 
+
+1.Problemas que surgieron
+
+-Nos ha costado la implementación de los middlewares, pero luego pudimos resolverlo.
+
+2.Para mejorar
+
+-Poder implementar un código más prolijo, creemos  que eso nos lo dará la experiencia.
+
+3.Que hicimos bien?
+
+-Como siempre ser responsables del compromiso asumido con el trabajo, Poniéndole fuerzas para que siempre salga bien y poder llegar a término con la entrega del sprint.
+
+Sprint 6
+1.Problemas que surgieron.
+
+-Hemos tenido varios problemas para la realización del CRUD. de hecho creemo que es lo que mas nos costó.
+Finalmente hemos podido resolverlo gracias a la perseverancia y a la ayuda de los profesores. 
+
+2.Para mejorar:
+
+-La realización de encuentros diarios para resolver el dia a dia de los problemas que surjan. Dada la diferencia de horaria laboral no contamos con ese espacio diariamente.
+
+3.Que hicimos bien?
+
+1.Pudimos resolver adecuadamente el tema de la creación de la base de datos con todo lo que eso conlleva, pudiendo de esta manera traer a nuestra base de datos por medio de sequalize.
