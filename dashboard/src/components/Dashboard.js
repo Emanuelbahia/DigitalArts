@@ -1,26 +1,28 @@
 import React from "react";
 import "../assets/css/styles.css";
+import TotalCategories from "./TotalCategories";
+import TotalProducts from "./TotalProducts";
 
 function Dashboard() {
   return (
     <div>
-      <div className="container-h1">
+      <div className="container-h1 header">
         <h1>Dashboard de DigitalArts </h1>
       </div>
-      <div className="container-dashboard">
+      <div className="container">
         <div className="card">
           <h4>Cantidad de usuarios</h4>
         </div>
-        <div className="card">
-          <h4>Cantidad de productos</h4>
-        </div>
+
+        <TotalProducts />
+
         <div className="card">
           <h4>Cantidad de categorias</h4>
         </div>
-        <div className="card">
-          <h4>Cantidad de productos por categoria</h4>
-        </div>
+
+        <TotalCategories />
       </div>
+      <div className="footer"></div>
     </div>
   );
 }

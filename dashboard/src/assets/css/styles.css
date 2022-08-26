@@ -1,5 +1,8 @@
+
+
 body{
     background-color: rgb(95 184 239);
+    
 }
 
 h1 {
@@ -14,19 +17,23 @@ h1 {
     justify-content: center;
 }
 
-.container-dashboard{
-    background-color: rgb(95 184 239);
-    border-radius: 10px;
-    
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+.container{
+    display: flex;
+    justify-content: space-evenly;
 }
-
 .card{
     margin: 10px;
     background-color: white;
     border-radius: 10px;
-    padding: 10px 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 25%;
 }
+
+.p-bold{
+    color: red;
+    font-weight: 800;
+}
+
