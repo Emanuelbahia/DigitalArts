@@ -16,7 +16,7 @@ class TotalProducts extends Component {
       })
       .catch((error) => console.log(error));
   }
-
+  //creo una funcion para obtener la cantidad de productos en la base de datos
   total() {
     let total = this.state.productList.total;
 

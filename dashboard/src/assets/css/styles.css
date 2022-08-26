@@ -1,7 +1,10 @@
-
+html{
+    height: 100%;
+}
 
 body{
-    background-color: rgb(95 184 239);
+    background-color: rgb(65, 162, 222);
+    min-height: 100%;
     
 }
 
@@ -28,8 +31,10 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content:flex-start;
     width: 25%;
+    max-height: 80px;
+    padding: 5px;
 }
 
 .p-bold{
@@ -37,3 +42,20 @@ h1 {
     font-weight: 800;
 }
 
+.sidebar{
+    width: 15%;
+    height: 100vh;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.main-cards{
+    width: 85%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h4{
+    height: 0px;
+}

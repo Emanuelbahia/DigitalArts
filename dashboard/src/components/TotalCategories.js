@@ -16,7 +16,7 @@ class TotalCategories extends Component {
       })
       .catch((error) => console.log(error));
   }
-
+  //creo una funcion para obtener la cantidad de categoria de productos en la base de datos
   total() {
     let total = this.state.categoryList.total;
 
