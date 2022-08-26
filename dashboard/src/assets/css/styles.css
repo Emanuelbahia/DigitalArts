@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(95 184 239);
+}
+
+h1 {
+    font: 10px bold 'Courier New', Courier, monospace;
+}
+
+.container-h1{
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-dashboard{
+    background-color: rgb(95 184 239);
+    border-radius: 10px;
+    
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.card{
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+}
