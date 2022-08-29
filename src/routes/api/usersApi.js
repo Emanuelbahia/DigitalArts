@@ -6,8 +6,8 @@ const usersApiController = require('../../controllers/api/usersAPIController');
 //Listado de usuarios
 router.get('/', usersApiController.list)
 
-//Listado de usuarios
-
+//Detalle de usuario
+router.get('/:id', usersApiController.detail)
 
 
 
