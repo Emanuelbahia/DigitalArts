@@ -111,4 +111,38 @@ window.addEventListener("load", function () {
       form.submit();
     }
   });
+
+  /* Confirmacion de la contraseña */
+  check = function () {
+    if (
+      document.getElementById("password").value ==
+      document.getElementById("checkPassword").value
+    ) {
+      document.getElementById("alertPassword").style.color = "green";
+      document.getElementById("alertPassword").innerHTML =
+        '<span><i class="fas fa-check-circle"></i> Las contraseñas concuerdan</span>';
+    } else {
+      document.getElementById("alertPassword").style.color = "red";
+      document.getElementById("alertPassword").innerHTML =
+        '<span><i class="fas fa-exclamation-triangle"></i> Las contraseñas no concuerdan</span>';
+    }
+  };
+
+  /* para mostrar la contraseña */
+  passToggle = () => {
+    if (
+      document.getElementById("password").type === "password" &&
+      document.getElementById("checkPassword").type === "password"
+    ) {
+      document.getElementById("password").type = "text";
+      document.getElementById("checkPassword").type = "text";
+      document.querySelector(".fa-eye-slash").style.visibility = "visible";
+      document.querySelector(".fa-eye").style.visibility = "hidden";
+    } else {
+      document.getElementById("password").type = "password";
+      document.getElementById("checkPassword").type = "password";
+      document.querySelector(".fa-eye-slash").style.visibility = "hidden";
+      document.querySelector(".fa-eye").style.visibility = "visible";
+    }
+  };
 });
