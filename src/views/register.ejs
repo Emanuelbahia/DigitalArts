@@ -44,10 +44,12 @@
                 <div class="div3"></div>
             </div>
 
-            <div class="control-formulario">
+            <div class="control-formulario ">
                 <label class="weight-label">Contraseña:</label>
-                <input type="password" name="password" class="control new-password-input" minlength="6" maxlength="20" placeholder="Password" pattern="[A-Za-z0-9]+" >
-               
+                <input type="password" name="password" class="control-password" id="password" minlength="6" maxlength="20" placeholder="Tiene que tener entre 6 y 20 caracteres"  pattern="[A-Za-z0-9]+" onkeyup="check()" />
+                <i class="fa-solid fa-eye" onclick="passToggle()"></i>
+                <i class="fa-solid fa-eye-slash" onclick="passToggle()"></i>
+                
                 <% if(locals.errors && errors.password) { %>
                     <div class="red-message-register">
                         <%= errors.password.msg %>
@@ -58,8 +60,8 @@
         
             <div class="control-formulario">
                 <label class="weight-label">Confirme su contraseña:</label>
-                <input type="password" name="confirmPassword" class="control confirm-password-input" minlength="6" maxlength="20" placeholder="Confirm password" pattern="[A-Za-z0-9]+">
-                
+                <input type="password" name="confirmPassword" class="control" id="checkPassword" minlength="6" maxlength="20" placeholder="" pattern="[A-Za-z0-9]+" onkeyup="check()" >
+                <p id="alertPassword">  </p>
                 <% if(locals.errors && errors.confirmPassword) { %>
                     <div class="red-message-register">
                         <%= errors.confirmPassword.msg %>

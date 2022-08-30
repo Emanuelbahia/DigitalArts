@@ -323,10 +323,17 @@ h5{
 }
 
 .control{
-    width: 100%;
+    width: 90%;
     padding: 4px 8px;
     font-size: 15px;
 }
+
+.control-password {
+    width: 85%;
+    padding: 4px 8px;
+    font-size: 15px;
+}
+
 
 .button-login{
     background-color: black;
@@ -768,7 +775,7 @@ p{
 
 .tamaño-link-user{
     text-decoration: none;
-    
+    font-size: 2.5vw;
 }
 
 .none-point{
@@ -778,7 +785,7 @@ p{
 .title-users{
     margin-top: 2%;
     padding: 2%;
-    font-size: 4.5vw;
+    font-size: 4vw;
     font-weight: bold;
 }
 
@@ -974,8 +981,6 @@ h1{
 
 .new-password .fa-eye, .fa-eye-slash {
     position: absolute;
-    right: 40px;
-    margin-top: 17px;
     color:grey;
     font-size: 18px;
     cursor: pointer;
@@ -994,6 +999,19 @@ h1{
     justify-content: space-around;
 }
 
+.control-formulario .fa-eye .fa-eye-slash{
+    position: absolute;
+    color: grey;
+    cursor: pointer;
+}
+
+.fa-eye-slash { 
+    visibility: hidden;
+}
+
+.margin-top-login{
+    margin-top: 2%;
+}
 
 /*media queries tablet*/
 
@@ -1061,7 +1079,7 @@ h1{
         height: 25vw;
     }
     .margin-h2-login {
-        padding-top: 5%;
+        padding-top: 2%;
         margin-top: 0px;
     }
     .margin-h2{
@@ -1165,12 +1183,9 @@ h1{
     .container-users-perfil{
         width: 40%;
     }
-    .image-size {
-        width: 60%;
-        margin-left: 20px;
-    }
+    
     .user-name{
-        width: 80%;
+        width: 100%;
     }
     h1 {
         font-size: 4vw;
@@ -1178,7 +1193,10 @@ h1{
     .contenedor-edit-delete { 
         flex-direction: row;
     }
-    
+    .image-size{
+        width: 60%;
+        padding: 0px 2% ;
+    }
 
     /*media queries pc*/
 
@@ -1379,20 +1397,35 @@ h1{
         padding-top: 22px;
     }
     .user-name{
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
     .title-users{
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
     .tamaño-link-user{
-        font-size: 2vw;
+        font-size: 1.7vw;
     }
     .wraper {
         display: flex;    
     }
     .img-cuadro {
         width: 80%;
+    }
+    .image-size {
+        width: 40%;
+        margin-left: 20px;
     }    
+    .container-users-link{
+        padding-top: 2%;
+        width: 70%;
+    }
+    .container-users-perfil{
+        width: 30%;
+    }
+    
+.h2-detail{
+    font-size: 3vw;
+}
 }    
 
 }

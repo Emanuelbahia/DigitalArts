@@ -22,9 +22,11 @@
          </div>
          <div class="div1"></div>
 
-        <div class="login-box">
+        <div class="login-box margin-top-login">
            <label class="weight-label">Contraseña:</label>
-           <input type="password" name="password" class="control" id="password" placeholder="Password">
+           <input type="password" name="password" class="control" id="passwordLogin" placeholder="Password">
+           <i class="fa-solid fa-eye" onclick="passToggle()"></i>
+           <i class="fa-solid fa-eye-slash" onclick="passToggle()"></i>
            <% if(locals.errors && errors.password) { %>
             <div class="red-message-register">
                 <%= errors.password.msg %>

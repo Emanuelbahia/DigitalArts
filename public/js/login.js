@@ -2,7 +2,20 @@ window.addEventListener("load", function () {
   let form = document.querySelector("form");
   let div1 = document.querySelector(".div1");
   let div2 = document.querySelector(".div2");
-  console.log(email);
+  console.log(div1);
+
+  /* para mostrar la contraseña */
+  passToggle = () => {
+    if (document.getElementById("passwordLogin").type === "password") {
+      document.getElementById("passwordLogin").type = "text";
+      document.querySelector(".fa-eye-slash").style.visibility = "visible";
+      document.querySelector(".fa-eye").style.visibility = "hidden";
+    } else {
+      document.getElementById("passwordLogin").type = "password";
+      document.querySelector(".fa-eye-slash").style.visibility = "hidden";
+      document.querySelector(".fa-eye").style.visibility = "visible";
+    }
+  };
 
   email.addEventListener("blur", function (e) {
     if (email.value == "") {
