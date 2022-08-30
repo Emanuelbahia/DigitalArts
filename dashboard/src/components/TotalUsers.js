@@ -1,29 +1,29 @@
 import { Component } from 'react';
 
 class TotalUsers extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            usersList:[]
-        }
+    
+    state = {
+      usersList:[]
     }
-
-
-    getUsers(){
+    
+    componentDidMount(){
         fetch('/api/users').then(r=>r.json()).then(respuesta=>{
-            this.setState({usersList:respuesta.data})
+            this.setState({usersList:respuesta.meta})
         })
     }
-
-    componentDidMount(){
-        this.getUsers();
+    total() {
+    
+        let totalUsers = this.state.usersList.total;
+        console.log(totalUsers);
+        return totalUsers  
     }
+   
 
     render() {
         return ( 
          <div className="card">
           <h4>Cantidad de usuarios</h4>
-          <p className="p-bold">{this.getUsers.length()}</p>
+          <p className="p-bold">{this.total()}</p>
          </div>
     )}
 }

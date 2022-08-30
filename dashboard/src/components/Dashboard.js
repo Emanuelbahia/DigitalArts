@@ -1,5 +1,6 @@
 import React from "react";
 import "../assets/css/styles.css";
+
 import TotalCategories from "./TotalCategories";
 import TotalProducts from "./TotalProducts";
 import TotalUsers from "./TotalUsers";
@@ -13,18 +14,13 @@ function Dashboard() {
         </div>
 
         <div className="container">
-          <div className="sidebar">sidebar</div>
+          <div className="sidebar"></div>
           <div className="main-cards">
-            <div className="card">
-             <h4>Cantidad de usuarios</h4>
-            </div>
-
+            
+            <TotalUsers />
             <TotalProducts />
             <TotalCategories />
-          
-            <div className="card">
-              <h4>Total de productos por categoria</h4>
-            </div>
+
           </div>
         </div>
         <div className="footer"></div>

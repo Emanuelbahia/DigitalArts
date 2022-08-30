@@ -112,6 +112,9 @@ main{
     box-shadow: 15px 15px 3px 5px rgb(37 36 36 / 87%);
     margin-bottom: 2vh;
 }
+.img-cuadro:hover {
+width: 105%;
+}
 
 .item{
     padding-left: 15%;
@@ -986,7 +989,10 @@ h1{
     display: none;
 }
 
-
+.buttons-admin{
+    display: flex;
+    justify-content: space-around;
+}
 
 
 /*media queries tablet*/
@@ -1073,7 +1079,7 @@ h1{
         display: none;
     }
     .caja-registro{
-        width: 400px;
+        width: 450px;
     }
     .caja-contacto{
         width: 50%;
@@ -1180,7 +1186,7 @@ h1{
     .contenedor-home{
         display: flex;
         flex-wrap: wrap;
-        padding-top: 30px;
+       /*  padding-top: 30px; */
         padding-bottom: 30px;
     }
     h1 {
@@ -1382,10 +1388,11 @@ h1{
         font-size: 2vw;
     }
     .wraper {
-        display: flex;
-        
+        display: flex;    
     }
-    
+    .img-cuadro {
+        width: 80%;
+    }    
 }    
 
 }

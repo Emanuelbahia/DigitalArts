@@ -5,7 +5,7 @@
     <%- include("./partials/header") %>
 
     <main>
-
+     
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -86,18 +86,27 @@
             <a href="/usersDb/register" ><button class="boton-registro boton-registro-color">Registrate</button></a>
         </div>
       </div>
-      <div class="button-create">
-          <a href="/productsDb/create"><button class="btn btn-success">Crear cuadro</button></a>
+      <br>
+      <br>
+      
+      <!-- aca solo muestro los botones si hay alguien logueado y es administrador -->
+      <% if(locals.userLogged && locals.userLogged.isAdmin == 1) { %>
+      
+      <div class="buttons-admin">
+          <div class="button-create">
+               <a href="/productsDb/create"><button class="btn btn-success">Crear cuadro</button></a>
+          </div>
+          <div class="button-create">
+               <a href="/productsDb/category/create"><button class="btn btn-warning">Crear categoria</button></a>
+          </div>
+          <div class="button-create">
+               <a href="/productsDb/description/create"><button class="btn btn-primary">Crear descripcion</button></a>
+          </div>
+          <div class="button-create">
+               <a href="/productsDb/material/create"><button class="btn btn-danger">Crear material</button></a>
+          </div>
       </div>
-      <div class="button-create">
-        <a href="/productsDb/category/create"><button class="btn btn-warning">Crear categoria</button></a>
-    </div>
-    <div class="button-create">
-      <a href="/productsDb/description/create"><button class="btn btn-primary">Crear descripcion</button></a>
-  </div>
-  <div class="button-create">
-    <a href="/productsDb/material/create"><button class="btn btn-danger">Crear material</button></a>
-</div>
+     <% } %>
     </main>
 
     <%- include("./partials/footer") %>
