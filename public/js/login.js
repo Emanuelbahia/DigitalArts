@@ -46,22 +46,22 @@ window.addEventListener("load", function () {
 
     if (email.value == "") {
       email.style.border = "red 3px solid";
-      div1.innerHTML = "tienes que poner un email";
+      div1.innerHTML = "Tienes que poner un email";
       div1.style.color = "red";
       errores.push("Email requerido");
     } else {
       form.email.style.border = "green 3px solid";
-      div1.innerHTML = "campo completo";
+      div1.innerHTML = "Campo completo";
       div1.style.color = "green";
     }
     if (password.value == "") {
       password.style.border = "red 3px solid";
-      div2.innerHTML = "tienes que poner una contraseña";
+      div2.innerHTML = "Tienes que poner una contraseña";
       div2.style.color = "red";
       errores.push("Contraseña requerida");
     } else {
       form.password.style.border = "green 3px solid";
-      div2.innerHTML = "campo completo";
+      div2.innerHTML = "Campo completo";
       div2.style.color = "green";
     }
   });
