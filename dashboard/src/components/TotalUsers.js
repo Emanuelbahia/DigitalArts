@@ -9,7 +9,7 @@ class TotalUsers extends Component {
     componentDidMount(){
         fetch('/api/users')
         .then(r=>r.json())
-        .then(respuesta=>{
+        .then((respuesta) => {
             this.setState({ usersList:respuesta.meta })
         })
         .catch((error) => console.log(error));
@@ -18,7 +18,7 @@ class TotalUsers extends Component {
     total() {
        let totalUsers = this.state.usersList.total;
         console.log(totalUsers);
-        return totalUsers; 
+        return totalUsers 
     }
    
 
