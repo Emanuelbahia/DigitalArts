@@ -17,7 +17,7 @@ window.addEventListener("load", function () {
   name.addEventListener("blur", function () {
     if (name.value == "") {
       name.style.border = "red 3px solid";
-      div1.innerHTML = "Tienes que poner un nombre";
+      div1.innerHTML = "Ingresa tu nombre";
       div1.style.color = "red";
     } else {
       name.style.border = "green 3px solid";
@@ -91,24 +91,25 @@ window.addEventListener("load", function () {
     console.log(errores);
 
     if (form.name.value == "") {
-      errores.push("Tienes que completar el campo del nombre!");
+      errores.push();
     }
 
     if (form.surname.value == "") {
-      errores.push("Tienes que completar el campo del apellido!");
+      errores.push();
     }
 
     if (form.email.value == "") {
-      errores.push("Tienes que completar el campo del email!");
+      errores.push();
     }
     if (form.password.value == "") {
-      errores.push("Tienes que completar el campo de la contraseña");
+      errores.push();
     }
     if (form.confirmPassword.value == "") {
-      errores.push("Tienes que completar el campo de la contraseña");
+      errores.push();
     }
     if (form.avatar.value == "") {
-      errores.push("Tienes que completar el campo de la foto");
+      errores.push();
+
     }
 
     if (errores.length > 0) {

@@ -70,6 +70,7 @@ Sprint 5
 -Como siempre ser responsables del compromiso asumido con el trabajo, Poniéndole fuerzas para que siempre salga bien y poder llegar a término con la entrega del sprint.
 
 Sprint 6
+
 1.Problemas que surgieron.
 
 -Hemos tenido varios problemas para la realización del CRUD. de hecho creemo que es lo que mas nos costó.
@@ -82,3 +83,17 @@ Finalmente hemos podido resolverlo gracias a la perseverancia y a la ayuda de lo
 3.Que hicimos bien?
 
 1.Pudimos resolver adecuadamente el tema de la creación de la base de datos con todo lo que eso conlleva, pudiendo de esta manera traer a nuestra base de datos por medio de sequalize.
+
+Sprint 7
+
+1.Problemas que surgieron.
+
+-El sprint pudo resolverse sin mayores inconvenientes. 
+
+2.Para mejorar:
+
+-Aspectos de diseño y estilo de la web.
+
+3.Que hicimos bien?
+
+1.Encontrar soluciones a los problemas que surgian , con la ayuda tanto de los compañeros de equipo como los profesores del curso.

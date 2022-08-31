@@ -9,7 +9,7 @@ Integrantes del grupo:
 
 -Mi nombre es Emanuel Azcona, soy de Bahia Blanca, tengo 38 años y soy licenciado en administracion de empresas. Me gusta hacer deportes, viajar, hacer trekking y juntarme con amigos.
 
--Soy Carolina Cirillo, vivo en Ramos Mejia, Pcia de Bs As, Argentina. Mi edad es incierta. Mis ganas de aprender a programar son muchas!. Soy Farmacéutica hace mas de 11 años , mi pasión?..estar con mi familia, mi meta próxima : Ser desarrolladora full stack.
+-Soy Carolina Cirillo, vivo en Ramos Mejia, Pcia de Bs As, Argentina. Mis ganas de aprender a programar son muchas!. Soy Farmacéutica hace mas de 11 años , mi pasión?..estar con mi familia, mi meta próxima : Ser desarrolladora full stack.
 
 -Mi nombre es Franco Leon Feierstein soy de Buenos Aires, Argentina, tengo 26 años. Me gusta hacer deportes por sobre todo grupales, tambien me gusta viajar y pasar tiempo con amigos.
 
@@ -36,3 +36,7 @@ Estas son:
 *fotomontaje
 *cuadros decorativos
 *cuadros de artistas nuevos
+
+Entorno de desarrollo:
+
+La aplicación web fue desarrollada utilizando como framework Express, utilizando como lenguajes de programación : JS (Entorno de ejecución Node.js), HTML5, CSS, REACT, aplicando MySql como gestor de base de datos y herramientas varias como bootstrap.

@@ -1,48 +1,47 @@
+// ************ Require's ************
 const express = require("express");
-const app = express();
 const path = require("path");
-const { ppid } = require("process");
 const port = 3001;
 const methodOverride = require("method-override");
 const session = require("express-session");
 const cookies = require("cookie-parser");
 const userLoggedMiddleware = require("./middlewares/userLoggedMiddleware");
 
+
+// ************ express() - (don't touch) ************
+const app = express();
+
+
+// ************ Middlewares - (don't touch) ************
 app.use(methodOverride("_method"));
 app.use(express.static(__dirname + "../../public"));
-
 app.use(
   session({ secret: "secreto", resave: false, saveUninitialized: false })
 );
 app.use(cookies());
-
 app.use(userLoggedMiddleware); //middleware de aplicacion porq el navbar esta en todas las vistas, va dsps de la session
+app.use(express.urlencoded({ extended: false }));// Recibo la informacion q viaja a traves de un formulario via POST en req.body 
 
-const views = path.join(__dirname, "views/");
-const mainRutas = require("./routes/main");
-const carritoRutas = require("./routes/cart");
-const userRutasDb = require("./routes/routesDb/usersdb");
-const productosRutasDb = require("./routes/routesDb/productosdb");
-//llamo a la ruta de las api de products
-const apiProductsRouter = require('./routes/api/productsApi')
-//llamo a la ruta de las api de users
-const apiUsersRouter = require('./routes/api/usersApi')
-
-/* Recibo la informacion q viaja a traves de un formulario via POST en req.body */
-app.use(express.urlencoded({ extended: false }));
-
+// ************ Template Engine - (don't touch) ************
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
-/* RUTAS NUEVAS */
-app.use("/", mainRutas); /*home */
-app.use("/carrito", carritoRutas); /*carrito */
-app.use("/productsDb", productosRutasDb); /*productosDb*/
-app.use("/usersDb", userRutasDb); /* usersDb*/
 
-//Creo la colección de mis recursos de Products y users (APIs)
-app.use("/api/products",apiProductsRouter);
-app.use("/api/users",apiUsersRouter);
+// ************ Route System require and use() ************
+const mainRutas = require("./routes/main");//Main
+const carritoRutas = require("./routes/cart");//Carrito
+const userRutasDb = require("./routes/routesDb/usersdb");//Usuarios
+const productosRutasDb = require("./routes/routesDb/productosdb");//Productos
+const apiProductsRouter = require('./routes/api/productsApi');//Api de products
+const apiUsersRouter = require('./routes/api/usersApi');//Api de users
+
+//RUTAS 
+app.use("/", mainRutas); //home
+app.use("/carrito", carritoRutas); //carrito 
+app.use("/productsDb", productosRutasDb); //productosDb
+app.use("/usersDb", userRutasDb); //usersDb
+app.use("/api/products",apiProductsRouter);//Api de productos
+app.use("/api/users",apiUsersRouter);//Api de usuarios
 
 // ************ DON'T TOUCH FROM HERE ************
 // ************ catch 404 and forward to error handler ************
@@ -59,7 +58,7 @@ app.use((err, req, res, next) => {
   res.status(err.status || 500);
   res.render("error");
 });
-
+//A través del método listen levantamos el servidor
 app.listen(port, () => {
   console.log("hola mundo");
 });

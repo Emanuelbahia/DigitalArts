@@ -3,6 +3,7 @@ import "../assets/css/styles.css";
 
 import TotalCategories from "./TotalCategories";
 import TotalProducts from "./TotalProducts";
+import TotalUsers from "./TotalUsers";
 
 function Dashboard() {
   return (
@@ -15,12 +16,11 @@ function Dashboard() {
         <div className="container">
           <div className="sidebar"></div>
           <div className="main-cards">
-            <div className="card">
-              <h4>Cantidad de usuarios</h4>
-            </div>
-
+            
+            <TotalUsers />
             <TotalProducts />
             <TotalCategories />
+
           </div>
         </div>
         <div className="footer"></div>
