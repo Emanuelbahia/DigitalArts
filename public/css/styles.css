@@ -1013,6 +1013,10 @@ h1{
     margin-top: 2%;
 }
 
+.p1, .p2, .p3 {
+    font-size: 80%;
+}
+
 /*media queries tablet*/
 
 @media (min-width: 481px){
