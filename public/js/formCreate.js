@@ -73,7 +73,7 @@ window.addEventListener("load", function () {
     if (form.name.value == "") {
       errors.push("El campo nombre no puede estar vacio");
       form.name.style.border = "red 3px solid";
-      div1.innerHTML = "Introduce tu nombre";
+      div1.innerHTML = "Introduce el nombre";
       div1.style.color = "red";
     } else {
       form.name.style.border = "green 3px solid";

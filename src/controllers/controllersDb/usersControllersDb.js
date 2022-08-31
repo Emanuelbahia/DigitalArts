@@ -22,7 +22,7 @@ const usersControllerDb = {
     if (userToLogin) {
       return res.render("register", {
         errors: {
-          email: { msg: "El email ya se encuentra registrado" },
+          email: { msg: "Las credenciales son inválidas" },
         },
       });
     }
@@ -96,7 +96,7 @@ const usersControllerDb = {
       return res.render("login", {
         //si las contraseñas no concuerdan lo mando a login
         errors: {
-          password: { msg: " La contraseña es invalida" },
+          password: { msg: "La contraseña es invalida" },
         },
       });
     } else {
