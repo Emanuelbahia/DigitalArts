@@ -82,3 +82,9 @@ Semana 15/8 al 21/8
 *formEdit
 *login
 *register
+
+Semana 22/8 al 30/8
+
+-Comenzamos a desarrollar el dashboard.
+-Desarrollamos las Apis
+-Arreglos de código

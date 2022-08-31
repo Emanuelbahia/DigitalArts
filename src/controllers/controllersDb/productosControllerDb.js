@@ -25,16 +25,6 @@ const productosControllerDb = {
 
   create: async function (req, res) {
     //Se utiliza create para crear y viaja por post
-
-    /* const resultValidation = validationResult(req);
-
-    if (resultValidation.errors.length > 0) {
-      return res.render("formCreate", {
-        errors: resultValidation.mapped(),
-        oldData: req.body,
-      });
-    } */
-
     await db.Products.create({
       name: req.body.name,
       image: req.file.filename,

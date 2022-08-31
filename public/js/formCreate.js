@@ -4,13 +4,15 @@ window.addEventListener("load", function () {
   let div2 = document.querySelector(".div2");
   let div3 = document.querySelector(".div3");
 
-  //hago foco en el primer campo a completar
-  form.category.focus(),
+    //hago foco en el primer campo a completar
+    form.category.focus(),
     //validaciones on-line
     //campo category
     form.category.addEventListener("change", function () {
       alert("Estas seguro que quieres esa categoría?");
+      form.category.style.border = "green 3px solid";
     }),
+    
     //campo name
     form.name.addEventListener("blur", function () {
       if (form.name.value == "") {
@@ -22,11 +24,14 @@ window.addEventListener("load", function () {
         div1.innerHTML = "Campo completo !";
         div1.style.color = "green";
       }
-      //campo description
     }),
+
+    //campo description
     form.description.addEventListener("change", function () {
       alert("Estas seguro que quieres esa técnica?");
+      form.description.style.border = "green 3px solid";
     }),
+
     //campo size
     form.size.addEventListener("blur", function () {
       if (form.size.value == "") {
@@ -39,10 +44,13 @@ window.addEventListener("load", function () {
         div2.style.color = "green";
       }
     }),
+
     //campo material
     form.material.addEventListener("change", function () {
       alert("Estas seguro que quieres esa material?");
+      form.material.style.border = "green 3px solid";
     }),
+
     //campo price
     form.price.addEventListener("blur", function () {
       if (form.price.value == "") {
@@ -55,6 +63,7 @@ window.addEventListener("load", function () {
         div3.style.color = "green";
       }
     }),
+
     //campo image
     form.image.addEventListener("blur", function () {
       if (form.image.value == "") {
@@ -62,7 +71,7 @@ window.addEventListener("load", function () {
       }
     });
 
-  form.addEventListener("submit", function (e) {
+    form.addEventListener("submit", function (e) {
     let errors = [];
     //chequeamos que no haya errores
     //campo categoria
@@ -71,7 +80,7 @@ window.addEventListener("load", function () {
     }
     //campo nombre
     if (form.name.value == "") {
-      errors.push("El campo nombre no puede estar vacio");
+      errors.push();
       form.name.style.border = "red 3px solid";
       div1.innerHTML = "Introduce tu nombre";
       div1.style.color = "red";
@@ -81,7 +90,7 @@ window.addEventListener("load", function () {
     }
     //campo tamaño
     if (form.size.value == "") {
-      errors.push("El campo nombre no puede estar vacio");
+      errors.push();
       form.size.style.border = "red 3px solid";
       div1.innerHTML = "Tienes que poner un tamaño";
       div1.style.color = "red";
@@ -91,15 +100,15 @@ window.addEventListener("load", function () {
     }
     //campo descripcion
     if (form.description.value == "") {
-      errors.push("Debe seleccionar una descripción");
+      errors.push();
     }
     //campo material
     if (form.material.value == "") {
-      errors.push("Debe seleccionar una material");
+      errors.push();
     }
     //campo precio
     if (form.price.value == "") {
-      errors.push("El campo precio no puede estar vacio");
+      errors.push();
       form.price.style.border = "red 3px solid";
       div1.innerHTML = "Introduce el tamaño";
       div1.style.color = "red";
@@ -109,7 +118,7 @@ window.addEventListener("load", function () {
     }
     //campo imagen
     if (form.image.value == "") {
-      errors.push("Debe seleccionar una imagen");
+      errors.push();
     }
     console.log(errors);
 

@@ -35,4 +35,4 @@ const upload = multer({ storage });
 /* ruta de eliminar un producto */
 // router.delete("/products/delete/:id", productosController.delete);
 
-module.exports = router;
+//module.exports = router;

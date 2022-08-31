@@ -36,3 +36,7 @@ Estas son:
 *fotomontaje
 *cuadros decorativos
 *cuadros de artistas nuevos
+
+Entorno de desarrollo:
+
+La aplicación web fue desarrollada utilizando como framework Express, utilizando como lenguajes de programación : JS (Entorno de ejecución Node.js), HTML5, CSS, REACT, aplicando MySql como gestor de base de datos y herramientas varias como bootstrap.
