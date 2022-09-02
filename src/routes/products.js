@@ -1,6 +1,6 @@
 const express = require("express");
 const path = require("path");
-const productosControllerDb = require("../../controllers/controllersDb/productosControllerDb");
+const productsController = require("../controllers/productsController");
 const router = express.Router();
 const multer = require("multer");
 const { body } = require("express-validator");
@@ -35,37 +35,37 @@ const validations = [
 ];
 
 /* ruta de crear un producto (Create)*/
-router.get("/create", productosControllerDb.formCreate);
+router.get("/create", productsController.formCreate);
 router.post(
   "/create",
   upload.single("image"),
   validations,
-  productosControllerDb.create
+  productsController.create
 );
 
 /* ruta para crear una categoria */
-router.get("/category/create", productosControllerDb.formCreateCategory);
-router.post("/category", productosControllerDb.createCategory);
+router.get("/category/create", productsController.formCreateCategory);
+router.post("/category", productsController.createCategory);
 
 /* ruta para crear una descripcion */
-router.get("/description/create", productosControllerDb.formCreateDescription);
-router.post("/description", productosControllerDb.createDescription);
+router.get("/description/create", productsController.formCreateDescription);
+router.post("/description", productsController.createDescription);
 
 /* ruta para crear material */
-router.get("/material/create", productosControllerDb.formCreateMaterial);
-router.post("/material", productosControllerDb.createMaterial);
+router.get("/material/create", productsController.formCreateMaterial);
+router.post("/material", productsController.createMaterial);
 
 /* ruta categoria de cuadros (Read) */
-router.get("/:category", productosControllerDb.cuadros);
+router.get("/:category", productsController.cuadros);
 
 /* ruta detalle de producto */
-router.get("/detail/:id", productosControllerDb.detail);
+router.get("/detail/:id", productsController.detail);
 
 /* ruta de editar un producto  (Update)*/
-router.get("/edit/:id", productosControllerDb.formEdit);
-router.put("/edit/:id", productosControllerDb.edit);
+router.get("/edit/:id", productsController.formEdit);
+router.put("/edit/:id", productsController.edit);
 
 /* ruta de eliminar un producto  (Delete)*/
-router.delete("/delete/:id", productosControllerDb.delete);
+router.delete("/delete/:id", productsController.delete);
 
 module.exports = router;

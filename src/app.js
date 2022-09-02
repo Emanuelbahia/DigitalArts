@@ -30,16 +30,16 @@ app.set("views", path.join(__dirname, "views"));
 // ************ Route System require and use() ************
 const mainRutas = require("./routes/main");//Main
 const carritoRutas = require("./routes/cart");//Carrito
-const userRutasDb = require("./routes/routesDb/usersdb");//Usuarios
-const productosRutasDb = require("./routes/routesDb/productosdb");//Productos
+const userRutas = require("./routes/users");//Usuarios
+const productsRutas = require("./routes/products");//Productos
 const apiProductsRouter = require('./routes/api/productsApi');//Api de products
 const apiUsersRouter = require('./routes/api/usersApi');//Api de users
 
 //RUTAS 
 app.use("/", mainRutas); //home
 app.use("/carrito", carritoRutas); //carrito 
-app.use("/productsDb", productosRutasDb); //productosDb
-app.use("/usersDb", userRutasDb); //usersDb
+app.use("/products", productsRutas); //productos
+app.use("/users", userRutas); //users
 app.use("/api/products",apiProductsRouter);//Api de productos
 app.use("/api/users",apiUsersRouter);//Api de usuarios
 

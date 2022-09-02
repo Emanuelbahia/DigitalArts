@@ -23,10 +23,10 @@
 
                 <div class="contenedor-edit-delete">
                     <div class="caja-edit">
-                         <a href="/productsDb/edit/<%= detailProduct.id %>"><button type="button" class="btn btn-info">EDITAR</button></a>
+                         <a href="/products/edit/<%= detailProduct.id %>"><button type="button" class="btn btn-info">EDITAR</button></a>
                     </div>
                     <div class="caja-detail">
-                        <form action="/productsDb/delete/<%= detailProduct.id %>?_method=DELETE" method="POST">
+                        <form action="/products/delete/<%= detailProduct.id %>?_method=DELETE" method="POST">
                             <button type="submit" class="btn btn-danger">ELIMINAR</button>
                         </form>
                     </div>

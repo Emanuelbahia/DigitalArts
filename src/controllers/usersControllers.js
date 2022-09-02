@@ -2,10 +2,10 @@ const bcryptjs = require("bcryptjs");
 const { text } = require("express");
 const express = require("express");
 const { validationResult } = require("express-validator");
-const db = require("../../database/models");
+const db = require("../database/models");
 const res = require("express/lib/response");
 
-const usersControllerDb = {
+const usersController = {
   register: function (req, res) {
     return res.render("register");
   },
@@ -122,4 +122,4 @@ const usersControllerDb = {
   },
 };
 
-module.exports = usersControllerDb;
+module.exports = usersController;
