@@ -6,97 +6,87 @@
 	<%- include('partials/header.ejs') %>
 	
   <main>
-
-	<div >
-		
-		<div>
-			<h2 class="h2-create">Estás editando: <i><%= cuadrosEditar.name %></i></h2>
-		</div>
-		<div class="errores">
-			<ul></ul>
-		</div>
+    <div >
+		  <div>
+			  <h2 class="h2-create">Estás editando: <i><%= cuadrosEditar.name %></i></h2>
+		  </div>
+		  <div class="errores">
+			  <ul></ul>
+		  </div>
 	
 		<div class="container-edit-form">
-            <form action="/products/edit/<%= cuadrosEditar.id %>?_method=PUT" method="POST" class="row g-3 needs-validation" >
-                <div class="col-md-4">
-                  <label for="category" class="form-label">Categoria del producto:</label>
-                  <select  name="category" class="form-select" id="category" > 
-                    <% for (let i = 0; i < cate.length; i++)  { %>  
-                          <%  if(cate[i].id == cuadrosEditar.category_id) { %>  
-                        <option value="<%= cate[i].id%>" selected>
-                            <%= cate[i].category  %> 
-                        </option>
-                        <%  } else {  %> 
-                        <option value="<%= cate[i].id%>">
-                            <%= cate[i].category  %> 
-                        </option>
-                        <%  } %> 
-                        <%  } %>
-                  </select>
-                  
-                </div>
-                <div class="col-md-4">
-                  <label for="name" class="form-label">Nombre del producto:</label>
-                  <input type="text" class="form-control" id="name" name="name" value="<%= cuadrosEditar.name%>" >
-                  <div class=" div1 ">
-                    
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <label for="size" class="form-label">Medida del producto:</label>
-                  <input type="text" class="form-control size-input" id="size" name="size" value="<%= cuadrosEditar.size %>">
-                  <div class=" div2">
-                   
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <label for="description" class="form-label">Descripcion:</label>
-                  <select  name="description" class="form-select" id="description" >              
-                    <% for (let i = 0; i < descrip.length; i++)  { %>  
-                        <%  if(descrip[i].id == cuadrosEditar.description_id) { %>           
-                        <option value="<%= descrip[i].id%>" selected>
-                            <%= descrip[i].description  %> 
-                        </option>
-                        <%  } else {  %> 
-                        <option value="<%= descrip[i].id%>">
-                            <%= descrip[i].description  %> 
-                        </option>
-                        <%  } %>
-                        <%  } %>
-                </select>
-                  
-                </div>
-                <div class="col-md-4">
-                  <label for="material" class="form-label">Material:</label>
-                  <select  name="material" class="form-select" id="material" >              
-                    <% for (let i = 0; i < mate.length; i++)  { %>  
-                        <%  if(mate[i].id == cuadrosEditar.material_id) { %>           
-                        <option value="<%= mate[i].id%>" selected>
-                            <%= mate[i].material  %> 
-                        </option>
-                        <%  } else {  %> 
-                        <option value="<%= mate[i].id%>">
-                            <%= mate[i].material  %> 
-                        </option>
-                        <%  } %>
-                        <%  } %>
-                </select>
-                  
-                </div>
-                <div class="col-md-3">
-                    <label for="price" class="form-label">Precio</label>
-                    <input type="text" class="form-control" id="price" name="price" value="<%= cuadrosEditar.price %>" >
-                    <div class=" div3">
-                      
-                    </div>
-                  </div>
-                
-                <div class="button-create">
-                  <button class="btn btn-primary" type="submit">Guardar producto</button>
-                </div>
-              </form>
-
+      <form action="/products/edit/<%= cuadrosEditar.id %>?_method=PUT" method="POST" class="row g-3 needs-validation" >
+        <div class="col-md-4">
+          <label for="category" class="form-label">Categoria del producto:</label>
+          <select  name="category" class="form-select" id="category" > 
+              <% for (let i = 0; i < cate.length; i++)  { %>  
+              <%  if(cate[i].id == cuadrosEditar.category_id) { %>  
+            <option value="<%= cate[i].id%>" selected>
+              <%= cate[i].category  %> 
+            </option>
+              <%  } else {  %> 
+            <option value="<%= cate[i].id%>">
+               <%= cate[i].category  %> 
+            </option>
+              <%  } %> 
+        <%  } %>
+          </select>
         </div>
+        <div class="col-md-4">
+            <label for="name" class="form-label">Nombre del producto:</label>
+            <input type="text" class="form-control" id="name" name="name" value="<%= cuadrosEditar.name%>" >
+          <div class=" div1 ">
+          </div>
+        </div>
+        <div class="col-md-3">
+            <label for="size" class="form-label">Medida del producto:</label>
+            <input type="text" class="form-control size-input" id="size" name="size" value="<%= cuadrosEditar.size %>">
+          <div class=" div2">
+          </div>
+        </div>
+        <div class="col-md-3">
+            <label for="description" class="form-label">Descripcion:</label>
+            <select  name="description" class="form-select" id="description" >              
+                <% for (let i = 0; i < descrip.length; i++)  { %>  
+                <%  if(descrip[i].id == cuadrosEditar.description_id) { %>           
+              <option value="<%= descrip[i].id%>" selected>
+                <%= descrip[i].description  %> 
+              </option>
+                <%  } else {  %> 
+              <option value="<%= descrip[i].id%>">
+                <%= descrip[i].description  %> 
+              </option>
+                <%  } %>
+              <%  } %>
+            </select>
+        </div>
+        <div class="col-md-4">
+          <label for="material" class="form-label">Material:</label>
+          <select  name="material" class="form-select" id="material" >              
+              <% for (let i = 0; i < mate.length; i++)  { %>  
+                <%  if(mate[i].id == cuadrosEditar.material_id) { %>           
+              <option value="<%= mate[i].id%>" selected>
+                <%= mate[i].material  %> 
+              </option>
+                <%  } else {  %> 
+               <option value="<%= mate[i].id%>">
+                <%= mate[i].material  %> 
+              </option>
+                <%  } %>
+              <%  } %>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="price" class="form-label">Precio</label>
+          <input type="text" class="form-control" id="price" name="price" value="<%= cuadrosEditar.price %>" >
+          <div class=" div3">
+          </div>
+        </div>
+        <div class="button-create">
+          <button class="btn btn-primary" type="submit">Guardar producto</button>
+        </div>
+      </form>
+    </div>
 	</div>
 	
  </main>

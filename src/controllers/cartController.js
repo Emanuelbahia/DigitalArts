@@ -4,7 +4,7 @@ const fs = require("fs");
 const cuadrosFilePath = path.join(__dirname, "../data/products.json");
 const cuadros = JSON.parse(fs.readFileSync(cuadrosFilePath, "utf-8"));
 
-const carritoController = {
+const cartController = {
   carrito: function (req, res) {
     let id = req.params.id; //guardo el id en la variable unCuadro
 
@@ -16,4 +16,4 @@ const carritoController = {
   },
 };
 
-module.exports = carritoController;
+module.exports = cartController;

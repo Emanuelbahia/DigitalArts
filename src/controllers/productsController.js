@@ -160,7 +160,7 @@ const productsController = {
 
   /* eliminar producto */
   delete: function (req, res) {
-    //Para eliminar se utiliza el metodo destroy """"NO TE OLVIDES DEL WHERE"""""
+    //Para eliminar se utiliza el metodo destroy """"NO TE OLVIDES DEL WHERE"""""//
     db.Products.destroy({
       where: {
         id: req.params.id,

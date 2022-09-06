@@ -10,16 +10,16 @@
         <ul> </ul>
       </div>
       <form action="/users/login" method="POST" class="formValid" >
-      <div class="centrar-login">
-        <div class="login-box">
-           <label class="weight-label">Email:</label>
-           <input type="email" name="email" class="control" id ="email" placeholder="Ej: juan@gmail.com" value="<%= locals.oldData ? oldData.email : null %>" autofocus>
-           <% if(locals.errors && errors.email) { %>
+        <div class="centrar-login">
+          <div class="login-box">
+            <label class="weight-label">Email:</label>
+            <input type="email" name="email" class="control" id ="email" placeholder="Ej: juan@gmail.com" value="<%= locals.oldData ? oldData.email : null %>" autofocus>
+            <% if(locals.errors && errors.email) { %>
             <div class="red-message-register">
                 <%= errors.email.msg %>
             </div>
         <% } %>
-         </div>
+          </div>
          <div class="div1"></div>
 
         <div class="login-box margin-top-login">
@@ -39,10 +39,7 @@
            <input type="checkbox" name="remember_user" class="">
            <label class="weight-label">Recuerdame</label>
         </div>
-
-        
-           <button type="submit" value="login" class="control button-login">Log In</button>
-        
+        <button type="submit" value="login" class="control button-login">Log In</button>
       </div>
       </form>
       <p class="centrar-login weight-label">¿Olvidaste tu contraseña? <a href="register"> Click Aquí </a></p>

@@ -19,11 +19,9 @@ window.addEventListener("load", function () {
     if (name.value == "") {
       errores.push("tenes que completar el campo del nombre!");
     }
-
     if (size.value == "") {
       errores.push("tenes que completar el campo del tamaño!");
     }
-
     if (price.value == "") {
       errores.push("tenes que completar el campo del precio!");
     }

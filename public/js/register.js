@@ -14,6 +14,8 @@ window.addEventListener("load", function () {
   let characterCount = document.querySelector("#character-count");
   console.log(password.value);
 
+  //Validaciones online
+  //Campo name
   name.addEventListener("blur", function () {
     if (name.value == "") {
       name.style.border = "red 3px solid";
@@ -25,7 +27,8 @@ window.addEventListener("load", function () {
       div1.style.color = "green";
     }
   });
-
+  
+  //Campo surname
   form.surname.addEventListener("blur", function () {
     if (form.surname.value == "") {
       form.surname.style.border = "red 3px solid";
@@ -37,7 +40,8 @@ window.addEventListener("load", function () {
       div2.style.color = "green";
     }
   });
-
+  
+  //Campo email
   form.email.addEventListener("blur", function () {
     if (form.email.value == "") {
       form.email.style.border = "red 3px solid";
@@ -49,7 +53,8 @@ window.addEventListener("load", function () {
       div3.style.color = "green";
     }
   });
-
+  
+  //Campo password
   form.password.addEventListener("blur", function () {
     if (form.password.value == "") {
       form.password.style.border = "red 3px solid";
@@ -61,7 +66,8 @@ window.addEventListener("load", function () {
       div4.style.color = "green";
     }
   });
-
+  
+  //Campo confirmacion password
   form.confirmPassword.addEventListener("blur", function () {
     if (form.confirmPassword.value == "") {
       form.confirmPassword.style.border = "red 3px solid";
@@ -69,11 +75,11 @@ window.addEventListener("load", function () {
       div5.style.color = "red";
     } else {
       form.confirmPassword.style.border = "green 3px solid";
-      /*  div5.innerHTML = "campo completo"; */
       div5.style.color = "green";
     }
   });
-
+  
+  //Campo avatar
   form.avatar.addEventListener("blur", function () {
     if (form.avatar.value == "") {
       form.avatar.style.border = "red 3px solid";
@@ -85,7 +91,8 @@ window.addEventListener("load", function () {
       div6.style.color = "green";
     }
   });
-
+  
+  //Validacion formulario
   form.addEventListener("submit", (e) => {
     let errores = [];
     console.log(errores);
@@ -93,11 +100,9 @@ window.addEventListener("load", function () {
     if (form.name.value == "") {
       errores.push();
     }
-
     if (form.surname.value == "") {
       errores.push();
     }
-
     if (form.email.value == "") {
       errores.push();
     }
@@ -109,9 +114,7 @@ window.addEventListener("load", function () {
     }
     if (form.avatar.value == "") {
       errores.push();
-
     }
-
     if (errores.length > 0) {
       e.preventDefault();
     } else {
