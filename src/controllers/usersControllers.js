@@ -1,11 +1,9 @@
 const bcryptjs = require("bcryptjs");
-const { text } = require("express");
-const express = require("express");
 const { validationResult } = require("express-validator");
-const db = require("../../database/models");
-const res = require("express/lib/response");
+const db = require("../database/models");
 
-const usersControllerDb = {
+
+const usersController = {
   register: function (req, res) {
     return res.render("register");
   },
@@ -45,7 +43,7 @@ const usersControllerDb = {
       image: req.file.filename,
     });
 
-    return res.redirect("/usersDb/login");
+    return res.redirect("/users/login");
   },
 
   login: function (req, res) {
@@ -90,7 +88,7 @@ const usersControllerDb = {
           res.cookie("userEmail", req.body.email, { maxAge: 10000 * 60 * 50 });
         }
 
-        return res.redirect("/usersDb/profile"); // si esta todo bien lo redirijo a la vista de su perfil de usuario
+        return res.redirect("/users/profile"); // si esta todo bien lo redirijo a la vista de su perfil de usuario
       }
 
       return res.render("login", {
@@ -122,4 +120,4 @@ const usersControllerDb = {
   },
 };
 
-module.exports = usersControllerDb;
+module.exports = usersController;

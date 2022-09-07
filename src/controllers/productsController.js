@@ -1,7 +1,7 @@
-const db = require("../../database/models");
+const db = require("../database/models");
 const { validationResult } = require("express-validator");
 
-const productosControllerDb = {
+const productsController = {
   //traigo todas los productos
   index: (req, res) => {
     db.Products.findAll().then((products) => res.send(products));
@@ -155,12 +155,12 @@ const productosControllerDb = {
       }
     );
 
-    return res.redirect("/productsDb/detail/" + req.params.id);
+    return res.redirect("/products/detail/" + req.params.id);
   },
 
   /* eliminar producto */
   delete: function (req, res) {
-    //Para eliminar se utiliza el metodo destroy """"NO TE OLVIDES DEL WHERE"""""
+    //Para eliminar se utiliza el metodo destroy """"NO TE OLVIDES DEL WHERE"""""//
     db.Products.destroy({
       where: {
         id: req.params.id,
@@ -171,4 +171,4 @@ const productosControllerDb = {
   },
 };
 
-module.exports = productosControllerDb;
+module.exports = productsController;

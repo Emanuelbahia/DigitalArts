@@ -1,5 +1,6 @@
 const path = require("path");
 
+//Le indicamos a sequalize las rutas de los archivos a utilizar
 module.exports = {
   config: path.resolve("./src/database/config", "config.js"),
   "models-path": path.resolve("./src/database/models"),

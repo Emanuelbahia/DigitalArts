@@ -38,7 +38,7 @@ module.exports = (sequelize, dataTypes) => {
   };
 
   let config = {
-    tableName: "products", // nombre de la tabla en nuestra BD
+    tableName: "products", // nombre de la tabla en  BD
     timestamps: false,
   };
 
