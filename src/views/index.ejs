@@ -89,29 +89,7 @@
      
       <br>
       <br>
-<<<<<<< HEAD
      
-=======
-      
-      <!-- aca solo muestro los botones si hay alguien logueado y es administrador -->
-      <% if(locals.userLogged && locals.userLogged.isAdmin == 1) { %>
-      
-      <div class="buttons-admin">
-          <div class="button-create">
-               <a href="/products/create"><button class="btn btn-success">Crear cuadro</button></a>
-          </div>
-          <div class="button-create">
-               <a href="/products/category/create"><button class="btn btn-warning">Crear categoria</button></a>
-          </div>
-          <div class="button-create">
-               <a href="/products/description/create"><button class="btn btn-primary">Crear descripcion</button></a>
-          </div>
-          <div class="button-create">
-               <a href="/products/material/create"><button class="btn btn-danger">Crear material</button></a>
-          </div>
-      </div>
-     <% } %>
->>>>>>> e9cd9f815730c5ab9c8dacfd40a094fdad5d65aa
     </main>
 
     <%- include("./partials/footer") %>
