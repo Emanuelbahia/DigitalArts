@@ -15,6 +15,22 @@ const productsAPIController = {
     });
   },
 
+  lastProduct: (req, res) => {
+    db.Products.findOne({
+      order: [["id", "DESC"]],
+    }).then((last) => {
+      let lastProd = {
+        meta: {
+          status: 200,
+          total: last.length,
+          url: "api/products/last",
+        },
+        data: last,
+      };
+      res.json(lastProd);
+    });
+  },
+
   category: (req, res) => {
     db.Categories.findAll().then((categories) => {
       let respuesta = {

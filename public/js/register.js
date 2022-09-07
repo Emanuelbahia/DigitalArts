@@ -11,8 +11,8 @@ window.addEventListener("load", function () {
   let p1 = document.querySelector(".p1");
   let p2 = document.querySelector(".p2");
   let p3 = document.querySelector(".p3");
+  let p4 = document.querySelector(".p4");
   let characterCount = document.querySelector("#character-count");
-  console.log(password.value);
 
   name.addEventListener("blur", function () {
     if (name.value == "") {
@@ -51,6 +51,7 @@ window.addEventListener("load", function () {
   });
 
   form.password.addEventListener("blur", function () {
+    console.log(password.value.match(/[0-9]/).input);
     if (form.password.value == "") {
       form.password.style.border = "red 3px solid";
       div4.innerHTML = "Ingresa una contraseña";
@@ -109,7 +110,6 @@ window.addEventListener("load", function () {
     }
     if (form.avatar.value == "") {
       errores.push();
-
     }
 
     if (errores.length > 0) {
@@ -118,7 +118,8 @@ window.addEventListener("load", function () {
       form.submit();
     }
   });
-
+  let numeros = "0123456789";
+  let symbol = "@|°?¡!¿{}[,.]";
   /* Confirmacion de la contraseña */
   check = function () {
     //para contar la cantidad de caracteres de la contraseña
@@ -138,18 +139,34 @@ window.addEventListener("load", function () {
         '<span><i class="fas fa-exclamation-triangle"></i> Las contraseñas no concuerdan</span>';
     }
 
+    if (
+      password.value.length > 0 &&
+      password.value.length < 10 &&
+      password.value.match(/[0-9]/) >= 3 &&
+      password.value.match(symbol)
+    )
+      p4.innerHTML = "bajo !";
+
+    if (
+      password.value.length > 10 &&
+      password.value.length < 15 &&
+      password.value.match(/[0-9]/) > 3
+    )
+      p4.innerHTML = "medio!";
     //mientras escribo voy completando los requisitos! cantidad de caracteres, q tenga un numero y mayuscula
     if (password.value.length < 6 || password.value.length > 20) {
       p1.style.color = "red";
     } else {
       p1.style.color = "green";
     }
+
     if (password.value.match(/[0-9]/) > 0) {
       p3.style.color = "green";
     } else {
       p3.style.color = "red";
     }
-    if (password.value.match(/[A-Z]/) > 0) {
+
+    if (password.value.match(/[A-Z]/)) {
       p2.style.color = "green";
     } else {
       p2.style.color = "red";
