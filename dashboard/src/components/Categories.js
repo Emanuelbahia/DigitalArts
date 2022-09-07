@@ -4,8 +4,8 @@ function Categories(props) {
   return (
     <React.Fragment>
       <tr>
-        <td>{props.id}</td>
-        <td>{props.category}</td>
+        <td className="center-row">{props.id}</td>
+        <td className="center-row">{props.category}</td>
       </tr>
     </React.Fragment>
   );

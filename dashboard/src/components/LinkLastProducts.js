@@ -26,9 +26,9 @@ class LinkLastProducts extends Component {
           <table className="width-table">
             <thead>
               <tr>
-                <th>Nombre</th>
-                <th>Medida</th>
-                <th>Precio</th>
+                <th className="name-table">Nombre</th>
+                <th className="name-table">Medida</th>
+                <th className="name-table">Precio</th>
               </tr>
             </thead>
             <tbody>

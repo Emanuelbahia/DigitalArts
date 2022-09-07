@@ -7,7 +7,7 @@ const { body } = require("express-validator");
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, path.join(__dirname, "../../../public/images"));
+    cb(null, path.join(__dirname, "../../public/images"));
   },
   filename: (req, file, cb) => {
     cb(null, Date.now() + path.extname(file.originalname));
@@ -38,8 +38,9 @@ const validations = [
 router.get("/create", productsController.formCreate);
 router.post(
   "/create",
-
   validations,
+  upload.single("name"),
+
   productsController.create
 );
 

@@ -4,9 +4,10 @@ function Products(props) {
   return (
     <React.Fragment>
       <tr>
-        <td>{props.name}</td>
-        <td>{props.size}</td>
-        <td>{props.price}</td>
+        <td className="center-row">{props.id}</td>
+        <td className="center-row">{props.name}</td>
+        <td className="center-row">{props.size}</td>
+        <td className="center-row">{props.price}</td>
       </tr>
     </React.Fragment>
   );

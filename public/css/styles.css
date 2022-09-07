@@ -3,17 +3,9 @@
     padding: 0;
     margin: 0;
     font-family:'Times New Roman', Times, serif;
+    
 }
 
-body.dark {
-    background: var(--dark-2);
-}
-label{
-    background: var(--light-2);
-}
-#toggle-button:checked + label {
-    background: var(--dark-0);
-}
 main{
     background-image: url("../images/others/backkk.jpg");
     object-fit: cover;
@@ -428,6 +420,7 @@ h5{
     color: white;
     border-radius: 10px;
     width: 100%;
+    padding: 2%;
 }
 .añadir-carrito-centrado{
     width: 100%;
@@ -446,9 +439,9 @@ h5{
     margin-top: 10px;
     
 }
- .detail-none{
+/* .detail-none{
     display: none;
-} 
+}  */
 
 p{
     margin-top: 0px;
@@ -992,9 +985,19 @@ h1{
     87.5% {transform: rotateX(270deg)}
     100% {transform: rotateX(360deg)}
 }
+.button-create-profile{
+    display: flex;
+    margin-bottom: 0.6%;
+    margin-left: 20px;
+    font-size: 15px;
+}
+.profile-size{
+    font-size: 12px;
+}
 
 .button-create{
     display: flex;
+    justify-content: center;
     padding: 0.2%;
 }
 .container-edit-form{

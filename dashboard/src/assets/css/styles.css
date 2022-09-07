@@ -115,6 +115,7 @@ h4{
     border: 1px black solid;
     padding: 1% 2%;
     margin: 1% 2%;
+    background-image: url("../../../public/backkk.jpg");
 }
 
 .h3-list{
@@ -128,6 +129,7 @@ h4{
 }
 .width-table {
     width: 100%;
+   
 }
 .order-buttons{
     display: flex;
@@ -172,4 +174,13 @@ h4{
 .container-select-category{
     display: flex;
     flex-direction: column;
+}
+.center-row{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+.name-table{
+    font-size: 25px;
+    color: #2b36bbe3;
 }

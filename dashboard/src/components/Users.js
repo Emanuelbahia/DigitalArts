@@ -4,10 +4,10 @@ function Users(props) {
   return (
     <React.Fragment>
       <tr>
-        <td>{props.id}</td>
-        <td>{props.firstName}</td>
-        <td>{props.lastName}</td>
-        <td>{props.email}</td>
+        <td className="center-row">{props.id}</td>
+        <td className="center-row">{props.firstName}</td>
+        <td className="center-row">{props.lastName}</td>
+        <td className="center-row">{props.email}</td>
       </tr>
     </React.Fragment>
   );

@@ -26,8 +26,8 @@ class LinkCategories extends Component {
           <table className="width-table">
             <thead>
               <tr>
-                <th>Numero</th>
-                <th>Categoria</th>
+                <th className="name-table">Numero</th>
+                <th className="name-table">Categoria</th>
               </tr>
             </thead>
             <tbody>

@@ -1,8 +1,10 @@
 import React from "react";
+
+import { MDBContainer } from "mdbreact";
 import { Bar } from "react-chartjs-2";
 
 function Home() {
-  /*  const data = {
+  const data = {
     labels: [
       "Abstracto espatula",
       "Abstracto pincel",
@@ -16,23 +18,17 @@ function Home() {
         label: "Categoria de Cuadros",
         backgroundColor: "green",
         borderColor: "black",
-        borderWidth: 1,
+        fill: true,
         hoverBackgroundColor: "orange",
         data: [11, 10, 9, 8, 6, 2],
       },
     ],
   };
 
-  const opciones = {
-    maintainAspectRatio: false,
-    responsive: true,
-  }; */
-
   return (
-    <div>
-      <h2>Cantidad de cuadros por categoria</h2>
-      {/* {<Bar data={data} options={opciones} />} */}
-    </div>
+    <MDBContainer>
+      <Bar data={data} />
+    </MDBContainer>
   );
 }
 

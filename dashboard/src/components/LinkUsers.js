@@ -22,10 +22,10 @@ class ListUsers extends Component {
           <table className="width-table">
             <thead>
               <tr>
-                <th>Id</th>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Email</th>
+                <th className="name-table">Id</th>
+                <th className="name-table">Nombre</th>
+                <th className="name-table">Apellido</th>
+                <th className="name-table">Email</th>
               </tr>
             </thead>
             <tbody>
