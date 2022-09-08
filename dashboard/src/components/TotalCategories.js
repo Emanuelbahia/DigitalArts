@@ -29,7 +29,7 @@ class TotalCategories extends Component {
         <h4 className="amount-categories-color h4-card">
           Cantidad de categorias
         </h4>
-        <p className="p-bold">{this.total()}</p>
+        <p className="p-bold number-categories">{this.total()}</p>
       </div>
     );
   }

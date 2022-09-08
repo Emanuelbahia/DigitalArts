@@ -27,7 +27,7 @@ class TotalProducts extends Component {
     return (
       <div className="card">
         <h4 className="amount-products-color h4-card">Cantidad de productos</h4>
-        <p className="p-bold">{this.total()}</p>
+        <p className="p-bold number-products">{this.total()}</p>
       </div>
     );
   }

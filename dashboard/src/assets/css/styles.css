@@ -41,7 +41,7 @@ h1 {
 .p-bold{
     color: black;
     font-weight: 800;
-  font-size: 10px;
+  font-size: 14px;
 }
 .amount-products-color{
     color: black;
@@ -61,7 +61,7 @@ h1 {
 
 .sidebar{
     width: 17%;
-    height: 100vh;
+    min-height: 100%; /*para q siempre llegue hasta el fondo*/
     margin: 10px;
     background-color: #000000c4;
     border-radius: 10px;
@@ -183,4 +183,30 @@ h4{
 .name-table{
     font-size: 25px;
     color: #2b36bbe3;
+}
+
+.number-categories{
+    color: blue
+}
+.number-products{
+    color: orange
+}
+.numbers-users{
+    color: rgb(135, 218, 10)
+}
+.bar-graphic{
+    border: 2px black solid;
+    background-color: white;
+    padding: 3%;
+    margin-bottom: 15px;
+} 
+.pie-graphic{
+    border: 2px black solid;
+    background-color: white;
+    padding: 3%;
+    height: 40%;
+} 
+.home-bar{
+    width: 85%;
+    height: 50%;
 }

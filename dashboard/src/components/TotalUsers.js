@@ -24,7 +24,7 @@ class TotalUsers extends Component {
     return (
       <div className="card">
         <h4 className="amount-users-color h4-card">Cantidad de usuarios</h4>
-        <p className="p-bold">{this.total()}</p>
+        <p className="p-bold numbers-users">{this.total()}</p>
       </div>
     );
   }

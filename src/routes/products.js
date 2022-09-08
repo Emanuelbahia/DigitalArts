@@ -38,9 +38,9 @@ const validations = [
 router.get("/create", productsController.formCreate);
 router.post(
   "/create",
-  validations,
-  upload.single("name"),
 
+  upload.single("image"),
+  validations,
   productsController.create
 );
 

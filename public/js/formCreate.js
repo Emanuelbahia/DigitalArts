@@ -59,49 +59,49 @@ window.addEventListener("load", function () {
       }
     }),
     //campo image
-    /*    form.image.addEventListener("blur", function () {
+    form.image.addEventListener("blur", function () {
       if (form.image.value == "") {
-        alert("Sube una imagen");
-      }
-    }); */
-
-    form.addEventListener("submit", function (e) {
-      let errors = [];
-      //chequeamos que no haya errores
-      //campo categoria
-      if (form.category.value == "") {
-        errors.push("Debe seleccionar una categoria");
-      }
-      //campo nombre
-      if (form.name.value == "") {
-        errors.push();
-      }
-      //campo tamaño
-      if (form.size.value == "") {
-        errors.push();
-      }
-      //campo descripcion
-      if (form.description.value == "") {
-        errors.push();
-      }
-      //campo material
-      if (form.material.value == "") {
-        errors.push();
-      }
-      //campo precio
-      if (form.price.value == "") {
-        errors.push();
-      }
-      /*   //campo imagen
-    if (form.image.value == "") {
-      errors.push();
-    } */
-      console.log(errors);
-
-      if (errors.length > 0) {
-        e.preventDefault();
-      } else {
-        form.submit();
       }
     });
+
+  form.addEventListener("submit", function (e) {
+    let errors = [];
+    //chequeamos que no haya errores
+    //campo categoria
+    if (form.category.value == "") {
+      errors.push("Debe seleccionar una categoria");
+    }
+    //campo nombre
+    if (form.name.value == "") {
+      errors.push(2);
+    }
+    //campo tamaño
+    if (form.size.value == "") {
+      errors.push(2);
+    }
+    //campo descripcion
+    if (form.description.value == "") {
+      errors.push(2);
+    }
+    //campo material
+    if (form.material.value == "") {
+      errors.push(2);
+    }
+    //campo precio
+    if (form.price.value == "") {
+      errors.push(2);
+    }
+    //campo imagen
+    if (form.image.value == "") {
+      errors.push(2);
+    }
+    console.log(errors);
+
+    if (errors.length > 0) {
+      e.preventDefault();
+      alert("Completa el formulario");
+    } else {
+      form.submit();
+    }
+  });
 });

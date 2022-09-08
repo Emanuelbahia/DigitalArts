@@ -32,7 +32,9 @@ const productsAPIController = {
   },
 
   category: (req, res) => {
-    db.Categories.findAll().then((categories) => {
+    db.Categories.findAll({
+      order: [["id", "ASC"]],
+    }).then((categories) => {
       let respuesta = {
         meta: {
           status: 200,
