@@ -27,7 +27,7 @@ window.addEventListener("load", function () {
       div1.style.color = "green";
     }
   });
-  
+
   //Campo surname
   form.surname.addEventListener("blur", function () {
     if (form.surname.value == "") {
@@ -40,7 +40,7 @@ window.addEventListener("load", function () {
       div2.style.color = "green";
     }
   });
-  
+
   //Campo email
   form.email.addEventListener("blur", function () {
     if (form.email.value == "") {
@@ -53,7 +53,7 @@ window.addEventListener("load", function () {
       div3.style.color = "green";
     }
   });
-  
+
   //Campo password
   form.password.addEventListener("blur", function () {
     console.log(password.value.match(/[0-9]/).input);
@@ -67,7 +67,7 @@ window.addEventListener("load", function () {
       div4.style.color = "green";
     }
   });
-  
+
   //Campo confirmacion password
   form.confirmPassword.addEventListener("blur", function () {
     if (form.confirmPassword.value == "") {
@@ -79,7 +79,7 @@ window.addEventListener("load", function () {
       div5.style.color = "green";
     }
   });
-  
+
   //Campo avatar
   form.avatar.addEventListener("blur", function () {
     if (form.avatar.value == "") {
@@ -92,29 +92,37 @@ window.addEventListener("load", function () {
       div6.style.color = "green";
     }
   });
-  
+
   //Validacion formulario
   form.addEventListener("submit", (e) => {
     let errores = [];
     console.log(errores);
 
     if (form.name.value == "") {
-      errores.push();
+      errores.push(1);
     }
     if (form.surname.value == "") {
-      errores.push();
+      errores.push(2);
     }
     if (form.email.value == "") {
-      errores.push();
+      errores.push(3);
     }
     if (form.password.value == "") {
-      errores.push();
+      errores.push(4);
     }
     if (form.confirmPassword.value == "") {
-      errores.push();
+      errores.push(5);
     }
     if (form.avatar.value == "") {
-      errores.push();
+      errores.push(6);
+    }
+    //si no hay un numero no te puedo registrar
+    if (!password.value.match(/[0-9]/) > 0) {
+      errores.push("tienes q poner una numero");
+    }
+    //si no hay una mayuscula no te puedo registrar
+    if (!password.value.match(/[A-Z]/)) {
+      errores.push("tienes q poner una mayuscula");
     }
     if (errores.length > 0) {
       e.preventDefault();

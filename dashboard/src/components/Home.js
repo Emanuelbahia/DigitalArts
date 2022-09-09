@@ -22,6 +22,7 @@ ChartJS.register(
 );
 
 function Home() {
+  //options y data para los datos del grafico de barra
   const options = {
     responsive: true,
     title: {
@@ -49,8 +50,9 @@ function Home() {
     ],
   };
 
+  //aca pongo los datos para el grafico de torta de tipo de material
   const data1 = {
-    labels: ["Bastidor en lienzo", "Bastidor macizo en mader", "Madera"],
+    labels: ["Bastidor en lienzo", "Bastidor macizo en madera", "Madera"],
     datasets: [
       {
         label: "Cantidad de cuadros por tipo de material",
@@ -60,13 +62,38 @@ function Home() {
     ],
   };
 
+  //aca pongo los datos para el grafico de torta de la tecnica d pintura
+  const data2 = {
+    labels: [
+      "Acrilico con espatula",
+      "Acrilico con pincel",
+      "Pouring",
+      "Fotomontaje",
+      "Impresion de vinilo mate con tintas de latex",
+    ],
+    datasets: [
+      {
+        label: "Cantidad de cuadros por tipo de tecnica",
+        data: [20, 10, 6, 2, 9],
+        backgroundColor: ["#620FA7 ", "#009EFF", "#FFA600", "black", "#36FF00"],
+      },
+    ],
+  };
+
   return (
     <div className="home-bar">
       <div className="bar-graphic">
         <Bar options={options} data={data} />
       </div>
-      <div className="pie-graphic">
-        <Pie data={data1} />
+      <div className="box-pie">
+        <div className="pie-graphic margin-right-pie">
+          <p className="title-pie">Cantidad de cuadros por tipo de material</p>
+          <Pie data={data1} />
+        </div>
+        <div className="pie-graphic">
+          <p className="title-pie">Cantidad de cuadros por tipo de tecnica</p>
+          <Pie data={data2} />
+        </div>
       </div>
     </div>
   );

@@ -195,18 +195,33 @@ h4{
     color: rgb(135, 218, 10)
 }
 .bar-graphic{
-    border: 2px black solid;
+    border-radius: 10px;
     background-color: white;
     padding: 3%;
     margin-bottom: 15px;
 } 
 .pie-graphic{
-    border: 2px black solid;
+    border-radius: 10px;
     background-color: white;
     padding: 3%;
-    height: 40%;
+    height: 35%;
+    width: 50%;
+    
 } 
+.margin-right-pie{
+    margin-right: 2%;
+}
 .home-bar{
-    width: 85%;
-    height: 50%;
+    width: 100%;
+}
+.box-pie {
+    display: flex;
+    justify-content: flex-start;
+}
+.title-pie{
+    text-decoration: underline;
+    text-align: center;
+    padding-bottom: 4%;
+    font-size: 1.5vw;
+    font-weight: bold;
 }

@@ -15,10 +15,18 @@
                 <p class="p-detail"><b>Dimensiones:</b><br><%= detailProduct.size %></p>
                 <p class="p-detail"><b>Material:</b><br><%= detailProduct.material.material %></p>
                 <p class="p-detail"><b>Precio:</b><br>$<%= detailProduct.price %></p>
-    
+                
+               
                 <div class="caja-comprar">
+                    <% if(locals.userLogged) { %>
                      <a href="/carrito/<%= detailProduct.id %>" ><button type="button" class="btn btn-primary">COMPRAR</button></a>
+                     <% } else { %>
+                      <a href="/users/login"><button type="button" class="btn btn-primary">COMPRAR</button></a>
+                        <% } %>
                 </div>
+               
+
+                  
                 <!-- aca solo muestro los botones de editar y eliminar si hay alguien logueado y es administrador -->
                 <% if(locals.userLogged && locals.userLogged.isAdmin == 1) { %>
 
