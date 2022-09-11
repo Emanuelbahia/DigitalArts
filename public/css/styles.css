@@ -72,8 +72,7 @@ main{
     display: flex;
     align-items: flex-end;
     padding-bottom: 5%;
-    /*
-    background: linear-gradient(90deg, rgb(203 187 187 / 0%) 0%, rgb(222 222 235 / 94%) 51%, rgba(45,100,136,1) 100%);*/
+  
 }  
 .tamaño-icono-acceso{
     font-size: 4vw;
@@ -577,7 +576,7 @@ p{
     display: block;
 }
   
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: #f1f1f1; color: #212529;}
   
   .dropdown:hover .dropdown-content {
     display: block;
@@ -589,6 +588,7 @@ p{
 
 .tamaño-letra-menu-desplegable{
     font-size: 3vw;
+   
 }
 
 .tamaño-galeria{
@@ -1337,7 +1337,7 @@ h1{
      }
      .navbar li {
          display: inline;
-         padding: 10px 1vw;
+         padding: 10px 1vw; 
         
      }
     .width-cajas-header {
