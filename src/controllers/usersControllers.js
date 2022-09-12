@@ -2,7 +2,6 @@ const bcryptjs = require("bcryptjs");
 const { validationResult } = require("express-validator");
 const db = require("../database/models");
 
-
 const usersController = {
   register: function (req, res) {
     return res.render("register");
@@ -85,7 +84,10 @@ const usersController = {
 
         //si por el body vino remember_user, seteo una cookie, que la llamo userEmail y va a guardar el email que vino por el body
         if (req.body.remember_user) {
-          res.cookie("userEmail", req.body.email, { maxAge: 10000 * 60 * 50 });
+          res.cookie("userEmail", req.body.email, {
+            maxAge: 60 * 60 * 24 * 30,
+          });
+          //la cookie dura un mes
         }
 
         return res.redirect("/users/profile"); // si esta todo bien lo redirijo a la vista de su perfil de usuario

@@ -23,7 +23,11 @@
                     </p>
                   </div>
                   <div class="añadir-carrito-centrado">
+                     <% if(locals.userLogged) { %>
                       <a href="/carrito/<%= cuadro.id %>"><button class="añadir-carrito">Agregar al carrito</button></a>
+                      <% } else { %>
+                        <a href="/users/login"><button type="button" class="añadir-carrito">Agregar al carrito</button></a>
+                        <% } %>
                   </div>
                </div> 
            </div>

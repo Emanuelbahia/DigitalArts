@@ -116,16 +116,17 @@ window.addEventListener("load", function () {
     if (form.avatar.value == "") {
       errores.push(6);
     }
-    //si no hay un numero no te puedo registrar
+    //si no hay un numero no se puede registrar
     if (!password.value.match(/[0-9]/) > 0) {
       errores.push("tienes q poner una numero");
     }
-    //si no hay una mayuscula no te puedo registrar
+    //si no hay una mayuscula no se puede registrar
     if (!password.value.match(/[A-Z]/)) {
       errores.push("tienes q poner una mayuscula");
     }
     if (errores.length > 0) {
       e.preventDefault();
+      this.alert("Tienes que completar todos los campos");
     } else {
       form.submit();
     }
@@ -151,20 +152,28 @@ window.addEventListener("load", function () {
         '<span><i class="fas fa-exclamation-triangle"></i> Las contraseñas no concuerdan</span>';
     }
 
-    if (
-      password.value.length > 0 &&
-      password.value.length < 10 &&
-      password.value.match(/[0-9]/) >= 3 &&
-      password.value.match(symbol)
-    )
-      p4.innerHTML = "bajo !";
+    if (password.value.length > 0 && password.value.length < 10)
+      p4.innerText = " Bajo !";
+    p4.style.fontSize = "100%";
+    p4.style.fontWeight = "bold";
 
     if (
       password.value.length > 10 &&
       password.value.length < 15 &&
-      password.value.match(/[0-9]/) > 3
+      password.value.match(/[0-9]/)
     )
-      p4.innerHTML = "medio!";
+      p4.innerText = " Medio!";
+    p4.style.fontWeight = "bold";
+
+    if (
+      password.value.length >= 15 &&
+      password.value.length <= 20 &&
+      password.value.match(/[0-9]/) &&
+      password.value.match(/[A-Z]/)
+    )
+      p4.innerText = " Alto!";
+    p4.style.fontWeight = "bold";
+
     //mientras escribo voy completando los requisitos! cantidad de caracteres, q tenga un numero y mayuscula
     if (password.value.length < 6 || password.value.length > 20) {
       p1.style.color = "red";

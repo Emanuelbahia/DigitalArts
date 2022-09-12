@@ -994,6 +994,13 @@ h1{
 .profile-size{
     font-size: 12px;
 }
+.inblock{
+    display: inline;
+    
+}
+.p4-div{
+    font-size: 80%;
+}
 
 .button-create{
     display: flex;
