@@ -7,6 +7,7 @@ function Products(props) {
         <td className="center-row">{props.id}</td>
         <td className="center-row">{props.name}</td>
         <td className="center-row">{props.size}</td>
+        <td className="center-row">{props.quantity}</td>
         <td className="center-row">{props.price}</td>
       </tr>
     </React.Fragment>

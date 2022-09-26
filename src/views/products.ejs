@@ -24,7 +24,9 @@
                   </div>
                   <div class="añadir-carrito-centrado">
                      <% if(locals.userLogged) { %>
-                      <a href="/carrito/<%= cuadro.id %>"><button class="añadir-carrito">Agregar al carrito</button></a>
+                         <!-- con el data-id le pasa al boton el id del producto, y con eso escucho el click y puedo ver si esta en la base de datos -->
+                      <button class="añadir-carrito agregar-carrito" data-id="<%= cuadro.id %>">Agregar al carrito</button>
+
                       <% } else { %>
                         <a href="/users/login"><button type="button" class="añadir-carrito">Agregar al carrito</button></a>
                         <% } %>
@@ -39,6 +41,8 @@
     </main>
 
     <%- include("./partials/footer") %>
+    <script src="/js/addToCart.js" ></script>
+   
     
 </body>
 

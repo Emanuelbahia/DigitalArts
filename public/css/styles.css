@@ -74,10 +74,15 @@ main{
     padding-bottom: 5%;
   
 }  
-.tamaño-icono-acceso{
+.tamaño-icono-acceso1{
     font-size: 4vw;
     color: black;
     padding-right: 3vw;
+    animation: float 5s ease-in-out infinite;
+}
+.tamaño-icono-acceso2{
+    font-size: 4vw;
+    color: black;
     animation: float 5s ease-in-out infinite;
 } 
 
@@ -1057,11 +1062,58 @@ h1{
     box-shadow: 15px 15px 3px 5px rgb(37 36 36 / 87%);
     margin-bottom: 2vh;
 }
-
+.position-number-cart{
+    color: white;
+    font-weight: bold;
+    padding-right: 3vw;
+}
+.total-right{
+    display: flex;
+    justify-content: flex-end;
+}
+.padding-top-h2{
+    padding: 3% 0px ;
+}
+.padding-table-carrito{
+    padding-bottom: 4%;
+}
+.button-add{
+    border: white;
+    background-color: white;
+    margin-left: 18px;
+}
+.button-min{
+    border: white;
+    background-color: white;
+    margin-right: 18px;
+}
+.height-select{
+    height: 4vh;
+    width: 100%;
+}
+.center-button-carrito{
+    display: flex;
+    justify-content: center;
+}
+.image-carrito{
+    width: 40px;
+    height: 40px;
+}
+.input-quantity{
+    width: 40%;
+}  
+.select-number{
+    width: 40%;
+}
 
 /*media queries tablet*/
 
 @media (min-width: 481px){
+    .position-number-cart{
+        color: black;
+        font-weight: bold;
+        padding-right: 3vw;
+    }
     .contenedor-home {
         display: flex;
         flex-wrap: wrap;
@@ -1314,9 +1366,12 @@ h1{
         flex-wrap: nowrap;
         background: linear-gradient(90deg, rgba(203,187,187,0) 0%, rgb(222 222 235 / 23%) 51%, rgba(45,100,136,1) 100%);
     }
-    .tamaño-icono-acceso {
+    .tamaño-icono-acceso1 {
         font-size: 2vw;
         padding-right: 3vw;
+    }
+    .tamaño-icono-acceso2{
+        font-size: 2vw;
     }
     .tamaño-logo {
         width: 150px;

@@ -15,6 +15,20 @@ const productsAPIController = {
     });
   },
 
+  product: (req, res) => {
+    db.Products.findByPk(req.params.id).then((q) => {
+      let qId = {
+        meta: {
+          status: 200,
+          total: q.length,
+          url: "api/products/:id",
+        },
+        data: q,
+      };
+      res.json(qId);
+    });
+  },
+
   lastProduct: (req, res) => {
     db.Products.findOne({
       order: [["id", "DESC"]],
@@ -28,6 +42,21 @@ const productsAPIController = {
         data: last,
       };
       res.json(lastProd);
+    });
+  },
+
+  //me trae la cantidad de productos q tiene cada uno
+  quantity: (req, res) => {
+    db.Products.findByPk(req.params.id).then((q) => {
+      let qId = {
+        meta: {
+          status: 200,
+          total: q.length,
+          url: "api/products/quantity/:id",
+        },
+        data: q.quantity,
+      };
+      res.json(qId);
     });
   },
 

@@ -42,9 +42,12 @@
       <div class="conteiner-profile width-cajas-header">
         
          <div class="acceso ">
-             <a href="/"><i class="fa-solid fa-house tamaño-icono-acceso"></i></a>    
-            <a href="../carrito" ><i class="fa-solid fa-bag-shopping tamaño-icono-acceso"></i></a>  
-          </div>
+             <a href="/"><i class="fa-solid fa-house tamaño-icono-acceso1"></i></a>    
+             <a href="/carrito" > 
+                 <i class="fa-solid fa-bag-shopping tamaño-icono-acceso2"></i>
+                 <span class="position-number-cart cart-number">0</span>
+             </a>  
+         </div>
 
           <% if(locals.isLogged) { %>
            <!--si estoy logueado se muestra la foto y el nombre del usuario-->
@@ -64,7 +67,7 @@
           <% } else { %> 
            <!--si no estoy logueado se muestra el icono del login-->
          <div class="acceso ">             
-              <a href="/users/login" ><i class="fa-solid fa-user tamaño-icono-acceso"></i></a> 
+              <a href="/users/login" ><i class="fa-solid fa-user tamaño-icono-acceso1"></i></a> 
          </div>  
 
           <% } %>

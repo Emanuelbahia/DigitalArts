@@ -33,9 +33,9 @@ function Home() {
 
   const data = {
     labels: [
+      "Cuadros decorativos",
       "Abstracto espatula",
       "Abstracto pincel",
-      "Cuadros decorativos",
       "Artistas nuevos",
       "Pouring",
       "Fotomontaje",
@@ -43,7 +43,7 @@ function Home() {
     datasets: [
       {
         label: "Cantidad de cuadros por cada categoria",
-        data: [11, 10, 9, 8, 6, 2],
+        data: [40, 11, 10, 8, 6, 2],
         backgroundColor: "rgb(245 15 187)",
         hoverBackgroundColor: "#2b36bbe3",
       },
@@ -91,7 +91,7 @@ function Home() {
           <Pie data={data1} />
         </div>
         <div className="pie-graphic">
-          <p className="title-pie">Cantidad de cuadros por tipo de tecnica</p>
+          <p className="title-pie">Cantidad de cuadros por tipo de técnica</p>
           <Pie data={data2} />
         </div>
       </div>
